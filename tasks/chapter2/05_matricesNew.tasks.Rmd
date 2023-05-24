@@ -1,0 +1,126 @@
+---
+title: "Matrices (tasks)"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+---
+
+```{r setup, include=FALSE,eval=TRUE}
+source( "../../setup/R_course_setup.R" );
+```
+
+# Matrices (tasks)
+
+## Tasks
+
+### Creation
+
+Create a matrix with 7 rows and 4 columns of the sequence of numbers from 1 until 28, filling out each column at a time.
+
+```{r}
+mat <- matrix(1:28, nrow = 7, ncol = 4)
+```
+
+### Setting/getting names of rows/columns
+
+Assign to the matrix row names corresponding to weekdays: "Monday", "Tuesday", etc.
+
+```{r}
+rownames(mat) <- c("Monday", "Tuesday", "Wednesday",
+                   "Thursday", "Friday", "Saturday", "Sunday")
+```
+
+Assign to the matrix column names corresponding to week numbers sequentially starting from 3.
+
+```{r}
+colnames(mat) <- 3:6
+```
+
+### Getting matrix elements
+
+Select from this matrix only the rows corresponding to weekend days, and save the result as an R object. Check that the result is correct.
+
+```{r}
+weekend <- mat[c("Saturday", "Sunday"), ]
+weekend
+```
+
+### Useful matrix functions
+
+The matrix below contains the daily number of loafs of bread sold by a small bakery, for 28 consecutive days.
+
+
+```{r}
+nloafs <- c(30, 24, 24, 27, 33, 45, 60, 32, 25, 22, 26, 34, 43, 61,
+            28, 25, 23, 28, 32, 46, 58, 31, 23, 25, 28, 34, 42, 63)
+mat <- matrix(nloafs, nrow = 7, ncol = 4)
+rownames(mat) <- c("Monday", "Tuesday", "Wednesday",
+                   "Thursday", "Friday", "Saturday", "Sunday")
+colnames(mat) <- 3:6
+```
+
+Compute the total number of loafs sold for each of the weeks.
+
+```{r}
+colSums(mat)
+```
+
+Compute the total number of loafs sold for each weekday.
+
+```{r}
+rowSums(mat)
+```
+
+(*) Compute the mean number fo loafs sold for each weekday, across the 4 weeks.
+
+```{r}
+rowSums(mat)/4
+rowMeans(mat) # gives the same result
+```
+
+
+### Matrix of correlation coefficients {#corMatrix}
+
+#### Extra tasks
+
+The goal of this exercise is to calculate a matrix of column-column Pearson correlation coefficients for a number of data frame columns. The `cor` function does not accept a `data.frame` argument and it works only with numerical columns. Therefore, first the numerical columns of the data frame need to be extracted and converted to a matrix.
+
+- Read the pulse data frame to `pulse` variable; check its class.
+```{r}
+pulse <- read.table( "../../data/pulse.txt" )
+```
+```{r result="as.is", echo=FALSE, comment=""}
+catReadTable( "pulse.txt", "pulse" )
+```
+
+```{r}
+class( pulse )
+```
+
+- Calculate correlation of columns `height` and `weight`.
+```{r}
+cor( pulse$height, pulse$weight )
+```
+
+- Understand the error of `cor( pulse )`.
+```{r error=TRUE}
+cor( pulse )
+```
+
+- Select only numerical columns of `pulse`. Then use `as.matrix` on the selected columns. Store the result in `m`. Confirm that `m` is a matrix. Check `m` dimensions and `str( m )`.
+```{r}
+m <- as.matrix( pulse[ c( "height", "weight", "age", "pulse1", "pulse2" ) ] )
+class( m )
+dim( m )
+str( m )
+```
+
+- Try `cor( m )` and understand the result. Read the `cor` documentation for further ideas related to `NA`. Assign the final result to `corM`.
+```{r}
+cor( m )
+cor( m, use = 'p' )
+corM <- cor( m, use = 'p' )
+```
+
+- Read documentation for `round` and round the `corM` matrix to 2 most significant digits. (*)
+```{r}
+round( corM, 2 )
+```

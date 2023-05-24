@@ -1,0 +1,80 @@
+h1:basics-of-r Basics of R
+h2:data-sets Data sets
+h3:pulse Pulse
+h3:survey Survey
+h2:introduction Introduction
+h3:why-this-course Why this course?
+h3:what-is-r What is R?
+h4:r-a-short-history : a short history
+h4:open-source Open source
+h4:obtaining-r Obtaining R
+h3:r-and-rstudio R and RStudio
+h3:course-overview Course overview
+h4:what-we-teach What we teach
+h4:course-structure Course structure
+h2:basics Basics
+h3:r-as-a-calculator R as a calculator
+h4:calculations Calculations
+h4:parentheses Parentheses
+h4:arithmetic-functions Arithmetic functions
+h4:multiline-commands Multiline commands
+h4:integer-division-and-remainders (*) Integer division and remainders
+h3:variables Variables
+h4:variable-names Variable names
+h4:legal-variable-names Legal variable names
+h4:assignment Assignment
+h4:the-workspace (*) The workspace
+h3:vectors Vectors
+h4:vector-basics Vector basics
+h4:simple-sequences Simple sequences
+h4:simple-selection Simple selection
+h2:projects-and-scripts Projects and scripts
+h3:projects Projects
+h4:creating-and-opening-a-new-project Creating and opening a new project
+h4:creating-a-folder Creating a folder
+h4:quick-exercises Quick exercises
+h3:reading-data Reading data
+h4:reading-tab-delimited-text Reading tab-delimited text
+h4:view View
+h3:scripts Scripts
+h4:making-a-script Making a script
+h4:using-a-script Using a script
+h4:comments Comments
+h2:data-frames-basics Data frames (basics)
+h3:exploring Exploring
+h4:dimensions Dimensions
+h4:showing-head-and-tail Showing head and tail
+h3:extracting Extracting
+h4:columns Columns
+h4:row-names Row names
+h4:elements Elements
+h4:removing-a-column (*) Removing a column
+h3:example-data Example data
+h2:basic-data-types Basic data types
+h3:types Types
+h4:str-and-class  and 
+h3:vector-classes Vector classes
+h4:numeric-data Numeric data
+h5:useful-functions-for-numeric-data Useful functions for numeric data
+h5:relationships-between-two-variables Relationships between two variables
+h3:character-data Character data
+h4:creating-character-data Creating character data
+h4:names Names
+h4:useful-premade-character-vectors (*) Useful premade character vectors
+h4:calculating-with-character-vectors (*) Calculating with character vectors
+h3:factor---categorical-data Factor - categorical data
+h4:making-a-factor Making a factor
+h4:factor-basics Factor basics
+h4:turning-factor-back-into-character Turning factor (back) into character
+h4:table Table
+h4:table-of-table (*) Table of table
+h2:functions-and-help-files Functions and help files
+h3:function-arguments Function arguments
+h4:functions-may-have-multiple-arguments Functions may have multiple arguments
+h4:getting-help-for-a-function Getting help for a function
+h4:specifying-arguments-by-name Specifying arguments by name
+h4:default-arguments Default arguments
+h4:the-...-argument (*) the  argument
+h3:other-help-file-aspects Other help file aspects
+h4:help-search Help search
+
