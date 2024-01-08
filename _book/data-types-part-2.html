@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-05-24" />
+<meta name="date" content="2024-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -388,20 +388,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="including-r-code-in-markdown" class="section level4 hasAnchor" number="3.1.2.2">
 <h4><span class="header-section-number">3.1.2.2</span> Including R code in markdown<a href="data-types-part-2.html#including-r-code-in-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>R code is included in a <code>chunk</code>:</p>
-<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb434-1"><a href="data-types-part-2.html#cb434-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb434-2"><a href="data-types-part-2.html#cb434-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb434-1"><a href="data-types-part-2.html#cb434-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb434-2"><a href="data-types-part-2.html#cb434-2" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1] 15</code></pre>
-<div class="sourceCode" id="cb436"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb436-1"><a href="data-types-part-2.html#cb436-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb436-2"><a href="data-types-part-2.html#cb436-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb436"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb436-1"><a href="data-types-part-2.html#cb436-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb436-2"><a href="data-types-part-2.html#cb436-2" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1] 15</code></pre>
 </div>
 <div id="chunk-options" class="section level4 hasAnchor" number="3.1.2.3">
 <h4><span class="header-section-number">3.1.2.3</span> Chunk options<a href="data-types-part-2.html#chunk-options" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>There are many chunck options available, most common being <code>echo</code>, <code>eval</code>. For example the option results=‘hide’ prevents the result of the <code>x + 10</code> being included in the compiled report:</p>
-<div class="sourceCode" id="cb438"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb438-1"><a href="data-types-part-2.html#cb438-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb438-2"><a href="data-types-part-2.html#cb438-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
-<div class="sourceCode" id="cb439"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb439-1"><a href="data-types-part-2.html#cb439-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb439-2"><a href="data-types-part-2.html#cb439-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb438"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb438-1"><a href="data-types-part-2.html#cb438-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb438-2"><a href="data-types-part-2.html#cb438-2" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb439"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb439-1"><a href="data-types-part-2.html#cb439-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb439-2"><a href="data-types-part-2.html#cb439-2" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">10</span></span></code></pre></div>
 <p>If you have a code chunk that generates a lot of output and you cannot switch that off while running it, this may be useful.</p>
 </div>
 <div id="r-studio-and-rmarkdown" class="section level4 hasAnchor" number="3.1.2.4">
@@ -434,20 +434,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Elements may be named.</p>
 <p>Elements are accessed through indexing operations.</p>
 <center>
-<div class="figure">
-<img src="figure/Data_types_mdfl.png" alt="" />
-<p class="caption">Lists</p>
+<div class="float">
+<img src="figure/Data_types_mdfl.png" alt="Lists" />
+<div class="figcaption">Lists</div>
 </div>
 </center>
 </div>
 <div id="creation-1" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Creation<a href="data-types-part-2.html#creation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb440"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb440-1"><a href="data-types-part-2.html#cb440-1" aria-hidden="true" tabindex="-1"></a>study <span class="ot">&lt;-</span> <span class="fu">list</span>(            <span class="co"># here = or &lt;-</span></span>
-<span id="cb440-2"><a href="data-types-part-2.html#cb440-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;Bob&quot;</span>,           <span class="co"># but here only =</span></span>
-<span id="cb440-3"><a href="data-types-part-2.html#cb440-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="dv">44</span>,               <span class="co"># never &lt;-</span></span>
-<span id="cb440-4"><a href="data-types-part-2.html#cb440-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">children =</span> <span class="fu">c</span>( <span class="st">&quot;Amy&quot;</span>, <span class="st">&quot;Dan&quot;</span>, <span class="st">&quot;Eve&quot;</span> )</span>
-<span id="cb440-5"><a href="data-types-part-2.html#cb440-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb440-6"><a href="data-types-part-2.html#cb440-6" aria-hidden="true" tabindex="-1"></a>study</span></code></pre></div>
+<div class="sourceCode" id="cb440"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb440-1"><a href="data-types-part-2.html#cb440-1" tabindex="-1"></a>study <span class="ot">&lt;-</span> <span class="fu">list</span>(            <span class="co"># here = or &lt;-</span></span>
+<span id="cb440-2"><a href="data-types-part-2.html#cb440-2" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;Bob&quot;</span>,           <span class="co"># but here only =</span></span>
+<span id="cb440-3"><a href="data-types-part-2.html#cb440-3" tabindex="-1"></a>  <span class="at">age =</span> <span class="dv">44</span>,               <span class="co"># never &lt;-</span></span>
+<span id="cb440-4"><a href="data-types-part-2.html#cb440-4" tabindex="-1"></a>  <span class="at">children =</span> <span class="fu">c</span>( <span class="st">&quot;Amy&quot;</span>, <span class="st">&quot;Dan&quot;</span>, <span class="st">&quot;Eve&quot;</span> )</span>
+<span id="cb440-5"><a href="data-types-part-2.html#cb440-5" tabindex="-1"></a>)</span>
+<span id="cb440-6"><a href="data-types-part-2.html#cb440-6" tabindex="-1"></a>study</span></code></pre></div>
 <pre><code>## $name
 ## [1] &quot;Bob&quot;
 ## 
@@ -457,10 +457,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## $children
 ## [1] &quot;Amy&quot; &quot;Dan&quot; &quot;Eve&quot;</code></pre>
 <p>The class of <code>study</code>:</p>
-<div class="sourceCode" id="cb442"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb442-1"><a href="data-types-part-2.html#cb442-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb442"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb442-1"><a href="data-types-part-2.html#cb442-1" tabindex="-1"></a><span class="fu">class</span>( study )</span></code></pre></div>
 <pre><code>## [1] &quot;list&quot;</code></pre>
 <p>Function <code>str</code> gives a compact display of an object structure/content:</p>
-<div class="sourceCode" id="cb444"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb444-1"><a href="data-types-part-2.html#cb444-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb444"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb444-1"><a href="data-types-part-2.html#cb444-1" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
 <pre><code>## List of 3
 ##  $ name    : chr &quot;Bob&quot;
 ##  $ age     : num 44
@@ -469,32 +469,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="length" class="section level3 hasAnchor" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> Length<a href="data-types-part-2.html#length" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Length of the list (number of elements):</p>
-<div class="sourceCode" id="cb446"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb446-1"><a href="data-types-part-2.html#cb446-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb446"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb446-1"><a href="data-types-part-2.html#cb446-1" tabindex="-1"></a><span class="fu">length</span>( study )</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
 </div>
 <div id="getting-names-of-the-elements" class="section level3 hasAnchor" number="3.2.4">
 <h3><span class="header-section-number">3.2.4</span> Getting names of the elements<a href="data-types-part-2.html#getting-names-of-the-elements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb448"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb448-1"><a href="data-types-part-2.html#cb448-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb448"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb448-1"><a href="data-types-part-2.html#cb448-1" tabindex="-1"></a><span class="fu">names</span>( study )</span></code></pre></div>
 <pre><code>## [1] &quot;name&quot;     &quot;age&quot;      &quot;children&quot;</code></pre>
 </div>
 <div id="getting-a-single-element" class="section level3 hasAnchor" number="3.2.5">
 <h3><span class="header-section-number">3.2.5</span> Getting a single element<a href="data-types-part-2.html#getting-a-single-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Single elements can be accessed by their names in the list:</p>
-<div class="sourceCode" id="cb450"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb450-1"><a href="data-types-part-2.html#cb450-1" aria-hidden="true" tabindex="-1"></a>study<span class="sc">$</span>age</span></code></pre></div>
+<div class="sourceCode" id="cb450"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb450-1"><a href="data-types-part-2.html#cb450-1" tabindex="-1"></a>study<span class="sc">$</span>age</span></code></pre></div>
 <pre><code>## [1] 44</code></pre>
-<div class="sourceCode" id="cb452"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb452-1"><a href="data-types-part-2.html#cb452-1" aria-hidden="true" tabindex="-1"></a>study[[ <span class="st">&quot;age&quot;</span> ]]</span></code></pre></div>
+<div class="sourceCode" id="cb452"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb452-1"><a href="data-types-part-2.html#cb452-1" tabindex="-1"></a>study[[ <span class="st">&quot;age&quot;</span> ]]</span></code></pre></div>
 <pre><code>## [1] 44</code></pre>
 <p>Note the double [[.</p>
 <p>The type of the returned element depends on the element:</p>
-<div class="sourceCode" id="cb454"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb454-1"><a href="data-types-part-2.html#cb454-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study<span class="sc">$</span>age )</span></code></pre></div>
+<div class="sourceCode" id="cb454"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb454-1"><a href="data-types-part-2.html#cb454-1" tabindex="-1"></a><span class="fu">class</span>( study<span class="sc">$</span>age )</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb456-1"><a href="data-types-part-2.html#cb456-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study<span class="sc">$</span>children )</span></code></pre></div>
+<div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb456-1"><a href="data-types-part-2.html#cb456-1" tabindex="-1"></a><span class="fu">class</span>( study<span class="sc">$</span>children )</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
 <p>When referring to nonexisting elements, the result is <code>NULL</code></p>
-<div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb458-1"><a href="data-types-part-2.html#cb458-1" aria-hidden="true" tabindex="-1"></a>study<span class="sc">$</span>parents</span></code></pre></div>
+<div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb458-1"><a href="data-types-part-2.html#cb458-1" tabindex="-1"></a>study<span class="sc">$</span>parents</span></code></pre></div>
 <pre><code>## NULL</code></pre>
 <p>It is also possible to access elements by numerical index:</p>
-<div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb460-1"><a href="data-types-part-2.html#cb460-1" aria-hidden="true" tabindex="-1"></a>study[[ <span class="dv">2</span> ]]</span></code></pre></div>
+<div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb460-1"><a href="data-types-part-2.html#cb460-1" tabindex="-1"></a>study[[ <span class="dv">2</span> ]]</span></code></pre></div>
 <pre><code>## [1] 44</code></pre>
 <hr />
 <blockquote>
@@ -506,34 +506,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="getting-multiple-elements-as-a-list" class="section level3 hasAnchor" number="3.2.6">
 <h3><span class="header-section-number">3.2.6</span> (*) Getting multiple elements as a list<a href="data-types-part-2.html#getting-multiple-elements-as-a-list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To get (possibly) multiple elements use single brackets notation:</p>
-<div class="sourceCode" id="cb462"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb462-1"><a href="data-types-part-2.html#cb462-1" aria-hidden="true" tabindex="-1"></a>study[ <span class="fu">c</span>( <span class="st">&quot;age&quot;</span>, <span class="st">&quot;children&quot;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb462"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb462-1"><a href="data-types-part-2.html#cb462-1" tabindex="-1"></a>study[ <span class="fu">c</span>( <span class="st">&quot;age&quot;</span>, <span class="st">&quot;children&quot;</span> ) ]</span></code></pre></div>
 <pre><code>## $age
 ## [1] 44
 ## 
 ## $children
 ## [1] &quot;Amy&quot; &quot;Dan&quot; &quot;Eve&quot;</code></pre>
 <p>Note the difference:</p>
-<div class="sourceCode" id="cb464"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb464-1"><a href="data-types-part-2.html#cb464-1" aria-hidden="true" tabindex="-1"></a>study[[ <span class="st">&quot;age&quot;</span> ]]</span></code></pre></div>
+<div class="sourceCode" id="cb464"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb464-1"><a href="data-types-part-2.html#cb464-1" tabindex="-1"></a>study[[ <span class="st">&quot;age&quot;</span> ]]</span></code></pre></div>
 <pre><code>## [1] 44</code></pre>
-<div class="sourceCode" id="cb466"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb466-1"><a href="data-types-part-2.html#cb466-1" aria-hidden="true" tabindex="-1"></a>study[ <span class="st">&quot;age&quot;</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb466"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb466-1"><a href="data-types-part-2.html#cb466-1" tabindex="-1"></a>study[ <span class="st">&quot;age&quot;</span> ]</span></code></pre></div>
 <pre><code>## $age
 ## [1] 44</code></pre>
-<div class="sourceCode" id="cb468"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb468-1"><a href="data-types-part-2.html#cb468-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study[[ <span class="st">&quot;age&quot;</span> ]] )</span></code></pre></div>
+<div class="sourceCode" id="cb468"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb468-1"><a href="data-types-part-2.html#cb468-1" tabindex="-1"></a><span class="fu">class</span>( study[[ <span class="st">&quot;age&quot;</span> ]] )</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb470"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb470-1"><a href="data-types-part-2.html#cb470-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study[ <span class="st">&quot;age&quot;</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb470"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb470-1"><a href="data-types-part-2.html#cb470-1" tabindex="-1"></a><span class="fu">class</span>( study[ <span class="st">&quot;age&quot;</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;list&quot;</code></pre>
 <p>Accessing nonexisting elements with single brackets:</p>
-<div class="sourceCode" id="cb472"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb472-1"><a href="data-types-part-2.html#cb472-1" aria-hidden="true" tabindex="-1"></a>study[ <span class="st">&quot;parents&quot;</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb472"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb472-1"><a href="data-types-part-2.html#cb472-1" tabindex="-1"></a>study[ <span class="st">&quot;parents&quot;</span> ]</span></code></pre></div>
 <pre><code>## $&lt;NA&gt;
 ## NULL</code></pre>
-<div class="sourceCode" id="cb474"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb474-1"><a href="data-types-part-2.html#cb474-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb474"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb474-1"><a href="data-types-part-2.html#cb474-1" tabindex="-1"></a><span class="fu">class</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;list&quot;</code></pre>
-<div class="sourceCode" id="cb476"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb476-1"><a href="data-types-part-2.html#cb476-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb476"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb476-1"><a href="data-types-part-2.html#cb476-1" tabindex="-1"></a><span class="fu">names</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
-<div class="sourceCode" id="cb478"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb478-1"><a href="data-types-part-2.html#cb478-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.null</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb478"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb478-1"><a href="data-types-part-2.html#cb478-1" tabindex="-1"></a><span class="fu">is.null</span>( study[ <span class="st">&quot;parents&quot;</span> ] )</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
 <p>Numerical or logical indices may be also used:</p>
-<div class="sourceCode" id="cb480"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb480-1"><a href="data-types-part-2.html#cb480-1" aria-hidden="true" tabindex="-1"></a>study[ <span class="fu">c</span>( <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb480"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb480-1"><a href="data-types-part-2.html#cb480-1" tabindex="-1"></a>study[ <span class="fu">c</span>( <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span> ) ]</span></code></pre></div>
 <pre><code>## $children
 ## [1] &quot;Amy&quot; &quot;Dan&quot; &quot;Eve&quot;
 ## 
@@ -542,7 +542,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $name
 ## [1] &quot;Bob&quot;</code></pre>
-<div class="sourceCode" id="cb482"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb482-1"><a href="data-types-part-2.html#cb482-1" aria-hidden="true" tabindex="-1"></a>study[ <span class="fu">c</span>( T, F, T ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb482"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb482-1"><a href="data-types-part-2.html#cb482-1" tabindex="-1"></a>study[ <span class="fu">c</span>( T, F, T ) ]</span></code></pre></div>
 <pre><code>## $name
 ## [1] &quot;Bob&quot;
 ## 
@@ -552,25 +552,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="removing-an-element" class="section level3 hasAnchor" number="3.2.7">
 <h3><span class="header-section-number">3.2.7</span> (*) Removing an element<a href="data-types-part-2.html#removing-an-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A list element is removed by setting to NULL:</p>
-<div class="sourceCode" id="cb484"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb484-1"><a href="data-types-part-2.html#cb484-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb484"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb484-1"><a href="data-types-part-2.html#cb484-1" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
 <pre><code>## List of 3
 ##  $ name    : chr &quot;Bob&quot;
 ##  $ age     : num 44
 ##  $ children: chr [1:3] &quot;Amy&quot; &quot;Dan&quot; &quot;Eve&quot;</code></pre>
-<div class="sourceCode" id="cb486"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb486-1"><a href="data-types-part-2.html#cb486-1" aria-hidden="true" tabindex="-1"></a>study[[ <span class="st">&quot;children&quot;</span> ]] <span class="ot">&lt;-</span> <span class="cn">NULL</span>;   <span class="co"># NULL means &quot;nothing&quot;</span></span>
-<span id="cb486-2"><a href="data-types-part-2.html#cb486-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb486"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb486-1"><a href="data-types-part-2.html#cb486-1" tabindex="-1"></a>study[[ <span class="st">&quot;children&quot;</span> ]] <span class="ot">&lt;-</span> <span class="cn">NULL</span>;   <span class="co"># NULL means &quot;nothing&quot;</span></span>
+<span id="cb486-2"><a href="data-types-part-2.html#cb486-2" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
 <pre><code>## List of 2
 ##  $ name: chr &quot;Bob&quot;
 ##  $ age : num 44</code></pre>
 </div>
 <div id="adding-an-element" class="section level3 hasAnchor" number="3.2.8">
 <h3><span class="header-section-number">3.2.8</span> (*) Adding an element<a href="data-types-part-2.html#adding-an-element" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb488"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb488-1"><a href="data-types-part-2.html#cb488-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb488"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb488-1"><a href="data-types-part-2.html#cb488-1" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
 <pre><code>## List of 2
 ##  $ name: chr &quot;Bob&quot;
 ##  $ age : num 44</code></pre>
-<div class="sourceCode" id="cb490"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb490-1"><a href="data-types-part-2.html#cb490-1" aria-hidden="true" tabindex="-1"></a>study<span class="sc">$</span>gender <span class="ot">&lt;-</span> <span class="st">&quot;male&quot;</span></span>
-<span id="cb490-2"><a href="data-types-part-2.html#cb490-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
+<div class="sourceCode" id="cb490"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb490-1"><a href="data-types-part-2.html#cb490-1" tabindex="-1"></a>study<span class="sc">$</span>gender <span class="ot">&lt;-</span> <span class="st">&quot;male&quot;</span></span>
+<span id="cb490-2"><a href="data-types-part-2.html#cb490-2" tabindex="-1"></a><span class="fu">str</span>( study )</span></code></pre></div>
 <pre><code>## List of 3
 ##  $ name  : chr &quot;Bob&quot;
 ##  $ age   : num 44
@@ -585,15 +585,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="basic-statistical-tests" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Basic statistical tests<a href="data-types-part-2.html#basic-statistical-tests" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb492"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb492-1"><a href="data-types-part-2.html#cb492-1" aria-hidden="true" tabindex="-1"></a><span class="do">## pulse &lt;- read.delim(&quot;pulse.txt&quot;)</span></span>
-<span id="cb492-2"><a href="data-types-part-2.html#cb492-2" aria-hidden="true" tabindex="-1"></a><span class="do">## survey &lt;- read.delim(&quot;survey.txt&quot;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb492"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb492-1"><a href="data-types-part-2.html#cb492-1" tabindex="-1"></a><span class="do">## pulse &lt;- read.delim(&quot;pulse.txt&quot;)</span></span>
+<span id="cb492-2"><a href="data-types-part-2.html#cb492-2" tabindex="-1"></a><span class="do">## survey &lt;- read.delim(&quot;survey.txt&quot;)</span></span></code></pre></div>
 <div id="statistical-methods-with-r" class="section level3 hasAnchor" number="3.3.1">
 <h3><span class="header-section-number">3.3.1</span> Statistical methods with R<a href="data-types-part-2.html#statistical-methods-with-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Statistical methods typically have their own pre-defined functions. Example: the t-test.</p>
 <div id="statistical-tests---the-t-test" class="section level4 hasAnchor" number="3.3.1.1">
 <h4><span class="header-section-number">3.3.1.1</span> Statistical tests - the t test<a href="data-types-part-2.html#statistical-tests---the-t-test" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Suppose we are interested in finding a difference between <code>pulse1</code> and <code>pulse2</code> in the pulse data. These are two variables representing measurements per individual before (pulse1) and after (pulse2) an intervention. As such, measurements are paired so we apply a paired t test:</p>
-<div class="sourceCode" id="cb493"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb493-1"><a href="data-types-part-2.html#cb493-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb493"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb493-1"><a href="data-types-part-2.html#cb493-1" tabindex="-1"></a><span class="fu">t.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Paired t-test
 ## 
@@ -609,39 +609,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="accessing-the-result" class="section level4 hasAnchor" number="3.3.1.2">
 <h4><span class="header-section-number">3.3.1.2</span> Accessing the result<a href="data-types-part-2.html#accessing-the-result" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The output on the screen is clear. But sometimes we want to extract parts of the output, say to put in a report, without having to include the entire output of the test. To do that, let us first save the result as an R object, and then check what it contains by using names().</p>
-<div class="sourceCode" id="cb495"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb495-1"><a href="data-types-part-2.html#cb495-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">t.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span>
-<span id="cb495-2"><a href="data-types-part-2.html#cb495-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(res)</span></code></pre></div>
+<div class="sourceCode" id="cb495"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb495-1"><a href="data-types-part-2.html#cb495-1" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">t.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span>
+<span id="cb495-2"><a href="data-types-part-2.html#cb495-2" tabindex="-1"></a><span class="fu">names</span>(res)</span></code></pre></div>
 <pre><code>##  [1] &quot;statistic&quot;   &quot;parameter&quot;   &quot;p.value&quot;     &quot;conf.int&quot;    &quot;estimate&quot;   
 ##  [6] &quot;null.value&quot;  &quot;stderr&quot;      &quot;alternative&quot; &quot;method&quot;      &quot;data.name&quot;</code></pre>
-<div class="sourceCode" id="cb497"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb497-1"><a href="data-types-part-2.html#cb497-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(res)</span></code></pre></div>
+<div class="sourceCode" id="cb497"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb497-1"><a href="data-types-part-2.html#cb497-1" tabindex="-1"></a><span class="fu">class</span>(res)</span></code></pre></div>
 <pre><code>## [1] &quot;htest&quot;</code></pre>
 <p>Note that the resulting object of <code>t.test</code> is a special type of object. It contains various components, including statistic and parameter. Each can be assessed by using a <code>$</code> sign, as in:</p>
-<div class="sourceCode" id="cb499"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb499-1"><a href="data-types-part-2.html#cb499-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>statistic</span></code></pre></div>
+<div class="sourceCode" id="cb499"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb499-1"><a href="data-types-part-2.html#cb499-1" tabindex="-1"></a>res<span class="sc">$</span>statistic</span></code></pre></div>
 <pre><code>##         t 
 ## -7.472648</code></pre>
-<div class="sourceCode" id="cb501"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb501-1"><a href="data-types-part-2.html#cb501-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>p.value</span></code></pre></div>
+<div class="sourceCode" id="cb501"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb501-1"><a href="data-types-part-2.html#cb501-1" tabindex="-1"></a>res<span class="sc">$</span>p.value</span></code></pre></div>
 <pre><code>## [1] 2.171529e-11</code></pre>
 <p>Note in particular that elements in this result involve different types and lengths. Indeed:</p>
-<div class="sourceCode" id="cb503"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb503-1"><a href="data-types-part-2.html#cb503-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(res<span class="sc">$</span>p.value)</span></code></pre></div>
+<div class="sourceCode" id="cb503"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb503-1"><a href="data-types-part-2.html#cb503-1" tabindex="-1"></a><span class="fu">class</span>(res<span class="sc">$</span>p.value)</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb505"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb505-1"><a href="data-types-part-2.html#cb505-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(res<span class="sc">$</span>alternative)</span></code></pre></div>
+<div class="sourceCode" id="cb505"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb505-1"><a href="data-types-part-2.html#cb505-1" tabindex="-1"></a><span class="fu">class</span>(res<span class="sc">$</span>alternative)</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<div class="sourceCode" id="cb507"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb507-1"><a href="data-types-part-2.html#cb507-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(res<span class="sc">$</span>p.value)</span></code></pre></div>
+<div class="sourceCode" id="cb507"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb507-1"><a href="data-types-part-2.html#cb507-1" tabindex="-1"></a><span class="fu">length</span>(res<span class="sc">$</span>p.value)</span></code></pre></div>
 <pre><code>## [1] 1</code></pre>
-<div class="sourceCode" id="cb509"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb509-1"><a href="data-types-part-2.html#cb509-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(res<span class="sc">$</span>conf.int)</span></code></pre></div>
+<div class="sourceCode" id="cb509"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb509-1"><a href="data-types-part-2.html#cb509-1" tabindex="-1"></a><span class="fu">length</span>(res<span class="sc">$</span>conf.int)</span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>This means that the object resulting from the t.test function is a list too.</p>
 </div>
 <div id="wilcoxon-test" class="section level4 hasAnchor" number="3.3.1.3">
 <h4><span class="header-section-number">3.3.1.3</span> Wilcoxon test<a href="data-types-part-2.html#wilcoxon-test" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Similarly to what we did above, we can apply a Wilcoxon test for these paired measurements and save results as an object. This can be done using:</p>
-<div class="sourceCode" id="cb511"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb511-1"><a href="data-types-part-2.html#cb511-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">wilcox.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb511"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb511-1"><a href="data-types-part-2.html#cb511-1" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">wilcox.test</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2, <span class="at">paired=</span><span class="cn">TRUE</span>)</span></code></pre></div>
 <p>Note that the syntax is the same as the one used for the t test.</p>
 <p>We can also assess names and the class of the object created by the Wilcoxon test:</p>
-<div class="sourceCode" id="cb512"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb512-1"><a href="data-types-part-2.html#cb512-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(res)</span></code></pre></div>
+<div class="sourceCode" id="cb512"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb512-1"><a href="data-types-part-2.html#cb512-1" tabindex="-1"></a><span class="fu">names</span>(res)</span></code></pre></div>
 <pre><code>## [1] &quot;statistic&quot;   &quot;parameter&quot;   &quot;p.value&quot;     &quot;null.value&quot;  &quot;alternative&quot;
 ## [6] &quot;method&quot;      &quot;data.name&quot;</code></pre>
-<div class="sourceCode" id="cb514"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb514-1"><a href="data-types-part-2.html#cb514-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(res)</span></code></pre></div>
+<div class="sourceCode" id="cb514"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb514-1"><a href="data-types-part-2.html#cb514-1" tabindex="-1"></a><span class="fu">class</span>(res)</span></code></pre></div>
 <pre><code>## [1] &quot;htest&quot;</code></pre>
 <p>Note that the class of the object created by the wilcox.test function is the same as that for the object created by the t.test function.</p>
 </div>
@@ -670,13 +670,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="basics-of-formula-objects" class="section level4 hasAnchor" number="3.4.1.1">
 <h4><span class="header-section-number">3.4.1.1</span> Basics of formula objects<a href="data-types-part-2.html#basics-of-formula-objects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To specify a (statistical) model in which <code>y</code> depends on <code>x</code>, say</p>
-<div class="sourceCode" id="cb516"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb516-1"><a href="data-types-part-2.html#cb516-1" aria-hidden="true" tabindex="-1"></a>y <span class="sc">~</span> x</span></code></pre></div>
+<div class="sourceCode" id="cb516"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb516-1"><a href="data-types-part-2.html#cb516-1" tabindex="-1"></a>y <span class="sc">~</span> x</span></code></pre></div>
 <pre><code>## y ~ x</code></pre>
 <p>We use a formula for more readable specification of code. For example, when plotting. Instead of</p>
-<div class="sourceCode" id="cb518"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb518-1"><a href="data-types-part-2.html#cb518-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2)</span></code></pre></div>
+<div class="sourceCode" id="cb518"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb518-1"><a href="data-types-part-2.html#cb518-1" tabindex="-1"></a><span class="fu">plot</span>(pulse<span class="sc">$</span>pulse1, pulse<span class="sc">$</span>pulse2)</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-209-1.png" width="672" /></p>
 <p>we say</p>
-<div class="sourceCode" id="cb519"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb519-1"><a href="data-types-part-2.html#cb519-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pulse2 <span class="sc">~</span> pulse1, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb519"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb519-1"><a href="data-types-part-2.html#cb519-1" tabindex="-1"></a><span class="fu">plot</span>(pulse2 <span class="sc">~</span> pulse1, <span class="at">data=</span>pulse)</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-210-1.png" width="672" /></p>
 <p>Note the reverse order!</p>
 <p>If a function allows a formula as input it always has a <code>data</code> argument. This gives the data.frame (or other environment) in which the variables in the formula are interpreted.</p>
@@ -684,9 +684,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="use-of-formula-objects-in-statistics" class="section level4 hasAnchor" number="3.4.1.2">
 <h4><span class="header-section-number">3.4.1.2</span> Use of formula objects in statistics<a href="data-types-part-2.html#use-of-formula-objects-in-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Formula objects can also be used in the syntax of tests and other functions, making them simpler. For example, consider the problem of comparing values of <code>pulse1</code> between males and females. We can use an unpaired t test for this, by writing:</p>
-<div class="sourceCode" id="cb520"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb520-1"><a href="data-types-part-2.html#cb520-1" aria-hidden="true" tabindex="-1"></a>pulse1.male <span class="ot">&lt;-</span> pulse<span class="sc">$</span>pulse1[survey<span class="sc">$</span>gender <span class="sc">==</span> <span class="st">&#39;male&#39;</span>]</span>
-<span id="cb520-2"><a href="data-types-part-2.html#cb520-2" aria-hidden="true" tabindex="-1"></a>pulse1.female <span class="ot">&lt;-</span> pulse<span class="sc">$</span>pulse1[survey<span class="sc">$</span>gender <span class="sc">==</span> <span class="st">&#39;female&#39;</span>]</span>
-<span id="cb520-3"><a href="data-types-part-2.html#cb520-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(pulse1.male, pulse1.female)</span></code></pre></div>
+<div class="sourceCode" id="cb520"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb520-1"><a href="data-types-part-2.html#cb520-1" tabindex="-1"></a>pulse1.male <span class="ot">&lt;-</span> pulse<span class="sc">$</span>pulse1[survey<span class="sc">$</span>gender <span class="sc">==</span> <span class="st">&#39;male&#39;</span>]</span>
+<span id="cb520-2"><a href="data-types-part-2.html#cb520-2" tabindex="-1"></a>pulse1.female <span class="ot">&lt;-</span> pulse<span class="sc">$</span>pulse1[survey<span class="sc">$</span>gender <span class="sc">==</span> <span class="st">&#39;female&#39;</span>]</span>
+<span id="cb520-3"><a href="data-types-part-2.html#cb520-3" tabindex="-1"></a><span class="fu">t.test</span>(pulse1.male, pulse1.female)</span></code></pre></div>
 <pre><code>## 
 ##  Welch Two Sample t-test
 ## 
@@ -699,7 +699,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## mean of x mean of y 
 ##  76.00000  75.33333</code></pre>
 <p>A much simpler way is to use a formula:</p>
-<div class="sourceCode" id="cb522"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb522-1"><a href="data-types-part-2.html#cb522-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(pulse1 <span class="sc">~</span> gender, <span class="at">data =</span> pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb522"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb522-1"><a href="data-types-part-2.html#cb522-1" tabindex="-1"></a><span class="fu">t.test</span>(pulse1 <span class="sc">~</span> gender, <span class="at">data =</span> pulse)</span></code></pre></div>
 <pre><code>## 
 ##  Welch Two Sample t-test
 ## 
@@ -716,11 +716,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-formula-class" class="section level4 hasAnchor" number="3.4.1.3">
 <h4><span class="header-section-number">3.4.1.3</span> (*) The formula class<a href="data-types-part-2.html#the-formula-class" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>A formula is just a R object.</p>
-<div class="sourceCode" id="cb524"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb524-1"><a href="data-types-part-2.html#cb524-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(y <span class="sc">~</span> x)</span></code></pre></div>
+<div class="sourceCode" id="cb524"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb524-1"><a href="data-types-part-2.html#cb524-1" tabindex="-1"></a><span class="fu">class</span>(y <span class="sc">~</span> x)</span></code></pre></div>
 <pre><code>## [1] &quot;formula&quot;</code></pre>
 <p>It can be stored in a variable and reused.</p>
-<div class="sourceCode" id="cb526"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb526-1"><a href="data-types-part-2.html#cb526-1" aria-hidden="true" tabindex="-1"></a>form <span class="ot">&lt;-</span> pulse1 <span class="sc">~</span> gender</span>
-<span id="cb526-2"><a href="data-types-part-2.html#cb526-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(form, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb526"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb526-1"><a href="data-types-part-2.html#cb526-1" tabindex="-1"></a>form <span class="ot">&lt;-</span> pulse1 <span class="sc">~</span> gender</span>
+<span id="cb526-2"><a href="data-types-part-2.html#cb526-2" tabindex="-1"></a><span class="fu">t.test</span>(form, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ##  Welch Two Sample t-test
 ## 
@@ -745,9 +745,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-lm-function" class="section level4 hasAnchor" number="3.4.2.1">
 <h4><span class="header-section-number">3.4.2.1</span> The <code>lm</code> function<a href="data-types-part-2.html#the-lm-function" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The command for linear regression is <code>lm</code> (for <em>linear model</em>). The linear model returns an object of class <code>lm</code>.</p>
-<div class="sourceCode" id="cb528"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb528-1"><a href="data-types-part-2.html#cb528-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(weight <span class="sc">~</span> height, <span class="at">data =</span> pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb528"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb528-1"><a href="data-types-part-2.html#cb528-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(weight <span class="sc">~</span> height, <span class="at">data =</span> pulse)</span></code></pre></div>
 <p>The output of <code>lm</code> is an object of class <code>lm</code>.</p>
-<div class="sourceCode" id="cb529"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb529-1"><a href="data-types-part-2.html#cb529-1" aria-hidden="true" tabindex="-1"></a>fit</span></code></pre></div>
+<div class="sourceCode" id="cb529"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb529-1"><a href="data-types-part-2.html#cb529-1" tabindex="-1"></a>fit</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = weight ~ height, data = pulse)
@@ -755,12 +755,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Coefficients:
 ## (Intercept)       height  
 ##    -27.4398       0.5465</code></pre>
-<div class="sourceCode" id="cb531"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb531-1"><a href="data-types-part-2.html#cb531-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb531"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb531-1"><a href="data-types-part-2.html#cb531-1" tabindex="-1"></a><span class="fu">names</span>(fit)</span></code></pre></div>
 <pre><code>##  [1] &quot;coefficients&quot;  &quot;residuals&quot;     &quot;effects&quot;       &quot;rank&quot;         
 ##  [5] &quot;fitted.values&quot; &quot;assign&quot;        &quot;qr&quot;            &quot;df.residual&quot;  
 ##  [9] &quot;xlevels&quot;       &quot;call&quot;          &quot;terms&quot;         &quot;model&quot;</code></pre>
 <p>Some S3 objects have special functions defined for them. The following functions extract useful information from the <code>lm</code> object.</p>
-<div class="sourceCode" id="cb533"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb533-1"><a href="data-types-part-2.html#cb533-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb533"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb533-1"><a href="data-types-part-2.html#cb533-1" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = weight ~ height, data = pulse)
@@ -779,10 +779,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Residual standard error: 12.41 on 108 degrees of freedom
 ## Multiple R-squared:  0.336,  Adjusted R-squared:  0.3299 
 ## F-statistic: 54.66 on 1 and 108 DF,  p-value: 3.231e-11</code></pre>
-<div class="sourceCode" id="cb535"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb535-1"><a href="data-types-part-2.html#cb535-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb535"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb535-1"><a href="data-types-part-2.html#cb535-1" tabindex="-1"></a><span class="fu">coef</span>(fit)</span></code></pre></div>
 <pre><code>## (Intercept)      height 
 ## -27.4397668   0.5465124</code></pre>
-<div class="sourceCode" id="cb537"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb537-1"><a href="data-types-part-2.html#cb537-1" aria-hidden="true" tabindex="-1"></a><span class="fu">residuals</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb537"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb537-1"><a href="data-types-part-2.html#cb537-1" tabindex="-1"></a><span class="fu">residuals</span>(fit)</span></code></pre></div>
 <pre><code>##      1993_A      1993_B      1993_C      1993_D      1993_E      1993_F 
 ## -10.1068721 -12.3859463  -1.8277979   4.8698559  -3.1068721   0.8814919 
 ##      1993_G      1993_H      1993_I      1993_J      1993_K      1993_L 
@@ -821,7 +821,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  -2.4673350   9.6140537 -14.6417484   3.6141170 -17.5487237 -12.0254833 
 ##      1998_Q      1998_R 
 ##  -0.4673350  11.3349796</code></pre>
-<div class="sourceCode" id="cb539"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb539-1"><a href="data-types-part-2.html#cb539-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fitted.values</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb539"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb539-1"><a href="data-types-part-2.html#cb539-1" tabindex="-1"></a><span class="fu">fitted.values</span>(fit)</span></code></pre></div>
 <pre><code>##    1993_A    1993_B    1993_C    1993_D    1993_E    1993_F    1993_G    1993_H 
 ## 67.106872 70.385946 63.827798 79.130144 67.106872 73.118508 61.095236 64.920823 
 ##    1993_I    1993_J    1993_K    1993_L    1993_M    1993_N    1993_O    1993_P 
@@ -851,24 +851,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    1998_M    1998_N    1998_O    1998_P    1998_Q    1998_R 
 ## 61.641748 23.385883 60.548724 72.025483 65.467335 73.665020</code></pre>
 <p>Note that <code>summary(fit)</code> returns itself an object in which some additional things are calculated.</p>
-<div class="sourceCode" id="cb541"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb541-1"><a href="data-types-part-2.html#cb541-1" aria-hidden="true" tabindex="-1"></a>summa <span class="ot">&lt;-</span> <span class="fu">summary</span>(fit)</span>
-<span id="cb541-2"><a href="data-types-part-2.html#cb541-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(summa)</span></code></pre></div>
+<div class="sourceCode" id="cb541"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb541-1"><a href="data-types-part-2.html#cb541-1" tabindex="-1"></a>summa <span class="ot">&lt;-</span> <span class="fu">summary</span>(fit)</span>
+<span id="cb541-2"><a href="data-types-part-2.html#cb541-2" tabindex="-1"></a><span class="fu">class</span>(summa)</span></code></pre></div>
 <pre><code>## [1] &quot;summary.lm&quot;</code></pre>
-<div class="sourceCode" id="cb543"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb543-1"><a href="data-types-part-2.html#cb543-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(summa)</span></code></pre></div>
+<div class="sourceCode" id="cb543"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb543-1"><a href="data-types-part-2.html#cb543-1" tabindex="-1"></a><span class="fu">names</span>(summa)</span></code></pre></div>
 <pre><code>##  [1] &quot;call&quot;          &quot;terms&quot;         &quot;residuals&quot;     &quot;coefficients&quot; 
 ##  [5] &quot;aliased&quot;       &quot;sigma&quot;         &quot;df&quot;            &quot;r.squared&quot;    
 ##  [9] &quot;adj.r.squared&quot; &quot;fstatistic&quot;    &quot;cov.unscaled&quot;</code></pre>
 <p>Most useful is the regression table</p>
-<div class="sourceCode" id="cb545"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb545-1"><a href="data-types-part-2.html#cb545-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(summa)</span></code></pre></div>
+<div class="sourceCode" id="cb545"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb545-1"><a href="data-types-part-2.html#cb545-1" tabindex="-1"></a><span class="fu">coef</span>(summa)</span></code></pre></div>
 <pre><code>##                Estimate  Std. Error   t value     Pr(&gt;|t|)
 ## (Intercept) -27.4397668 12.73857886 -2.154068 3.345796e-02
 ## height        0.5465124  0.07392117  7.393178 3.231467e-11</code></pre>
 <p>and the confidence intervals for all or some regression coefficients</p>
-<div class="sourceCode" id="cb547"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb547-1"><a href="data-types-part-2.html#cb547-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb547"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb547-1"><a href="data-types-part-2.html#cb547-1" tabindex="-1"></a><span class="fu">confint</span>(fit)</span></code></pre></div>
 <pre><code>##                   2.5 %     97.5 %
 ## (Intercept) -52.6898400 -2.1896935
 ## height        0.3999878  0.6930369</code></pre>
-<div class="sourceCode" id="cb549"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb549-1"><a href="data-types-part-2.html#cb549-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(fit, <span class="st">&quot;height&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb549"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb549-1"><a href="data-types-part-2.html#cb549-1" tabindex="-1"></a><span class="fu">confint</span>(fit, <span class="st">&quot;height&quot;</span>)</span></code></pre></div>
 <pre><code>##            2.5 %    97.5 %
 ## height 0.3999878 0.6930369</code></pre>
 <p>Note that the regression coefficients are only accessible from the <code>summary</code> object, whilst the <code>confint</code> function yields confidence intervals using the fitted model object.</p>
@@ -876,8 +876,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="visualizing-a-regression" class="section level4 hasAnchor" number="3.4.2.2">
 <h4><span class="header-section-number">3.4.2.2</span> Visualizing a regression<a href="data-types-part-2.html#visualizing-a-regression" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can easily visualize the regression using the same formula and fit object</p>
-<div class="sourceCode" id="cb551"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb551-1"><a href="data-types-part-2.html#cb551-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(weight <span class="sc">~</span> height, <span class="at">data=</span>pulse)</span>
-<span id="cb551-2"><a href="data-types-part-2.html#cb551-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">coef</span>(fit))</span></code></pre></div>
+<div class="sourceCode" id="cb551"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb551-1"><a href="data-types-part-2.html#cb551-1" tabindex="-1"></a><span class="fu">plot</span>(weight <span class="sc">~</span> height, <span class="at">data=</span>pulse)</span>
+<span id="cb551-2"><a href="data-types-part-2.html#cb551-2" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">coef</span>(fit))</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-222-1.png" width="672" /></p>
 <hr />
 <blockquote>
@@ -892,8 +892,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="multiple-terms-in-a-formula" class="section level4 hasAnchor" number="3.4.3.1">
 <h4><span class="header-section-number">3.4.3.1</span> Multiple terms in a formula<a href="data-types-part-2.html#multiple-terms-in-a-formula" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can have multiple terms in a formula. This way we can do multiple regression</p>
-<div class="sourceCode" id="cb552"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb552-1"><a href="data-types-part-2.html#cb552-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span>
-<span id="cb552-2"><a href="data-types-part-2.html#cb552-2" aria-hidden="true" tabindex="-1"></a>fit</span></code></pre></div>
+<div class="sourceCode" id="cb552"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb552-1"><a href="data-types-part-2.html#cb552-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span>
+<span id="cb552-2"><a href="data-types-part-2.html#cb552-2" tabindex="-1"></a>fit</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ pulse1 + height, data = pulse)
@@ -901,7 +901,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Coefficients:
 ## (Intercept)       pulse1       height  
 ##    25.96489      0.86822      0.02984</code></pre>
-<div class="sourceCode" id="cb554"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb554-1"><a href="data-types-part-2.html#cb554-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb554"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb554-1"><a href="data-types-part-2.html#cb554-1" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ pulse1 + height, data = pulse)
@@ -919,18 +919,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 29.71 on 106 degrees of freedom
-##   (1 observation deleted due to missingness)
+##   (1 observation effacée parce que manquante)
 ## Multiple R-squared:  0.1309, Adjusted R-squared:  0.1145 
 ## F-statistic: 7.981 on 2 and 106 DF,  p-value: 0.0005904</code></pre>
 </div>
 <div id="predicting" class="section level4 hasAnchor" number="3.4.3.2">
 <h4><span class="header-section-number">3.4.3.2</span> Predicting<a href="data-types-part-2.html#predicting" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can use regression for prediction using the predict function. To predict we need two things. First, a fitted model object.</p>
-<div class="sourceCode" id="cb556"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb556-1"><a href="data-types-part-2.html#cb556-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb556"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb556-1"><a href="data-types-part-2.html#cb556-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span></code></pre></div>
 <p>Second, a data.frame with new data for our covariates</p>
-<div class="sourceCode" id="cb557"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb557-1"><a href="data-types-part-2.html#cb557-1" aria-hidden="true" tabindex="-1"></a>new.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">pulse1=</span><span class="fu">c</span>(<span class="dv">90</span>, <span class="dv">80</span>), <span class="at">height=</span><span class="fu">c</span>(<span class="dv">173</span>, <span class="dv">185</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb557"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb557-1"><a href="data-types-part-2.html#cb557-1" tabindex="-1"></a>new.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">pulse1=</span><span class="fu">c</span>(<span class="dv">90</span>, <span class="dv">80</span>), <span class="at">height=</span><span class="fu">c</span>(<span class="dv">173</span>, <span class="dv">185</span>))</span></code></pre></div>
 <p>Now we can predict a value for a person with these covariates</p>
-<div class="sourceCode" id="cb558"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb558-1"><a href="data-types-part-2.html#cb558-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(fit, new.data)</span></code></pre></div>
+<div class="sourceCode" id="cb558"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb558-1"><a href="data-types-part-2.html#cb558-1" tabindex="-1"></a><span class="fu">predict</span>(fit, new.data)</span></code></pre></div>
 <pre><code>##        1        2 
 ## 109.2668 100.9426</code></pre>
 </div>
@@ -942,7 +942,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>*</code> interaction and main effects</li>
 </ul>
 <p>Let us say that we want to explain <code>pulse2</code> by <code>pulse1</code>, <code>exercise</code> and <code>alcohol</code>, as well as a variable representing an interaction between <code>exercise</code> and <code>alcohol</code>. Two alternative ways of specifying the same model are</p>
-<div class="sourceCode" id="cb560"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb560-1"><a href="data-types-part-2.html#cb560-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> exercise <span class="sc">+</span> alcohol <span class="sc">+</span> exercise<span class="sc">:</span>alcohol, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb560"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb560-1"><a href="data-types-part-2.html#cb560-1" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> exercise <span class="sc">+</span> alcohol <span class="sc">+</span> exercise<span class="sc">:</span>alcohol, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ pulse1 + exercise + alcohol + exercise:alcohol, 
@@ -957,7 +957,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                     28.4487                     -21.3348  
 ## exercisemoderate:alcoholyes  
 ##                    -28.8261</code></pre>
-<div class="sourceCode" id="cb562"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb562-1"><a href="data-types-part-2.html#cb562-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> exercise<span class="sc">*</span>alcohol, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb562"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb562-1"><a href="data-types-part-2.html#cb562-1" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> pulse1 <span class="sc">+</span> exercise<span class="sc">*</span>alcohol, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ pulse1 + exercise * alcohol, data = pulse)
@@ -976,7 +976,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">3.4.3.4</span> (*) The intercept term<a href="data-types-part-2.html#the-intercept-term" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We see that R automatically adds an intercept term to the model. You can suppress the intercept too, by adding either <code>+0</code> or <code>-1</code> to the formula. Suppressing the intercept has different effects if there are factor variables in your model or not.</p>
 <p>Suppression of the intercept means regression through the origin</p>
-<div class="sourceCode" id="cb564"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb564-1"><a href="data-types-part-2.html#cb564-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(weight <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb564"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb564-1"><a href="data-types-part-2.html#cb564-1" tabindex="-1"></a><span class="fu">lm</span>(weight <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> height, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = weight ~ 0 + height, data = pulse)
@@ -999,63 +999,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="factors-revisited" class="section level3 hasAnchor" number="3.5.1">
 <h3><span class="header-section-number">3.5.1</span> Factors revisited<a href="data-types-part-2.html#factors-revisited" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We have seen an introduction to factors in the section ‘Basic data types’. Remember that they are variables that define categories. We can find out the category names involved using <code>levels</code> and tabulate factors:</p>
-<div class="sourceCode" id="cb566"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb566-1"><a href="data-types-part-2.html#cb566-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb566"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb566-1"><a href="data-types-part-2.html#cb566-1" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <pre><code>## NULL</code></pre>
-<div class="sourceCode" id="cb568"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb568-1"><a href="data-types-part-2.html#cb568-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb568"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb568-1"><a href="data-types-part-2.html#cb568-1" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <pre><code>## 
 ##     high      low moderate 
 ##       14       37       59</code></pre>
 <p>Note that the category names given by its levels come typically in alphabetical order. In the example above, this order does not correspond to the intrinsic order of the categories, in which the extremes are given by <code>high</code> and <code>low</code>, with <code>intermediate</code> in the middle, rather than the last one. This is not a big problem for a table, but it is not ideal for a graph. Indeed, a boxplot of <code>pulse2</code> according to the groups defined by <code>exercise</code> looks like:</p>
-<div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb570-1"><a href="data-types-part-2.html#cb570-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(pulse<span class="sc">$</span>pulse2 <span class="sc">~</span> pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb570-1"><a href="data-types-part-2.html#cb570-1" tabindex="-1"></a><span class="fu">boxplot</span>(pulse<span class="sc">$</span>pulse2 <span class="sc">~</span> pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-232-1.png" width="672" /></p>
 <p>So we would like to re-order the factor levels so that they correspond to the intrinsic order of the categories.</p>
 <div id="reordering-a-factor" class="section level4 hasAnchor" number="3.5.1.1">
 <h4><span class="header-section-number">3.5.1.1</span> Reordering a factor<a href="data-types-part-2.html#reordering-a-factor" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To change the order of the category levels, we create the factor again by giving its levels in the correct order:</p>
-<div class="sourceCode" id="cb571"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb571-1"><a href="data-types-part-2.html#cb571-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>exercise <span class="ot">&lt;-</span> <span class="fu">factor</span>(pulse<span class="sc">$</span>exercise, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">&#39;high&#39;</span>, <span class="st">&#39;moderate&#39;</span>, <span class="st">&#39;low&#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb571"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb571-1"><a href="data-types-part-2.html#cb571-1" tabindex="-1"></a>pulse<span class="sc">$</span>exercise <span class="ot">&lt;-</span> <span class="fu">factor</span>(pulse<span class="sc">$</span>exercise, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">&#39;high&#39;</span>, <span class="st">&#39;moderate&#39;</span>, <span class="st">&#39;low&#39;</span>))</span></code></pre></div>
 <p>We can check that the re-ordering has worked:</p>
-<div class="sourceCode" id="cb572"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb572-1"><a href="data-types-part-2.html#cb572-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb572"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb572-1"><a href="data-types-part-2.html#cb572-1" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <pre><code>## [1] &quot;high&quot;     &quot;moderate&quot; &quot;low&quot;</code></pre>
-<div class="sourceCode" id="cb574"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb574-1"><a href="data-types-part-2.html#cb574-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb574"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb574-1"><a href="data-types-part-2.html#cb574-1" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <pre><code>## 
 ##     high moderate      low 
 ##       14       59       37</code></pre>
-<div class="sourceCode" id="cb576"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb576-1"><a href="data-types-part-2.html#cb576-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(pulse<span class="sc">$</span>pulse2 <span class="sc">~</span> pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb576"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb576-1"><a href="data-types-part-2.html#cb576-1" tabindex="-1"></a><span class="fu">boxplot</span>(pulse<span class="sc">$</span>pulse2 <span class="sc">~</span> pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-234-1.png" width="672" /></p>
 </div>
 <div id="changing-factor-labels" class="section level4 hasAnchor" number="3.5.1.2">
 <h4><span class="header-section-number">3.5.1.2</span> Changing factor labels<a href="data-types-part-2.html#changing-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you want to change the category labels only, without re-ordering them, assign new values to the <code>levels</code> of a factor.</p>
-<div class="sourceCode" id="cb577"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb577-1"><a href="data-types-part-2.html#cb577-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>exercise2 <span class="ot">&lt;-</span> pulse<span class="sc">$</span>exercise</span>
-<span id="cb577-2"><a href="data-types-part-2.html#cb577-2" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise2) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;H&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;L&quot;</span>)</span>
-<span id="cb577-3"><a href="data-types-part-2.html#cb577-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise2)</span></code></pre></div>
+<div class="sourceCode" id="cb577"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb577-1"><a href="data-types-part-2.html#cb577-1" tabindex="-1"></a>pulse<span class="sc">$</span>exercise2 <span class="ot">&lt;-</span> pulse<span class="sc">$</span>exercise</span>
+<span id="cb577-2"><a href="data-types-part-2.html#cb577-2" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise2) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;H&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;L&quot;</span>)</span>
+<span id="cb577-3"><a href="data-types-part-2.html#cb577-3" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise2)</span></code></pre></div>
 <pre><code>## 
 ##  H  I  L 
 ## 14 59 37</code></pre>
 <p>You are advised to check that the correspondence between observations in <code>exercise</code> and <code>exercise2</code>, for example by tabulating the old and new factors:</p>
-<div class="sourceCode" id="cb579"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb579-1"><a href="data-types-part-2.html#cb579-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise, pulse<span class="sc">$</span>exercise2)</span></code></pre></div>
+<div class="sourceCode" id="cb579"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb579-1"><a href="data-types-part-2.html#cb579-1" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise, pulse<span class="sc">$</span>exercise2)</span></code></pre></div>
 <pre><code>##           
 ##             H  I  L
 ##   high     14  0  0
 ##   moderate  0 59  0
 ##   low       0  0 37</code></pre>
 <p>We can use similar code to merge categories of a factor. For example, to merge the categories <code>H</code> and <code>I</code>, assign to them the same label:</p>
-<div class="sourceCode" id="cb581"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb581-1"><a href="data-types-part-2.html#cb581-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>exercise3 <span class="ot">&lt;-</span> pulse<span class="sc">$</span>exercise</span>
-<span id="cb581-2"><a href="data-types-part-2.html#cb581-2" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise3) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;H.I&quot;</span>, <span class="st">&quot;H.I&quot;</span> , <span class="st">&quot;L&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb581"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb581-1"><a href="data-types-part-2.html#cb581-1" tabindex="-1"></a>pulse<span class="sc">$</span>exercise3 <span class="ot">&lt;-</span> pulse<span class="sc">$</span>exercise</span>
+<span id="cb581-2"><a href="data-types-part-2.html#cb581-2" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>exercise3) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;H.I&quot;</span>, <span class="st">&quot;H.I&quot;</span> , <span class="st">&quot;L&quot;</span>)</span></code></pre></div>
 </div>
 <div id="turning-a-continuous-variable-into-categories" class="section level4 hasAnchor" number="3.5.1.3">
 <h4><span class="header-section-number">3.5.1.3</span> Turning a continuous variable into categories<a href="data-types-part-2.html#turning-a-continuous-variable-into-categories" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Use <code>cut</code> to categorise a continuous variable and turn into a factor variable. Note that when calling <code>cut</code> the break points between categories need to be given, including the maximum and minimum values of the original variable.</p>
-<div class="sourceCode" id="cb582"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb582-1"><a href="data-types-part-2.html#cb582-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>height4 <span class="ot">&lt;-</span> <span class="fu">cut</span>(pulse<span class="sc">$</span>height, <span class="fu">c</span>(<span class="fu">min</span>(pulse<span class="sc">$</span>height)<span class="sc">-</span><span class="dv">1</span>, <span class="dv">160</span>, <span class="dv">170</span>, <span class="dv">180</span>, <span class="fu">max</span>(pulse<span class="sc">$</span>height)))</span>
-<span id="cb582-2"><a href="data-types-part-2.html#cb582-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
+<div class="sourceCode" id="cb582"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb582-1"><a href="data-types-part-2.html#cb582-1" tabindex="-1"></a>pulse<span class="sc">$</span>height4 <span class="ot">&lt;-</span> <span class="fu">cut</span>(pulse<span class="sc">$</span>height, <span class="fu">c</span>(<span class="fu">min</span>(pulse<span class="sc">$</span>height)<span class="sc">-</span><span class="dv">1</span>, <span class="dv">160</span>, <span class="dv">170</span>, <span class="dv">180</span>, <span class="fu">max</span>(pulse<span class="sc">$</span>height)))</span>
+<span id="cb582-2"><a href="data-types-part-2.html#cb582-2" tabindex="-1"></a><span class="fu">class</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
 <pre><code>## [1] &quot;factor&quot;</code></pre>
-<div class="sourceCode" id="cb584"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb584-1"><a href="data-types-part-2.html#cb584-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
+<div class="sourceCode" id="cb584"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb584-1"><a href="data-types-part-2.html#cb584-1" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
 <pre><code>## 
 ##  (67,160] (160,170] (170,180] (180,195] 
 ##        11        38        37        24</code></pre>
 <p>You may want to change the labels to something prettier.</p>
-<div class="sourceCode" id="cb586"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb586-1"><a href="data-types-part-2.html#cb586-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>height4) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&#39;-160&#39;</span>, <span class="st">&#39;160-170&#39;</span>, <span class="st">&#39;170-180&#39;</span>, <span class="st">&#39;180+&#39;</span>)</span>
-<span id="cb586-2"><a href="data-types-part-2.html#cb586-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
+<div class="sourceCode" id="cb586"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb586-1"><a href="data-types-part-2.html#cb586-1" tabindex="-1"></a><span class="fu">levels</span>(pulse<span class="sc">$</span>height4) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&#39;-160&#39;</span>, <span class="st">&#39;160-170&#39;</span>, <span class="st">&#39;170-180&#39;</span>, <span class="st">&#39;180+&#39;</span>)</span>
+<span id="cb586-2"><a href="data-types-part-2.html#cb586-2" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>height4)</span></code></pre></div>
 <pre><code>## 
 ##    -160 160-170 170-180    180+ 
 ##      11      38      37      24</code></pre>
@@ -1063,7 +1063,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="combining-factors" class="section level4 hasAnchor" number="3.5.1.4">
 <h4><span class="header-section-number">3.5.1.4</span> (*) Combining factors<a href="data-types-part-2.html#combining-factors" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The <code>:</code> operator can be used to make a new factor with all combinations of two (or more) factors</p>
-<div class="sourceCode" id="cb588"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb588-1"><a href="data-types-part-2.html#cb588-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pulse$smokes:pulse$alcohol</span></span></code></pre></div>
+<div class="sourceCode" id="cb588"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb588-1"><a href="data-types-part-2.html#cb588-1" tabindex="-1"></a><span class="co">#pulse$smokes:pulse$alcohol</span></span></code></pre></div>
 <hr />
 <blockquote>
 <p><em>Quick task(s)</em>:</p>
@@ -1078,12 +1078,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="regression-model-fit" class="section level4 hasAnchor" number="3.5.2.1">
 <h4><span class="header-section-number">3.5.2.1</span> Regression model fit<a href="data-types-part-2.html#regression-model-fit" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Say you fit a regression model of <code>pulse2</code> on <code>exercise</code>, which already had its categories reordered:</p>
-<div class="sourceCode" id="cb589"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb589-1"><a href="data-types-part-2.html#cb589-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
+<div class="sourceCode" id="cb589"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb589-1"><a href="data-types-part-2.html#cb589-1" tabindex="-1"></a><span class="fu">table</span>(pulse<span class="sc">$</span>exercise)</span></code></pre></div>
 <pre><code>## 
 ##     high moderate      low 
 ##       14       59       37</code></pre>
-<div class="sourceCode" id="cb591"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb591-1"><a href="data-types-part-2.html#cb591-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> exercise, <span class="at">data=</span>pulse)</span>
-<span id="cb591-2"><a href="data-types-part-2.html#cb591-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb591"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb591-1"><a href="data-types-part-2.html#cb591-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> exercise, <span class="at">data=</span>pulse)</span>
+<span id="cb591-2"><a href="data-types-part-2.html#cb591-2" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ exercise, data = pulse)
@@ -1101,7 +1101,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 31.84 on 106 degrees of freedom
-##   (1 observation deleted due to missingness)
+##   (1 observation effacée parce que manquante)
 ## Multiple R-squared:  0.001533,   Adjusted R-squared:  -0.01731 
 ## F-statistic: 0.08139 on 2 and 106 DF,  p-value: 0.9219</code></pre>
 <p>In the results, <code>exercisemoderate</code> represents the effect of <code>exercise='moderate'</code> versus the reference category <code>exercise='high'</code>. By default, the first level of the factor is taken as the reference category, and this is often the first level in alphabetical order.</p>
@@ -1110,7 +1110,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-anova-table-and-f-test" class="section level4 hasAnchor" number="3.5.2.2">
 <h4><span class="header-section-number">3.5.2.2</span> The ANOVA table and F-test<a href="data-types-part-2.html#the-anova-table-and-f-test" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The ANOVA table can be obtained by using the function <code>anova</code> and the model fit <code>fit</code>:</p>
-<div class="sourceCode" id="cb593"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb593-1"><a href="data-types-part-2.html#cb593-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb593"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb593-1"><a href="data-types-part-2.html#cb593-1" tabindex="-1"></a><span class="fu">anova</span>(fit)</span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: pulse2
@@ -1118,8 +1118,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## exercise    2    165   82.51  0.0814 0.9219
 ## Residuals 106 107461 1013.78</code></pre>
 <p>We can also compare two model fits using ANOVA. Say that we want to check if the above model fit improves by including <code>gender</code> in the model. Then we fit a model with both <code>exercise</code> and <code>gender</code>, and compare this new fit with the above one:</p>
-<div class="sourceCode" id="cb595"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb595-1"><a href="data-types-part-2.html#cb595-1" aria-hidden="true" tabindex="-1"></a>fit2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> exercise <span class="sc">+</span> gender, <span class="at">data=</span>pulse)</span>
-<span id="cb595-2"><a href="data-types-part-2.html#cb595-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit, fit2)</span></code></pre></div>
+<div class="sourceCode" id="cb595"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb595-1"><a href="data-types-part-2.html#cb595-1" tabindex="-1"></a>fit2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(pulse2 <span class="sc">~</span> exercise <span class="sc">+</span> gender, <span class="at">data=</span>pulse)</span>
+<span id="cb595-2"><a href="data-types-part-2.html#cb595-2" tabindex="-1"></a><span class="fu">anova</span>(fit, fit2)</span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Model 1: pulse2 ~ exercise
@@ -1132,7 +1132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="model-fit-without-a-reference-category" class="section level4 hasAnchor" number="3.5.2.3">
 <h4><span class="header-section-number">3.5.2.3</span> (*) Model fit without a reference category<a href="data-types-part-2.html#model-fit-without-a-reference-category" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>When fitting a regression model, we can do without a reference category in a model fit by suppressing the intercept:</p>
-<div class="sourceCode" id="cb597"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb597-1"><a href="data-types-part-2.html#cb597-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> gender, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb597"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb597-1"><a href="data-types-part-2.html#cb597-1" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> gender, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ 0 + gender, data = pulse)
@@ -1142,7 +1142,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##        98.92         95.00</code></pre>
 <p>The coefficient now represents the mean in the group (male or female), instead of a comparison between males and females (such a comparison is called a contrast).</p>
 <p>Note that the reference category is only suppressed for the first factor in the formula:</p>
-<div class="sourceCode" id="cb599"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb599-1"><a href="data-types-part-2.html#cb599-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> gender <span class="sc">+</span> ran, <span class="at">data=</span>pulse)</span></code></pre></div>
+<div class="sourceCode" id="cb599"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb599-1"><a href="data-types-part-2.html#cb599-1" tabindex="-1"></a><span class="fu">lm</span>(pulse2 <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> gender <span class="sc">+</span> ran, <span class="at">data=</span>pulse)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ 0 + gender + ran, data = pulse)
@@ -1159,8 +1159,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="logistic-regression-and-anova" class="section level4 hasAnchor" number="3.5.3.1">
 <h4><span class="header-section-number">3.5.3.1</span> (*) Logistic regression and ANOVA<a href="data-types-part-2.html#logistic-regression-and-anova" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>For logistic regression, use <code>glm</code> with slot <code>family=binomial</code>.</p>
-<div class="sourceCode" id="cb601"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb601-1"><a href="data-types-part-2.html#cb601-1" aria-hidden="true" tabindex="-1"></a><span class="do">## fit &lt;- glm(alcohol ~ gender + smokes + exercise, family=binomial, data=pulse)</span></span>
-<span id="cb601-2"><a href="data-types-part-2.html#cb601-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
+<div class="sourceCode" id="cb601"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb601-1"><a href="data-types-part-2.html#cb601-1" tabindex="-1"></a><span class="do">## fit &lt;- glm(alcohol ~ gender + smokes + exercise, family=binomial, data=pulse)</span></span>
+<span id="cb601-2"><a href="data-types-part-2.html#cb601-2" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = pulse2 ~ exercise, data = pulse)
@@ -1178,11 +1178,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 31.84 on 106 degrees of freedom
-##   (1 observation deleted due to missingness)
+##   (1 observation effacée parce que manquante)
 ## Multiple R-squared:  0.001533,   Adjusted R-squared:  -0.01731 
 ## F-statistic: 0.08139 on 2 and 106 DF,  p-value: 0.9219</code></pre>
 <p>When using <code>anova</code> in <code>glm</code>, the default is not to give a p-value. If you want it, explicitly ask for one. In case of the logistic model, the adequate way to compute the ANOVA p-value is via the likelihood ratio test (LRT):</p>
-<div class="sourceCode" id="cb603"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb603-1"><a href="data-types-part-2.html#cb603-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit, <span class="at">test=</span><span class="st">&#39;LRT&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb603"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb603-1"><a href="data-types-part-2.html#cb603-1" tabindex="-1"></a><span class="fu">anova</span>(fit, <span class="at">test=</span><span class="st">&#39;LRT&#39;</span>)</span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: pulse2
@@ -1194,17 +1194,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">3.5.3.2</span> (*) Survival analysis<a href="data-types-part-2.html#survival-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Survival analysis methods are available in the <code>survival</code> package, which is installed automatically with the base package. The syntax is similar to <code>lm</code> and <code>glm</code>, except that the response has to be a <code>Surv</code> object, built from two separate variables giving time and event.</p>
 <p>We do not have survival times in the <code>pulse</code> data, so we use the <code>aml</code> data from the <code>survival</code> package.</p>
-<div class="sourceCode" id="cb605"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb605-1"><a href="data-types-part-2.html#cb605-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(survival)</span>
-<span id="cb605-2"><a href="data-types-part-2.html#cb605-2" aria-hidden="true" tabindex="-1"></a><span class="do">## ?aml</span></span>
-<span id="cb605-3"><a href="data-types-part-2.html#cb605-3" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(aml, <span class="fu">Surv</span>(time, status))</span></code></pre></div>
+<div class="sourceCode" id="cb605"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb605-1"><a href="data-types-part-2.html#cb605-1" tabindex="-1"></a><span class="fu">library</span>(survival)</span>
+<span id="cb605-2"><a href="data-types-part-2.html#cb605-2" tabindex="-1"></a><span class="do">## ?aml</span></span>
+<span id="cb605-3"><a href="data-types-part-2.html#cb605-3" tabindex="-1"></a><span class="fu">with</span>(aml, <span class="fu">Surv</span>(time, status))</span></code></pre></div>
 <pre><code>##  [1]   9   13   13+  18   23   28+  31   34   45+  48  161+   5    5    8    8 
 ## [16]  12   16+  23   27   30   33   43   45</code></pre>
 <p>To draw Kaplan-Meier curves, use <code>survfit</code>:</p>
-<div class="sourceCode" id="cb607"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb607-1"><a href="data-types-part-2.html#cb607-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span>
-<span id="cb607-2"><a href="data-types-part-2.html#cb607-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit, <span class="at">col=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb607"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb607-1"><a href="data-types-part-2.html#cb607-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span>
+<span id="cb607-2"><a href="data-types-part-2.html#cb607-2" tabindex="-1"></a><span class="fu">plot</span>(fit, <span class="at">col=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>)</span></code></pre></div>
 <p><img src="bookdown-demo_files/figure-html/unnamed-chunk-250-1.png" width="672" /></p>
 <p>A log-rank test can be computed using:</p>
-<div class="sourceCode" id="cb608"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb608-1"><a href="data-types-part-2.html#cb608-1" aria-hidden="true" tabindex="-1"></a><span class="fu">survdiff</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span></code></pre></div>
+<div class="sourceCode" id="cb608"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb608-1"><a href="data-types-part-2.html#cb608-1" tabindex="-1"></a><span class="fu">survdiff</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span></code></pre></div>
 <pre><code>## Call:
 ## survdiff(formula = Surv(time, status) ~ x, data = aml)
 ## 
@@ -1214,7 +1214,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##  Chisq= 3.4  on 1 degrees of freedom, p= 0.07</code></pre>
 <p>A Cox model can be fitted as follows:</p>
-<div class="sourceCode" id="cb610"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb610-1"><a href="data-types-part-2.html#cb610-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coxph</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span></code></pre></div>
+<div class="sourceCode" id="cb610"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb610-1"><a href="data-types-part-2.html#cb610-1" tabindex="-1"></a><span class="fu">coxph</span>(<span class="fu">Surv</span>(time, status) <span class="sc">~</span> x, <span class="at">data=</span>aml)</span></code></pre></div>
 <pre><code>## Call:
 ## coxph(formula = Surv(time, status) ~ x, data = aml)
 ## 
