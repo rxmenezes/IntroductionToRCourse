@@ -1,240 +1,240 @@
 \contentsline {chapter}{About this course}{5}{chapter*.2}%
 \contentsline {section}{Teachers}{5}{section*.3}%
 \contentsline {section}{Goals \& Topics}{5}{section*.4}%
-\contentsline {section}{Prerequisites}{6}{section*.5}%
-\contentsline {section}{Materials}{6}{section*.6}%
-\contentsline {section}{Programme}{7}{section*.7}%
-\contentsline {subsection}{\numberline {0.0.1}Fifth NKI edition, June 5th, 6th, 8th, and 9th 2023}{7}{subsection.0.0.1}%
-\contentsline {chapter}{\numberline {1}Basics of R}{9}{chapter.1}%
+\contentsline {section}{Prerequisites}{5}{section*.5}%
+\contentsline {section}{Materials}{5}{section*.6}%
+\contentsline {section}{Programme}{5}{section*.7}%
+\contentsline {subsection}{\numberline {0.0.1}Fifth NKI edition, June 5th, 6th, 8th, and 9th 2023}{5}{subsection.0.0.1}%
+\contentsline {chapter}{\numberline {1}Basics of R}{7}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Data sets}{9}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Pulse}{9}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Survey}{10}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Introduction}{10}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Why this course?}{10}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}What is R?}{11}{subsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.1}\emph {R}: a short history}{11}{subsubsection.1.2.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2.2}Open source}{11}{subsubsection.1.2.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.3}Obtaining R}{11}{subsubsection.1.2.2.3}%
-\contentsline {subsection}{\numberline {1.2.3}R and RStudio}{11}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Course overview}{12}{subsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.4.1}What we teach}{12}{subsubsection.1.2.4.1}%
-\contentsline {subsubsection}{\numberline {1.2.4.2}Course structure}{12}{subsubsection.1.2.4.2}%
-\contentsline {section}{\numberline {1.3}Basics}{12}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}R as a calculator}{12}{subsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.1}Calculations}{12}{subsubsection.1.3.1.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.2}Parentheses}{13}{subsubsection.1.3.1.2}%
-\contentsline {subsubsection}{\numberline {1.3.1.3}Arithmetic functions}{13}{subsubsection.1.3.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1.4}Multiline commands}{13}{subsubsection.1.3.1.4}%
-\contentsline {subsubsection}{\numberline {1.3.1.5}(*) Integer division and remainders}{14}{subsubsection.1.3.1.5}%
-\contentsline {subsection}{\numberline {1.3.2}Variables}{14}{subsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.2.1}Variable names}{14}{subsubsection.1.3.2.1}%
-\contentsline {subsubsection}{\numberline {1.3.2.2}Legal variable names}{14}{subsubsection.1.3.2.2}%
-\contentsline {subsubsection}{\numberline {1.3.2.3}Assignment}{15}{subsubsection.1.3.2.3}%
-\contentsline {subsubsection}{\numberline {1.3.2.4}(*) The workspace}{15}{subsubsection.1.3.2.4}%
-\contentsline {subsection}{\numberline {1.3.3}Vectors}{16}{subsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.3.1}Vector basics}{16}{subsubsection.1.3.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.3.2}Simple sequences}{16}{subsubsection.1.3.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3.3}Simple selection}{17}{subsubsection.1.3.3.3}%
-\contentsline {section}{\numberline {1.4}Projects and scripts}{17}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Projects}{17}{subsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.1.1}Creating and opening a new project}{17}{subsubsection.1.4.1.1}%
-\contentsline {subsubsection}{\numberline {1.4.1.2}Creating a folder}{18}{subsubsection.1.4.1.2}%
-\contentsline {subsubsection}{\numberline {1.4.1.3}Quick exercises}{18}{subsubsection.1.4.1.3}%
-\contentsline {subsection}{\numberline {1.4.2}Reading data}{18}{subsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.2.1}Reading tab-delimited text}{18}{subsubsection.1.4.2.1}%
-\contentsline {subsubsection}{\numberline {1.4.2.2}View}{18}{subsubsection.1.4.2.2}%
-\contentsline {subsection}{\numberline {1.4.3}Scripts}{19}{subsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.3.1}Making a script}{19}{subsubsection.1.4.3.1}%
-\contentsline {subsubsection}{\numberline {1.4.3.2}Using a script}{19}{subsubsection.1.4.3.2}%
-\contentsline {subsubsection}{\numberline {1.4.3.3}Comments}{19}{subsubsection.1.4.3.3}%
-\contentsline {section}{\numberline {1.5}Data frames (basics)}{20}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Exploring}{20}{subsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.1.1}Dimensions}{20}{subsubsection.1.5.1.1}%
-\contentsline {subsubsection}{\numberline {1.5.1.2}Showing head and tail}{20}{subsubsection.1.5.1.2}%
-\contentsline {subsection}{\numberline {1.5.2}Extracting}{22}{subsection.1.5.2}%
-\contentsline {subsubsection}{\numberline {1.5.2.1}Columns}{22}{subsubsection.1.5.2.1}%
-\contentsline {subsubsection}{\numberline {1.5.2.2}Row names}{22}{subsubsection.1.5.2.2}%
-\contentsline {subsubsection}{\numberline {1.5.2.3}Elements}{23}{subsubsection.1.5.2.3}%
-\contentsline {subsubsection}{\numberline {1.5.2.4}(*) Removing a column}{23}{subsubsection.1.5.2.4}%
-\contentsline {subsection}{\numberline {1.5.3}Example data}{23}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Basic data types}{24}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Types}{24}{subsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.1.1}\texttt {str} and \texttt {class}}{25}{subsubsection.1.6.1.1}%
-\contentsline {subsection}{\numberline {1.6.2}Vector classes}{25}{subsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.2.1}Numeric data}{25}{subsubsection.1.6.2.1}%
-\contentsline {paragraph}{\numberline {1.6.2.1.1}Useful functions for numeric data}{25}{paragraph.1.6.2.1.1}%
-\contentsline {paragraph}{\numberline {1.6.2.1.2}Relationships between two variables}{26}{paragraph.1.6.2.1.2}%
-\contentsline {subsection}{\numberline {1.6.3}Character data}{26}{subsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.1}Creating character data}{26}{subsubsection.1.6.3.1}%
-\contentsline {subsubsection}{\numberline {1.6.3.2}Names}{27}{subsubsection.1.6.3.2}%
-\contentsline {subsubsection}{\numberline {1.6.3.3}(*) Useful premade character vectors}{27}{subsubsection.1.6.3.3}%
-\contentsline {subsubsection}{\numberline {1.6.3.4}(*) Calculating with character vectors}{27}{subsubsection.1.6.3.4}%
-\contentsline {subsection}{\numberline {1.6.4}Factor - categorical data}{27}{subsection.1.6.4}%
-\contentsline {subsubsection}{\numberline {1.6.4.1}Making a factor}{27}{subsubsection.1.6.4.1}%
-\contentsline {subsubsection}{\numberline {1.6.4.2}Factor basics}{27}{subsubsection.1.6.4.2}%
-\contentsline {subsubsection}{\numberline {1.6.4.3}Turning factor (back) into character}{28}{subsubsection.1.6.4.3}%
-\contentsline {subsubsection}{\numberline {1.6.4.4}Table}{28}{subsubsection.1.6.4.4}%
-\contentsline {subsubsection}{\numberline {1.6.4.5}(*) Table of table}{28}{subsubsection.1.6.4.5}%
-\contentsline {section}{\numberline {1.7}Functions and help files}{29}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Function arguments}{29}{subsection.1.7.1}%
-\contentsline {subsubsection}{\numberline {1.7.1.1}Functions may have multiple arguments}{29}{subsubsection.1.7.1.1}%
-\contentsline {subsubsection}{\numberline {1.7.1.2}Getting help for a function}{29}{subsubsection.1.7.1.2}%
-\contentsline {subsubsection}{\numberline {1.7.1.3}Specifying arguments by name}{29}{subsubsection.1.7.1.3}%
-\contentsline {subsubsection}{\numberline {1.7.1.4}Default arguments}{30}{subsubsection.1.7.1.4}%
-\contentsline {subsubsection}{\numberline {1.7.1.5}(*) the \texttt {...} argument}{30}{subsubsection.1.7.1.5}%
-\contentsline {subsection}{\numberline {1.7.2}Other help file aspects}{30}{subsection.1.7.2}%
-\contentsline {subsubsection}{\numberline {1.7.2.1}Help search}{30}{subsubsection.1.7.2.1}%
-\contentsline {chapter}{\numberline {2}Data types, part 1}{33}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Basic data types (cont.)}{33}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Missing values}{33}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Numeric vectors}{33}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Single number (numeric vector with a single element)}{33}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}Multiple numbers}{33}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Sequence of numbers (one by one)}{33}{subsubsection.2.1.2.3}%
-\contentsline {subsubsection}{\numberline {2.1.2.4}Sequence of numbers}{34}{subsubsection.2.1.2.4}%
-\contentsline {subsubsection}{\numberline {2.1.2.5}Combine (several) vectors of numbers}{34}{subsubsection.2.1.2.5}%
-\contentsline {subsection}{\numberline {2.1.3}Character vectors}{34}{subsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}Simple single text (character vector with a single element)}{34}{subsubsection.2.1.3.1}%
-\contentsline {subsubsection}{\numberline {2.1.3.2}Multiple texts}{34}{subsubsection.2.1.3.2}%
-\contentsline {subsection}{\numberline {2.1.4}Logical vectors}{35}{subsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.4.1}Elementary logical values}{35}{subsubsection.2.1.4.1}%
-\contentsline {subsubsection}{\numberline {2.1.4.2}Logical operators}{35}{subsubsection.2.1.4.2}%
-\contentsline {paragraph}{\numberline {2.1.4.2.1}Negation}{35}{paragraph.2.1.4.2.1}%
-\contentsline {paragraph}{\numberline {2.1.4.2.2}AND Operator \texttt {\&}}{35}{paragraph.2.1.4.2.2}%
-\contentsline {paragraph}{\numberline {2.1.4.2.3}OR operator \texttt {\textbar {}}}{36}{paragraph.2.1.4.2.3}%
-\contentsline {subsubsection}{\numberline {2.1.4.3}Relational operators}{36}{subsubsection.2.1.4.3}%
-\contentsline {paragraph}{\numberline {2.1.4.3.1}Equality operator \texttt {==}}{36}{paragraph.2.1.4.3.1}%
-\contentsline {paragraph}{\numberline {2.1.4.3.2}Inequality operators}{36}{paragraph.2.1.4.3.2}%
-\contentsline {subsubsection}{\numberline {2.1.4.4}Comparison of two vectors}{37}{subsubsection.2.1.4.4}%
-\contentsline {subsection}{\numberline {2.1.5}Type conversions}{37}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Vectors}{38}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Square brackets operator}{38}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}By numbers}{38}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}By names}{39}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}By condition (logical indices)}{40}{subsubsection.2.2.1.3}%
-\contentsline {subsection}{\numberline {2.2.2}Other useful functions}{41}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Data frames}{42}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}What is a data frame}{42}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Creating}{43}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}From manually provided vectors}{43}{subsubsection.2.3.2.1}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Import from files}{44}{subsubsection.2.3.2.2}%
-\contentsline {paragraph}{\numberline {2.3.2.2.1}TSV file}{44}{paragraph.2.3.2.2.1}%
-\contentsline {paragraph}{\numberline {2.3.2.2.2}CSV file}{45}{paragraph.2.3.2.2.2}%
-\contentsline {paragraph}{\numberline {2.3.2.2.3}(*) Microsoft Excel file}{45}{paragraph.2.3.2.2.3}%
-\contentsline {subparagraph}{\numberline {2.3.2.2.3.1}(*) With package readxl}{45}{subparagraph.2.3.2.2.3.1}%
-\contentsline {subparagraph}{\numberline {2.3.2.2.3.2}(*) With package gdata}{46}{subparagraph.2.3.2.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.3}(*) SPSS files}{46}{subsubsection.2.3.2.3}%
-\contentsline {subsection}{\numberline {2.3.3}Properties}{47}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Dimensions}{47}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}Columns/rows names}{47}{subsubsection.2.3.3.2}%
-\contentsline {subsection}{\numberline {2.3.4}Content}{48}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Dollar operator}{48}{subsubsection.2.3.4.1}%
-\contentsline {subsubsection}{\numberline {2.3.4.2}Square brackets operator, single argument}{49}{subsubsection.2.3.4.2}%
-\contentsline {subsubsection}{\numberline {2.3.4.3}Square brackets operator, two arguments}{51}{subsubsection.2.3.4.3}%
-\contentsline {section}{\numberline {2.4}Matrices}{54}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}What is a matrix}{54}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Creation}{54}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Dimensions}{55}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Setting/getting names of the columns and rows}{56}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Getting matrix elements}{56}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Useful matrix functions}{58}{subsection.2.4.6}%
-\contentsline {subsubsection}{\numberline {2.4.6.1}Row/columns means/sums}{58}{subsubsection.2.4.6.1}%
-\contentsline {subsubsection}{\numberline {2.4.6.2}(*) Transposition}{58}{subsubsection.2.4.6.2}%
-\contentsline {subsubsection}{\numberline {2.4.6.3}(*) Matrix multiplication}{59}{subsubsection.2.4.6.3}%
-\contentsline {subsubsection}{\numberline {2.4.6.4}(*) Element-wise multiplication}{59}{subsubsection.2.4.6.4}%
-\contentsline {chapter}{\numberline {3}Data types, part 2}{61}{chapter.3}%
-\contentsline {section}{\numberline {3.1}R scripts and reports (Rmarkdown)}{61}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Markdown : R code + Markdown text formating language}{61}{subsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.1.1}Short session}{61}{subsubsection.3.1.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Features of R Markdown}{62}{subsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}Markdown examples}{62}{subsubsection.3.1.2.1}%
-\contentsline {subsubsection}{\numberline {3.1.2.2}Including R code in markdown}{62}{subsubsection.3.1.2.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.3}Chunk options}{62}{subsubsection.3.1.2.3}%
-\contentsline {subsubsection}{\numberline {3.1.2.4}R Studio and RMarkdown}{62}{subsubsection.3.1.2.4}%
-\contentsline {subsubsection}{\numberline {3.1.2.5}Try this!}{63}{subsubsection.3.1.2.5}%
-\contentsline {section}{\numberline {3.2}Lists}{63}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}What is a list}{63}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Creation}{63}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Length}{64}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Getting names of the elements}{65}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Getting a single element}{65}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}(*) Getting multiple elements as a list}{65}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}(*) Removing an element}{67}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}(*) Adding an element}{67}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Basic statistical tests}{68}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Statistical methods with R}{68}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Statistical tests - the t test}{68}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Accessing the result}{68}{subsubsection.3.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.3.1.3}Wilcoxon test}{69}{subsubsection.3.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.3.1.4}Other statistical tests}{70}{subsubsection.3.3.1.4}%
-\contentsline {section}{\numberline {3.4}Regression and formula objects}{70}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Formula objects}{70}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}Basics of formula objects}{70}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}Use of formula objects in statistics}{72}{subsubsection.3.4.1.2}%
-\contentsline {subsubsection}{\numberline {3.4.1.3}(*) The formula class}{72}{subsubsection.3.4.1.3}%
-\contentsline {subsection}{\numberline {3.4.2}Simple linear regression}{73}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}The \texttt {lm} function}{73}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}Visualizing a regression}{76}{subsubsection.3.4.2.2}%
-\contentsline {subsection}{\numberline {3.4.3}Multiple regression and prediction}{77}{subsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}Multiple terms in a formula}{77}{subsubsection.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {3.4.3.2}Predicting}{78}{subsubsection.3.4.3.2}%
-\contentsline {subsubsection}{\numberline {3.4.3.3}(*) Interaction}{78}{subsubsection.3.4.3.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.4}(*) The intercept term}{79}{subsubsection.3.4.3.4}%
-\contentsline {section}{\numberline {3.5}Factors (advanced)}{80}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Factors revisited}{80}{subsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.1}Reordering a factor}{81}{subsubsection.3.5.1.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.2}Changing factor labels}{82}{subsubsection.3.5.1.2}%
-\contentsline {subsubsection}{\numberline {3.5.1.3}Turning a continuous variable into categories}{83}{subsubsection.3.5.1.3}%
-\contentsline {subsubsection}{\numberline {3.5.1.4}(*) Combining factors}{83}{subsubsection.3.5.1.4}%
-\contentsline {subsection}{\numberline {3.5.2}ANOVA and regression with factors}{83}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Regression model fit}{83}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}The ANOVA table and F-test}{84}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}(*) Model fit without a reference category}{85}{subsubsection.3.5.2.3}%
-\contentsline {subsection}{\numberline {3.5.3}(*) Generalized linear models and survival}{86}{subsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.3.1}(*) Logistic regression and ANOVA}{86}{subsubsection.3.5.3.1}%
-\contentsline {subsubsection}{\numberline {3.5.3.2}(*) Survival analysis}{87}{subsubsection.3.5.3.2}%
-\contentsline {chapter}{\numberline {4}Functions}{89}{chapter.4}%
-\contentsline {section}{\numberline {4.1}User-defined Functions}{89}{section.4.1}%
-\contentsline {section}{\numberline {4.2}(*) Control flow constructs}{92}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sequential execution}{92}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Conditional execution: if}{92}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Conditional execution: if/else}{92}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}\texttt {apply} family: apply, lapply, sapply, tapply}{97}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}apply(X, MARGIN, FUN, \ldots )}{97}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}sapply(X, FUN, \ldots )}{98}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}lapply(X, FUN, \ldots ) : apply a function to a list/vector}{98}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}tapply(X, INDEX, FUN, \ldots ) : apply a function to a vector, according to groups of INDEX}{99}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Type checking}{101}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}is.* family functions}{101}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}(*) stop(\ldots )/warning(\ldots )}{103}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}(*) R programming}{104}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}General coding conventions}{104}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Finding, installing and loading packages}{104}{subsection.4.5.2}%
-\contentsline {chapter}{Appendix}{107}{chapter*.8}%
-\contentsline {section}{Character string processing \& Pattern matching}{107}{section*.9}%
-\contentsline {subsection}{Learning goals}{107}{section*.10}%
-\contentsline {subsection}{Quotes and escape characters (characters with special meaning)}{107}{section*.11}%
-\contentsline {subsection}{Character string}{107}{section*.12}%
-\contentsline {subsection}{paste(\ldots , sep = '' ``, collapse = NULL):}{109}{section*.13}%
-\contentsline {subsection}{Pulse data set}{109}{section*.14}%
-\contentsline {subsection}{tolower, toupper, nchar}{110}{section*.15}%
-\contentsline {subsection}{Split character string : strsplit(x, split, \ldots ):}{111}{section*.16}%
-\contentsline {subsection}{rbind(\ldots ), cbind(\ldots ) : combine by rows or columns}{112}{section*.17}%
-\contentsline {subsection}{strsplit(x, split, \ldots )}{112}{section*.18}%
-\contentsline {subsection}{do.call(what, args, \ldots ) : execute function on list of arguments}{113}{section*.19}%
-\contentsline {subsection}{grep(pattern, x, ignore.case = FALSE, value = FALSE, \ldots {} )}{113}{section*.20}%
-\contentsline {subsection}{grepl(pattern, x, ignore.case = FALSE, \ldots )}{114}{section*.21}%
-\contentsline {subsection}{substr(x, start, stop) : extract/replace substrings}{114}{section*.22}%
-\contentsline {subsection}{gsub/sub(pattern, replacement, x, ignore.case = FALSE, \ldots )}{115}{section*.23}%
-\contentsline {subsection}{Extra exercises}{116}{section*.24}%
-\contentsline {section}{S3 and S4 classes}{116}{section*.25}%
-\contentsline {subsection}{Learning goals}{116}{section*.26}%
-\contentsline {subsection}{Objects}{116}{section*.27}%
-\contentsline {subsection}{S3}{116}{section*.28}%
-\contentsline {subsection}{S4}{117}{section*.29}%
-\contentsline {section}{Making errors the right way}{119}{section*.30}%
-\contentsline {subsection}{Annoying errors}{119}{section*.31}%
-\contentsline {subsection}{How to correct (annoying) errors}{120}{section*.32}%
-\contentsline {subsection}{Dangerous errors}{121}{section*.33}%
-\contentsline {subsection}{How to avoid (dangerous) errors}{123}{section*.34}%
-\contentsline {section}{Useful links}{124}{section*.35}%
+\contentsline {subsection}{\numberline {1.1.2}Survey}{9}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Introduction}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Why this course?}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}What is R?}{9}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}\emph {R}: a short history}{9}{subsubsection.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}Open source}{9}{subsubsection.1.2.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.3}Obtaining R}{9}{subsubsection.1.2.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}R and RStudio}{9}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Course overview}{9}{subsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.1}What we teach}{9}{subsubsection.1.2.4.1}%
+\contentsline {subsubsection}{\numberline {1.2.4.2}Course structure}{9}{subsubsection.1.2.4.2}%
+\contentsline {section}{\numberline {1.3}Basics}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}R as a calculator}{9}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Calculations}{9}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Parentheses}{9}{subsubsection.1.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.3.1.3}Arithmetic functions}{9}{subsubsection.1.3.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1.4}Multiline commands}{9}{subsubsection.1.3.1.4}%
+\contentsline {subsubsection}{\numberline {1.3.1.5}(*) Integer division and remainders}{9}{subsubsection.1.3.1.5}%
+\contentsline {subsection}{\numberline {1.3.2}Variables}{9}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Variable names}{9}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Legal variable names}{9}{subsubsection.1.3.2.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.3}Assignment}{9}{subsubsection.1.3.2.3}%
+\contentsline {subsubsection}{\numberline {1.3.2.4}(*) The workspace}{9}{subsubsection.1.3.2.4}%
+\contentsline {subsection}{\numberline {1.3.3}Vectors}{9}{subsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3.1}Vector basics}{9}{subsubsection.1.3.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.3.2}Simple sequences}{9}{subsubsection.1.3.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3.3}Simple selection}{9}{subsubsection.1.3.3.3}%
+\contentsline {section}{\numberline {1.4}Projects and scripts}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Projects}{9}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.1}Creating and opening a new project}{9}{subsubsection.1.4.1.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.2}Creating a folder}{9}{subsubsection.1.4.1.2}%
+\contentsline {subsubsection}{\numberline {1.4.1.3}Quick exercises}{9}{subsubsection.1.4.1.3}%
+\contentsline {subsection}{\numberline {1.4.2}Reading data}{9}{subsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.1}Reading tab-delimited text}{9}{subsubsection.1.4.2.1}%
+\contentsline {subsubsection}{\numberline {1.4.2.2}View}{9}{subsubsection.1.4.2.2}%
+\contentsline {subsection}{\numberline {1.4.3}Scripts}{9}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}Making a script}{9}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}Using a script}{9}{subsubsection.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {1.4.3.3}Comments}{9}{subsubsection.1.4.3.3}%
+\contentsline {section}{\numberline {1.5}Data frames (basics)}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Exploring}{9}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}Dimensions}{9}{subsubsection.1.5.1.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Showing head and tail}{9}{subsubsection.1.5.1.2}%
+\contentsline {subsection}{\numberline {1.5.2}Extracting}{9}{subsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.1}Columns}{9}{subsubsection.1.5.2.1}%
+\contentsline {subsubsection}{\numberline {1.5.2.2}Row names}{9}{subsubsection.1.5.2.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.3}Elements}{9}{subsubsection.1.5.2.3}%
+\contentsline {subsubsection}{\numberline {1.5.2.4}(*) Removing a column}{9}{subsubsection.1.5.2.4}%
+\contentsline {subsection}{\numberline {1.5.3}Example data}{9}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Basic data types}{9}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Types}{9}{subsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.1}\texttt {str} and \texttt {class}}{9}{subsubsection.1.6.1.1}%
+\contentsline {subsection}{\numberline {1.6.2}Vector classes}{9}{subsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.1}Numeric data}{9}{subsubsection.1.6.2.1}%
+\contentsline {paragraph}{\numberline {1.6.2.1.1}Useful functions for numeric data}{9}{paragraph.1.6.2.1.1}%
+\contentsline {paragraph}{\numberline {1.6.2.1.2}Relationships between two variables}{10}{paragraph.1.6.2.1.2}%
+\contentsline {subsection}{\numberline {1.6.3}Character data}{10}{subsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.1}Creating character data}{10}{subsubsection.1.6.3.1}%
+\contentsline {subsubsection}{\numberline {1.6.3.2}Names}{10}{subsubsection.1.6.3.2}%
+\contentsline {subsubsection}{\numberline {1.6.3.3}(*) Useful premade character vectors}{10}{subsubsection.1.6.3.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.4}(*) Calculating with character vectors}{10}{subsubsection.1.6.3.4}%
+\contentsline {subsection}{\numberline {1.6.4}Factor - categorical data}{10}{subsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.1}Making a factor}{10}{subsubsection.1.6.4.1}%
+\contentsline {subsubsection}{\numberline {1.6.4.2}Factor basics}{10}{subsubsection.1.6.4.2}%
+\contentsline {subsubsection}{\numberline {1.6.4.3}Turning factor (back) into character}{10}{subsubsection.1.6.4.3}%
+\contentsline {subsubsection}{\numberline {1.6.4.4}Table}{10}{subsubsection.1.6.4.4}%
+\contentsline {subsubsection}{\numberline {1.6.4.5}(*) Table of table}{10}{subsubsection.1.6.4.5}%
+\contentsline {section}{\numberline {1.7}Functions and help files}{10}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Function arguments}{10}{subsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.1.1}Functions may have multiple arguments}{10}{subsubsection.1.7.1.1}%
+\contentsline {subsubsection}{\numberline {1.7.1.2}Getting help for a function}{10}{subsubsection.1.7.1.2}%
+\contentsline {subsubsection}{\numberline {1.7.1.3}Specifying arguments by name}{10}{subsubsection.1.7.1.3}%
+\contentsline {subsubsection}{\numberline {1.7.1.4}Default arguments}{10}{subsubsection.1.7.1.4}%
+\contentsline {subsubsection}{\numberline {1.7.1.5}(*) the \texttt {...} argument}{10}{subsubsection.1.7.1.5}%
+\contentsline {subsection}{\numberline {1.7.2}Other help file aspects}{10}{subsection.1.7.2}%
+\contentsline {subsubsection}{\numberline {1.7.2.1}Help search}{10}{subsubsection.1.7.2.1}%
+\contentsline {chapter}{\numberline {2}Data types, part 1}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Basic data types (cont.)}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Missing values}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Numeric vectors}{11}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Single number (numeric vector with a single element)}{11}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Multiple numbers}{11}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Sequence of numbers (one by one)}{11}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}Sequence of numbers}{11}{subsubsection.2.1.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}Combine (several) vectors of numbers}{11}{subsubsection.2.1.2.5}%
+\contentsline {subsection}{\numberline {2.1.3}Character vectors}{11}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Simple single text (character vector with a single element)}{11}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Multiple texts}{11}{subsubsection.2.1.3.2}%
+\contentsline {subsection}{\numberline {2.1.4}Logical vectors}{11}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}Elementary logical values}{11}{subsubsection.2.1.4.1}%
+\contentsline {subsubsection}{\numberline {2.1.4.2}Logical operators}{11}{subsubsection.2.1.4.2}%
+\contentsline {paragraph}{\numberline {2.1.4.2.1}Negation}{11}{paragraph.2.1.4.2.1}%
+\contentsline {paragraph}{\numberline {2.1.4.2.2}AND Operator \texttt {\&}}{11}{paragraph.2.1.4.2.2}%
+\contentsline {paragraph}{\numberline {2.1.4.2.3}OR operator \texttt {\textbar {}}}{12}{paragraph.2.1.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.4.3}Relational operators}{12}{subsubsection.2.1.4.3}%
+\contentsline {paragraph}{\numberline {2.1.4.3.1}Equality operator \texttt {==}}{12}{paragraph.2.1.4.3.1}%
+\contentsline {paragraph}{\numberline {2.1.4.3.2}Inequality operators}{12}{paragraph.2.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {2.1.4.4}Comparison of two vectors}{12}{subsubsection.2.1.4.4}%
+\contentsline {subsection}{\numberline {2.1.5}Type conversions}{12}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Vectors}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Square brackets operator}{12}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}By numbers}{12}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}By names}{12}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}By condition (logical indices)}{12}{subsubsection.2.2.1.3}%
+\contentsline {subsection}{\numberline {2.2.2}Other useful functions}{12}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Data frames}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}What is a data frame}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Creating}{12}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}From manually provided vectors}{12}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Import from files}{12}{subsubsection.2.3.2.2}%
+\contentsline {paragraph}{\numberline {2.3.2.2.1}TSV file}{12}{paragraph.2.3.2.2.1}%
+\contentsline {paragraph}{\numberline {2.3.2.2.2}CSV file}{12}{paragraph.2.3.2.2.2}%
+\contentsline {paragraph}{\numberline {2.3.2.2.3}(*) Microsoft Excel file}{12}{paragraph.2.3.2.2.3}%
+\contentsline {subparagraph}{\numberline {2.3.2.2.3.1}(*) With package readxl}{12}{subparagraph.2.3.2.2.3.1}%
+\contentsline {subparagraph}{\numberline {2.3.2.2.3.2}(*) With package gdata}{12}{subparagraph.2.3.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}(*) SPSS files}{13}{subsubsection.2.3.2.3}%
+\contentsline {subsection}{\numberline {2.3.3}Properties}{13}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Dimensions}{13}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Columns/rows names}{13}{subsubsection.2.3.3.2}%
+\contentsline {subsection}{\numberline {2.3.4}Content}{13}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Dollar operator}{13}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}Square brackets operator, single argument}{13}{subsubsection.2.3.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}Square brackets operator, two arguments}{13}{subsubsection.2.3.4.3}%
+\contentsline {section}{\numberline {2.4}Matrices}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}What is a matrix}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Creation}{13}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Dimensions}{13}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Setting/getting names of the columns and rows}{13}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Getting matrix elements}{13}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Useful matrix functions}{13}{subsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.6.1}Row/columns means/sums}{13}{subsubsection.2.4.6.1}%
+\contentsline {subsubsection}{\numberline {2.4.6.2}(*) Transposition}{13}{subsubsection.2.4.6.2}%
+\contentsline {subsubsection}{\numberline {2.4.6.3}(*) Matrix multiplication}{13}{subsubsection.2.4.6.3}%
+\contentsline {subsubsection}{\numberline {2.4.6.4}(*) Element-wise multiplication}{13}{subsubsection.2.4.6.4}%
+\contentsline {chapter}{\numberline {3}Data types, part 2}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}R scripts and reports (Rmarkdown)}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Markdown : R code + Markdown text formating language}{17}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Short session}{17}{subsubsection.3.1.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Features of R Markdown}{17}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Markdown examples}{17}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Including R code in markdown}{17}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Chunk options}{17}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}R Studio and RMarkdown}{17}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}Try this!}{17}{subsubsection.3.1.2.5}%
+\contentsline {section}{\numberline {3.2}Lists}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}What is a list}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Creation}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Length}{17}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Getting names of the elements}{17}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Getting a single element}{17}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}(*) Getting multiple elements as a list}{17}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}(*) Removing an element}{17}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}(*) Adding an element}{17}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Basic statistical tests}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Statistical methods with R}{17}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Statistical tests - the t test}{17}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Accessing the result}{17}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}Wilcoxon test}{17}{subsubsection.3.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.3.1.4}Other statistical tests}{17}{subsubsection.3.3.1.4}%
+\contentsline {section}{\numberline {3.4}Regression and formula objects}{17}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Formula objects}{17}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Basics of formula objects}{17}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}Use of formula objects in statistics}{17}{subsubsection.3.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1.3}(*) The formula class}{17}{subsubsection.3.4.1.3}%
+\contentsline {subsection}{\numberline {3.4.2}Simple linear regression}{17}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}The \texttt {lm} function}{17}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}Visualizing a regression}{17}{subsubsection.3.4.2.2}%
+\contentsline {subsection}{\numberline {3.4.3}Multiple regression and prediction}{17}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}Multiple terms in a formula}{17}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}Predicting}{17}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}(*) Interaction}{17}{subsubsection.3.4.3.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.4}(*) The intercept term}{17}{subsubsection.3.4.3.4}%
+\contentsline {section}{\numberline {3.5}Factors (advanced)}{17}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Factors revisited}{17}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.1}Reordering a factor}{17}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.2}Changing factor labels}{17}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {3.5.1.3}Turning a continuous variable into categories}{17}{subsubsection.3.5.1.3}%
+\contentsline {subsubsection}{\numberline {3.5.1.4}(*) Combining factors}{17}{subsubsection.3.5.1.4}%
+\contentsline {subsection}{\numberline {3.5.2}ANOVA and regression with factors}{17}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Regression model fit}{17}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}The ANOVA table and F-test}{17}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}(*) Model fit without a reference category}{17}{subsubsection.3.5.2.3}%
+\contentsline {subsection}{\numberline {3.5.3}(*) Generalized linear models and survival}{17}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}(*) Logistic regression and ANOVA}{17}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}(*) Survival analysis}{17}{subsubsection.3.5.3.2}%
+\contentsline {chapter}{\numberline {4}Functions}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}User-defined Functions}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}(*) Control flow constructs}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Sequential execution}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Conditional execution: if}{20}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Conditional execution: if/else}{20}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}\texttt {apply} family: apply, lapply, sapply, tapply}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}apply(X, MARGIN, FUN, \ldots )}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}sapply(X, FUN, \ldots )}{20}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}lapply(X, FUN, \ldots ) : apply a function to a list/vector}{20}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}tapply(X, INDEX, FUN, \ldots ) : apply a function to a vector, according to groups of INDEX}{20}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Type checking}{20}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}is.* family functions}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}(*) stop(\ldots )/warning(\ldots )}{20}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}(*) R programming}{20}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}General coding conventions}{20}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Finding, installing and loading packages}{20}{subsection.4.5.2}%
+\contentsline {chapter}{Appendix}{21}{chapter*.8}%
+\contentsline {section}{Character string processing \& Pattern matching}{22}{section*.9}%
+\contentsline {subsection}{Learning goals}{22}{section*.10}%
+\contentsline {subsection}{Quotes and escape characters (characters with special meaning)}{22}{section*.11}%
+\contentsline {subsection}{Character string}{22}{section*.12}%
+\contentsline {subsection}{paste(\ldots , sep = '' ``, collapse = NULL):}{22}{section*.13}%
+\contentsline {subsection}{Pulse data set}{22}{section*.14}%
+\contentsline {subsection}{tolower, toupper, nchar}{22}{section*.15}%
+\contentsline {subsection}{Split character string : strsplit(x, split, \ldots ):}{22}{section*.16}%
+\contentsline {subsection}{rbind(\ldots ), cbind(\ldots ) : combine by rows or columns}{22}{section*.17}%
+\contentsline {subsection}{strsplit(x, split, \ldots )}{22}{section*.18}%
+\contentsline {subsection}{do.call(what, args, \ldots ) : execute function on list of arguments}{22}{section*.19}%
+\contentsline {subsection}{grep(pattern, x, ignore.case = FALSE, value = FALSE, \ldots {} )}{22}{section*.20}%
+\contentsline {subsection}{grepl(pattern, x, ignore.case = FALSE, \ldots )}{22}{section*.21}%
+\contentsline {subsection}{substr(x, start, stop) : extract/replace substrings}{22}{section*.22}%
+\contentsline {subsection}{gsub/sub(pattern, replacement, x, ignore.case = FALSE, \ldots )}{22}{section*.23}%
+\contentsline {subsection}{Extra exercises}{22}{section*.24}%
+\contentsline {section}{S3 and S4 classes}{22}{section*.25}%
+\contentsline {subsection}{Learning goals}{22}{section*.26}%
+\contentsline {subsection}{Objects}{22}{section*.27}%
+\contentsline {subsection}{S3}{22}{section*.28}%
+\contentsline {subsection}{S4}{22}{section*.29}%
+\contentsline {section}{Making errors the right way}{22}{section*.30}%
+\contentsline {subsection}{Annoying errors}{22}{section*.31}%
+\contentsline {subsection}{How to correct (annoying) errors}{22}{section*.32}%
+\contentsline {subsection}{Dangerous errors}{22}{section*.33}%
+\contentsline {subsection}{How to avoid (dangerous) errors}{22}{section*.34}%
+\contentsline {section}{Useful links}{22}{section*.35}%

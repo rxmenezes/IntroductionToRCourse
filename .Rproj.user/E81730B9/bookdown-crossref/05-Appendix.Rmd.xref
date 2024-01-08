@@ -1,0 +1,29 @@
+h1:appendix Appendix
+h2:character-string-processing-pattern-matching Character string processing & Pattern matching
+h3:learning-goals Learning goals
+h3:quotes-and-escape-characters-characters-with-special-meaning Quotes and escape characters (characters with special meaning)
+h3:character-string Character string
+h3:paste-sep-collapse-null paste(…, sep = ” “, collapse = NULL):
+h3:pulse-data-set Pulse data set
+h3:tolower-toupper-nchar tolower, toupper, nchar
+h3:split-character-string-strsplitx-split Split character string : strsplit(x, split, …):
+h3:rbind-cbind-combine-by-rows-or-columns rbind(…), cbind(…) : combine by rows or columns
+h3:strsplitx-split strsplit(x, split, …)
+h3:do.callwhat-args-execute-function-on-list-of-arguments do.call(what, args, …) : execute function on list of arguments
+h3:greppattern-x-ignore.case-false-value-false grep(pattern, x, ignore.case = FALSE, value = FALSE, … )
+h3:greplpattern-x-ignore.case-false grepl(pattern, x, ignore.case = FALSE, …)
+h3:substrx-start-stop-extractreplace-substrings substr(x, start, stop) : extract/replace substrings
+h3:gsubsubpattern-replacement-x-ignore.case-false gsub/sub(pattern, replacement, x, ignore.case = FALSE, …)
+h3:extra-exercises Extra exercises
+h2:s3-and-s4-classes S3 and S4 classes
+h3:learning-goals-1 Learning goals
+h3:objects Objects
+h3:s3 S3
+h3:s4 S4
+h2:making-errors-the-right-way Making errors the right way
+h3:annoying-errors Annoying errors
+h3:how-to-correct-annoying-errors How to correct (annoying) errors
+h3:dangerous-errors Dangerous errors
+h3:how-to-avoid-dangerous-errors How to avoid (dangerous) errors
+h2:useful-links Useful links
+

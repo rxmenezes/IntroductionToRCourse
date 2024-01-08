@@ -7,7 +7,7 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 source( "../../setup/R_course_setup.R" );
 ```
 
-# Basic data types (cont.) (tasks)
+# Basic data types (cont.) (task)
 
 ## Numeric vectors {#numeric}
 
