@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-05-24" />
+<meta name="date" content="2024-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -353,31 +353,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>There are several ways to construct a vector of numbers.</p>
 <div id="single-number-numeric-vector-with-a-single-element" class="section level4 hasAnchor" number="2.1.2.1">
 <h4><span class="header-section-number">2.1.2.1</span> Single number (numeric vector with a single element)<a href="data-types-part-1.html#single-number-numeric-vector-with-a-single-element" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="data-types-part-1.html#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span></span></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="data-types-part-1.html#cb138-1" tabindex="-1"></a><span class="dv">7</span></span></code></pre></div>
 <pre><code>## [1] 7</code></pre>
 </div>
 <div id="multiple-numbers" class="section level4 hasAnchor" number="2.1.2.2">
 <h4><span class="header-section-number">2.1.2.2</span> Multiple numbers<a href="data-types-part-1.html#multiple-numbers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="data-types-part-1.html#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>( <span class="dv">5</span>, <span class="sc">-</span><span class="fl">2.5</span>, <span class="cn">NA</span>, <span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">3</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="data-types-part-1.html#cb140-1" tabindex="-1"></a><span class="fu">c</span>( <span class="dv">5</span>, <span class="sc">-</span><span class="fl">2.5</span>, <span class="cn">NA</span>, <span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">3</span> )</span></code></pre></div>
 <pre><code>## [1]  5.0000000 -2.5000000         NA 10.0000000  0.3333333</code></pre>
 </div>
 <div id="sequence-of-numbers-one-by-one" class="section level4 hasAnchor" number="2.1.2.3">
 <h4><span class="header-section-number">2.1.2.3</span> Sequence of numbers (one by one)<a href="data-types-part-1.html#sequence-of-numbers-one-by-one" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="data-types-part-1.html#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">:</span><span class="dv">17</span></span></code></pre></div>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="data-types-part-1.html#cb142-1" tabindex="-1"></a><span class="dv">3</span><span class="sc">:</span><span class="dv">17</span></span></code></pre></div>
 <pre><code>##  [1]  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17</code></pre>
 </div>
 <div id="sequence-of-numbers" class="section level4 hasAnchor" number="2.1.2.4">
 <h4><span class="header-section-number">2.1.2.4</span> Sequence of numbers<a href="data-types-part-1.html#sequence-of-numbers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Sequence of numbers with a defined step:</p>
-<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="data-types-part-1.html#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>( <span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">2</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="data-types-part-1.html#cb144-1" tabindex="-1"></a><span class="fu">seq</span>( <span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">2</span> )</span></code></pre></div>
 <pre><code>## [1]  5  7  9 11 13 15</code></pre>
 </div>
 <div id="combine-several-vectors-of-numbers" class="section level4 hasAnchor" number="2.1.2.5">
 <h4><span class="header-section-number">2.1.2.5</span> Combine (several) vectors of numbers<a href="data-types-part-1.html#combine-several-vectors-of-numbers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Multiple vectors can be combined together:</p>
-<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="data-types-part-1.html#cb146-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span></span>
-<span id="cb146-2"><a href="data-types-part-1.html#cb146-2" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">seq</span>( <span class="dv">10</span>, <span class="dv">90</span>, <span class="dv">10</span> )</span>
-<span id="cb146-3"><a href="data-types-part-1.html#cb146-3" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>( <span class="dv">0</span>, v, w, <span class="dv">100</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="data-types-part-1.html#cb146-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span></span>
+<span id="cb146-2"><a href="data-types-part-1.html#cb146-2" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">seq</span>( <span class="dv">10</span>, <span class="dv">90</span>, <span class="dv">10</span> )</span>
+<span id="cb146-3"><a href="data-types-part-1.html#cb146-3" tabindex="-1"></a><span class="fu">c</span>( <span class="dv">0</span>, v, w, <span class="dv">100</span> )</span></code></pre></div>
 <pre><code>##  [1]   0   1   2   3   4   5   6   7   8   9  10  20  30  40  50  60  70  80  90
 ## [20] 100</code></pre>
 <hr />
@@ -394,15 +394,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="simple-single-text-character-vector-with-a-single-element" class="section level4 hasAnchor" number="2.1.3.1">
 <h4><span class="header-section-number">2.1.3.1</span> Simple single text (character vector with a single element)<a href="data-types-part-1.html#simple-single-text-character-vector-with-a-single-element" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>With double quotes:</p>
-<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="data-types-part-1.html#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Bioinformatics&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="data-types-part-1.html#cb148-1" tabindex="-1"></a><span class="st">&quot;Bioinformatics&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;Bioinformatics&quot;</code></pre>
 <p>Or, with single quotes:</p>
-<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="data-types-part-1.html#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;Biostatistics&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="data-types-part-1.html#cb150-1" tabindex="-1"></a><span class="st">&#39;Biostatistics&#39;</span></span></code></pre></div>
 <pre><code>## [1] &quot;Biostatistics&quot;</code></pre>
 </div>
 <div id="multiple-texts" class="section level4 hasAnchor" number="2.1.3.2">
 <h4><span class="header-section-number">2.1.3.2</span> Multiple texts<a href="data-types-part-1.html#multiple-texts" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="data-types-part-1.html#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>( <span class="st">&quot;Bioinformatics&quot;</span>, <span class="st">&quot;Biostatistics&quot;</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="data-types-part-1.html#cb152-1" tabindex="-1"></a><span class="fu">c</span>( <span class="st">&quot;Bioinformatics&quot;</span>, <span class="st">&quot;Biostatistics&quot;</span> )</span></code></pre></div>
 <pre><code>## [1] &quot;Bioinformatics&quot; &quot;Biostatistics&quot;</code></pre>
 </div>
 </div>
@@ -410,15 +410,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">2.1.4</span> Logical vectors<a href="data-types-part-1.html#logical-vectors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="elementary-logical-values" class="section level4 hasAnchor" number="2.1.4.1">
 <h4><span class="header-section-number">2.1.4.1</span> Elementary logical values<a href="data-types-part-1.html#elementary-logical-values" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="data-types-part-1.html#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="data-types-part-1.html#cb154-1" tabindex="-1"></a><span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="data-types-part-1.html#cb156-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="data-types-part-1.html#cb156-1" tabindex="-1"></a><span class="cn">FALSE</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="data-types-part-1.html#cb158-1" aria-hidden="true" tabindex="-1"></a>T</span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="data-types-part-1.html#cb158-1" tabindex="-1"></a>T</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="data-types-part-1.html#cb160-1" aria-hidden="true" tabindex="-1"></a>F</span></code></pre></div>
+<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="data-types-part-1.html#cb160-1" tabindex="-1"></a>F</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="data-types-part-1.html#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>( <span class="cn">FALSE</span>, F, <span class="cn">TRUE</span>, T )    <span class="co"># vector of logical values</span></span></code></pre></div>
+<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="data-types-part-1.html#cb162-1" tabindex="-1"></a><span class="fu">c</span>( <span class="cn">FALSE</span>, F, <span class="cn">TRUE</span>, T )    <span class="co"># vector of logical values</span></span></code></pre></div>
 <pre><code>## [1] FALSE FALSE  TRUE  TRUE</code></pre>
 <p>(*) <code>NA</code> is a logical constant and it gets automatically converted to other types when necessary.</p>
 </div>
@@ -427,31 +427,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="negation" class="section level5 hasAnchor" number="2.1.4.2.1">
 <h5><span class="header-section-number">2.1.4.2.1</span> Negation<a href="data-types-part-1.html#negation" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Unary negation operator (denoted <code>!</code>):</p>
-<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="data-types-part-1.html#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="data-types-part-1.html#cb164-1" tabindex="-1"></a><span class="sc">!</span><span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="data-types-part-1.html#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="data-types-part-1.html#cb166-1" tabindex="-1"></a><span class="sc">!</span><span class="cn">FALSE</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 </div>
 <div id="and-operator" class="section level5 hasAnchor" number="2.1.4.2.2">
 <h5><span class="header-section-number">2.1.4.2.2</span> AND Operator <code>&amp;</code><a href="data-types-part-1.html#and-operator" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Binary operator AND (denoted <code>&amp;</code>) returns <code>TRUE</code> result when <code>all</code> its arguments are <code>TRUE</code>:</p>
-<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="data-types-part-1.html#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="data-types-part-1.html#cb168-1" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <p>Otherwise returns <code>FALSE</code>:</p>
-<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="data-types-part-1.html#cb170-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">&amp;</span> <span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="data-types-part-1.html#cb170-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">&amp;</span> <span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="data-types-part-1.html#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">&amp;</span> <span class="cn">FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="data-types-part-1.html#cb172-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">&amp;</span> <span class="cn">FALSE</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
 </div>
 <div id="or-operator" class="section level5 hasAnchor" number="2.1.4.2.3">
 <h5><span class="header-section-number">2.1.4.2.3</span> OR operator <code>|</code><a href="data-types-part-1.html#or-operator" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Binary operator OR (denoted <code>|</code>) returns <code>TRUE</code> result when <code>any</code> (at least one) of its arguments is <code>TRUE</code>:</p>
-<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="data-types-part-1.html#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="data-types-part-1.html#cb174-1" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="data-types-part-1.html#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">|</span> <span class="cn">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="data-types-part-1.html#cb176-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">|</span> <span class="cn">TRUE</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <p>Otherwise returns <code>FALSE</code>:</p>
-<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="data-types-part-1.html#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">|</span> <span class="cn">FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="data-types-part-1.html#cb178-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">|</span> <span class="cn">FALSE</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
 </div>
 </div>
@@ -459,44 +459,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">2.1.4.3</span> Relational operators<a href="data-types-part-1.html#relational-operators" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div id="equality-operator" class="section level5 hasAnchor" number="2.1.4.3.1">
 <h5><span class="header-section-number">2.1.4.3.1</span> Equality operator <code>==</code><a href="data-types-part-1.html#equality-operator" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="data-types-part-1.html#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="data-types-part-1.html#cb180-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb182"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb182-1"><a href="data-types-part-1.html#cb182-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Bioinformatics&quot;</span> <span class="sc">==</span> <span class="st">&quot;Biostatistics&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb182"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb182-1"><a href="data-types-part-1.html#cb182-1" tabindex="-1"></a><span class="st">&quot;Bioinformatics&quot;</span> <span class="sc">==</span> <span class="st">&quot;Biostatistics&quot;</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb184"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb184-1"><a href="data-types-part-1.html#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">==</span> F</span></code></pre></div>
+<div class="sourceCode" id="cb184"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb184-1"><a href="data-types-part-1.html#cb184-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">==</span> F</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 </div>
 <div id="inequality-operators" class="section level5 hasAnchor" number="2.1.4.3.2">
 <h5><span class="header-section-number">2.1.4.3.2</span> Inequality operators<a href="data-types-part-1.html#inequality-operators" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="data-types-part-1.html#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span>    <span class="co"># unequal  </span></span></code></pre></div>
+<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="data-types-part-1.html#cb186-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span>    <span class="co"># unequal  </span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="data-types-part-1.html#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;a&quot;</span> <span class="sc">!=</span> <span class="st">&quot;A&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="data-types-part-1.html#cb188-1" tabindex="-1"></a><span class="st">&quot;a&quot;</span> <span class="sc">!=</span> <span class="st">&quot;A&quot;</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="data-types-part-1.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">!=</span> T</span></code></pre></div>
+<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="data-types-part-1.html#cb190-1" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">!=</span> T</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="data-types-part-1.html#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span>     <span class="co"># less than</span></span></code></pre></div>
+<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="data-types-part-1.html#cb192-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span>     <span class="co"># less than</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="data-types-part-1.html#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">&gt;</span> <span class="dv">2</span>     <span class="co"># greater than</span></span></code></pre></div>
+<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="data-types-part-1.html#cb194-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">&gt;</span> <span class="dv">2</span>     <span class="co"># greater than</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="data-types-part-1.html#cb196-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span>    <span class="co"># less or equal </span></span></code></pre></div>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="data-types-part-1.html#cb196-1" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span>    <span class="co"># less or equal </span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="data-types-part-1.html#cb198-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span>    <span class="co"># greater or equal</span></span></code></pre></div>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="data-types-part-1.html#cb198-1" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span>    <span class="co"># greater or equal</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 </div>
 </div>
 <div id="comparison-of-two-vectors" class="section level4 hasAnchor" number="2.1.4.4">
 <h4><span class="header-section-number">2.1.4.4</span> Comparison of two vectors<a href="data-types-part-1.html#comparison-of-two-vectors" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="data-types-part-1.html#cb200-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span> )</span>
-<span id="cb200-2"><a href="data-types-part-1.html#cb200-2" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span> )</span>
-<span id="cb200-3"><a href="data-types-part-1.html#cb200-3" aria-hidden="true" tabindex="-1"></a>v <span class="sc">==</span> w</span></code></pre></div>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="data-types-part-1.html#cb200-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span> )</span>
+<span id="cb200-2"><a href="data-types-part-1.html#cb200-2" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span> )</span>
+<span id="cb200-3"><a href="data-types-part-1.html#cb200-3" tabindex="-1"></a>v <span class="sc">==</span> w</span></code></pre></div>
 <pre><code>## [1] FALSE FALSE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="data-types-part-1.html#cb202-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">!=</span> w</span></code></pre></div>
+<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="data-types-part-1.html#cb202-1" tabindex="-1"></a>v <span class="sc">!=</span> w</span></code></pre></div>
 <pre><code>## [1]  TRUE  TRUE FALSE  TRUE  TRUE</code></pre>
-<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="data-types-part-1.html#cb204-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">&lt;</span> w</span></code></pre></div>
+<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="data-types-part-1.html#cb204-1" tabindex="-1"></a>v <span class="sc">&lt;</span> w</span></code></pre></div>
 <pre><code>## [1]  TRUE  TRUE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb206-1"><a href="data-types-part-1.html#cb206-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">&lt;=</span> w</span></code></pre></div>
+<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb206-1"><a href="data-types-part-1.html#cb206-1" tabindex="-1"></a>v <span class="sc">&lt;=</span> w</span></code></pre></div>
 <pre><code>## [1]  TRUE  TRUE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb208-1"><a href="data-types-part-1.html#cb208-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">&gt;=</span> w</span></code></pre></div>
+<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb208-1"><a href="data-types-part-1.html#cb208-1" tabindex="-1"></a>v <span class="sc">&gt;=</span> w</span></code></pre></div>
 <pre><code>## [1] FALSE FALSE  TRUE  TRUE  TRUE</code></pre>
 <hr />
 <blockquote>
@@ -511,10 +511,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Sometimes a conversion to a vector of certain type might be needed.
 The family of functions: <code>as.numeric</code>, <code>as.character</code>, <code>as.logical</code> take as an argument a vector of any type and return a vector of the type given in the function name.
 When the conversion of an element is not possible, <code>NA</code> value is used.</p>
-<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="data-types-part-1.html#cb210-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
-<span id="cb210-2"><a href="data-types-part-1.html#cb210-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="data-types-part-1.html#cb210-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
+<span id="cb210-2"><a href="data-types-part-1.html#cb210-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
-<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="data-types-part-1.html#cb212-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.character</span>( v )</span></code></pre></div>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="data-types-part-1.html#cb212-1" tabindex="-1"></a><span class="fu">as.character</span>( v )</span></code></pre></div>
 <pre><code>##  [1] &quot;101&quot; &quot;102&quot; &quot;103&quot; &quot;104&quot; &quot;105&quot; &quot;106&quot; &quot;107&quot; &quot;108&quot; &quot;109&quot; &quot;110&quot;</code></pre>
 <hr />
 <blockquote>
@@ -536,68 +536,68 @@ When the conversion of an element is not possible, <code>NA</code> value is used
 R vectors keep the first element at index 1 and the last element at index which can be obtained with the function <code>length</code>.</p>
 <p>The indices can be used to fetch elements from the corresponding positions with the square bracket operators <code>[ pos ]</code>.</p>
 <p>Let’s take a vector:</p>
-<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="data-types-part-1.html#cb214-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span></code></pre></div>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="data-types-part-1.html#cb214-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span></code></pre></div>
 <p>To get the first element of <code>v</code>:</p>
-<div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="data-types-part-1.html#cb215-1" aria-hidden="true" tabindex="-1"></a>v[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="data-types-part-1.html#cb215-1" tabindex="-1"></a>v[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>## [1] 101</code></pre>
 <p>To get the last element of <code>v</code>:</p>
-<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="data-types-part-1.html#cb217-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="fu">length</span>( v ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="data-types-part-1.html#cb217-1" tabindex="-1"></a>v[ <span class="fu">length</span>( v ) ]</span></code></pre></div>
 <pre><code>## [1] 110</code></pre>
 <p>To get an element at a given index:</p>
-<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="data-types-part-1.html#cb219-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="dv">5</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="data-types-part-1.html#cb219-1" tabindex="-1"></a>v[ <span class="dv">5</span> ]</span></code></pre></div>
 <pre><code>## [1] 105</code></pre>
 <p>Setting a single element:</p>
-<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="data-types-part-1.html#cb221-1" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="data-types-part-1.html#cb221-1" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
-<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb223-1"><a href="data-types-part-1.html#cb223-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="dv">2</span> ] <span class="ot">&lt;-</span> <span class="dv">22</span></span>
-<span id="cb223-2"><a href="data-types-part-1.html#cb223-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb223-1"><a href="data-types-part-1.html#cb223-1" tabindex="-1"></a>v[ <span class="dv">2</span> ] <span class="ot">&lt;-</span> <span class="dv">22</span></span>
+<span id="cb223-2"><a href="data-types-part-1.html#cb223-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101  22 103 104 105 106 107 108 109 110</code></pre>
 <p>Getting multiple elements:</p>
-<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="data-types-part-1.html#cb225-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="data-types-part-1.html#cb225-1" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span> ) ]</span></code></pre></div>
 <pre><code>## [1]  22 104 107</code></pre>
 <p>Setting multiple elements:</p>
-<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="data-types-part-1.html#cb227-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span> ) ] <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">22</span>, <span class="dv">24</span>, <span class="dv">27</span> )</span>
-<span id="cb227-2"><a href="data-types-part-1.html#cb227-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="data-types-part-1.html#cb227-1" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span> ) ] <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">22</span>, <span class="dv">24</span>, <span class="dv">27</span> )</span>
+<span id="cb227-2"><a href="data-types-part-1.html#cb227-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101  22 103  24 105 106  27 108 109 110</code></pre>
 </div>
 <div id="by-names" class="section level4 hasAnchor" number="2.2.1.2">
 <h4><span class="header-section-number">2.2.1.2</span> By names<a href="data-types-part-1.html#by-names" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Elements of the vectors can also be given names, i.e. <code>named vector</code>. Let’s take a vector:</p>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="data-types-part-1.html#cb229-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
-<span id="cb229-2"><a href="data-types-part-1.html#cb229-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="data-types-part-1.html#cb229-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
+<span id="cb229-2"><a href="data-types-part-1.html#cb229-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
 <p>Setting names of vector elements:</p>
-<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="data-types-part-1.html#cb231-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>( v ) <span class="ot">&lt;-</span> LETTERS[ <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>( v ) ]</span>
-<span id="cb231-2"><a href="data-types-part-1.html#cb231-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="data-types-part-1.html#cb231-1" tabindex="-1"></a><span class="fu">names</span>( v ) <span class="ot">&lt;-</span> LETTERS[ <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>( v ) ]</span>
+<span id="cb231-2"><a href="data-types-part-1.html#cb231-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##   A   B   C   D   E   F   G   H   I   J 
 ## 101 102 103 104 105 106 107 108 109 110</code></pre>
 <p>Getting names of vector elements:</p>
-<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="data-types-part-1.html#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>( v )</span></code></pre></div>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="data-types-part-1.html#cb233-1" tabindex="-1"></a><span class="fu">names</span>( v )</span></code></pre></div>
 <pre><code>##  [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot;</code></pre>
 <p>Accessing elements (single or multiple) by names:</p>
-<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="data-types-part-1.html#cb235-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="st">&quot;C&quot;</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="data-types-part-1.html#cb235-1" tabindex="-1"></a>v[ <span class="st">&quot;C&quot;</span> ]</span></code></pre></div>
 <pre><code>##   C 
 ## 103</code></pre>
-<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="data-types-part-1.html#cb237-1" aria-hidden="true" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="st">&quot;F&quot;</span>, <span class="st">&quot;H&quot;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="data-types-part-1.html#cb237-1" tabindex="-1"></a>v[ <span class="fu">c</span>( <span class="st">&quot;F&quot;</span>, <span class="st">&quot;H&quot;</span> ) ]</span></code></pre></div>
 <pre><code>##   F   H 
 ## 106 108</code></pre>
 </div>
 <div id="by-condition-logical-indices" class="section level4 hasAnchor" number="2.2.1.3">
 <h4><span class="header-section-number">2.2.1.3</span> By condition (logical indices)<a href="data-types-part-1.html#by-condition-logical-indices" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can use a logical vector to select elements of a vector. Consider the vector</p>
-<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="data-types-part-1.html#cb239-1" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="data-types-part-1.html#cb239-1" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>)</span></code></pre></div>
 <p>and say that we want to select the second element, but not the first. For this we know we can use</p>
-<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="data-types-part-1.html#cb240-1" aria-hidden="true" tabindex="-1"></a>b[<span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="data-types-part-1.html#cb240-1" tabindex="-1"></a>b[<span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] 7</code></pre>
 <p>and it turns out we can also use a logical vector with <code>TRUE</code> for the element to be selected, and <code>FALSE</code> for the one not to be selected. That is <code>b[ c(FALSE, TRUE) ]</code> gives the same selection as above:</p>
-<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="data-types-part-1.html#cb242-1" aria-hidden="true" tabindex="-1"></a>b[ <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>) ]</span></code></pre></div>
+<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="data-types-part-1.html#cb242-1" tabindex="-1"></a>b[ <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>) ]</span></code></pre></div>
 <pre><code>## [1] 7</code></pre>
 <p>This example is trivial. Let us take a longer vector:</p>
-<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="data-types-part-1.html#cb244-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
-<span id="cb244-2"><a href="data-types-part-1.html#cb244-2" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="data-types-part-1.html#cb244-1" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">101</span><span class="sc">:</span><span class="dv">110</span></span>
+<span id="cb244-2"><a href="data-types-part-1.html#cb244-2" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
 <p>Now let us construct a logical vector <code>idx</code> with the same number of elements as <code>v</code>:</p>
-<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="data-types-part-1.html#cb246-1" aria-hidden="true" tabindex="-1"></a>idx <span class="ot">&lt;-</span> <span class="fu">c</span>( F, F, F, T, F, T, F, F, T, <span class="cn">NA</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="data-types-part-1.html#cb246-1" tabindex="-1"></a>idx <span class="ot">&lt;-</span> <span class="fu">c</span>( F, F, F, T, F, T, F, F, T, <span class="cn">NA</span> )</span></code></pre></div>
 <p><code>v</code> can now be “filtered through” <code>idx</code>, where positions in <code>idx</code> are selected or not according to:</p>
 <ul>
 <li><code>TRUE</code> in <code>idx</code>, then the element appears in the result;</li>
@@ -606,23 +606,23 @@ R vectors keep the first element at index 1 and the last element at index which 
 </ul>
 <p>This means that <code>NA</code> entries in <code>idx</code> will include <code>NA</code>s entries in the result, even if the original vector <code>v</code> did not involve <code>NA</code>s.</p>
 <p>In the example above, the result is:</p>
-<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="data-types-part-1.html#cb247-1" aria-hidden="true" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
+<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="data-types-part-1.html#cb247-1" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
 <pre><code>## [1] 104 106 109  NA</code></pre>
 <p>A logical vector like <code>idx</code> is typically a result of equality/comparison, or is generated by specialized functions. For example, if we wish to select entries in <code>v</code> that have values at least equal to 102 and smaller than 106, we could use:</p>
-<div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="data-types-part-1.html#cb249-1" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="data-types-part-1.html#cb249-1" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
-<div class="sourceCode" id="cb251"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb251-1"><a href="data-types-part-1.html#cb251-1" aria-hidden="true" tabindex="-1"></a>idx <span class="ot">&lt;-</span> v <span class="sc">&gt;=</span> <span class="dv">102</span></span>
-<span id="cb251-2"><a href="data-types-part-1.html#cb251-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="sourceCode" id="cb251"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb251-1"><a href="data-types-part-1.html#cb251-1" tabindex="-1"></a>idx <span class="ot">&lt;-</span> v <span class="sc">&gt;=</span> <span class="dv">102</span></span>
+<span id="cb251-2"><a href="data-types-part-1.html#cb251-2" tabindex="-1"></a>idx</span></code></pre></div>
 <pre><code>##  [1] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE</code></pre>
-<div class="sourceCode" id="cb253"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb253-1"><a href="data-types-part-1.html#cb253-1" aria-hidden="true" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
+<div class="sourceCode" id="cb253"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb253-1"><a href="data-types-part-1.html#cb253-1" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
 <pre><code>## [1] 102 103 104 105 106 107 108 109 110</code></pre>
 <p>We can also combine logical statements into a single one. Say, if we wish to select entries in <code>v</code> that have values at least equal to 102 and smaller than 106, we could use:</p>
-<div class="sourceCode" id="cb255"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb255-1"><a href="data-types-part-1.html#cb255-1" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb255"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb255-1"><a href="data-types-part-1.html#cb255-1" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
-<div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="data-types-part-1.html#cb257-1" aria-hidden="true" tabindex="-1"></a>idx <span class="ot">&lt;-</span> (v <span class="sc">&gt;=</span> <span class="dv">102</span>) <span class="sc">&amp;</span> (v <span class="sc">&lt;</span> <span class="dv">106</span>)</span>
-<span id="cb257-2"><a href="data-types-part-1.html#cb257-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="data-types-part-1.html#cb257-1" tabindex="-1"></a>idx <span class="ot">&lt;-</span> (v <span class="sc">&gt;=</span> <span class="dv">102</span>) <span class="sc">&amp;</span> (v <span class="sc">&lt;</span> <span class="dv">106</span>)</span>
+<span id="cb257-2"><a href="data-types-part-1.html#cb257-2" tabindex="-1"></a>idx</span></code></pre></div>
 <pre><code>##  [1] FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb259"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb259-1"><a href="data-types-part-1.html#cb259-1" aria-hidden="true" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
+<div class="sourceCode" id="cb259"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb259-1"><a href="data-types-part-1.html#cb259-1" tabindex="-1"></a>v[ idx ]</span></code></pre></div>
 <pre><code>## [1] 102 103 104 105</code></pre>
 <p>Indices given by a logical vector are referred to as <em>logical indices</em>.</p>
 <hr />
@@ -639,37 +639,37 @@ R vectors keep the first element at index 1 and the last element at index which 
 <ul>
 <li><code>sort()</code>: sorts the elements of a vector:</li>
 </ul>
-<div class="sourceCode" id="cb261"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb261-1"><a href="data-types-part-1.html#cb261-1" aria-hidden="true" tabindex="-1"></a>v</span></code></pre></div>
+<div class="sourceCode" id="cb261"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb261-1"><a href="data-types-part-1.html#cb261-1" tabindex="-1"></a>v</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
-<div class="sourceCode" id="cb263"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb263-1"><a href="data-types-part-1.html#cb263-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(v)</span></code></pre></div>
+<div class="sourceCode" id="cb263"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb263-1"><a href="data-types-part-1.html#cb263-1" tabindex="-1"></a><span class="fu">sort</span>(v)</span></code></pre></div>
 <pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
 <ul>
 <li><code>unique()</code>: returns a vector containing the unique entries of a vector:</li>
 </ul>
-<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="data-types-part-1.html#cb265-1" aria-hidden="true" tabindex="-1"></a>u <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">1</span>)</span>
-<span id="cb265-2"><a href="data-types-part-1.html#cb265-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(u)</span></code></pre></div>
+<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="data-types-part-1.html#cb265-1" tabindex="-1"></a>u <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">1</span>)</span>
+<span id="cb265-2"><a href="data-types-part-1.html#cb265-2" tabindex="-1"></a><span class="fu">unique</span>(u)</span></code></pre></div>
 <pre><code>## [1] 5 4 3 1</code></pre>
-<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="data-types-part-1.html#cb267-1" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Monday&quot;</span>, <span class="st">&quot;Tuesday&quot;</span>, <span class="st">&quot;Thursday&quot;</span>, <span class="st">&quot;Friday&quot;</span>, <span class="st">&quot;Monday&quot;</span>, <span class="st">&quot;Wednesday&quot;</span>, <span class="st">&quot;Thursday&quot;</span>)</span>
-<span id="cb267-2"><a href="data-types-part-1.html#cb267-2" aria-hidden="true" tabindex="-1"></a>w</span></code></pre></div>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="data-types-part-1.html#cb267-1" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Monday&quot;</span>, <span class="st">&quot;Tuesday&quot;</span>, <span class="st">&quot;Thursday&quot;</span>, <span class="st">&quot;Friday&quot;</span>, <span class="st">&quot;Monday&quot;</span>, <span class="st">&quot;Wednesday&quot;</span>, <span class="st">&quot;Thursday&quot;</span>)</span>
+<span id="cb267-2"><a href="data-types-part-1.html#cb267-2" tabindex="-1"></a>w</span></code></pre></div>
 <pre><code>## [1] &quot;Monday&quot;    &quot;Tuesday&quot;   &quot;Thursday&quot;  &quot;Friday&quot;    &quot;Monday&quot;    &quot;Wednesday&quot;
 ## [7] &quot;Thursday&quot;</code></pre>
-<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="data-types-part-1.html#cb269-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(w)</span></code></pre></div>
+<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="data-types-part-1.html#cb269-1" tabindex="-1"></a><span class="fu">unique</span>(w)</span></code></pre></div>
 <pre><code>## [1] &quot;Monday&quot;    &quot;Tuesday&quot;   &quot;Thursday&quot;  &quot;Friday&quot;    &quot;Wednesday&quot;</code></pre>
 <ul>
 <li><code>duplicated()</code>: returns a logical vector indicating which entries are duplicated or not:</li>
 </ul>
-<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="data-types-part-1.html#cb271-1" aria-hidden="true" tabindex="-1"></a><span class="fu">duplicated</span>(u)</span></code></pre></div>
+<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="data-types-part-1.html#cb271-1" tabindex="-1"></a><span class="fu">duplicated</span>(u)</span></code></pre></div>
 <pre><code>## [1] FALSE  TRUE FALSE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="data-types-part-1.html#cb273-1" aria-hidden="true" tabindex="-1"></a><span class="fu">duplicated</span>(w)</span></code></pre></div>
+<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="data-types-part-1.html#cb273-1" tabindex="-1"></a><span class="fu">duplicated</span>(w)</span></code></pre></div>
 <pre><code>## [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE</code></pre>
 <p>So, in order to select all duplicated entries, the following could be used:</p>
-<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="data-types-part-1.html#cb275-1" aria-hidden="true" tabindex="-1"></a>u[ <span class="fu">duplicated</span>(u) ]</span></code></pre></div>
+<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="data-types-part-1.html#cb275-1" tabindex="-1"></a>u[ <span class="fu">duplicated</span>(u) ]</span></code></pre></div>
 <pre><code>## [1] 5 4</code></pre>
 <p>If instead you wish to select all unique entries, you can use:</p>
-<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="data-types-part-1.html#cb277-1" aria-hidden="true" tabindex="-1"></a>u[ <span class="sc">!</span><span class="fu">duplicated</span>(u) ]</span></code></pre></div>
+<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="data-types-part-1.html#cb277-1" tabindex="-1"></a>u[ <span class="sc">!</span><span class="fu">duplicated</span>(u) ]</span></code></pre></div>
 <pre><code>## [1] 5 4 3 1</code></pre>
 <p>You can check that this is the same result that you get using <code>unique</code>:</p>
-<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="data-types-part-1.html#cb279-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(u)</span></code></pre></div>
+<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="data-types-part-1.html#cb279-1" tabindex="-1"></a><span class="fu">unique</span>(u)</span></code></pre></div>
 <pre><code>## [1] 5 4 3 1</code></pre>
 <hr />
 <blockquote>
@@ -684,9 +684,9 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="what-is-a-data-frame" class="section level3 hasAnchor" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> What is a data frame<a href="data-types-part-1.html#what-is-a-data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <center>
-<div class="figure">
-<img src="figure/Data_types_mdfl.png" alt="" />
-<p class="caption">Vectors</p>
+<div class="float">
+<img src="figure/Data_types_mdfl.png" alt="Vectors" />
+<div class="figcaption">Vectors</div>
 </div>
 </center>
 <p>A data frame is a collection of variables represented as vectors of the same length.</p>
@@ -699,28 +699,28 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="from-manually-provided-vectors" class="section level4 hasAnchor" number="2.3.2.1">
 <h4><span class="header-section-number">2.3.2.1</span> From manually provided vectors<a href="data-types-part-1.html#from-manually-provided-vectors" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>An example data frame built of <code>character</code>, <code>numeric</code> and <code>logical</code> vectors:</p>
-<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="data-types-part-1.html#cb281-1" aria-hidden="true" tabindex="-1"></a>ids <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span> );</span>
-<span id="cb281-2"><a href="data-types-part-1.html#cb281-2" aria-hidden="true" tabindex="-1"></a>ns <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Amy&quot;</span>, <span class="st">&quot;Bob&quot;</span>, <span class="st">&quot;Dan&quot;</span>, <span class="st">&quot;Eve&quot;</span> )</span>
-<span id="cb281-3"><a href="data-types-part-1.html#cb281-3" aria-hidden="true" tabindex="-1"></a>as <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">40</span>, <span class="cn">NA</span>, <span class="dv">6</span>, <span class="dv">16</span> )</span>
-<span id="cb281-4"><a href="data-types-part-1.html#cb281-4" aria-hidden="true" tabindex="-1"></a>ss <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="cn">TRUE</span>, <span class="cn">NA</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span> )</span>
-<span id="cb281-5"><a href="data-types-part-1.html#cb281-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb281-6"><a href="data-types-part-1.html#cb281-6" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb281-7"><a href="data-types-part-1.html#cb281-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">row.names =</span> ids,</span>
-<span id="cb281-8"><a href="data-types-part-1.html#cb281-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> ns,</span>
-<span id="cb281-9"><a href="data-types-part-1.html#cb281-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> as,</span>
-<span id="cb281-10"><a href="data-types-part-1.html#cb281-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">smoker =</span> ss</span>
-<span id="cb281-11"><a href="data-types-part-1.html#cb281-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb281-12"><a href="data-types-part-1.html#cb281-12" aria-hidden="true" tabindex="-1"></a>d</span></code></pre></div>
+<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="data-types-part-1.html#cb281-1" tabindex="-1"></a>ids <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span> );</span>
+<span id="cb281-2"><a href="data-types-part-1.html#cb281-2" tabindex="-1"></a>ns <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Amy&quot;</span>, <span class="st">&quot;Bob&quot;</span>, <span class="st">&quot;Dan&quot;</span>, <span class="st">&quot;Eve&quot;</span> )</span>
+<span id="cb281-3"><a href="data-types-part-1.html#cb281-3" tabindex="-1"></a>as <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">40</span>, <span class="cn">NA</span>, <span class="dv">6</span>, <span class="dv">16</span> )</span>
+<span id="cb281-4"><a href="data-types-part-1.html#cb281-4" tabindex="-1"></a>ss <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="cn">TRUE</span>, <span class="cn">NA</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span> )</span>
+<span id="cb281-5"><a href="data-types-part-1.html#cb281-5" tabindex="-1"></a></span>
+<span id="cb281-6"><a href="data-types-part-1.html#cb281-6" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb281-7"><a href="data-types-part-1.html#cb281-7" tabindex="-1"></a>  <span class="at">row.names =</span> ids,</span>
+<span id="cb281-8"><a href="data-types-part-1.html#cb281-8" tabindex="-1"></a>  <span class="at">name =</span> ns,</span>
+<span id="cb281-9"><a href="data-types-part-1.html#cb281-9" tabindex="-1"></a>  <span class="at">age =</span> as,</span>
+<span id="cb281-10"><a href="data-types-part-1.html#cb281-10" tabindex="-1"></a>  <span class="at">smoker =</span> ss</span>
+<span id="cb281-11"><a href="data-types-part-1.html#cb281-11" tabindex="-1"></a>)</span>
+<span id="cb281-12"><a href="data-types-part-1.html#cb281-12" tabindex="-1"></a>d</span></code></pre></div>
 <pre><code>##   name age smoker
 ## A  Amy  40   TRUE
 ## B  Bob  NA     NA
 ## D  Dan   6  FALSE
 ## E  Eve  16  FALSE</code></pre>
 <p>The class of <code>d</code> is:</p>
-<div class="sourceCode" id="cb283"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb283-1"><a href="data-types-part-1.html#cb283-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb283"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb283-1"><a href="data-types-part-1.html#cb283-1" tabindex="-1"></a><span class="fu">class</span>( d )</span></code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
 <p>Function <code>str</code> gives a compact display of an object structure/content:</p>
-<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="data-types-part-1.html#cb285-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="data-types-part-1.html#cb285-1" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    4 obs. of  3 variables:
 ##  $ name  : chr  &quot;Amy&quot; &quot;Bob&quot; &quot;Dan&quot; &quot;Eve&quot;
 ##  $ age   : num  40 NA 6 16
@@ -733,10 +733,10 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="tsv-file" class="section level5 hasAnchor" number="2.3.2.2.1">
 <h5><span class="header-section-number">2.3.2.2.1</span> TSV file<a href="data-types-part-1.html#tsv-file" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>For files stored in <a href="https://en.wikipedia.org/wiki/Tab-separated_values">tab-separated files (<code>tsv</code>) format</a> use:</p>
-<div class="sourceCode" id="cb287"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb287-1"><a href="data-types-part-1.html#cb287-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.table</span>( <span class="st">&quot;data/pulse.tsv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb287"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb287-1"><a href="data-types-part-1.html#cb287-1" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.table</span>( <span class="st">&quot;data/pulse.tsv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span> )</span></code></pre></div>
 <pre><code># To get &#39;pulse.tsv&#39; directly from the server, use:
 # d &lt;- read.table( url( &quot;/tree/master/data/pulse.tsv&quot; ), header = TRUE, sep = &quot;\t&quot; )</code></pre>
-<div class="sourceCode" id="cb289"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb289-1"><a href="data-types-part-1.html#cb289-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb289"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb289-1"><a href="data-types-part-1.html#cb289-1" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    110 obs. of  12 variables:
 ##  $ name    : chr  &quot;Bonnie&quot; &quot;Melanie&quot; &quot;Consuelo&quot; &quot;Travis&quot; ...
 ##  $ height  : int  173 179 167 195 173 184 162 169 164 168 ...
@@ -754,10 +754,10 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="csv-file" class="section level5 hasAnchor" number="2.3.2.2.2">
 <h5><span class="header-section-number">2.3.2.2.2</span> CSV file<a href="data-types-part-1.html#csv-file" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Data frames (tables) stored in files in <a href="https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values (<code>csv</code>) format</a> can be read with:</p>
-<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="data-types-part-1.html#cb291-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>( <span class="st">&quot;data/pulse.csv&quot;</span> );</span></code></pre></div>
+<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="data-types-part-1.html#cb291-1" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>( <span class="st">&quot;data/pulse.csv&quot;</span> );</span></code></pre></div>
 <pre><code># To get &#39;pulse.csv&#39; directly from the server, use:
 # d &lt;- read.csv( url( &quot;/tree/master/data/pulse.csv&quot; ) )</code></pre>
-<div class="sourceCode" id="cb293"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb293-1"><a href="data-types-part-1.html#cb293-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb293"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb293-1"><a href="data-types-part-1.html#cb293-1" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    110 obs. of  13 variables:
 ##  $ id      : chr  &quot;1993_A&quot; &quot;1993_B&quot; &quot;1993_C&quot; &quot;1993_D&quot; ...
 ##  $ name    : chr  &quot;Bonnie&quot; &quot;Melanie&quot; &quot;Consuelo&quot; &quot;Travis&quot; ...
@@ -778,10 +778,10 @@ R vectors keep the first element at index 1 and the last element at index which 
 <p>Reading Microsoft Excel files requires an additional library/package, which needs to be installed first. There exists several packages providing reading of Excel files.</p>
 <div id="with-package-readxl" class="section level6 hasAnchor" number="2.3.2.2.3.1">
 <h6><span class="header-section-number">2.3.2.2.3.1</span> (*) With package readxl<a href="data-types-part-1.html#with-package-readxl" class="anchor-section" aria-label="Anchor link to header"></a></h6>
-<div class="sourceCode" id="cb295"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb295-1"><a href="data-types-part-1.html#cb295-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages( &quot;readxl&quot; )</span></span>
-<span id="cb295-2"><a href="data-types-part-1.html#cb295-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( readxl );</span>
-<span id="cb295-3"><a href="data-types-part-1.html#cb295-3" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read_excel</span>( <span class="st">&quot;data/pulse.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">1</span> );</span>
-<span id="cb295-4"><a href="data-types-part-1.html#cb295-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d );</span></code></pre></div>
+<div class="sourceCode" id="cb295"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb295-1"><a href="data-types-part-1.html#cb295-1" tabindex="-1"></a><span class="co"># install.packages( &quot;readxl&quot; )</span></span>
+<span id="cb295-2"><a href="data-types-part-1.html#cb295-2" tabindex="-1"></a><span class="fu">library</span>( readxl );</span>
+<span id="cb295-3"><a href="data-types-part-1.html#cb295-3" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read_excel</span>( <span class="st">&quot;data/pulse.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">1</span> );</span>
+<span id="cb295-4"><a href="data-types-part-1.html#cb295-4" tabindex="-1"></a><span class="fu">str</span>( d );</span></code></pre></div>
 <pre><code>## tibble [110 × 13] (S3: tbl_df/tbl/data.frame)
 ##  $ id      : chr [1:110] &quot;1993_A&quot; &quot;1993_B&quot; &quot;1993_C&quot; &quot;1993_D&quot; ...
 ##  $ name    : chr [1:110] &quot;Bonnie&quot; &quot;Melanie&quot; &quot;Consuelo&quot; &quot;Travis&quot; ...
@@ -800,19 +800,19 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="with-package-gdata" class="section level6 hasAnchor" number="2.3.2.2.3.2">
 <h6><span class="header-section-number">2.3.2.2.3.2</span> (*) With package gdata<a href="data-types-part-1.html#with-package-gdata" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 <p>Please note that <code>gdata</code> package requires additional PERL packages to be installed; <code>readxl</code> seems to be easier to use.</p>
-<div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="data-types-part-1.html#cb297-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages( &quot;gdata&quot; )</span></span>
-<span id="cb297-2"><a href="data-types-part-1.html#cb297-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( gdata )</span>
-<span id="cb297-3"><a href="data-types-part-1.html#cb297-3" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.xls</span>( <span class="st">&quot;data/pulse.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">1</span> )</span>
-<span id="cb297-4"><a href="data-types-part-1.html#cb297-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="data-types-part-1.html#cb297-1" tabindex="-1"></a><span class="co"># install.packages( &quot;gdata&quot; )</span></span>
+<span id="cb297-2"><a href="data-types-part-1.html#cb297-2" tabindex="-1"></a><span class="fu">library</span>( gdata )</span>
+<span id="cb297-3"><a href="data-types-part-1.html#cb297-3" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.xls</span>( <span class="st">&quot;data/pulse.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="dv">1</span> )</span>
+<span id="cb297-4"><a href="data-types-part-1.html#cb297-4" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
 </div>
 </div>
 </div>
 <div id="spss-files" class="section level4 hasAnchor" number="2.3.2.3">
 <h4><span class="header-section-number">2.3.2.3</span> (*) SPSS files<a href="data-types-part-1.html#spss-files" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Reading SPSS files requires an additional library/package <code>foreign</code> (normally installed with R distribution).</p>
-<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="data-types-part-1.html#cb298-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( foreign )</span>
-<span id="cb298-2"><a href="data-types-part-1.html#cb298-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.spss</span>( <span class="st">&quot;data/pulse.sav&quot;</span>, <span class="at">to.data.frame =</span> <span class="cn">TRUE</span> )</span>
-<span id="cb298-3"><a href="data-types-part-1.html#cb298-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
+<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="data-types-part-1.html#cb298-1" tabindex="-1"></a><span class="fu">library</span>( foreign )</span>
+<span id="cb298-2"><a href="data-types-part-1.html#cb298-2" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read.spss</span>( <span class="st">&quot;data/pulse.sav&quot;</span>, <span class="at">to.data.frame =</span> <span class="cn">TRUE</span> )</span>
+<span id="cb298-3"><a href="data-types-part-1.html#cb298-3" tabindex="-1"></a><span class="fu">str</span>( d )</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    110 obs. of  13 variables:
 ##  $ id      : chr  &quot;1993_A&quot; &quot;1993_B&quot; &quot;1993_C&quot; &quot;1993_D&quot; ...
 ##  $ name    : chr  &quot;Bonnie     &quot; &quot;Melanie    &quot; &quot;Consuelo   &quot; &quot;Travis     &quot; ...
@@ -833,41 +833,41 @@ R vectors keep the first element at index 1 and the last element at index which 
 <div id="properties" class="section level3 hasAnchor" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Properties<a href="data-types-part-1.html#properties" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Let’s discuss the data frame <code>pulse</code>:</p>
-<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="data-types-part-1.html#cb300-1" aria-hidden="true" tabindex="-1"></a>pulse <span class="ot">&lt;-</span> <span class="fu">read.table</span>( <span class="st">&quot;data/pulse.txt&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="data-types-part-1.html#cb300-1" tabindex="-1"></a>pulse <span class="ot">&lt;-</span> <span class="fu">read.table</span>( <span class="st">&quot;data/pulse.txt&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span> )</span></code></pre></div>
 <pre><code># To get &#39;pulse.txt&#39; directly from the server, use:
 # pulse &lt;- read.table( url( &quot;/tree/master/data/pulse.txt&quot; ), header = TRUE, sep = &quot;\t&quot; )</code></pre>
 <p>To shorten output we will use the first 20 rows of the <code>pulse</code> data frame:</p>
-<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="data-types-part-1.html#cb302-1" aria-hidden="true" tabindex="-1"></a>pulse <span class="ot">&lt;-</span> <span class="fu">head</span>( pulse, <span class="dv">20</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="data-types-part-1.html#cb302-1" tabindex="-1"></a>pulse <span class="ot">&lt;-</span> <span class="fu">head</span>( pulse, <span class="dv">20</span> )</span></code></pre></div>
 <div id="dimensions-1" class="section level4 hasAnchor" number="2.3.3.1">
 <h4><span class="header-section-number">2.3.3.1</span> Dimensions<a href="data-types-part-1.html#dimensions-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>There are several functions to get dimensions of a data frame:</p>
 <ul>
 <li><code>ncol( pulse )</code> provides the number of columns:</li>
 </ul>
-<div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="data-types-part-1.html#cb303-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="data-types-part-1.html#cb303-1" tabindex="-1"></a><span class="fu">ncol</span>( pulse )</span></code></pre></div>
 <pre><code>## [1] 12</code></pre>
 <ul>
 <li><code>nrow( pulse )</code> provides the number of rows:</li>
 </ul>
-<div class="sourceCode" id="cb305"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb305-1"><a href="data-types-part-1.html#cb305-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb305"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb305-1"><a href="data-types-part-1.html#cb305-1" tabindex="-1"></a><span class="fu">nrow</span>( pulse )</span></code></pre></div>
 <pre><code>## [1] 20</code></pre>
 <ul>
 <li><code>dim( pulse )</code> returns a vector with two elements: number of rows and number of columns</li>
 </ul>
-<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="data-types-part-1.html#cb307-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="data-types-part-1.html#cb307-1" tabindex="-1"></a><span class="fu">dim</span>( pulse )</span></code></pre></div>
 <pre><code>## [1] 20 12</code></pre>
 </div>
 <div id="columnsrows-names" class="section level4 hasAnchor" number="2.3.3.2">
 <h4><span class="header-section-number">2.3.3.2</span> Columns/rows names<a href="data-types-part-1.html#columnsrows-names" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><code>colnames()</code> is used to get the names of the columns. In data frames, the same result is returned by <code>names()</code>:</p>
-<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="data-types-part-1.html#cb309-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="data-types-part-1.html#cb309-1" tabindex="-1"></a><span class="fu">colnames</span>( pulse )</span></code></pre></div>
 <pre><code>##  [1] &quot;name&quot;     &quot;height&quot;   &quot;weight&quot;   &quot;age&quot;      &quot;gender&quot;   &quot;smokes&quot;  
 ##  [7] &quot;alcohol&quot;  &quot;exercise&quot; &quot;ran&quot;      &quot;pulse1&quot;   &quot;pulse2&quot;   &quot;year&quot;</code></pre>
-<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="data-types-part-1.html#cb311-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="data-types-part-1.html#cb311-1" tabindex="-1"></a><span class="fu">names</span>( pulse )</span></code></pre></div>
 <pre><code>##  [1] &quot;name&quot;     &quot;height&quot;   &quot;weight&quot;   &quot;age&quot;      &quot;gender&quot;   &quot;smokes&quot;  
 ##  [7] &quot;alcohol&quot;  &quot;exercise&quot; &quot;ran&quot;      &quot;pulse1&quot;   &quot;pulse2&quot;   &quot;year&quot;</code></pre>
 <p>To get names of the rows use:</p>
-<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="data-types-part-1.html#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>( pulse )</span></code></pre></div>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="data-types-part-1.html#cb313-1" tabindex="-1"></a><span class="fu">rownames</span>( pulse )</span></code></pre></div>
 <pre><code>##  [1] &quot;1993_A&quot; &quot;1993_B&quot; &quot;1993_C&quot; &quot;1993_D&quot; &quot;1993_E&quot; &quot;1993_F&quot; &quot;1993_G&quot; &quot;1993_H&quot;
 ##  [9] &quot;1993_I&quot; &quot;1993_J&quot; &quot;1993_K&quot; &quot;1993_L&quot; &quot;1993_M&quot; &quot;1993_N&quot; &quot;1993_O&quot; &quot;1993_P&quot;
 ## [17] &quot;1993_Q&quot; &quot;1993_R&quot; &quot;1993_S&quot; &quot;1993_T&quot;</code></pre>
@@ -887,35 +887,35 @@ When a single column is requested, should it be:
 - a vector with the column elements (so, a 1-dimensional structure)?
 - a data frame with a single column (so, a 2-dimensional structure)? -->
 <p>We can illustrate this by creating a vector with the <code>height</code> variable of the <code>pulse</code> data, using both syntaxes:</p>
-<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="data-types-part-1.html#cb315-1" aria-hidden="true" tabindex="-1"></a>height1 <span class="ot">&lt;-</span> pulse[ <span class="st">&quot;height&quot;</span> ]</span>
-<span id="cb315-2"><a href="data-types-part-1.html#cb315-2" aria-hidden="true" tabindex="-1"></a>height2 <span class="ot">&lt;-</span> pulse[, <span class="st">&quot;height&quot;</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="data-types-part-1.html#cb315-1" tabindex="-1"></a>height1 <span class="ot">&lt;-</span> pulse[ <span class="st">&quot;height&quot;</span> ]</span>
+<span id="cb315-2"><a href="data-types-part-1.html#cb315-2" tabindex="-1"></a>height2 <span class="ot">&lt;-</span> pulse[, <span class="st">&quot;height&quot;</span> ]</span></code></pre></div>
 <p>Now check the class of the objects created:</p>
-<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="data-types-part-1.html#cb316-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(height1) </span></code></pre></div>
+<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="data-types-part-1.html#cb316-1" tabindex="-1"></a><span class="fu">class</span>(height1) </span></code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
-<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="data-types-part-1.html#cb318-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(height2) </span></code></pre></div>
+<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="data-types-part-1.html#cb318-1" tabindex="-1"></a><span class="fu">class</span>(height2) </span></code></pre></div>
 <pre><code>## [1] &quot;integer&quot;</code></pre>
 <p>So, by extracting one column of <code>pulse</code>using the syntax <code>[, columnName]</code>, a vector is created</p>
 <div id="dollar-operator" class="section level4 hasAnchor" number="2.3.4.1">
 <h4><span class="header-section-number">2.3.4.1</span> Dollar operator<a href="data-types-part-1.html#dollar-operator" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The <code>$</code> method returns a <em>single</em> column as a <em>vector</em>:</p>
-<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="data-types-part-1.html#cb320-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>weight</span></code></pre></div>
+<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="data-types-part-1.html#cb320-1" tabindex="-1"></a>pulse<span class="sc">$</span>weight</span></code></pre></div>
 <pre><code>##  [1]  57  58  62  84  64  74  57  55  56  60  75  58  68  59  72 110  56  70  56
 ## [20]  50</code></pre>
 <p>When the column name is valid the returned value is a <em>vector</em>:</p>
-<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="data-types-part-1.html#cb322-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( pulse<span class="sc">$</span>weight )</span></code></pre></div>
+<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="data-types-part-1.html#cb322-1" tabindex="-1"></a><span class="fu">class</span>( pulse<span class="sc">$</span>weight )</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
 <p>When the name is invalid, <code>NULL</code> is returned:</p>
-<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="data-types-part-1.html#cb324-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>wrong</span></code></pre></div>
+<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="data-types-part-1.html#cb324-1" tabindex="-1"></a>pulse<span class="sc">$</span>wrong</span></code></pre></div>
 <pre><code>## NULL</code></pre>
 <p>Be careful, the <code>$</code> notation searches for a column name starting with a provided prefix:</p>
-<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="data-types-part-1.html#cb326-1" aria-hidden="true" tabindex="-1"></a>pulse<span class="sc">$</span>we</span></code></pre></div>
+<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="data-types-part-1.html#cb326-1" tabindex="-1"></a>pulse<span class="sc">$</span>we</span></code></pre></div>
 <pre><code>##  [1]  57  58  62  84  64  74  57  55  56  60  75  58  68  59  72 110  56  70  56
 ## [20]  50</code></pre>
 </div>
 <div id="square-brackets-operator-single-argument" class="section level4 hasAnchor" number="2.3.4.2">
 <h4><span class="header-section-number">2.3.4.2</span> Square brackets operator, single argument<a href="data-types-part-1.html#square-brackets-operator-single-argument" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Square brackets notation with a single argument return requested columns as a <em>data frame</em> (compare to the dollar operator section):</p>
-<div class="sourceCode" id="cb328"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb328-1"><a href="data-types-part-1.html#cb328-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="st">&#39;weight&#39;</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb328"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb328-1"><a href="data-types-part-1.html#cb328-1" tabindex="-1"></a>pulse[ <span class="st">&#39;weight&#39;</span> ]</span></code></pre></div>
 <pre><code>##        weight
 ## 1993_A     57
 ## 1993_B     58
@@ -937,9 +937,9 @@ When a single column is requested, should it be:
 ## 1993_R     70
 ## 1993_S     56
 ## 1993_T     50</code></pre>
-<div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="data-types-part-1.html#cb330-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( pulse[ <span class="st">&#39;weight&#39;</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="data-types-part-1.html#cb330-1" tabindex="-1"></a><span class="fu">class</span>( pulse[ <span class="st">&#39;weight&#39;</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
-<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="data-types-part-1.html#cb332-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="dv">3</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="data-types-part-1.html#cb332-1" tabindex="-1"></a>pulse[ <span class="dv">3</span> ]</span></code></pre></div>
 <pre><code>##        weight
 ## 1993_A     57
 ## 1993_B     58
@@ -961,10 +961,10 @@ When a single column is requested, should it be:
 ## 1993_R     70
 ## 1993_S     56
 ## 1993_T     50</code></pre>
-<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="data-types-part-1.html#cb334-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( pulse[ <span class="dv">3</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="data-types-part-1.html#cb334-1" tabindex="-1"></a><span class="fu">class</span>( pulse[ <span class="dv">3</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
 <p>Since the returned object is a <code>data.frame</code>, multiple columns might be returned (for example in a different order):</p>
-<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="data-types-part-1.html#cb336-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="data-types-part-1.html#cb336-1" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##        height weight
 ## 1993_A    173     57
 ## 1993_B    179     58
@@ -987,23 +987,23 @@ When a single column is requested, should it be:
 ## 1993_S    166     56
 ## 1993_T    155     50</code></pre>
 <p>When a name is invalid, an error is produced:</p>
-<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="data-types-part-1.html#cb338-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="st">&#39;wrong&#39;</span> ]</span></code></pre></div>
-<pre><code>## Error in `[.data.frame`(pulse, &quot;wrong&quot;): undefined columns selected</code></pre>
+<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="data-types-part-1.html#cb338-1" tabindex="-1"></a>pulse[ <span class="st">&#39;wrong&#39;</span> ]</span></code></pre></div>
+<pre><code>## Error in `[.data.frame`(pulse, &quot;wrong&quot;): colonnes non définies sélectionnées</code></pre>
 </div>
 <div id="square-brackets-operator-two-arguments" class="section level4 hasAnchor" number="2.3.4.3">
 <h4><span class="header-section-number">2.3.4.3</span> Square brackets operator, two arguments<a href="data-types-part-1.html#square-brackets-operator-two-arguments" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Single brackets notation with two arguments <code>[ row(s), col(s) ]</code> might be used to get (multiple) row(s) and (multiple) column(s):</p>
-<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="data-types-part-1.html#cb340-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="dv">1</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="data-types-part-1.html#cb340-1" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="dv">1</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##        height weight
 ## 1993_A    173     57
 ## 1993_C    167     62</code></pre>
-<div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="data-types-part-1.html#cb342-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&quot;1993_C&quot;</span>, <span class="st">&quot;1993_A&quot;</span>, <span class="st">&quot;wrong&quot;</span> ), <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="data-types-part-1.html#cb342-1" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&quot;1993_C&quot;</span>, <span class="st">&quot;1993_A&quot;</span>, <span class="st">&quot;wrong&quot;</span> ), <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##        height weight
 ## 1993_C    167     62
 ## 1993_A    173     57
 ## NA         NA     NA</code></pre>
 <p>Warning: notice the difference of the class of the output when only a single column is requested:</p>
-<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="data-types-part-1.html#cb344-1" aria-hidden="true" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="data-types-part-1.html#cb344-1" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##        height weight
 ## 1993_A    173     57
 ## 1993_B    179     58
@@ -1025,15 +1025,15 @@ When a single column is requested, should it be:
 ## 1993_R    180     70
 ## 1993_S    166     56
 ## 1993_T    155     50</code></pre>
-<div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="data-types-part-1.html#cb346-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ] )</span></code></pre></div>
+<div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="data-types-part-1.html#cb346-1" tabindex="-1"></a><span class="fu">class</span>( pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ] )</span></code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
-<div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="data-types-part-1.html#cb348-1" aria-hidden="true" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="data-types-part-1.html#cb348-1" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##  [1]  57  58  62  84  64  74  57  55  56  60  75  58  68  59  72 110  56  70  56
 ## [20]  50</code></pre>
-<div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="data-types-part-1.html#cb350-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( pulse[ , <span class="fu">c</span>( <span class="st">&#39;weight&#39;</span> ) ] )</span></code></pre></div>
+<div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="data-types-part-1.html#cb350-1" tabindex="-1"></a><span class="fu">class</span>( pulse[ , <span class="fu">c</span>( <span class="st">&#39;weight&#39;</span> ) ] )</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
 <p>Empty index field means “all” rows or columns:</p>
-<div class="sourceCode" id="cb352"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb352-1"><a href="data-types-part-1.html#cb352-1" aria-hidden="true" tabindex="-1"></a>pulse[ , ]</span></code></pre></div>
+<div class="sourceCode" id="cb352"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb352-1"><a href="data-types-part-1.html#cb352-1" tabindex="-1"></a>pulse[ , ]</span></code></pre></div>
 <pre><code>##             name height weight age gender smokes alcohol exercise ran pulse1
 ## 1993_A    Bonnie    173     57  18 female     no     yes moderate sat     86
 ## 1993_B   Melanie    179     58  19 female     no     yes moderate ran     82
@@ -1076,7 +1076,7 @@ When a single column is requested, should it be:
 ## 1993_R    146 1993
 ## 1993_S     79 1993
 ## 1993_T     79 1993</code></pre>
-<div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="data-types-part-1.html#cb354-1" aria-hidden="true" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="data-types-part-1.html#cb354-1" tabindex="-1"></a>pulse[ , <span class="fu">c</span>( <span class="st">&#39;height&#39;</span>, <span class="st">&#39;weight&#39;</span> ) ]</span></code></pre></div>
 <pre><code>##        height weight
 ## 1993_A    173     57
 ## 1993_B    179     58
@@ -1098,7 +1098,7 @@ When a single column is requested, should it be:
 ## 1993_R    180     70
 ## 1993_S    166     56
 ## 1993_T    155     50</code></pre>
-<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="data-types-part-1.html#cb356-1" aria-hidden="true" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&quot;1993_C&quot;</span>, <span class="st">&quot;1993_A&quot;</span> ), ]</span></code></pre></div>
+<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="data-types-part-1.html#cb356-1" tabindex="-1"></a>pulse[ <span class="fu">c</span>( <span class="st">&quot;1993_C&quot;</span>, <span class="st">&quot;1993_A&quot;</span> ), ]</span></code></pre></div>
 <pre><code>##            name height weight age gender smokes alcohol exercise ran pulse1
 ## 1993_C Consuelo    167     62  18 female     no     yes     high ran     96
 ## 1993_A   Bonnie    173     57  18 female     no     yes moderate sat     86
@@ -1119,9 +1119,9 @@ When a single column is requested, should it be:
 <div id="what-is-a-matrix" class="section level3 hasAnchor" number="2.4.1">
 <h3><span class="header-section-number">2.4.1</span> What is a matrix<a href="data-types-part-1.html#what-is-a-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <center>
-<div class="figure">
-<img src="figure/Data_types_mdfl.png" alt="" />
-<p class="caption">Vectors</p>
+<div class="float">
+<img src="figure/Data_types_mdfl.png" alt="Vectors" />
+<div class="figcaption">Vectors</div>
 </div>
 </center>
 <p>Matrix is a two-dimensional array of elements of the same type.</p>
@@ -1131,27 +1131,27 @@ When a single column is requested, should it be:
 <div id="creation" class="section level3 hasAnchor" number="2.4.2">
 <h3><span class="header-section-number">2.4.2</span> Creation<a href="data-types-part-1.html#creation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A matrix can be constructed from a vector. Depending on the arguments, elements are put to the matrix in a different order:</p>
-<div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="data-types-part-1.html#cb358-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span> );</span>
-<span id="cb358-2"><a href="data-types-part-1.html#cb358-2" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="data-types-part-1.html#cb358-1" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span> );</span>
+<span id="cb358-2"><a href="data-types-part-1.html#cb358-2" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    3    5
 ## [2,]    2    4    6</code></pre>
-<div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb360-1"><a href="data-types-part-1.html#cb360-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span> );</span>
-<span id="cb360-2"><a href="data-types-part-1.html#cb360-2" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb360-1"><a href="data-types-part-1.html#cb360-1" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span> );</span>
+<span id="cb360-2"><a href="data-types-part-1.html#cb360-2" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    2    3
 ## [2,]    4    5    6</code></pre>
-<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="data-types-part-1.html#cb362-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ncol =</span> <span class="dv">2</span> );</span>
-<span id="cb362-2"><a href="data-types-part-1.html#cb362-2" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="data-types-part-1.html#cb362-1" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ncol =</span> <span class="dv">2</span> );</span>
+<span id="cb362-2"><a href="data-types-part-1.html#cb362-2" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##      [,1] [,2]
 ## [1,]    1    4
 ## [2,]    2    5
 ## [3,]    3    6</code></pre>
 <p>The class of <code>m</code> is:</p>
-<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="data-types-part-1.html#cb364-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="data-types-part-1.html#cb364-1" tabindex="-1"></a><span class="fu">class</span>( m )</span></code></pre></div>
 <pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
 <p>Function <code>str</code> gives a compact display of an object structure/content:</p>
-<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="data-types-part-1.html#cb366-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="data-types-part-1.html#cb366-1" tabindex="-1"></a><span class="fu">str</span>( m )</span></code></pre></div>
 <pre><code>##  int [1:3, 1:2] 1 2 3 4 5 6</code></pre>
 </div>
 <div id="dimensions-2" class="section level3 hasAnchor" number="2.4.3">
@@ -1160,86 +1160,86 @@ When a single column is requested, should it be:
 <ul>
 <li><code>ncol( m )</code> provides the number of columns:</li>
 </ul>
-<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb368-1"><a href="data-types-part-1.html#cb368-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb368-1"><a href="data-types-part-1.html#cb368-1" tabindex="-1"></a><span class="fu">ncol</span>( m )</span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <ul>
 <li><code>nrow( m )</code> provides the number of rows:</li>
 </ul>
-<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="data-types-part-1.html#cb370-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="data-types-part-1.html#cb370-1" tabindex="-1"></a><span class="fu">nrow</span>( m )</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
 <ul>
 <li><code>dim( m )</code> returns a vector with two elements: number of rows and number of columns</li>
 </ul>
-<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="data-types-part-1.html#cb372-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="data-types-part-1.html#cb372-1" tabindex="-1"></a><span class="fu">dim</span>( m )</span></code></pre></div>
 <pre><code>## [1] 3 2</code></pre>
 </div>
 <div id="settinggetting-names-of-the-columns-and-rows" class="section level3 hasAnchor" number="2.4.4">
 <h3><span class="header-section-number">2.4.4</span> Setting/getting names of the columns and rows<a href="data-types-part-1.html#settinggetting-names-of-the-columns-and-rows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>colnames( m )</code> and <code>rownames( m )</code> are used to set and get the names of matrix columns and rows:</p>
-<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="data-types-part-1.html#cb374-1" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="data-types-part-1.html#cb374-1" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##      [,1] [,2]
 ## [1,]    1    4
 ## [2,]    2    5
 ## [3,]    3    6</code></pre>
-<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="data-types-part-1.html#cb376-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span> )</span>
-<span id="cb376-2"><a href="data-types-part-1.html#cb376-2" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="data-types-part-1.html#cb376-1" tabindex="-1"></a><span class="fu">colnames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span> )</span>
+<span id="cb376-2"><a href="data-types-part-1.html#cb376-2" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##      A B
 ## [1,] 1 4
 ## [2,] 2 5
 ## [3,] 3 6</code></pre>
-<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="data-types-part-1.html#cb378-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>, <span class="st">&quot;Z&quot;</span> )</span>
-<span id="cb378-2"><a href="data-types-part-1.html#cb378-2" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="data-types-part-1.html#cb378-1" tabindex="-1"></a><span class="fu">rownames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>, <span class="st">&quot;Z&quot;</span> )</span>
+<span id="cb378-2"><a href="data-types-part-1.html#cb378-2" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
 ## Z 3 6</code></pre>
 <p>To get names use:</p>
-<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="data-types-part-1.html#cb380-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="data-types-part-1.html#cb380-1" tabindex="-1"></a><span class="fu">rownames</span>( m )</span></code></pre></div>
 <pre><code>## [1] &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
-<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="data-types-part-1.html#cb382-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="data-types-part-1.html#cb382-1" tabindex="-1"></a><span class="fu">colnames</span>( m )</span></code></pre></div>
 <pre><code>## [1] &quot;A&quot; &quot;B&quot;</code></pre>
 </div>
 <div id="getting-matrix-elements" class="section level3 hasAnchor" number="2.4.5">
 <h3><span class="header-section-number">2.4.5</span> Getting matrix elements<a href="data-types-part-1.html#getting-matrix-elements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Single brackets notation with two arguments <code>[ row(s), col(s) ]</code> might be used to get specified row(s) and column(s). By default single rows/cols will get reduced to a vector.</p>
-<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="data-types-part-1.html#cb384-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="data-types-part-1.html#cb384-1" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span> ]</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="data-types-part-1.html#cb386-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="dv">1</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="data-types-part-1.html#cb386-1" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="dv">1</span> ]</span></code></pre></div>
 <pre><code>## Y Z 
 ## 2 3</code></pre>
-<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="data-types-part-1.html#cb388-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="data-types-part-1.html#cb388-1" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
 <pre><code>##   B A
 ## Y 5 2
 ## Z 6 3</code></pre>
-<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="data-types-part-1.html#cb390-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="fu">c</span>( F, T, T ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="data-types-part-1.html#cb390-1" tabindex="-1"></a>m[ <span class="fu">c</span>( F, T, T ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
 <pre><code>##   B A
 ## Y 5 2
 ## Z 6 3</code></pre>
 <p>Notice the difference in the output class when only a single element is requested:</p>
-<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="data-types-part-1.html#cb392-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="dv">3</span>, <span class="dv">1</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="data-types-part-1.html#cb392-1" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="dv">3</span>, <span class="dv">1</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;integer&quot;</code></pre>
-<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="data-types-part-1.html#cb394-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ] )</span></code></pre></div>
+<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="data-types-part-1.html#cb394-1" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">3</span> ), <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ] )</span></code></pre></div>
 <pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
 <p>Dropping of <code>matrix</code> dimensionality might be prevented:</p>
-<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="data-types-part-1.html#cb396-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="data-types-part-1.html#cb396-1" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span> ]</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="data-types-part-1.html#cb398-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span>, drop <span class="ot">=</span> <span class="cn">FALSE</span> ]</span></code></pre></div>
+<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="data-types-part-1.html#cb398-1" tabindex="-1"></a>m[ <span class="dv">3</span>, <span class="dv">1</span>, drop <span class="ot">=</span> <span class="cn">FALSE</span> ]</span></code></pre></div>
 <pre><code>##   A
 ## Z 3</code></pre>
-<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="data-types-part-1.html#cb400-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="dv">3</span>, <span class="dv">1</span>, <span class="at">drop =</span> <span class="cn">FALSE</span> ] )</span></code></pre></div>
+<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="data-types-part-1.html#cb400-1" tabindex="-1"></a><span class="fu">class</span>( m[ <span class="dv">3</span>, <span class="dv">1</span>, <span class="at">drop =</span> <span class="cn">FALSE</span> ] )</span></code></pre></div>
 <pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
 <p>Empty index field means “all” rows or columns:</p>
-<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="data-types-part-1.html#cb402-1" aria-hidden="true" tabindex="-1"></a>m[ , <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
+<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="data-types-part-1.html#cb402-1" tabindex="-1"></a>m[ , <span class="fu">c</span>( <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span> ) ]</span></code></pre></div>
 <pre><code>##   B A
 ## X 4 1
 ## Y 5 2
 ## Z 6 3</code></pre>
-<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="data-types-part-1.html#cb404-1" aria-hidden="true" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="st">&quot;Z&quot;</span>, <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span> ), ]</span></code></pre></div>
+<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="data-types-part-1.html#cb404-1" tabindex="-1"></a>m[ <span class="fu">c</span>( <span class="st">&quot;Z&quot;</span>, <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span> ), ]</span></code></pre></div>
 <pre><code>##   A B
 ## Z 3 6
 ## X 1 4
 ## Y 2 5</code></pre>
-<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb406-1"><a href="data-types-part-1.html#cb406-1" aria-hidden="true" tabindex="-1"></a>m[ , ]</span></code></pre></div>
+<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb406-1"><a href="data-types-part-1.html#cb406-1" tabindex="-1"></a>m[ , ]</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
@@ -1250,51 +1250,51 @@ When a single column is requested, should it be:
 <p>Short summary of matrix operations: <a href="http://www.statmethods.net/advstats/matrix.html" class="uri">http://www.statmethods.net/advstats/matrix.html</a></p>
 <div id="rowcolumns-meanssums" class="section level4 hasAnchor" number="2.4.6.1">
 <h4><span class="header-section-number">2.4.6.1</span> Row/columns means/sums<a href="data-types-part-1.html#rowcolumns-meanssums" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb408-1"><a href="data-types-part-1.html#cb408-1" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb408-1"><a href="data-types-part-1.html#cb408-1" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
 ## Z 3 6</code></pre>
-<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb410-1"><a href="data-types-part-1.html#cb410-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rowMeans</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb410-1"><a href="data-types-part-1.html#cb410-1" tabindex="-1"></a><span class="fu">rowMeans</span>( m )</span></code></pre></div>
 <pre><code>##   X   Y   Z 
 ## 2.5 3.5 4.5</code></pre>
-<div class="sourceCode" id="cb412"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb412-1"><a href="data-types-part-1.html#cb412-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rowSums</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb412"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb412-1"><a href="data-types-part-1.html#cb412-1" tabindex="-1"></a><span class="fu">rowSums</span>( m )</span></code></pre></div>
 <pre><code>## X Y Z 
 ## 5 7 9</code></pre>
-<div class="sourceCode" id="cb414"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb414-1"><a href="data-types-part-1.html#cb414-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colMeans</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb414"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb414-1"><a href="data-types-part-1.html#cb414-1" tabindex="-1"></a><span class="fu">colMeans</span>( m )</span></code></pre></div>
 <pre><code>## A B 
 ## 2 5</code></pre>
-<div class="sourceCode" id="cb416"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb416-1"><a href="data-types-part-1.html#cb416-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb416"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb416-1"><a href="data-types-part-1.html#cb416-1" tabindex="-1"></a><span class="fu">colSums</span>( m )</span></code></pre></div>
 <pre><code>##  A  B 
 ##  6 15</code></pre>
 </div>
 <div id="transposition" class="section level4 hasAnchor" number="2.4.6.2">
 <h4><span class="header-section-number">2.4.6.2</span> (*) Transposition<a href="data-types-part-1.html#transposition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb418"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb418-1"><a href="data-types-part-1.html#cb418-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">3</span> );</span>
-<span id="cb418-2"><a href="data-types-part-1.html#cb418-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span> )</span>
-<span id="cb418-3"><a href="data-types-part-1.html#cb418-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>, <span class="st">&quot;Z&quot;</span> )</span>
-<span id="cb418-4"><a href="data-types-part-1.html#cb418-4" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb418"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb418-1"><a href="data-types-part-1.html#cb418-1" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">3</span> );</span>
+<span id="cb418-2"><a href="data-types-part-1.html#cb418-2" tabindex="-1"></a><span class="fu">colnames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span> )</span>
+<span id="cb418-3"><a href="data-types-part-1.html#cb418-3" tabindex="-1"></a><span class="fu">rownames</span>( m ) <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;X&quot;</span>, <span class="st">&quot;Y&quot;</span>, <span class="st">&quot;Z&quot;</span> )</span>
+<span id="cb418-4"><a href="data-types-part-1.html#cb418-4" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
 ## Z 3 6</code></pre>
-<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb420-1"><a href="data-types-part-1.html#cb420-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t</span>(m)</span></code></pre></div>
+<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb420-1"><a href="data-types-part-1.html#cb420-1" tabindex="-1"></a><span class="fu">t</span>(m)</span></code></pre></div>
 <pre><code>##   X Y Z
 ## A 1 2 3
 ## B 4 5 6</code></pre>
 </div>
 <div id="matrix-multiplication" class="section level4 hasAnchor" number="2.4.6.3">
 <h4><span class="header-section-number">2.4.6.3</span> (*) Matrix multiplication<a href="data-types-part-1.html#matrix-multiplication" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="data-types-part-1.html#cb422-1" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="data-types-part-1.html#cb422-1" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
 ## Z 3 6</code></pre>
-<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb424-1"><a href="data-types-part-1.html#cb424-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb424-1"><a href="data-types-part-1.html#cb424-1" tabindex="-1"></a><span class="fu">t</span>( m )</span></code></pre></div>
 <pre><code>##   X Y Z
 ## A 1 2 3
 ## B 4 5 6</code></pre>
-<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="data-types-part-1.html#cb426-1" aria-hidden="true" tabindex="-1"></a>m <span class="sc">%*%</span> <span class="fu">t</span>( m )</span></code></pre></div>
+<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="data-types-part-1.html#cb426-1" tabindex="-1"></a>m <span class="sc">%*%</span> <span class="fu">t</span>( m )</span></code></pre></div>
 <pre><code>##    X  Y  Z
 ## X 17 22 27
 ## Y 22 29 36
@@ -1302,17 +1302,17 @@ When a single column is requested, should it be:
 </div>
 <div id="element-wise-multiplication" class="section level4 hasAnchor" number="2.4.6.4">
 <h4><span class="header-section-number">2.4.6.4</span> (*) Element-wise multiplication<a href="data-types-part-1.html#element-wise-multiplication" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb428"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb428-1"><a href="data-types-part-1.html#cb428-1" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="sourceCode" id="cb428"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb428-1"><a href="data-types-part-1.html#cb428-1" tabindex="-1"></a>m</span></code></pre></div>
 <pre><code>##   A B
 ## X 1 4
 ## Y 2 5
 ## Z 3 6</code></pre>
-<div class="sourceCode" id="cb430"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb430-1"><a href="data-types-part-1.html#cb430-1" aria-hidden="true" tabindex="-1"></a>m<span class="sc">+</span><span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb430"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb430-1"><a href="data-types-part-1.html#cb430-1" tabindex="-1"></a>m<span class="sc">+</span><span class="dv">1</span></span></code></pre></div>
 <pre><code>##   A B
 ## X 2 5
 ## Y 3 6
 ## Z 4 7</code></pre>
-<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb432-1"><a href="data-types-part-1.html#cb432-1" aria-hidden="true" tabindex="-1"></a>m <span class="sc">*</span> (m<span class="sc">+</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb432-1"><a href="data-types-part-1.html#cb432-1" tabindex="-1"></a>m <span class="sc">*</span> (m<span class="sc">+</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>##    A  B
 ## X  2 20
 ## Y  6 30
