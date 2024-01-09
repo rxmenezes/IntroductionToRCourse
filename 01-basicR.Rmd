@@ -419,31 +419,32 @@ catLinkTaskSection( "exercisesBasics", "exercises/02_basics.Rmd" );
 
 ### Projects
 
-We are going to read our first data set into R. To structure this, we are going to make a `project`.
+We are going to read our first data set into R. To structure this, we are going to make a *project*. Projects are a feature of RStudio to: 
 
-#### Creating and opening a new project
-
-Choose File...New project...New directory... and create a new folder on your computer for this R course. Make sure this new folder is NOT within the course folder, to avoid confusion.
-
-RStudio has created a `.Rproj` file for you that you can use to open Rstudio. You end up in the right project immediately.
-
-Projects are a feature of RStudio to: 
-
-- organize all files and scripts that you need for a single project  
+- organize all files (scripts, data, output) that you need and generate for a single project  
 
 - keep files separate from other projects
 
+To keep files organized within a project folder, it is useful to have within the folder subfolders called *data*, *output* and *scripts*. 
+
+
+#### Creating and opening a new project
+
+Choose File...New project...New directory... and create a new folder on your computer for this R course. Make sure this new folder is NOT within the course folder, to avoid confusion. 
+
+RStudio then creates a `.Rproj` file for you that you can use to open Rstudio. By clicking on it, you end up in the right project immediately.
+
+
 *From now on in this course, you are going to do exercises within the new R course project you created.* This is to allow you to create scripts and make changes, which are discouraged in the course project to avoid problems.
 
-Look top right in the RStudio window to check which project you are working in. There, you can also switch between projects.
+On the top right of the RStudio window the project name you are working in is displayed. There, you can also switch between projects.
 
 
+#### Creating folders within a project
 
-#### Creating a folder
+In the new project, let us create a folder called  `data`.
 
-In our new project we are going to create a folder that contains our data sets
-
-Choose the files tab and click `new folder` to create a `data` folder, or type at the prompt
+Choose the files tab (by default on the bottom-right) and click `new folder` to create a `data` folder, or type at the prompt
 
 ```{r, eval=FALSE}
 dir.create('data')
@@ -457,7 +458,7 @@ Check in Rstudio that the files are indeed in the right folder.
 
 #### Quick exercises
 
-- Close RStudio and open it again. Check that you are in your new project.
+- Close RStudio and open it again. Check that you are in your new project
 
 - Create new folders in your new project, called `scripts` and `output`
 
@@ -480,11 +481,11 @@ pulse <- read.delim( "data/pulse.txt" )
 
 We added `data/` because the file is in the data subfolder we just created.
 
-Note that we assigned `<-` the result of `read.delim` to `pulse`. We have given our dataset the name `pulse`.
+Note that we assigned `<-` the result of `read.delim` to `pulse`. We have given our dataset the name `pulse` within R.
 
 #### View
 
-To check that you've read the data correctly 
+To check that you've read the data correctly, you may use:
 
 
 
@@ -500,11 +501,11 @@ catLinkTaskSection( "firstLoad", "exercises/03_projects_and_scripts.Rmd" );
 
 ### Scripts
 
-So far we have been typing at the prompt. What we type at the prompt is executed and lost. Using scripts allows repeating things and make our results reproducible.
+So far we have been typing at the prompt. What we type at the prompt is executed and lost. By using scripts we keep track of what we do/did and make our results reproducible.
 
 #### Making a script
 
-We will open an R  script File...New file...R script. An R script is just a text editor. Type some R code into the script
+We will open an R  script File...New file...R script. An R script is just a text editor. Type some R code into the script, for example:
 
 ```{r, eval=FALSE}
 2^6
@@ -518,15 +519,25 @@ x
 ```
 
 
-We can `run` (Ctrl+Enter) part of this code by sending it to the prompt. Check what happens if we run when
+We can `run` (Ctrl+Enter) part of this code by sending it to the prompt. Check what happens if we run when:
 
-- The cursor is in a line
-- We made a block of several lines
-- We made a block of part of a line
+- the cursor is in a line
+- we make a block of several lines
+- we made a block of part of a line
 
-If we use (Ctrl+Shift+Enter), the entire content of the R script file is run. We can do the same thing by using `source()` to run the whole script.
+If we use (Ctrl+Shift+Enter), the entire content of the R script file is run. 
 
-We can save a script. By default the file receives the `.R` extension.
+We can save a script. By default the file receives the `.R` extension. Save the current script you wrote within the `scripts` folder with your own chosen name (say, `myfile.R`). Note that you can now run the entire script by using `source()`.
+
+
+#### Quick exercise
+
+Run the script you just wrote by using `source()`:
+
+```{r eval = FALSE}
+source("scripts/myfile.R")
+```
+
 
 #### Using a script
 
