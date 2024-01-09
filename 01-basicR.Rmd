@@ -184,10 +184,9 @@ Hands-on at four levels:
 1. *Type with me*
 2. Mini-exercises briefly interrupt the lecture
 3. Longer exercises to do on your own
-4. Advanced exercises introduce advanced concepts for quick learners (optional)
+4. Optional (marked with '*'): advanced sections/exercises introduce advanced concepts for quick learners 
 
 Eight half-day slots.
-
 
 
 ## Basics
@@ -230,7 +229,19 @@ sqrt(10)             # square root
 log(10)              # natural logarithm
 ```
 
-Terminology: the _function_ (e.g. `log`) is applied to its _argument_ (e.g. `10`). The argument of a function is always between parentheses.
+Terminology: the _function_ (e.g. `log`) is applied to its _argument_ (e.g. `10`). 
+
+Syntax: when a function is called, its name is **always** followed by parenthesis:
+
+```{r}
+date() # to get current date and time
+```
+
+Any required arguments are given between parentheses:
+
+```{r}
+log( 2.718 )
+```
 
 Other useful functions 
 
@@ -244,6 +255,7 @@ Other useful functions
 Use up/down arrow to retrieve previous/next commands. Use Ctrl-R to see command history and type letters to select a line.
 
 Getting a `+` as a prompt means the command is not finished yet. Continue typing or press _Esc_.
+
 ```{r}
 5*(1+1
 )
@@ -273,8 +285,10 @@ my_calculation <- 6 + x
 ```
 
 To find out what the value of a variable is: type the name.
+
 ```{r}
 x
+my_calculation
 ```
 
 Rstudio has autocomplete (with `tab`). Useful for long variable names.
