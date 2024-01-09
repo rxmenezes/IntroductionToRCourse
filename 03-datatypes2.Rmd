@@ -41,7 +41,6 @@ Use
   - \*italic\*, \*\*bold\*\* and \~\~strike through\~\~ for  *italic*, **bold**, ~~strike through~~ respectively
   - \> to highlight 
   
-to highlight
 
 #### Including R code in markdown
 
@@ -68,7 +67,7 @@ x + 10
 
 #### Chunk options
 
-There are many chunck options available, most common being `echo`, `eval`. For example the option results='hide' prevents the result of the `x + 10` being included in the compiled report:  
+There are many chunk options available, most common being `echo`, `eval`. For example the option results='hide' prevents the result of the `x + 10` being included in the compiled report:  
 
 ````{r results='hide'}
 x <- 5
@@ -164,7 +163,7 @@ class( study$age )
 class( study$children )
 ```
 
-When referring to nonexisting elements, the result is `NULL` 
+When referring to non-existing elements, the result is `NULL` 
 
 ```{r}
 study$parents
@@ -194,7 +193,7 @@ class( study[[ "age" ]] )
 class( study[ "age" ] )
 ```
 
-Accessing nonexisting elements with single brackets:
+Accessing non-existing elements with single brackets:
 ```{r}
 study[ "parents" ]
 class( study[ "parents" ] )
@@ -301,7 +300,7 @@ names(res)
 class(res)
 ```
 
-Note that the class of the object created by the wilcox.test function is the same as that for the object created by the t.test function.
+Note that the class of the object created by the `wilcox.test` function is the same as that for the object created by the t.test function.
 
 #### Other statistical tests
 
@@ -614,7 +613,7 @@ table(pulse$height4)
 The `:` operator can be used to make a new factor with all combinations of two (or more) factors
 
 ```{r}
-#pulse$smokes:pulse$alcohol
+factor(pulse$smokes):factor(pulse$alcohol)
 ```
 
 
@@ -737,9 +736,9 @@ coxph(Surv(time, status) ~ x, data=aml)
 ```
 
 
-As before, each object can be stored separately. In particular, the Surv object can be saved and the entire analysis run using it. 
+As before, each object can be stored separately. In particular, the `Surv` object can be saved and the entire analysis run using it. 
 
-The result of coxph can be stored as an object and manipulated in most ways like a `lm` or `glm` object. In particular we can use `anova` to compare different model fits.
+The result of `coxph` can be stored as an object and manipulated in most ways like a `lm` or `glm` object. In particular we can use `anova` to compare different model fits.
 
 
 ```{r results="asis", echo=FALSE, comment=""}
