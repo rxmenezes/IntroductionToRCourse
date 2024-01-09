@@ -113,7 +113,7 @@ odd( x = 6 )
   - Arguments are given in the same order as they are declared in the function except when the argument names are provided explicitly. 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "functions0", "01_userDefinedFunctions.Rmd" )
+catLinkTaskSection( "functions0", "exercises/01_userDefinedFunctions.Rmd" )
 ```
 
 
@@ -355,7 +355,7 @@ AgeGroup(20)  #  "adult"
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "functions1", "01_userDefinedFunctions.Rmd" )
+catLinkTaskSection( "functions1", "exercises/01_userDefinedFunctions.Rmd" )
 ```
 
 
@@ -403,7 +403,7 @@ sapply(1:4, odd)  # <=>   unlist( lapply(1:4,odd) )
 This is in fact a simplified, user-friendly  `lapply()`, which we will see next.
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "apply", "01_userDefinedFunctions.Rmd" )
+catLinkTaskSection( "apply", "exercises/01_userDefinedFunctions.Rmd" )
 ```
 
 
@@ -580,7 +580,7 @@ AgeGroup(-10)
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "argcheck", "01_userDefinedFunctions.Rmd" )
+catLinkTaskSection( "argcheck", "exercises/01_userDefinedFunctions.Rmd" )
 ```
 
 
