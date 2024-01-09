@@ -310,7 +310,7 @@ Choose meaningful variable names for readable code.
 
 #### Assignment
 
-Arrow is called "assignment". Also allowed: `=`.
+Arrow '<-' is called "assignment". Also allowed: `=`.
 
 ```{r}
 x = 5
@@ -334,7 +334,7 @@ Remember: _no assignment, no change_
 
 Important: variables are stored in memory, not on disk. If you close R, all variables are lost (if save workspace image = no)
 
-Your RStudio has an *environment* tab that lists all the variables you made.
+Your RStudio has an *environment* tab that lists all the variables you made - by default on the top-right
 
 #### (*) The workspace
 
@@ -355,13 +355,13 @@ rm(x)
 You only need to remove a variable from memory when:
 
 1. The variable is large and you want to free memory
-2. You have accidentaly overwritten one of R's fixed constants
+2. You have accidentally overwritten one of R's fixed constants
 
 Note that `rm` is definitive and you cannot _undo_ it!
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstVariables", "_book/02_basics.Rmd" );
+catLinkTaskSection( "firstVariables", "exercises/02_basics.Rmd" );
 ```
 
 ### Vectors 
@@ -412,7 +412,7 @@ x[3:4]
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "exercisesBasics", "_book/02_basics.Rmd" );
+catLinkTaskSection( "exercisesBasics", "exercises/02_basics.Rmd" );
 ```
 
 ## Projects and scripts
@@ -495,7 +495,7 @@ View(pulse)
 Note the capital V.
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstLoad", "_book/03_projects_and_scripts.Rmd" );
+catLinkTaskSection( "firstLoad", "exercises/03_projects_and_scripts.Rmd" );
 ```
 
 ### Scripts
