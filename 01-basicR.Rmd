@@ -543,27 +543,28 @@ source("scripts/myfile.R")
 
 The script should contain the analysis you want to reproduce later.
 
-Type at the prompt only to try things out.
+Type at the prompt only to try things out. Copy what works into the script.
 
-To check that the script works, close RStudio and open again. Run the script.
+To check that the script works, close RStudio and open again. Then run the script.
 
-More advanced way of working with scripts: R Markdown (later in the course)
-
-
-#### Comments
-
-R ignores everyting in a line after `#`. Use to put human readable text in your scripts (explanation).
+More advanced way of working with scripts: RMarkdown (later in the course)
 
 
-```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstScript", "03_projects_and_scripts.Rmd" );
-```
+#### Comments in scripts
+
+R ignores everything in a line after `#`. Use it to put comments or notes in your scripts, clarifying analysis steps.
+
+
 
 ```{r}
 # Here I calculate x
 x <- c(3, 6, 7, 8) *3
 ```
 
+
+```{r results="asis", echo=FALSE, comment=""}
+catLinkTaskSection( "firstScript", "03_projects_and_scripts.Rmd" );
+```
 
 ## Data frames (basics)
 
