@@ -72,7 +72,16 @@ No need to wait until they are programmed into SPSS.
 
 ### What is R? 
 
-#### _R_: a short history
+
+The [R Project for Statistical Computing](https://www.r-project.org/): 
+
+- involves many sub-projects, such as Bioconductor 
+
+- publishes [The R Journal](https://journal.r-project.org/)
+
+Huge community (users, package writers).
+
+### _R_: a short history
 
 _S_: a programming language for statistics by John Chambers (Bell Labs) in the 1970s-80s.
 
@@ -81,28 +90,33 @@ Two implementations:
 - S-plus (1988, commercial)
 - R (1993, GNU public license) by Robert Gentleman and Ross Ihaka (Univ. of Auckland)
 
-The R Foundation for Statistical Computing. Non-profit. 
+[The R Foundation for Statistical Computing](https://www.r-project.org/foundation/). Non-profit. 
 
-Huge community (users, package writers).
+### R is Open Source
 
-#### Open source
+Many advantages:
 
-Free software.
+- Free software
 
-Volunteer work (mostly by academics).
+- Anyone can see the source code
 
-Anyone can see the source code.
+- Anyone can contribute:
 
-Anyone can contribute:
+  - write code
+  - report bugs
+  - write documentation
 
-- write code
-- report bugs
-- write documentation
+But also disadvantages:
+
+- Anyone can contribute (so quality of code may vary)
+
+- Volunteer work (mostly by academics)
+
 
 
 #### Obtaining R
 
-CRAN: Comprehensive R Archive Network 
+CRAN: [Comprehensive R Archive Network](https://cran.r-project.org/mirrors.html)
 
 - Repository for R and packages
 - Go to http://www.r-project.org
