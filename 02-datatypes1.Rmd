@@ -50,7 +50,7 @@ c( 0, v, w, 100 )
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "numeric", "01_basic_data_types_cont.Rmd" );
+catLinkTaskSection( "numeric", "exercises/01_basic_data_types_cont.Rmd" );
 ```
 
 
@@ -163,7 +163,7 @@ v >= w
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "logical", "01_basic_data_types_cont.Rmd" );
+catLinkTaskSection( "logical", "exercises/01_basic_data_types_cont.Rmd" );
 ```
 
 ### Type conversions 
@@ -179,7 +179,7 @@ as.character( v )
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "conversions", "01_basic_data_types_cont.Rmd" );
+catLinkTaskSection( "conversions", "exercises/01_basic_data_types_cont.Rmd" );
 ```
 
 
@@ -330,7 +330,7 @@ Indices given by a logical vector are referred to as *logical indices*.
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "brackets", "02_selecting.Rmd" );
+catLinkTaskSection( "brackets", "exercises/02_selecting.Rmd" );
 ```
 
 ### Other useful functions  
@@ -380,7 +380,7 @@ unique(u)
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "utility", "02_selecting.Rmd" );
+catLinkTaskSection( "utility", "exercises/02_selecting.Rmd" );
 ```
 
 ## Data frames 
@@ -675,7 +675,7 @@ pulse[ c( "1993_C", "1993_A" ), ]
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "dataframes", "03_data_frames.Rmd" );
+catLinkTaskSection( "dataframes", "exercises/03_data_frames.Rmd" );
 ```
 
 
@@ -825,5 +825,5 @@ m * (m+1)
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "corMatrix", "05_matrices.Rmd" );
+catLinkTaskSection( "corMatrix", "exercises/05_matrices.Rmd" );
 ```

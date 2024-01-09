@@ -176,7 +176,7 @@ study[[ 2 ]]
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "createList", "01_lists.Rmd" );
+catLinkTaskSection( "createList", "exercises/01_lists.Rmd" );
 ```
 
 ### (*) Getting multiple elements as a list 
@@ -226,7 +226,7 @@ str( study )
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "elementsList", "01_lists.Rmd" );
+catLinkTaskSection( "elementsList", "exercises/01_lists.Rmd" );
 ```
 
 ## Basic statistical tests
@@ -313,7 +313,7 @@ Other basic tests available include:
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "S3", "02_S3_objects.Rmd" )
+catLinkTaskSection( "S3", "exercises/02_S3_objects.Rmd" )
 ```
 
 
@@ -395,7 +395,7 @@ t.test(form, data=pulse)
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "formula", "03_regression.Rmd" );
+catLinkTaskSection( "formula", "exercises/03_regression.Rmd" );
 ```
 
 
@@ -460,7 +460,7 @@ abline(coef(fit))
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "lm", "03_regression.Rmd" );
+catLinkTaskSection( "lm", "exercises/03_regression.Rmd" );
 ```
 
 
@@ -526,7 +526,7 @@ lm(weight ~ 0 + height, data=pulse)
 Note that this is different if we have factors (see next part)!
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "multiple", "03_regression.Rmd" );
+catLinkTaskSection( "multiple", "exercises/03_regression.Rmd" );
 ```
 
 ## Factors (advanced)
@@ -619,7 +619,7 @@ The `:` operator can be used to make a new factor with all combinations of two (
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "levels", "04_advanced_factors.Rmd" );
+catLinkTaskSection( "levels", "exercises/04_advanced_factors.Rmd" );
 ```
 
 
@@ -743,7 +743,7 @@ The result of coxph can be stored as an object and manipulated in most ways like
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "anova", "04_advanced_factors.Rmd" )
+catLinkTaskSection( "anova", "exercises/04_advanced_factors.Rmd" )
 ```
 
 
