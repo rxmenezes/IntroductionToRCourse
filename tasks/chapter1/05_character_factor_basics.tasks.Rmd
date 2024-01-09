@@ -50,8 +50,8 @@ class(survey$fold)
 
 - Transform the `fold` variable into a factor. How many and what levels does it have?
 ```{r}
-survey$nfactor <- as.factor(survey$factor)
-levels(factor(survey$nfold))
+survey$nfold <- as.factor(survey$fold)
+levels(survey$nfold)
 ```
 
 - Make a `table` of the `fold` variable (columns) versus the `clap` variable (rows)

@@ -15,6 +15,7 @@ source( "../../setup/R_course_setup.R" )
 ```
 
 - What is the square root of the number you have just calculated?
+
 ```{r}
 sqrt(25 + 12^2)
 ```
