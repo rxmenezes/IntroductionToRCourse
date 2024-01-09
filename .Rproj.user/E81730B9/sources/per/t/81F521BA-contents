@@ -37,7 +37,7 @@ add_one(-1)
 
 ```
 
-Now let us update  our function to calculate $x^2 + 1$ :
+Now let's update  our function to calculate $x^2 + 1$ :
 
 ```{r}
 square_add_one <- function(x) {
@@ -92,7 +92,7 @@ increment( x = 14, i = 7 ) # increment 14 by 7
 ```
 
 
-Now let us write a function which is not already part of the base R, e.g. `odd`. This function will take as an argument a whole number and returns a logical `TRUE` if the number is an odd number and FALSE otherwise.
+Now let's write a function which is not already part of the base R, e.g. `odd`. This function will take as an argument a whole number and returns a logical `TRUE` if the number is an odd number and FALSE otherwise.
 
 A whole number is odd when it is not integer divisible by 2. We can do this by taking it's remainder of integer division (`%%` operator) by 2 and see whether it is non-zero:
 
@@ -120,13 +120,14 @@ catLinkTaskSection( "functions0", "01_userDefinedFunctions.Rmd" )
 
 ## (*) Control flow constructs 
 
-Or `conditional statements` are constructs controlling the program sequence being executed. Based on the conditions we impose into the program we can influence the outcome. 
-
- <!-- <center>![Program](images/control_flow_2.png)</center> -->
  
 ```{r echo = FALSE}
 options(knitr.table.format = "latex")
 ```
+
+ `conditional statements` are constructs controlling the program sequence being executed. Based on the conditions we impose into the program, we can influence the outcome. 
+
+ <!-- <center>![Program](images/control_flow_2.png)</center> -->
 
 ### Sequential execution
 
@@ -170,7 +171,7 @@ statement_B
 
 **Example:**
 
-Let us take the following excerpt from the World Health Organization (WHO): 
+Let's take the following excerpt from the World Health Organization (WHO): 
 
 ```{r, echo=FALSE}
 # https://www.who.int/hiv/pub/guidelines/arv2013/intro/keyterms/en/
@@ -182,6 +183,7 @@ Let us take the following excerpt from the World Health Organization (WHO):
 Now we would like to write a function, given the age in years, to evaluate the appropriate age group label for us. For this we need conditional statements.
 
 **Important** First we enumerate the age group categories:
+
 
 
 ```{r, eval=TRUE, echo=FALSE}

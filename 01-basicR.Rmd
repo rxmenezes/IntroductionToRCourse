@@ -29,7 +29,7 @@ Students in an introductory statistics class (MS212 taught by Professor John Ecc
 | pulse2	  |	Second pulse measurement (rate per minute) |
 | year		  | Year of the class (1993 - 1998) |
 
-The pulse data set is available in the data folder as tab-delimited text: `pulse.txt`. It is also available in SPSS-format as `pulse.sav`.
+The pulse data set is available in the data folder as tab-delimited text: `pulse.txt`. 
 
 
 ### Survey
@@ -72,7 +72,16 @@ No need to wait until they are programmed into SPSS.
 
 ### What is R? 
 
-#### _R_: a short history
+
+The [R Project for Statistical Computing](https://www.r-project.org/): 
+
+- involves many sub-projects, such as Bioconductor 
+
+- publishes [The R Journal](https://journal.r-project.org/)
+
+Huge community (users, package writers).
+
+### _R_: a short history
 
 _S_: a programming language for statistics by John Chambers (Bell Labs) in the 1970s-80s.
 
@@ -81,53 +90,71 @@ Two implementations:
 - S-plus (1988, commercial)
 - R (1993, GNU public license) by Robert Gentleman and Ross Ihaka (Univ. of Auckland)
 
-The R Foundation for Statistical Computing. Non-profit. 
+[The R Foundation for Statistical Computing](https://www.r-project.org/foundation/). Non-profit. 
 
-Huge community (users, package writers).
+### R is Open Source
 
-#### Open source
+Many advantages:
 
-Free software.
+- Free software
 
-Volunteer work (mostly by academics).
+- Anyone can see the source code
 
-Anyone can see the source code.
+- Anyone can contribute:
 
-Anyone can contribute:
+  - write code
+  - report bugs
+  - write documentation
 
-- write code
-- report bugs
-- write documentation
+But also disadvantages:
+
+- Anyone can contribute (so quality of code may vary)
+
+- Volunteer work (mostly by academics)
+
 
 
 #### Obtaining R
 
-CRAN: Comprehensive R Archive Network 
+CRAN: [Comprehensive R Archive Network](https://cran.r-project.org/mirrors.html)
 
 - Repository for R and packages
-- Go to http://www.r-project.org
 
-Free download
+- New major version (R 4.2.0) every year
 
-- New major version (R 3.2.0) every year 
-- New minor versions (R 3.2.4) in between
+- New minor versions (R 4.2.1) in between
 
 Also on CRAN
 
 - Manuals (don't read them)
+
 - Mailing lists + archives (well indexed on google)
 
 
-### R and RStudio
+### R and RStudio 
 
-RStudio: open source integrated development environment to R (2011)
+[RStudio](https://posit.co/download/rstudio-desktop/)
 
-Adds useful features to help write code and organize projects
+- open source integrated development environment to R (2011)
 
-Not necessary to use R, but highly recommended
+- now part of [Posit](https://posit.co/), which also has products for Python
 
-RStudio organises input and output in useful windows
+- adds useful features to help write code and organize projects
 
+- not necessary to use R, but highly recommended
+
+- RStudio organises input and output in useful windows
+
+### RStudio packages
+
+- [RMarkdown](https://posit.co/products/open-source/rstudio/)
+
+  - produces dynamic reports, integrating comments, code and output
+  - provides excellent and easy way for working reproducibly
+
+- [Shiny](https://shiny.posit.co/): for making easy-to-use web apps based in R/Python
+
+- [Quarto](https://quarto.org/): multi-language version of RMarkdown from Posit
 
 ### Course overview
 
@@ -156,11 +183,10 @@ Hands-on at four levels:
 
 1. *Type with me*
 2. Mini-exercises briefly interrupt the lecture
-3. Longer exercises to do it on your own
-4. Advanced exercises introduce advanced concepts for quick learners (optional)
+3. Longer exercises to do on your own
+4. Optional (marked with '*'): advanced sections/exercises introduce advanced concepts for quick learners 
 
 Eight half-day slots.
-
 
 
 ## Basics
@@ -203,7 +229,19 @@ sqrt(10)             # square root
 log(10)              # natural logarithm
 ```
 
-Terminology: the _function_ (e.g. `log`) is applied to its _argument_ (e.g. `10`). The argument of a function is always between parentheses.
+Terminology: the _function_ (e.g. `log`) is applied to its _argument_ (e.g. `10`). 
+
+Syntax: when a function is called, its name is **always** followed by parenthesis:
+
+```{r}
+date() # to get current date and time
+```
+
+Any required arguments are given between parentheses:
+
+```{r}
+log( 2.718 )
+```
 
 Other useful functions 
 
@@ -217,6 +255,7 @@ Other useful functions
 Use up/down arrow to retrieve previous/next commands. Use Ctrl-R to see command history and type letters to select a line.
 
 Getting a `+` as a prompt means the command is not finished yet. Continue typing or press _Esc_.
+
 ```{r}
 5*(1+1
 )
@@ -246,8 +285,10 @@ my_calculation <- 6 + x
 ```
 
 To find out what the value of a variable is: type the name.
+
 ```{r}
 x
+my_calculation
 ```
 
 Rstudio has autocomplete (with `tab`). Useful for long variable names.
@@ -269,7 +310,7 @@ Choose meaningful variable names for readable code.
 
 #### Assignment
 
-Arrow is called "assignment". Also allowed: `=`.
+Arrow '<-' is called "assignment". Also allowed: `=`.
 
 ```{r}
 x = 5
@@ -293,7 +334,7 @@ Remember: _no assignment, no change_
 
 Important: variables are stored in memory, not on disk. If you close R, all variables are lost (if save workspace image = no)
 
-Your RStudio has an *environment* tab that lists all the variables you made.
+Your RStudio has an *environment* tab that lists all the variables you made - by default on the top-right
 
 #### (*) The workspace
 
@@ -314,13 +355,13 @@ rm(x)
 You only need to remove a variable from memory when:
 
 1. The variable is large and you want to free memory
-2. You have accidentaly overwritten one of R's fixed constants
+2. You have accidentally overwritten one of R's fixed constants
 
 Note that `rm` is definitive and you cannot _undo_ it!
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstVariables", "_book/02_basics.Rmd" );
+catLinkTaskSection( "firstVariables", "exercises/02_basics.Rmd" );
 ```
 
 ### Vectors 
@@ -371,7 +412,7 @@ x[3:4]
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "exercisesBasics", "_book/02_basics.Rmd" );
+catLinkTaskSection( "exercisesBasics", "exercises/02_basics.Rmd" );
 ```
 
 ## Projects and scripts
@@ -454,7 +495,7 @@ View(pulse)
 Note the capital V.
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstLoad", "_book/03_projects_and_scripts.Rmd" );
+catLinkTaskSection( "firstLoad", "exercises/03_projects_and_scripts.Rmd" );
 ```
 
 ### Scripts

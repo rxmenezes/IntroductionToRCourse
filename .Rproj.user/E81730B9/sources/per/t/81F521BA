@@ -1,26 +1,26 @@
 {
-    "id": "044A719C",
+    "id": "81F521BA",
     "path": "~/Documents/NKI/courses/R course NKI/materials2023/04-functions.Rmd",
     "project_path": "04-functions.Rmd",
     "type": "r_markdown",
-    "hash": "1349404066",
+    "hash": "805508657",
     "contents": "",
     "dirty": false,
-    "created": 1684936200420.0,
+    "created": 1686220691423.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "182,0",
-        "scrollLine": "181"
+        "cursorPosition": "186,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1684937835,
+    "lastKnownWriteTime": 1684937182,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1684937835953,
+    "last_content_update": 1684937182,
     "read_only": false,
     "read_only_alternatives": []
 }
