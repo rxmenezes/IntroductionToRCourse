@@ -568,30 +568,29 @@ catLinkTaskSection( "firstScript", "03_projects_and_scripts.Rmd" );
 
 ## Data frames (basics)
 
-So we are now able to read in data sets (tables). A data set in R is called a `data.frame`. 
+So we are now able to read data sets into R. A data set in R is called a `data.frame`. 
 
-```{r eval=FALSE}
+```{r}
 pulse <- read.delim( "data/pulse.txt" )
 ```
 
-```{r eval=FALSE}
+```{r }
 survey <- read.delim( "data/survey.txt" )
 ```
 
 
 R can have many data sets in memory simultaneously. You will always have to specify which data set you are working in.
 
-### Exploring 
+### Exploring datasets
 
 #### Dimensions
 
-Rows in a data.frame are typically subjects; columns are variables.
+Rows in a `data.frame` are typically subjects/samples/individuals; columns are variables.
 
-To find the size of a data.frame
+We can check the numbers of columns/rows of a `data.frame`, as well as its dimensions (rows and columns at the same time) by using:
 
 
 ```{r}
-pulse <- read.delim( "data/pulse.txt" )
 ncol(pulse)
 nrow(pulse)
 dim(pulse)
@@ -599,12 +598,13 @@ dim(pulse)
 
 #### Showing head and tail
 
-To get a quick impression of a data.frame:
+To get a quick impression of a `data.frame`:
 
 - `head` prints the first 6 rows
 - `tail` prints the last 6 rows
 
-If you want more or less than 6, add the number you want as a second argument to the function:
+If you want more or less than 6 rows, add the number you want as a second argument to the function:
+
 ```{r}
 head(pulse)
 tail(pulse, 3)
@@ -612,9 +612,10 @@ tail(pulse, 3)
 
 
 
-We've already seen `View`.
+We've already seen `View`, which can be used to quickly visualise the data.
 
-With `names` (alternatively `colnames`) you find the names of the variables (columns) in the data.frame:
+With `names` (or `colnames`) you can find the names of the variables (columns) in the `data.frame`:
+
 ```{r}
 names(pulse)
 ```
