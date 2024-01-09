@@ -109,8 +109,8 @@ CRAN: Comprehensive R Archive Network
 
 Free download
 
-- New major version (R 3.2.0) every year 
-- New minor versions (R 3.2.4) in between
+- New major version (R 4.2.0) every year 
+- New minor versions (R 4.2.1) in between
 
 Also on CRAN
 
