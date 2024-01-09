@@ -119,29 +119,42 @@ But also disadvantages:
 CRAN: [Comprehensive R Archive Network](https://cran.r-project.org/mirrors.html)
 
 - Repository for R and packages
-- Go to http://www.r-project.org
 
-Free download
+- New major version (R 4.2.0) every year
 
-- New major version (R 4.2.0) every year 
 - New minor versions (R 4.2.1) in between
 
 Also on CRAN
 
 - Manuals (don't read them)
+
 - Mailing lists + archives (well indexed on google)
 
 
-### R and RStudio
+### R and RStudio 
 
-RStudio: open source integrated development environment to R (2011)
+[RStudio](https://posit.co/download/rstudio-desktop/)
 
-Adds useful features to help write code and organize projects
+- open source integrated development environment to R (2011)
 
-Not necessary to use R, but highly recommended
+- now part of [Posit](https://posit.co/), which also has products for Python
 
-RStudio organises input and output in useful windows
+- adds useful features to help write code and organize projects
 
+- not necessary to use R, but highly recommended
+
+- RStudio organises input and output in useful windows
+
+### RStudio packages
+
+- [RMarkdown](https://posit.co/products/open-source/rstudio/)
+
+  - produces dynamic reports, integrating comments, code and output
+  - provides excellent and easy way for working reproducibly
+
+- [Shiny](https://shiny.posit.co/): for making easy-to-use web apps based in R/Python
+
+- [Quarto](https://quarto.org/): multi-language version of RMarkdown from Posit
 
 ### Course overview
 
@@ -170,7 +183,7 @@ Hands-on at four levels:
 
 1. *Type with me*
 2. Mini-exercises briefly interrupt the lecture
-3. Longer exercises to do it on your own
+3. Longer exercises to do on your own
 4. Advanced exercises introduce advanced concepts for quick learners (optional)
 
 Eight half-day slots.
