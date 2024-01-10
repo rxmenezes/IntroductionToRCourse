@@ -1,20 +1,15 @@
 ---
 title: "Projects and Scripts (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
-
-```{r setup, include=FALSE}
-source( "../../setup/R_course_setup.R" )
-```
 
 
 # Loading data from txt {#firstLoad}
 
-For the quick exercises we will mostly work with the `survey` data. Let's load them into R.
+For the quick exercises we will mostly work with the `survey` data. Let us load them into R.
 
-- Download in `survey.txt` into your data folder
+- Copy the file  `survey.txt` into your data folder
 
-- Load this new data set into R and call it survey
+- Load this new data set into R and call it `survey`
 
 ```{r eval=1, echo=2}
 survey <- read.delim("../../data/survey.txt")
@@ -22,15 +17,19 @@ survey <- read.delim("../../data/survey.txt")
 ```
 
 - View it
+
 ```{r, eval=FALSE}
 View(survey)
 ```
 
 # Making a script {#firstScript}
 
-We will make a script to read in the pulse and survey data. We'll use that every day in the course.
+We will make a script to read in the pulse and survey datasets. We will use this script every day in the course.
 
-- Start a new script that reads the pulse and survey data sets
+- Start a new script that reads in the pulse and survey data sets
+
 - Add a comment to the script
+
 - Save the script under a useful name
-- Check it by closing and opening RStudio and running the script (HINT: make sure you are in the right project)
+
+- Check it by closing and opening RStudio, running the script and then checking that the objects containing the datasets are loaded in the workspace (HINT: make sure you are in the right project)
