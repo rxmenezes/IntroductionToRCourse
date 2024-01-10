@@ -866,30 +866,47 @@ A categorical variable in R is called `factor`:
 
 #### Making a factor
 
-To make a factor variable, start with a character vector and use `factor`:
+There are different ways to create a factor variable. One is to create a character vector and use `factor()`:
 
 ```{r}
 fct <- factor(c('A', 'B', 'A', 'B', 'B'))
 ```
 
-#### Factor basics
+The other is to use a numeric vector and assign labels (character strings) to the values:
 
-You recognize a factor by the `Levels:` line when printing:
+```{r}
+fct2 <- factor(c(1, 2, 1, 2, 2), labels = c('A', 'B'))
+```
+
+You can check that they give the same result:
+
 ```{r}
 fct
+fct2
+```
+
+#### Factor basics
+
+You recognize a factor by the `Levels:` line when printing, or by using `class()`:
+
+```{r}
+class(fct)
 ```
 
 To get the numeric coding:
+
 ```{r}
 as.numeric(fct)
 ```
 
 To get the value labels:
+
 ```{r}
 levels(fct)
 ```
 
 To get the number of levels (categories):
+
 ```{r}
 nlevels(fct)
 ```
@@ -902,12 +919,14 @@ as.character(fct)
 
 #### Table
 
-Factors are best summarized with `table`:
+Factors are best summarized with `table()`:
+
 ```{r}
 table(pulse$exercise)
 ```
 
-`table` can also cross tabulate two (or even more) variables:
+`table()` can also cross tabulate two (or even more) variables: 
+
 ```{r}
 table(pulse$gender, pulse$exercise)
 ```
