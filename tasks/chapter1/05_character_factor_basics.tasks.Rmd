@@ -1,15 +1,10 @@
 ---
 title: "Basic data types (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
 
-```{r setup, include=FALSE}
-source( "../../setup/R_course_setup.R" );
-```
-
 ```{r echo=FALSE}
-pulse <- read.delim("../../data/pulse.txt")
-survey <- read.delim("../../data/survey.txt")
+pulse <- read.delim("./data/pulse.txt")
+survey <- read.delim("./data/survey.txt")
 ```
 
 # Numeric data {#numeric}
@@ -17,21 +12,25 @@ survey <- read.delim("../../data/survey.txt")
 In the `survey` data
 
 - Find the standard deviation of `span1`
+
 ```{r}
 sd(survey$span1)
 ```
 
 - Find the age range
+
 ```{r}
 range(survey$age)
 ```
 
 - plot `span1` (y-axis) against `span2` (x-axis)
+
 ```{r}
 plot(survey$span2, survey$span1)
 ```
 
 - (*) plot the difference between `span1` and `span2` (y-axis) against their average (x-axis)
+
 ```{r}
 survey$diff.span <- survey$span1 - survey$span2
 survey$mean.span <- (survey$span1 + survey$span2)/2
@@ -49,24 +48,38 @@ class(survey$fold)
 ```
 
 - Transform the `fold` variable into a factor. How many and what levels does it have?
+
 ```{r}
 survey$nfold <- as.factor(survey$fold)
 levels(survey$nfold)
+nlevels(survey$nfold)
 ```
 
-- Make a `table` of the `fold` variable (columns) versus the `clap` variable (rows)
+- Make a table of the `fold` variable (columns) versus the `clap` variable (rows)
+
 ```{r}
 table(survey$clap, survey$fold)
 ```
 
 - Convert the variables `hand`, `exercise` and `smoke`  to `factor`
+
 ```{r}
 survey$hand <- as.factor(survey$hand)
 survey$exercise <- as.factor(survey$exercise)
 survey$smokes <- as.factor(survey$smokes)
 ```
 
-- Do the same for variables `gender`, `smokes`, `alcohol`, exercise and `ran` from the `pulse` data.
+- Do the same for variables `gender`, `smokes`, `alcohol`, `exercise` and `ran` from the `pulse` data.
+
+```{r}
+pulse$gender <- as.factor(pulse$gender)
+pulse$smokes <- as.factor(pulse$smokes)
+pulse$alcohol <- as.factor(pulse$alcohol)
+pulse$exercise <- as.factor(pulse$exercise)
+pulse$ran <- as.factor(pulse$ran)
+
+```
+
 
 - Add these steps to your standard script for reading in the data! 
 
@@ -76,34 +89,40 @@ survey$smokes <- as.factor(survey$smokes)
 We make use of the `cats` data set from the `MASS` package. 
 
 -	Load the `MASS` package by writing `library(MASS)`. This makes the `cats` data available to you. What variables of what types are in `cats`?
+
 ```{r}
 library(MASS)
 str(cats)
 ```
 
 - How many male and female cats were in this experiment?
+
 ```{r}
 table(cats$Sex)
 ```
 
-- Make a histogram of heart weights
+- Make a histogram of heart weights (`Hwt`)
+
 ```{r}
 hist(cats$Hwt)
 ```
 
 - Find mean and median heart weight
+
 ```{r}
 mean(cats$Hwt)
 median(cats$Hwt)
 
 ```
 
--	Plot heart weight against body weight
+-	Plot heart weight against body weight (`Bwt`)
+
 ```{r}
 with(cats, plot(Bwt, Hwt))
 ```
 
--	(*) `plot` when applied to a factor and a numeric variable makes boxplots. Make boxplots of body weight against gender
+-	(*) `plot` when applied to a factor (first variable) and a numeric variable (second) makes boxplots. Make boxplots of body weight against gender
+
 ```{r}
 plot(cats$Sex, cats$Bwt)
 ```
