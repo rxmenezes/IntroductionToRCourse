@@ -373,6 +373,7 @@ Vectors are the basic building blocks of the R language.
 Variables can contain _vectors_ of numbers. A vector can be e.g. just any sequence of numbers.
 
 You can make a vector using `c` (combine):
+
 ```{r}
 x <- c(3, 6, 7, 2)
 ```
@@ -557,7 +558,7 @@ R ignores everything in a line after `#`. Use it to put comments or notes in you
 
 
 ```{r}
-# Here I calculate x
+# Here I define x
 x <- c(3, 6, 7, 8) *3
 ```
 
@@ -726,21 +727,10 @@ catLinkTaskSection( "newFrame", "04_dataframes.Rmd" );
 
 ## Basic data types
 
-We will use the `pulse` and `survey` data again for illustration and exercises:
-
-
-```{r eval=FALSE}
-pulse <- read.delim( "data/pulse.txt" )
-```
-
-
-```{r eval=FALSE}
-survey <- read.delim( "data/survey.txt" )
-```
 
 ### Types
 
-Columns in a data.frame can be of different types. Typically:
+Columns in a `data.frame` can be of different types. Typically:
 
 - numeric (we've seen already)
 - character (for text)
@@ -748,23 +738,40 @@ Columns in a data.frame can be of different types. Typically:
 
 #### `str` and `class`
 
-To get a quick overview (structure) of the types of data in your data.frame:
+To get a quick overview of the variables and their types in your `data.frame`, you can check its structure:
+
 ```{r}
 str(pulse)
 ```
 
-To learn about the type of a specific column:
+To check the class of a specific column:
+
 ```{r}
 class(pulse$name)
 ```
+
+The function `class()` can be used to check the object class of anything in R. So:
+
+```{r}
+class(pulse)
+```
+
+as expected.
 
 ### Vector classes
 
 #### Numeric data
 
-Numeric data can be `integer` (whole numbers) or `numeric` (continuous data) but you can ignore that distinction if you are not a programmer.
+Numeric data can be `integer` (whole numbers) or `numeric` (continuous data), but you can ignore that distinction if you are not a programmer.
 
-We've seen how to make numeric data with `c` or `:`
+We have seen how to make numeric vectors with `c()` or `:`, and we can check the class of the objects produced:
+
+```{r}
+x <- c(5.3, 3, 5, 1)
+class(x)
+y <- 5:1
+class(y)
+```
 
 ##### Useful functions for numeric data
 
@@ -780,6 +787,7 @@ Summarizing a single variable:
 - `hist` (histogram)
 
 A six-number summary: range, three quartiles and the mean:
+
 ```{r}
 summary(pulse$age)
 ```
@@ -805,7 +813,7 @@ Texts in R is called `character`. You recognize is by the quotes around the valu
 
 #### Creating character data
 
-Use either single or double quotes
+Use either single or double quotes around values. Then `c()` can be used to combine values, as in:
 
 ```{r}
 text <- c('alpha', 'beta', 'gamma')
@@ -814,9 +822,11 @@ TEXT <- c("ALPHA", "BETA", "GAMMA")
 
 #### Names
 
-Row and column names in a data.frame are always `character`:
+Row and column names in a `data.frame` are always of type character:
+
 ```{r}
 rownames(pulse)[1:10]
+class(rownames(pulse))
 ```
 
 #### (*) Useful premade character vectors
@@ -825,12 +835,24 @@ rownames(pulse)[1:10]
 - `letters` (lower case)
 - `month.name` (months)
 
-#### (*) Calculating with character vectors
+```{r}
+LETTERS[5:10]
+```
 
-Arithmetics of text
+#### (*) Operations on character vectors
+
+- `toupper()`: changes all letters to upper case
 
 ```{r}
 toupper("me")
+toupper("Amsterdam")
+```
+
+- Guess what `tolower()` does?
+
+- `paste()`: puts elements of two vectors together, with a separator
+
+```{r}
 paste(LETTERS, letters, sep='_')
 ```
 
