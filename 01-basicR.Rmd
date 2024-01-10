@@ -950,33 +950,38 @@ catLinkTaskSection( "factors", "05_character_factor_basics.Rmd" );
 
 ### Function arguments
 
-#### Functions may have multiple arguments
+Arguments to a function are declared within parenthesis:
 
-Example `round`:
-```{r}
-round(pi,3)
-round(pi,5)
-```
-
-Optional arguments may be left out:
 ```{r}
 round(pi)
+round(3.14)
 ```
 
-#### Getting help for a function
+Functions may have multiple arguments, and all arguments used are declared in sequence:
 
-Functions do calculations for you based on one or more arguments. To find out what arguments a function has and how they work, check the help file of the function. Two ways of getting help for a function
+
+```{r}
+round(pi, 3)
+round(pi, 5)
+```
+
+Note that the second argument was left out, as it has a default value - to know what it is, we need to check the help file of `round()`.
+
+### Getting help for a function
+
+Functions execute tasks based on one or more arguments. To find out what arguments a function has and how they work, check the help file of the function. Two ways of assessing the help file:
+
 ```{r eval=FALSE}
 help(round)
 ?round
 ```
 
-We see that `round` has two arguments and that the default of the second argument is 0.
+We see that `round()` has two arguments and that the default of the second argument is 0.
 
 
-#### Specifying arguments by name
+### Specifying arguments by name
 
-Function arguments may be either given in the right order or specified explicitly by name.
+Function arguments may be either given in the right order (as expected in the original syntax in the help file) or specified explicitly by name.
 
 ```{r}
 round(pi, digits = 3)
@@ -984,17 +989,21 @@ round(pi, digits = 3)
 
 The latter option is especially useful for functions with many arguments.
 
-#### Default arguments
+### Default arguments
 
-Look at the help file of `cor`. We see that the argument `method` has a vector of three options as a default. This means that the first mentioned value (`pearson`) is the default and the others (`kendall`, `spearman`) are alternative options.
+Look at the help file of `cor()`. We see that the argument `method` has a vector of three values as options. This means that the first mentioned value (`pearson`) is the default and the others (`kendall`, `spearman`) are alternative options.
 
-#### (*) the `...` argument
+### (*) the `...` argument
 
 The argument `...` means that a variable number of arguments may be given. See e.g. `sum` has a `...` argument since it sums all arguments together
+
 ```{r}
-sum(1,4,5:7,1)
+sum(1, 4, 5:7, 1)
 ```
+
 Arguments appearing after `...` must always be specified by name.
+
+Sometimes `...` refers to arguments that may be passed on to other functions, called by the first one. When this is the case, it is explicitly stated in the help file of the first function.
 
 
 ```{r results="asis", echo=FALSE, comment=""}
@@ -1008,9 +1017,10 @@ Help files typically explain the type of object that is returned by the function
 
 Help files also contain examples that can be run.
 
-#### Help search
+### Help search
 
-Finding help if you don't know the function name
+Finding help if you don't know the function name:
+
 ```{r eval=FALSE}
 help.search("mean")
 ??mean
@@ -1018,7 +1028,7 @@ help.search("mean")
 
 Usually better: use the R help mailing list: <http://www.r-project.org/mail.html>. Someone has usually asked the same question you want to ask. The R mailing list is well indexed in google.
 
-Or ask some local expert. At NKI, we recently created "NKI-R users group" on Teams.
+Or ask some local expert. At the NKI, we recently created "NKI-R users group" on Teams.
 
 ```{r results="asis", echo=FALSE, comment=""}
 catLinkTaskSection( "help", "06_help.Rmd" );
