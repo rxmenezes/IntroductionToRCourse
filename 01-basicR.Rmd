@@ -564,7 +564,7 @@ x <- c(3, 6, 7, 8) *3
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "firstScript", "03_projects_and_scripts.Rmd" );
+catLinkTaskSection( "firstScript", "exercises/03_projects_and_scripts.Rmd" );
 ```
 
 ## Data frames (basics)
@@ -622,7 +622,7 @@ names(pulse)
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "explore", "04_dataframes.Rmd" );
+catLinkTaskSection( "explore", "exercises/04_dataframes.Rmd" );
 ```
 
 
@@ -687,7 +687,7 @@ pulse$pulse.diff <- NULL
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "columns", "04_dataframes.Rmd" );
+catLinkTaskSection( "columns", "exercises/04_dataframes.Rmd" );
 ```
 
 ### Example data
@@ -721,7 +721,7 @@ library(MASS)
 More about packages later.
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "newFrame", "04_dataframes.Rmd" );
+catLinkTaskSection( "newFrame", "exercises/04_dataframes.Rmd" );
 ```
 
 
@@ -804,7 +804,7 @@ plot(pulse$height, pulse$weight)
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "numeric", "05_character_factor_basics.Rmd" );
+catLinkTaskSection( "numeric", "exercises/05_character_factor_basics.Rmd" );
 ```
 
 ### Character data
@@ -940,7 +940,7 @@ table(table(pulse$name))
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "factors", "05_character_factor_basics.Rmd" );
+catLinkTaskSection( "factors", "exercises/05_character_factor_basics.Rmd" );
 ```
 
 
@@ -1007,7 +1007,7 @@ Sometimes `...` refers to arguments that may be passed on to other functions, ca
 
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "signif", "06_help.Rmd" );
+catLinkTaskSection( "signif", "exercises/06_help.Rmd" );
 ```
 
 
@@ -1031,7 +1031,7 @@ Usually better: use the R help mailing list: <http://www.r-project.org/mail.html
 Or ask some local expert. At the NKI, we recently created "NKI-R users group" on Teams.
 
 ```{r results="asis", echo=FALSE, comment=""}
-catLinkTaskSection( "help", "06_help.Rmd" );
+catLinkTaskSection( "help", "exercises/06_help.Rmd" );
 ```
 
 
