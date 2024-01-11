@@ -1,6 +1,6 @@
 ---
 title: "R scripts and reports (Rmarkdown) (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
 ---
 
 ```{r setup, include=FALSE, eval=F}

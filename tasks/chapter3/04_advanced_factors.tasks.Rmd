@@ -1,6 +1,6 @@
 ---
 title: "Advanced factors (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
 ---
 
 ```{r setup, include=FALSE}

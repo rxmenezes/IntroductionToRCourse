@@ -1,6 +1,6 @@
 ---
 title: "User-defined functions and control flow (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
 ---
 
 ```{r setup, include=FALSE}

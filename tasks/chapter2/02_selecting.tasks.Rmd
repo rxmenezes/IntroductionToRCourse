@@ -1,6 +1,6 @@
 ---
 title: "Selecting/indexing/subsetting (vector elements, data frame rows/columns, ...) (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
 ---
 
 ```{r setup,include=FALSE,eval=TRUE}
