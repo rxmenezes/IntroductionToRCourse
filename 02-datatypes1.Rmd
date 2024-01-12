@@ -99,24 +99,42 @@ catLinkTaskSection( "numeric", "exercises/01_basic_data_types_cont.Rmd" );
 
 ### Character vectors 
 
-There are several ways to construct a vector of texts.
+Just like with numeric vectors, there are several ways to construct a character vector. First let us define what a string of characters  is.
 
-#### Simple single text (character vector with a single element)
+#### String of characters
 
-With double quotes:
+A character string, or string of characters, is essentially a combination of characters. These can be letters "a", "A", "b", as well as numbers and other character types such as '.' and '_'. A character string can be defined by declaring it between quotes - they can be double:
+
 ```{r}
 "Bioinformatics"
 ```
 
-Or, with single quotes:
+or single:
+
 ```{r}
 'Biostatistics'
 ```
 
-#### Multiple texts
+The initial quote must match the last one.
+
+In R everything is case-sensitive, including character strings. This means that 'Biostatistics' and 'biostatistics' are in fact different strings.
+
+Other examples of character strings are:
 
 ```{r}
-c( "Bioinformatics", "Biostatistics" )
+"day1"
+"June 2024"
+'first.And.Second'
+'file_name'
+```
+
+#### Character  vector
+
+Multiple  character strings can be combined to create a character vector using `c()`. For example:
+
+```{r}
+x <- c( "Bioinformatics", "Biostatistics", "June2024", NA, "particiPants" )
+x
 ```
 
 
