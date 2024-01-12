@@ -87,7 +87,7 @@ Multiple vectors can be combined together:
 ```{r}
 v <- 1:9
 w <- seq( 10, 90, 10 )
-res <- c( 0, v, w, 100 )
+res <- c( 0, v, w, NA, 100 )
 res
 class(res)
 ```
@@ -135,29 +135,39 @@ Multiple  character strings can be combined to create a character vector using `
 ```{r}
 x <- c( "Bioinformatics", "Biostatistics", "June2024", NA, "particiPants" )
 x
+class(x)
 ```
 
 
+### Logical vectors and operators
 
-### Logical vectors 
+#### Logical vectors 
 
-#### Elementary logical values
+Elementary logical values are:
 
 ```{r}
 TRUE
 FALSE
 T
 F
-c( FALSE, F, TRUE, T )    # vector of logical values
 ```
 
-(*) `NA` is a logical constant and it gets automatically converted to other types when necessary.
+A logical vector can be created by combining logical values with `c()`:
+
+```{r}
+x <- c( FALSE, F, NA, TRUE, T )   
+x
+class(x)
+```
+
+
 
 #### Logical operators
 
 ##### Negation
 
 Unary negation operator (denoted `!`):
+
 ```{r}
 !TRUE
 !FALSE
@@ -165,12 +175,14 @@ Unary negation operator (denoted `!`):
 
 ##### AND Operator `&`
 
-Binary operator AND (denoted `&`) returns `TRUE` result when `all` its arguments are `TRUE`:
+Binary operator AND (denoted `&`) returns `TRUE` result when *all* its arguments are `TRUE`:
+
 ```{r}
 TRUE & TRUE
 ```
 
-Otherwise returns `FALSE`:
+Otherwise it returns `FALSE`:
+
 ```{r}
 FALSE & TRUE
 FALSE & FALSE
@@ -178,13 +190,15 @@ FALSE & FALSE
 
 ##### OR operator `|`
 
-Binary operator OR (denoted `|`) returns `TRUE` result when `any` (at least one) of its arguments is `TRUE`:
+Binary operator OR (denoted `|`) returns `TRUE` result when *any* (at least one) of its arguments is `TRUE`:
+
 ```{r}
 TRUE | TRUE
 FALSE | TRUE
 ```
 
-Otherwise returns `FALSE`:
+Otherwise it returns `FALSE`:
+
 ```{r}
 FALSE | FALSE
 ```
@@ -196,20 +210,32 @@ FALSE | FALSE
 ```{r}
 1 == 2
 "Bioinformatics" == "Biostatistics"
+"biostatistics" == "Biostatistics"
 FALSE == F
 ```
 
 ##### Inequality operators 
 
+Not equal:
+
 ```{r}
-1 != 2    # unequal  
+1 != 2     
 "a" != "A"
 FALSE != T
-1 < 2     # less than
-1 > 2     # greater than
-2 <= 2    # less or equal 
-2 >= 2    # greater or equal
 ```
+
+As you can see, this can be used for numeric entries, character strings as well as logical values.
+
+The operators "less than" ("<"), greater than (">") as well as their combinations with "equal" ("=") are mostly used with numeric entries:
+
+```{r}
+1 < 2     
+1 > 2     
+2 <= 2    
+2 >= 2    
+```
+
+
 
 #### Comparison of two vectors
 
