@@ -3,9 +3,7 @@ title: "Basic data types (cont.)"
 output: html_document
 ---
 
-```{r setup,include=FALSE,eval=TRUE}
-source( "../../setup/R_course_setup.R" );
-```
+
 
 # Basic data types (cont.) (task)
 
@@ -235,10 +233,26 @@ sum( w )
 
 
 
-### Extra tasks
+### Extra tasks (*)
 
-- OR (vector) operator: (*)
-    - Reproduce the "AND operator" exercise for the `|` (or) operator.
+#### Comparisons of character vectors
+
+
+
+Logical operators such as `>` and `<` do not give an error when used with character strings.  To see this, check what the result of `A < B` is:
+
+```{r}
+"A" < "B"
+```
+
+Specifically, the result is `TRUE` if the relation corresponds to the correct alphabetical order, and `FALSE` otherwise. 
+
+However, the alphabetical order depends on the locale in use (i.e. the local settings). As such, the result depends on the locale as well. So, while it is perhaps logical to expect that `A < B` yields `r A < B`, the comparison `Z < T` gives `r Z < T` in English, but `TRUE` in Estonian. See Details in  `help(">")` for more information and examples.
+
+
+#### OR operator
+
+- Reproduce the "AND operator" exercise for the `|` (or) operator.
 
 - Elements on `which` positions (indices) are `TRUE`: (*)
     - Study the logical vector `w` from the earlier task. 
