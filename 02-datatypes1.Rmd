@@ -8,45 +8,88 @@ Numeric, character, logical vectors, factors might contain elements marked as 'm
 
 `NA` is a constant which indicates a missing value.
 
-`NA` values would appear in the course materials and tasks.
+`NA` values can be included in all objects in R.
 
 ### Numeric vectors 
 
-There are several ways to construct a vector of numbers.
+Vector: set of values put together in a certain order
 
-#### Single number (numeric vector with a single element)
+Numeric vector: set of *numbers* put together in a certain order
 
-```{r}
+Below we will see some ways to create numeric vectors.
 
-7
-```
+#### Sequences of numbers 
 
-#### Multiple numbers
-
-```{r}
-c( 5, -2.5, NA, 7+3, 1/3 )
-```
-
-#### Sequence of numbers (one by one)
+One way of creating sequences of numbers is to use the operator `:`. It creates a sequence of consecutive integers starting by the first argument, and ending by the last one. For example:
 
 ```{r}
 3:17
 ```
 
-#### Sequence of numbers
+It can also be used to create sequences in decreasing order:
 
-Sequence of numbers with a defined step:
 ```{r}
-seq( 5, 15, 2 )
+17:3
 ```
 
-#### Combine (several) vectors of numbers
+Negative arguments are also allowed:
+
+```{r}
+-3:10
+-2:-7
+```
+
+So `:` can be used to create sequences with steps of 1 between elements. Sometimes we want to create sequences with steps of a different value. For this, `seq()` is useful:
+
+```{r}
+seq(from = 3, to = 17, by = 1)
+```
+
+This creates the same sequence as with `3:17`. If we wish to use a step of 2, all we do is:
+
+```{r}
+seq(from = 3, to = 17, by = 2)
+```
+
+Above `seq()` was called by naming the arguments `from`, `to` and `by`. The argument names can be omited if they are given in the expected order `from--to--by`:
+
+```{r}
+seq(from = 3, to = 17, by = 2)
+```
+
+#### Combining multiple numbers
+
+Multiple numbers can be combined to create numeric vectors:
+
+```{r}
+c(3, 5, 7, 8)
+```
+
+Entries in `c()` may include any type of number, or operation yielding a number, and the result will be a numeric vector. For example:
+
+```{r}
+x <- c( 5, -2.5, NA, 7+3, 1/3 )
+x
+class(x)
+```
+
+Note that a single value is in fact a vector of length 1:
+
+```{r}
+x <- 7
+class(x)
+```
+
+#### Combining  vectors of numbers
 
 Multiple vectors can be combined together:
+
 ```{r}
 v <- 1:9
 w <- seq( 10, 90, 10 )
-c( 0, v, w, 100 )
+res <- c( 0, v, w, 100 )
+res
+class(res)
 ```
 
 ```{r results="asis", echo=FALSE, comment=""}
