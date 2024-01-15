@@ -47,6 +47,7 @@ v[ -7 ]
 ```
 
 - Set the 5th element of `v` to zero. Check `v` before and after this change.
+
 ```{r}
 v
 v[ 5 ] <- 0
@@ -70,6 +71,7 @@ v
 ```
 
 - Get the values of `v` corresponding to positions named `e` and `h`. (*)
+
 ```{r}
 v[ c( 'e', 'h' ) ]
 ```
@@ -89,7 +91,7 @@ v
 
 #### Primary tasks
 
-- Sample a vector randomly: `sample`.
+- Sample entries from a vector randomly using `sample()`.
     - Define `v <- 101:110`. Try several times `sample( v )`. 
     - Then try several times `sample( v, 3 )`, `sample( v, 15 )` and `sample( v, 15, replace = TRUE )`.
  
@@ -167,9 +169,24 @@ duplicated( v )
 
 #### Primary tasks
 
-To find the index of the largest/smallest entry in a vector, you can use: `which.max`, `which.min`.
-    
-- Create a vector `v` by sampling 10 elements from the sequence `1:1000000`. Show `v`.
+- The function `which.max()` returns the index of the largest value in a vector. Use it to obtain the index of the largest value in `1:5`, and the one in `5:1`.
+
+```{r}
+x <- 1:5
+which.max(x)
+y <- 5:1
+which.max(y)
+```
+
+A similar function is `which.min()`, which returns the index of the smallest value in a vector. Use it to obtain the index of the largest value in a vector composed of `1:10` followed by `9:1`.
+
+```{r}
+x <- c(1:10, 9:1)
+which.min(x)
+```
+
+
+- Create a vector `v` by sampling 10 elements from the sequence starting with `1` and ending at `1000000`, with step `1`. Show `v`.
     
     
 ```{r}
@@ -212,6 +229,7 @@ v[ which( v ) ]
     - Let's check where elements of `v <- c( "1", "B", "I", "O", "b" )` are among `LETTERS` with `match( v, LETTERS )`.
     - How to interpret the result? 
     - How to find how many of elements in `v` do not occur in `LETTERS`?
+    
 ```{r}
 v <- c( "1", "B", "I", "O", "b" )
 idx <- match( v, LETTERS )
@@ -224,6 +242,7 @@ sum( is.na( idx ) )
     - Let's generate a random vector `v <- sample( LETTERS, 10 )`.
     - Understand `order( v )` and `v[ order( v ) ]`.
     - Check whether `v[ order( v ) ] == sort( v )` or even better whether `all( v[ order( v ) ] == sort( v ) )` is TRUE.
+    
 ```{r}
 v <- sample( LETTERS, 10 )
 v
