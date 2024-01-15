@@ -61,6 +61,47 @@ idx <- c( 3, 7, 1 )
 v[ idx ]
 ```
 
+
+- Create a vector `age` by sampling 30 values between 18 and 55.
+
+```{r}
+age <- sample(18:55, size = 30)
+```
+
+Create a vector `sex` assigning "female" to the first half of entries, and "male" to the second half. Hint: use `rep()`.
+
+```{r}
+sex <- rep(c("female", "male"), each = 30/2)
+```
+
+Now create a vector `height` of 30 heights in meters, by selecting values at random between 1.55 and 1.95. Hint: first generate the vector of heights to be sampled from using `seq()`. Then use `sample()` to draw 30 values from the created vector.
+
+```{r}
+height <- sample(seq(from = 1.55, to = 1.95, by = 0.01), size = 30)
+```
+
+Select all values of `height` for females older than 30 years. Hint: first create a logical vector selecting females, then create a logical vector selecting ages older than 30. Subsequently, create a logical vector by combining the two logical vectors using `&` (AND). Finally, use this logical vector to select entries from `height`.
+
+```{r}
+sel.fem <- sex == "female"
+sel.age <- age > 30
+sel <- sel.fem & sel.age
+height.sel <- height[ sel ]
+```
+
+- Now make the 10th entry in `age` as `NA`, and repeat the exercise. What happens to the result?
+
+```{r}
+age[ 10 ] <- NA
+sel.age <- age > 30
+sel <- sel.fem & sel.age
+height.sel <- height[ sel ]
+```
+
+
+Explanation: `NA` entries in the logical vector used as index will generate `NA`s entries in the result, even if the original  vector (in this case, `height`) did not involve `NA`s.
+
+
 ### Extra tasks
 
 - Name the elements of `v` with subsequent small letters of alphabet. Use `1:length( v )` to specify the range of the `letters` vector. (*)
@@ -83,6 +124,7 @@ v
 v[ c( 3, 5 ) ] <- c( 13, 15 )
 v
 ```
+
 
 
 ## Through utility functions {#utility}
