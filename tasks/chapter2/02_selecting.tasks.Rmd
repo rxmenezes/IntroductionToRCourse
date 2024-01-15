@@ -1,11 +1,7 @@
 ---
 title: "Selecting/indexing/subsetting (vector elements, data frame rows/columns, ...) (tasks)"
-output: html_document
 ---
 
-```{r setup,include=FALSE,eval=TRUE}
-source( "../../setup/R_course_setup.R" );
-```
 
 # Selecting/indexing/subsetting (vectors) (tasks)
 
@@ -350,4 +346,17 @@ The `rank` gives you the relative position of each entry, also in alphabetical o
 
 ```{r}
 rank(myv)
+```
+
+## (*) Class of a vector {#vectorClass}
+
+
+Try to explain the class of the resulting vector in the examples below:
+
+```{r}
+x <- c(3, 10, TRUE, 20)
+```
+
+```{r}
+x <- c(3, 10, "TRUE", 20)
 ```
