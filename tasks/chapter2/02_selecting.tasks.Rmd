@@ -163,6 +163,7 @@ vs[1:3] # Same result as before
 - Reverse a vector: `rev`. (*)
     - Define `v <- 101:110`. 
     - Compare `v` to `rev( v )`.
+    
 ```{r}
 v <- 101:110
 v
