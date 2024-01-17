@@ -237,7 +237,7 @@ v <- sample( 1:1000000, 10 )
 v
 ```
 
-- Use `which.max( v )` to find which entry of `v` contains its largest element. 
+- Use `which.max()` to find which entry of `v` contains its largest element. 
 
 ```{r}
 which.max( v )
@@ -249,7 +249,7 @@ which.max( v )
 v[ which.max( v ) ]
 ```
 
-- Check that this is indeed the largest value in `v` by using `max`.
+- Check that this is indeed the largest value in `v` by using `max()`.
 
 ```{r}
 max(v)
@@ -312,7 +312,7 @@ sort( v )
 u <- sort(v)
 ```
 
-- Now computer `order(v)`.
+- Now computer `order()` for `v`.
 
 ```{r}
 order(v)
@@ -391,20 +391,20 @@ order( v )
 rank( v )
 ```
 
-*Explanation*: We already know that `order` returns the indices that, when used on the original vector, sorts its elements. The function `rank` gives you the relative position of each entry, from the smallest to the largerst by default. For example, define
+*Explanation*: We already know that `order()` returns the indices that, when used on the original vector, sorts its elements. The function `rank()` gives you the relative position of each entry, from the smallest to the largest by default. For example, define
 
 ```{r}
 myv <- c("A", "C", "E", "B", "F")
 myv
 ```
 
-It is easy to see that the result of `order` should be the vector: `c(1, 4, 2, 3, 5)`, since the first element in alphabetical order `A` is at position one, then the second element in alphabetical order `B` is in position 4, etc. Indeed, check that this is also the result of `order`:
+It is easy to see that the result of `order()` should be the vector: `c(1, 4, 2, 3, 5)`, since the first element in alphabetical order `A` is at position one, then the second element in alphabetical order `B` is in position 4, etc. Indeed, check that this is also the result of `order()`:
 
 ```{r}
 order(myv)
 ```
 
-The `rank` gives you the relative position of each entry, also in alphabetical order. The first entry in `myv` is also the first element in alphabetical order, so the first element in `rank` is 1. The second entry in `myv` is the fourth element in alphabetical order, so the second element in `rank` is 4.  Then the third entry in `myv` is the second element in alphabetical order, with rank 2. The next entry in `myv` is the third element, and the last entry in `myv` is the fifth element. This means that `rank(myv)` returns `c(1, 4, 2, 3, 5)`. Check this:
+The `rank()` gives you the relative position of each entry, also in alphabetical order. The first entry in `myv` is also the first element in alphabetical order, so the first element in `rank()` is 1. The second entry in `myv` is the fourth element in alphabetical order, so the second element in `rank` is 4.  Then the third entry in `myv` is the second element in alphabetical order, with rank 2. The next entry in `myv` is the third element, and the last entry in `myv` is the fifth element. This means that `rank(myv)` returns `c(1, 4, 2, 3, 5)`. Check this:
 
 ```{r}
 rank(myv)
