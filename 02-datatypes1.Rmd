@@ -1017,6 +1017,10 @@ colMeans( m )
 colSums( m )
 ```
 
+```{r results="asis", echo=FALSE, comment=""}
+catLinkTaskSection( "createSummarize", "exercises/05_matrices.Rmd" );
+```
+
 
 #### (*) Reducing dimensions
 
@@ -1087,3 +1091,5 @@ m * (m+1)
 ```{r results="asis", echo=FALSE, comment=""}
 catLinkTaskSection( "corMatrix", "exercises/05_matrices.Rmd" );
 ```
+
+
