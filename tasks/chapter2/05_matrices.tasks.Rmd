@@ -3,7 +3,7 @@ title: "Matrices (tasks)"
 ---
 
 
-## Creating a matrix 
+## Creating a matrix {#createSummarize}
 
 Create a matrix with 5 rows and 5 columns, with entries formed by the sequence of integers from 1 to 25. Fill in entries by row: first entries on row 1, then entries on row 2, and so on. Save the matrix as an object. Show the matrix created.
 
@@ -26,6 +26,9 @@ mat[2, 5] <- NA
 ```
 
 
+
+### Getting summaries of a matrix
+
 Use the function `summary()` to compute various statistics of the matrix columns. 
 
 ```{r}
@@ -33,7 +36,6 @@ Use the function `summary()` to compute various statistics of the matrix columns
 summary(mat)
 ```
 
-### Extra tasks
 
 Compute the sum of columns of the matrix, per column. Hint: use function `colSums()`.
 
