@@ -1,15 +1,7 @@
 ---
 title: "Matrices (tasks)"
-output: html_document
 ---
 
-```{r setup, include=FALSE,eval=TRUE}
-source( "../../setup/R_course_setup.R" );
-```
-
-# Matrices (tasks)
-
-## Tasks
 
 ### Creation
 
