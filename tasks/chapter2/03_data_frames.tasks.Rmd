@@ -3,17 +3,10 @@ title: "Data frames (tasks)"
 output: html_document
 ---
 
-```{r setup,include=FALSE,eval=TRUE}
-source( "../../setup/R_course_setup.R" );
-```
 
-# Data frames (tasks)
+## Creating a data frame
 
-## Tasks
-
-### Creating a data frame
-
-#### Primary tasks
+### Primary tasks
 
 - Create a `data.frame` from given vectors
 
@@ -55,9 +48,9 @@ Check what happens if you try to compute the mean by selecting the variable `age
 mean(mydata[, "age"])
 ```
 
-### Reading data from files with different formats
+## Reading data from files with different formats
 
-#### Primary tasks
+### Primary tasks
 
 - Load the `pulse.csv` file into the `d` object. Display the structure of `d` and the first few rows.
 
@@ -192,7 +185,7 @@ d[ isMan & isInWeightRange, ]
 
 
 
-#### Extra tasks
+### Extra tasks
 
 - Enforce a data frame type.
     - Observe below, that `d[ ,cols ]` might sometimes return a vector, and sometimes return a data frame.
