@@ -825,37 +825,46 @@ pulse[ 3 ]
 class( pulse[ 3 ] )
 ```
 
-Since the returned object is a `data.frame`, multiple columns might be returned (for example in a different order):
+Since the returned object is a `data.frame`, multiple columns might be returned (for example in a different order than they are in the `pulse` data):
+
 ```{r}
 pulse[ c( 'height', 'weight' ) ]
 ```
 
 When a name is invalid, an error is produced:
+
 ```{r error=TRUE}
 pulse[ 'wrong' ]
 ```
 
 #### Square brackets operator, two arguments
 
-Single brackets notation with two arguments `[ row(s), col(s) ]` might be used to get (multiple) row(s) and (multiple) column(s):
+The single brackets notation with two arguments `[ row(s), col(s) ]` separated by a comma can be used to get (multiple) row(s) and (multiple) column(s):
+
 ```{r}
+pulse[2, "weight"]
+pulse["1993_C", 3]
 pulse[ c( 1, 3 ), c( 'height', 'weight' ) ]
 pulse[ c( "1993_C", "1993_A", "wrong" ), c( 'height', 'weight' ) ]
+pulse[ 4:8, "smokes"]
 ```
 
-Warning: notice the difference of the class of the output when only a single column is requested:
+Note  the class of the output when extracting multiple columns:
 
 ```{r}
 pulse[ , c( 'height', 'weight' ) ]
 class( pulse[ , c( 'height', 'weight' ) ] )
 ```
 
+And now extracting a single column:
+
 ```{r}
 pulse[ , c( 'weight' ) ]
 class( pulse[ , c( 'weight' ) ] )
 ```
 
-Empty index field means "all" rows or columns:
+Within the square bracket, an empty index field refers to all rows or columns:
+
 ```{r}
 pulse[ , ]
 pulse[ , c( 'height', 'weight' ) ]
