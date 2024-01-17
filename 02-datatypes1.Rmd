@@ -883,57 +883,73 @@ catLinkTaskSection( "dataframes", "exercises/03_data_frames.Rmd" );
 
 <center>![Vectors](figure/Data_types_mdfl.png)</center>
 
-Matrix is a two-dimensional array of elements of the same type.
+A matrix is a two-dimensional array of elements of the same type. It can be seen as a generalization of a vector, with all entries are of the same type, only now with rows and columns. Conversely, a vector can be seen as a matrix of a single row or a single column (depending on the case).
 
-Rows and columns are addressed by numerical indices.
+Similar to data frames, rows and columns are addressed by numerical indices.
+Rows and columns can also be named and be used for indexing.
 
-Rows and columns might also get names. The names might be used for indexing.
+Many of the functions used for a `data.frame` to assess elements can be used for matrices as well, as we will see.
 
 ### Creation
 
-A matrix can be constructed from a vector. Depending on the arguments, elements are put to the matrix in a different order:
+A matrix can be constructed from a vector by using the function `matrix()`. Depending on the arguments, elements are put to the matrix in a different order:
 
 ```{r}
-m <- matrix( 1:6, nrow = 2 );
+m <- matrix( 1:6, nrow = 2 )
 m
-m <- matrix( 1:6, nrow = 2, byrow = TRUE );
-m
-m <- matrix( 1:6, ncol = 2 );
+m <- matrix( 1:6, nrow = 2, byrow = TRUE )
 m
 ```
 
+By default, elements from the input vector `1:6` above are arranged in the matrix `m` by column - so putting the values in the first column, and after that is filled continuing on the second column, until all entries are filled. You can change this by using `byrow = TRUE` in the function call (as above).
+
+By default, a matrix with a single column is made. This can be changed by using `ncol` within `matrix()`:
+
+
+```{r}
+m <- matrix( 1:6, ncol = 2 )
+m
+```
+
+
 The class of `m` is:
+
 ```{r}
 class( m )
 ```
 
-Function `str` gives a compact display of an object structure/content:
+The function `str()` can be used for matrices as well to give a compact display of the object's structure/content:
+
 ```{r}
 str( m )
 ```
 
 ### Dimensions
 
-There are several functions to get dimensions of a matrix:
+Many of the functions used for a `data.frame` to get rows, columns and dimensions can be used for a matrix:
 
-- `ncol( m )` provides the number of columns:
+- `ncol()` for the number of columns:
+
 ```{r}
 ncol( m )
 ```
 
-- `nrow( m )` provides the number of rows:
+- `nrow()` for the number of rows:
+
 ```{r}
 nrow( m )
 ```
 
-- `dim( m )` returns a vector with two elements: number of rows and number of columns
+- `dim()` returns a vector with two elements: number of rows and number of columns:
+
 ```{r}
 dim( m )
 ```
 
 ### Setting/getting names of the columns and rows
 
-`colnames( m )` and `rownames( m )` are used to set and get the names of matrix columns and rows:
+The functions `colnames()` and `rownames()` are used to set and get the names of matrix columns and rows:
+
 ```{r}
 m
 colnames( m ) <- c( "A", "B" )
@@ -943,6 +959,7 @@ m
 ```
 
 To get names use:
+
 ```{r}
 rownames( m )
 colnames( m )
@@ -950,7 +967,7 @@ colnames( m )
 
 ### Getting matrix elements
 
-Single brackets notation with two arguments `[ row(s), col(s) ]` might be used to get specified row(s) and column(s). By default single rows/cols will get reduced to a vector.
+The single square-brackets notation with two arguments `[ row(s), col(s) ]` can be used to get specified row(s) and column(s). By default single rows/cols will get reduced to a vector.
 
 ```{r}
 m[ 3, 1 ]
@@ -959,25 +976,32 @@ m[ c( 2, 3 ), c( "B", "A" ) ]
 m[ c( F, T, T ), c( "B", "A" ) ]
 ```
 
-Notice the difference in the output class when only a single element is requested:
-```{r}
-class( m[ 3, 1 ] )
-class( m[ c( 2, 3 ), c( "B", "A" ) ] )
-```
+As for a `data.frame`, an empty index field selects all indices in that field. So, to select all rows and columns `B` and `A`, we can use:
 
-Dropping of `matrix` dimensionality might be prevented:
 ```{r}
-m[ 3, 1 ]
-m[ 3, 1, drop = FALSE ]
-class( m[ 3, 1, drop = FALSE ] )
-```
-
-Empty index field means "all" rows or columns:
-```{r}
-m[ , c( "B", "A" ) ]
+m[ , c("B", "A")]
 m[ c( "Z", "X", "Y" ), ]
 m[ , ]
 ```
+
+The output class of a few elements of a matrix is still a matrix:
+
+```{r}
+class( m[ c( 2, 3 ), c( "B", "A" ) ] )
+```
+
+However, the class of a single entry is just the class of that entry:
+
+```{r}
+class( m[ 3, 1 ] )
+```
+
+When assessing/extracting elements of a matrix, we cannot leave out the comma - which is possible for a `data.frame` because then by default a column is selected:
+
+```{r error=TRUE}
+m[ 1 ]
+```
+
 
 ### Useful matrix functions
 
@@ -991,6 +1015,45 @@ rowMeans( m )
 rowSums( m )
 colMeans( m )
 colSums( m )
+```
+
+
+#### (*) Reducing dimensions
+
+When selecting entries from a single column, the result will no longer be a matrix:
+
+```{r}
+m[1:3, 2] 
+class( m[1:3, 2] )
+```
+
+This means that some functions that specifically work for matrices, but not for vectors, will no longer work. For example `dim()` does not return a number:
+
+```{r}
+dim( m[1:3, 2]  )
+```
+
+Of course, functions for vectors work:
+
+```{r}
+length( m[1:3, 2] )
+```
+
+This happens because the result can be indexed by a single dimension, so the now-obsolete dimension is dropped by default. This can create problems when writing scripts, as functions such as `dim()` may need to be used. It can therefore be useful to guarantee that the result has the same number of dimensions as the original object, so that functions such as `dim()` still work, even if a selection may have meant that a vector (rather than a matrix) is returned. In such cases, the argument `drop` can be used to make sure that all dimensions of the original object are preserved (or not dropped). 
+
+For example, the following selection yields a vector, and `dim()` returns `NULL`:
+
+```{r}
+m[ 3, 1:2 ]
+dim(m[ 3, 1:2 ])
+```
+
+By using `drop = FALSE`, all dimensions are preserved:
+
+```{r}
+m[ 3, 1, drop = FALSE ]
+dim(m[ 3, 1, drop = FALSE ])
+class( m[ 3, 1, drop = FALSE ] )
 ```
 
 
