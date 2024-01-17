@@ -1,17 +1,9 @@
 ---
 title: "Matrices (tasks)"
-date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
 
-```{r setup, include=FALSE,eval=TRUE}
-source( "../../setup/R_course_setup.R" );
-```
 
-# Matrices (tasks)
-
-## Tasks
-
-### Matrix creating
+## Creating a matrix 
 
 Create a matrix with 5 rows and 5 columns, with entries formed by the sequence of integers from 1 to 25. Fill in entries by row: first entries on row 1, then entries on row 2, and so on. Save the matrix as an object. Show the matrix created.
 
@@ -26,17 +18,6 @@ Assign the following row names to this matrix: "Row 1", "Row 2", and so on until
 rownames(mat) <- c("Row 1", "Row 2", "Row 3", "Row 4")
 ```
 
-Compute the sum of columns of the matrix, per column.
-
-```{r}
-colSums(mat)
-```
-
-Compute the row means of the matrix, per row.
-
-```{r}
-rowMeans(mat)
-```
 
 You have been told that the element on the second row and fifth column was actually not observed. Make this entry `NA`.
 
@@ -44,12 +25,6 @@ You have been told that the element on the second row and fifth column was actua
 mat[2, 5] <- NA
 ```
 
-Now recompute the column sums. Check the help file of the function used, to make sure that `NA`s are ignored when computing the sums.
-
-```{r}
-# ?colSums
-colSums(mat, na.rm = TRUE)
-```
 
 Use the function `summary()` to compute various statistics of the matrix columns. 
 
@@ -58,9 +33,33 @@ Use the function `summary()` to compute various statistics of the matrix columns
 summary(mat)
 ```
 
-### Matrix of correlation coefficients {#corMatrix}
+### Extra tasks
 
-#### Extra tasks
+Compute the sum of columns of the matrix, per column. Hint: use function `colSums()`.
+
+```{r}
+colSums(mat)
+```
+
+Check the help file of `colSums()`, to make sure that `NA`s are ignored when computing the sums.
+
+```{r}
+# ?colSums
+colSums(mat, na.rm = TRUE)
+```
+
+
+Compute the row means of the matrix, per row. Hint: use `rowMeans()`. Check in the function help file how `NA`s are handled.
+
+```{r}
+rowMeans(mat)
+```
+
+
+
+## Matrix of correlation coefficients {#corMatrix}
+
+### Extra tasks
 
 The goal of this exercise is to calculate a matrix of column-column Pearson correlation coefficients for a number of data frame columns. The `cor` function does not accept a `data.frame` argument and it works only with numerical columns. Therefore, first the numerical columns of the data frame need to be extracted and converted to a matrix.
 
