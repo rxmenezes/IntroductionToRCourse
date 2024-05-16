@@ -66,14 +66,16 @@ barplot(women$weight, names.arg=women$height, xlab='height', ylab='weight', main
 
 In the `survey` data:
 
-```{r result="as.is", echo=FALSE, comment="", eval=TRUE}
-survey <- catReadTable( "survey.txt", "survey" )
-```
-```{r eval=FALSE}
+```{r echo = TRUE, eval = FALSE }
 survey <- read.delim( "./data/survey.txt" )
 ```
 
+```{r echo = FALSE, eval = TRUE }
+survey <- read.delim( "../../data/survey.txt" )
+```
+
 -	The function for correlation in R is `cor()`. Calculate correlation between average `span1` and `span2`
+
 ```{r}
 cor(survey$span1, survey$span1)
 ```

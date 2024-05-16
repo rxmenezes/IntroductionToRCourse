@@ -2,7 +2,12 @@
 title: "Basic data types (tasks)"
 ---
 
-```{r echo=FALSE}
+```{r echo = FALSE, eval = TRUE}
+pulse <- read.delim("../../data/pulse.txt")
+survey <- read.delim("../../data/survey.txt")
+```
+
+```{r echo = TRUE, eval = FALSE}
 pulse <- read.delim("./data/pulse.txt")
 survey <- read.delim("./data/survey.txt")
 ```

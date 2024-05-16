@@ -11,7 +11,12 @@ For the quick exercises we will mostly work with the `survey` data. Let's load t
 
 - Load the survey data into R. Use the script you made!
 
-```{r eval=1:2, echo=3}
+```{r eval=1:2, echo = FALSE}
+survey <- read.delim("../../data/survey.txt")
+pulse <- read.delim("../../data/pulse.txt")
+```
+
+```{r eval = FALSE, echo = TRUE}
 survey <- read.delim("./data/survey.txt")
 pulse <- read.delim("./data/pulse.txt")
 ```
