@@ -54,13 +54,13 @@ mean(mydata[ "age"])
 
 - Load the `pulse.csv` file into the `d` object. Display the structure of `d` and the first few rows.
 
-```{r eval=FALSE}
-d <- read.csv( "data/pulse.csv" )
+```{r eval = FALSE}
+d <- read.csv( "./data/pulse.csv" )
 ```
 
-```{r result="as.is", echo=FALSE, comment="",eval=TRUE}
+```{r result="as.is", echo=FALSE, comment="", eval=TRUE}
 # Do not run this code chunk during the course
-d <- catReadCsv( "pulse.csv", "d" )
+d <- read.csv( "../../data/pulse.csv" )
 ```
 
 ```{r}

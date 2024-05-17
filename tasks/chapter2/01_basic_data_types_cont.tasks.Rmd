@@ -31,6 +31,7 @@ length( v )
 - Create a variable `v` as a vector of (50, 40, 30, 20, 10, 5, 4, 3, 2, 1, NA). 
     - Use once `seq`, and once `:` (colon). 
     - Show `v` to check the numbers.
+    
 ```{r}
 v <- c( seq( 50, 10, -10), 5:1, NA )
 v
@@ -86,11 +87,14 @@ v
 ```
 
 - Read the help file of `rep`. Construct a vector 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2... with 20 pattern repetitions. (*)
+
+
 ```{r}
 rep( 0:2, 20 )
 ```
 
 - Use `rep`. Construct the first 13 elements of a vector 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2... Check the length of the result. (*)
+
 ```{r}
 v <- rep( 0:2, length.out = 13 )
 v
@@ -98,6 +102,7 @@ length( v )
 ```
 
 - Read manual of function `rev`. Use this function and the `v` from the previous task to build a vector of (50,40,30,20,10,5,4,3,2,1,NA,NA,1,2,3,4,5,10,20,30,40,50). (*)
+
 ```{r}
 v <- 1:5
 w <- seq(from = 10, to =50, by = 10)
@@ -247,7 +252,7 @@ Logical operators such as `>` and `<` do not give an error when used with charac
 
 Specifically, the result is `TRUE` if the relation corresponds to the correct alphabetical order, and `FALSE` otherwise. 
 
-However, the alphabetical order depends on the locale in use (i.e. the local settings). As such, the result depends on the locale as well. So, while it is perhaps logical to expect that `A < B` yields `r A < B`, the comparison `Z < T` gives `r Z < T` in English, but `TRUE` in Estonian. See Details in  `help(">")` for more information and examples.
+However, the alphabetical order depends on the locale in use (i.e. the local settings). As such, the result depends on the locale as well. So, while it is perhaps logical to expect that `A < B` yields `r "A" < "B"`, the comparison `Z < T` gives `r "Z" < "T"` in English, but `TRUE` in Estonian. See Details in  `help(">")` for more information and examples.
 
 
 #### OR operator
