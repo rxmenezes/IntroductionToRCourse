@@ -11,7 +11,7 @@
 
 
 
-<title>Projects and Scripts (tasks)</title>
+<title>Basics (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,40 +348,135 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects and Scripts (tasks)</h1>
+<h1 class="title toc-ignore">Basics (tasks)</h1>
 
 </div>
 
 
-<div id="firstLoad" class="section level1">
-<h1>Loading data from txt</h1>
-<p>For the quick exercises we will mostly work with the
-<code>survey</code> data. Let us load them into R.</p>
+<div id="firstCalculations" class="section level1">
+<h1>First calculations</h1>
 <ul>
-<li><p>Copy the file <code>survey.txt</code> into your data
-folder</p></li>
-<li><p>Load this new data set into R and call it
-<code>survey</code></p></li>
+<li>Calculate 25 plus the square of 12</li>
 </ul>
-<pre class="r"><code>## </code></pre>
+<pre class="r"><code>25 + 12^2</code></pre>
+<pre><code>## [1] 169</code></pre>
 <ul>
-<li>View it</li>
+<li>What is the square root of the number you have just calculated?</li>
 </ul>
-<pre class="r"><code>View(survey)</code></pre>
+<pre class="r"><code>sqrt(25 + 12^2)</code></pre>
+<pre><code>## [1] 13</code></pre>
 </div>
-<div id="firstScript" class="section level1">
-<h1>Making a script</h1>
-<p>We will make a script to read in the pulse and survey datasets. We
-will use this script every day in the course.</p>
+<div id="firstVariables" class="section level1">
+<h1>First variables</h1>
 <ul>
-<li><p>Start a new script that reads in the pulse and survey data
-sets</p></li>
-<li><p>Add a comment to the script</p></li>
-<li><p>Save the script under a useful name</p></li>
-<li><p>Check it by closing and opening RStudio, running the script and
-then checking that the objects containing the datasets are loaded in the
-workspace (HINT: make sure you are in the right project)</p></li>
+<li>Make a variable that contains your height in m.</li>
 </ul>
+<pre class="r"><code>height_m &lt;- 1.78</code></pre>
+<ul>
+<li>Calculate your height in cm.</li>
+</ul>
+<pre class="r"><code>height_m*100</code></pre>
+<pre><code>## [1] 178</code></pre>
+<ul>
+<li>Store the result of the previous calculation as a variable</li>
+</ul>
+<pre class="r"><code>height_cm &lt;- height_m*100</code></pre>
+</div>
+<div id="exercisesBasics" class="section level1">
+<h1>Making a vector</h1>
+<p>Four patients had dietary intakes of 2314, 2178, 1922, 2004
+kilocalories (kca).</p>
+<ul>
+<li>Make a vector of these four values.</li>
+</ul>
+<pre class="r"><code>diet_kcal &lt;- c(2314, 2178, 1922, 2004)</code></pre>
+<ul>
+<li>Convert these values into KJ using 1 kca = 4.184 kJ</li>
+</ul>
+<pre class="r"><code>diet_kJ &lt;- diet_kcal * 4.184</code></pre>
+<ul>
+<li>(*) Sort the resulting values using the function
+<code>sort</code>.</li>
+</ul>
+<pre class="r"><code>sort(diet_kJ)</code></pre>
+<pre><code>## [1] 8041.648 8384.736 9112.752 9681.776</code></pre>
+</div>
+<div id="regular-sequences" class="section level1">
+<h1>Regular sequences</h1>
+<ul>
+<li>Make a vector of all numbers between 1 and 100. Hint: use
+<code>:</code>.</li>
+</ul>
+<pre class="r"><code>x &lt;- 1:100</code></pre>
+<ul>
+<li>Calculate 1+2+3+…+100. Hint: use <code>sum()</code>.</li>
+</ul>
+<pre class="r"><code>sum(x)</code></pre>
+<pre><code>## [1] 5050</code></pre>
+</div>
+<div id="vectorized-calculation" class="section level1">
+<h1>Vectorized calculation</h1>
+<ul>
+<li>Degrees Celsius (<code>Cel</code>) can be calculated from degrees
+Fahrenheit (<code>Fah</code>) as <code>Cel = 5/9 * (Fah - 32)</code>.
+How much is 60 degrees Fahrenheit in Celsius?</li>
+</ul>
+<pre class="r"><code>5/9 * (60 - 32)</code></pre>
+<pre><code>## [1] 15.55556</code></pre>
+<ul>
+<li>Calculate a vector that contains degrees Celsius for 0,1,…,100
+degrees Fahrenheit.</li>
+</ul>
+<pre class="r"><code>Fah &lt;- 0:100
+Cel &lt;- 5/9 * (Fah - 32)</code></pre>
+<ul>
+<li>From your calculation in the previous exercise, select 10 Fahrenheit
+in Celsius.</li>
+</ul>
+<pre class="r"><code>Cel[11]</code></pre>
+<pre><code>## [1] -12.22222</code></pre>
+</div>
+<div id="removing-variables" class="section level1">
+<h1>(*) Removing variables</h1>
+<ul>
+<li>R knows the value of the constant <code>pi</code>. Type
+<code>pi</code> to check.</li>
+</ul>
+<pre class="r"><code>pi</code></pre>
+<pre><code>## [1] 3.141593</code></pre>
+<ul>
+<li>Overwrite <code>pi</code> with a variable of your own.</li>
+</ul>
+<pre class="r"><code>pi &lt;- 3
+pi</code></pre>
+<pre><code>## [1] 3</code></pre>
+<ul>
+<li>Remove the newly created <code>pi</code> and check that the old
+<code>pi</code> is available again</li>
+</ul>
+<pre class="r"><code>rm(pi)
+pi</code></pre>
+<pre><code>## [1] 3.141593</code></pre>
+</div>
+<div id="integer-division-and-vectors" class="section level1">
+<h1>(*) Integer division and vectors</h1>
+<ul>
+<li>The function <code>%/%</code> divides the first argument by the
+second and then returns the largest integer contained in the result - so
+1 divided by 2 yields 0.5 and the largest integer is 0. Use
+<code>%/%</code> to make a vector of length 16 with values
+1,1,1,1,2,2,2,2,3,…</li>
+</ul>
+<pre class="r"><code>1:16 %/% 4</code></pre>
+<pre><code>##  [1] 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3 4</code></pre>
+<ul>
+<li>The function <code>%%</code> divides the first argument by the
+second and then returns the remainder - so 1 divided by 2 yields 0.5,
+the largest integer is 0 and the remainder is 1. Use <code>%%</code> to
+make a vector of length 16 with values 1,2,3,4,1,2,3,4,1,…</li>
+</ul>
+<pre class="r"><code>(0:15 %% 4) + 1</code></pre>
+<pre><code>##  [1] 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4</code></pre>
 </div>
 
 

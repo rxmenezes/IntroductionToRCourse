@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Functions | Using R for data analysis</title>
   <meta name="description" content="This course teaches the basics of R, an open-source and free environment for statistical analyses. In this course we also teach the basics transparent and reproducible research. For this, we teach RMarkdown, a tool to make dynamic reports in R." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Functions | Using R for data analysis" />
   <meta property="og:type" content="book" />
@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2024-01-09" />
+<meta name="date" content="2024-05-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -143,7 +143,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#materials"><i class="fa fa-check"></i>Materials</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#programme"><i class="fa fa-check"></i>Programme</a>
 <ul>
-<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#fifth-nki-edition-june-5th-6th-8th-and-9th-2023"><i class="fa fa-check"></i><b>0.0.1</b> Fifth NKI edition, June 5th, 6th, 8th, and 9th 2023</a></li>
+<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#sixth-nki-edition-june-3rd-4th-6th-and-7th-2024"><i class="fa fa-check"></i><b>0.0.1</b> Sixth NKI edition, June 3rd, 4th, 6th, and 7th 2024</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="basics-of-r.html"><a href="basics-of-r.html"><i class="fa fa-check"></i><b>1</b> Basics of R</a>
@@ -157,8 +157,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="1.2.1" data-path="basics-of-r.html"><a href="basics-of-r.html#why-this-course"><i class="fa fa-check"></i><b>1.2.1</b> Why this course?</a></li>
 <li class="chapter" data-level="1.2.2" data-path="basics-of-r.html"><a href="basics-of-r.html#what-is-r"><i class="fa fa-check"></i><b>1.2.2</b> What is R?</a></li>
-<li class="chapter" data-level="1.2.3" data-path="basics-of-r.html"><a href="basics-of-r.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.2.3</b> R and RStudio</a></li>
-<li class="chapter" data-level="1.2.4" data-path="basics-of-r.html"><a href="basics-of-r.html#course-overview"><i class="fa fa-check"></i><b>1.2.4</b> Course overview</a></li>
+<li class="chapter" data-level="1.2.3" data-path="basics-of-r.html"><a href="basics-of-r.html#r-a-short-history"><i class="fa fa-check"></i><b>1.2.3</b> <em>R</em>: a short history</a></li>
+<li class="chapter" data-level="1.2.4" data-path="basics-of-r.html"><a href="basics-of-r.html#r-is-open-source"><i class="fa fa-check"></i><b>1.2.4</b> R is Open Source</a></li>
+<li class="chapter" data-level="1.2.5" data-path="basics-of-r.html"><a href="basics-of-r.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.2.5</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.2.6" data-path="basics-of-r.html"><a href="basics-of-r.html#rstudio-packages"><i class="fa fa-check"></i><b>1.2.6</b> RStudio packages</a></li>
+<li class="chapter" data-level="1.2.7" data-path="basics-of-r.html"><a href="basics-of-r.html#course-overview"><i class="fa fa-check"></i><b>1.2.7</b> Course overview</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="basics-of-r.html"><a href="basics-of-r.html#basics"><i class="fa fa-check"></i><b>1.3</b> Basics</a>
 <ul>
@@ -174,7 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="basics-of-r.html"><a href="basics-of-r.html#data-frames-basics"><i class="fa fa-check"></i><b>1.5</b> Data frames (basics)</a>
 <ul>
-<li class="chapter" data-level="1.5.1" data-path="basics-of-r.html"><a href="basics-of-r.html#exploring"><i class="fa fa-check"></i><b>1.5.1</b> Exploring</a></li>
+<li class="chapter" data-level="1.5.1" data-path="basics-of-r.html"><a href="basics-of-r.html#exploring-datasets"><i class="fa fa-check"></i><b>1.5.1</b> Exploring datasets</a></li>
 <li class="chapter" data-level="1.5.2" data-path="basics-of-r.html"><a href="basics-of-r.html#extracting"><i class="fa fa-check"></i><b>1.5.2</b> Extracting</a></li>
 <li class="chapter" data-level="1.5.3" data-path="basics-of-r.html"><a href="basics-of-r.html#example-data"><i class="fa fa-check"></i><b>1.5.3</b> Example data</a></li>
 </ul></li>
@@ -188,7 +191,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.7" data-path="basics-of-r.html"><a href="basics-of-r.html#functions-and-help-files"><i class="fa fa-check"></i><b>1.7</b> Functions and help files</a>
 <ul>
 <li class="chapter" data-level="1.7.1" data-path="basics-of-r.html"><a href="basics-of-r.html#function-arguments"><i class="fa fa-check"></i><b>1.7.1</b> Function arguments</a></li>
-<li class="chapter" data-level="1.7.2" data-path="basics-of-r.html"><a href="basics-of-r.html#other-help-file-aspects"><i class="fa fa-check"></i><b>1.7.2</b> Other help file aspects</a></li>
+<li class="chapter" data-level="1.7.2" data-path="basics-of-r.html"><a href="basics-of-r.html#getting-help-for-a-function"><i class="fa fa-check"></i><b>1.7.2</b> Getting help for a function</a></li>
+<li class="chapter" data-level="1.7.3" data-path="basics-of-r.html"><a href="basics-of-r.html#specifying-arguments-by-name"><i class="fa fa-check"></i><b>1.7.3</b> Specifying arguments by name</a></li>
+<li class="chapter" data-level="1.7.4" data-path="basics-of-r.html"><a href="basics-of-r.html#default-arguments"><i class="fa fa-check"></i><b>1.7.4</b> Default arguments</a></li>
+<li class="chapter" data-level="1.7.5" data-path="basics-of-r.html"><a href="basics-of-r.html#the-...-argument"><i class="fa fa-check"></i><b>1.7.5</b> (*) the <code>...</code> argument</a></li>
+<li class="chapter" data-level="1.7.6" data-path="basics-of-r.html"><a href="basics-of-r.html#other-help-file-aspects"><i class="fa fa-check"></i><b>1.7.6</b> Other help file aspects</a></li>
+<li class="chapter" data-level="1.7.7" data-path="basics-of-r.html"><a href="basics-of-r.html#help-search"><i class="fa fa-check"></i><b>1.7.7</b> Help search</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="data-types-part-1.html"><a href="data-types-part-1.html"><i class="fa fa-check"></i><b>2</b> Data types, part 1</a>
@@ -198,18 +206,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.1" data-path="data-types-part-1.html"><a href="data-types-part-1.html#missing-values"><i class="fa fa-check"></i><b>2.1.1</b> Missing values</a></li>
 <li class="chapter" data-level="2.1.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#numeric-vectors"><i class="fa fa-check"></i><b>2.1.2</b> Numeric vectors</a></li>
 <li class="chapter" data-level="2.1.3" data-path="data-types-part-1.html"><a href="data-types-part-1.html#character-vectors"><i class="fa fa-check"></i><b>2.1.3</b> Character vectors</a></li>
-<li class="chapter" data-level="2.1.4" data-path="data-types-part-1.html"><a href="data-types-part-1.html#logical-vectors"><i class="fa fa-check"></i><b>2.1.4</b> Logical vectors</a></li>
+<li class="chapter" data-level="2.1.4" data-path="data-types-part-1.html"><a href="data-types-part-1.html#logical-vectors-and-operators"><i class="fa fa-check"></i><b>2.1.4</b> Logical vectors and operators</a></li>
 <li class="chapter" data-level="2.1.5" data-path="data-types-part-1.html"><a href="data-types-part-1.html#type-conversions"><i class="fa fa-check"></i><b>2.1.5</b> Type conversions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#vectors-1"><i class="fa fa-check"></i><b>2.2</b> Vectors</a>
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="data-types-part-1.html"><a href="data-types-part-1.html#square-brackets-operator"><i class="fa fa-check"></i><b>2.2.1</b> Square brackets operator</a></li>
-<li class="chapter" data-level="2.2.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#other-useful-functions"><i class="fa fa-check"></i><b>2.2.2</b> Other useful functions</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#class-of-a-vector"><i class="fa fa-check"></i><b>2.2.2</b> (*) Class of a vector</a></li>
+<li class="chapter" data-level="2.2.3" data-path="data-types-part-1.html"><a href="data-types-part-1.html#other-useful-functions"><i class="fa fa-check"></i><b>2.2.3</b> Other useful functions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="data-types-part-1.html"><a href="data-types-part-1.html#data-frames"><i class="fa fa-check"></i><b>2.3</b> Data frames</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="data-types-part-1.html"><a href="data-types-part-1.html#what-is-a-data-frame"><i class="fa fa-check"></i><b>2.3.1</b> What is a data frame</a></li>
-<li class="chapter" data-level="2.3.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#creating"><i class="fa fa-check"></i><b>2.3.2</b> Creating</a></li>
+<li class="chapter" data-level="2.3.1" data-path="data-types-part-1.html"><a href="data-types-part-1.html#what-is-a-data-frame"><i class="fa fa-check"></i><b>2.3.1</b> What is a data frame?</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-types-part-1.html"><a href="data-types-part-1.html#creating-a-data-frame"><i class="fa fa-check"></i><b>2.3.2</b> Creating a data frame</a></li>
 <li class="chapter" data-level="2.3.3" data-path="data-types-part-1.html"><a href="data-types-part-1.html#properties"><i class="fa fa-check"></i><b>2.3.3</b> Properties</a></li>
 <li class="chapter" data-level="2.3.4" data-path="data-types-part-1.html"><a href="data-types-part-1.html#content"><i class="fa fa-check"></i><b>2.3.4</b> Content</a></li>
 </ul></li>
@@ -344,88 +353,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">4.1</span> User-defined Functions<a href="functions.html#user-defined-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Functions are constructs that encapsulate series of statements for convenience so you do not repeat the same statements all over again when needed.</p>
 <p><strong>Function construct:</strong></p>
-<div class="sourceCode" id="cb612"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb612-1"><a href="functions.html#cb612-1" tabindex="-1"></a><span class="co"># (1) default return value is the last statment </span></span>
-<span id="cb612-2"><a href="functions.html#cb612-2" tabindex="-1"></a>functionName <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
-<span id="cb612-3"><a href="functions.html#cb612-3" tabindex="-1"></a>  statement</span>
-<span id="cb612-4"><a href="functions.html#cb612-4" tabindex="-1"></a>  ...</span>
-<span id="cb612-5"><a href="functions.html#cb612-5" tabindex="-1"></a>  <span class="sc">&lt;</span>value<span class="sc">&gt;</span></span>
-<span id="cb612-6"><a href="functions.html#cb612-6" tabindex="-1"></a>} </span>
-<span id="cb612-7"><a href="functions.html#cb612-7" tabindex="-1"></a></span>
-<span id="cb612-8"><a href="functions.html#cb612-8" tabindex="-1"></a><span class="co"># (2) return(...)</span></span>
-<span id="cb612-9"><a href="functions.html#cb612-9" tabindex="-1"></a>functionName <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
-<span id="cb612-10"><a href="functions.html#cb612-10" tabindex="-1"></a>  statement</span>
-<span id="cb612-11"><a href="functions.html#cb612-11" tabindex="-1"></a>  ...</span>
-<span id="cb612-12"><a href="functions.html#cb612-12" tabindex="-1"></a>  <span class="fu">return</span>(<span class="sc">&lt;</span>value<span class="sc">&gt;</span>)</span>
-<span id="cb612-13"><a href="functions.html#cb612-13" tabindex="-1"></a>} </span></code></pre></div>
+<div class="sourceCode" id="cb715"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb715-1"><a href="functions.html#cb715-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) default return value is the last statment </span></span>
+<span id="cb715-2"><a href="functions.html#cb715-2" aria-hidden="true" tabindex="-1"></a>functionName <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
+<span id="cb715-3"><a href="functions.html#cb715-3" aria-hidden="true" tabindex="-1"></a>  statement</span>
+<span id="cb715-4"><a href="functions.html#cb715-4" aria-hidden="true" tabindex="-1"></a>  ...</span>
+<span id="cb715-5"><a href="functions.html#cb715-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">&lt;</span>value<span class="sc">&gt;</span></span>
+<span id="cb715-6"><a href="functions.html#cb715-6" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb715-7"><a href="functions.html#cb715-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb715-8"><a href="functions.html#cb715-8" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) return(...)</span></span>
+<span id="cb715-9"><a href="functions.html#cb715-9" aria-hidden="true" tabindex="-1"></a>functionName <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
+<span id="cb715-10"><a href="functions.html#cb715-10" aria-hidden="true" tabindex="-1"></a>  statement</span>
+<span id="cb715-11"><a href="functions.html#cb715-11" aria-hidden="true" tabindex="-1"></a>  ...</span>
+<span id="cb715-12"><a href="functions.html#cb715-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="sc">&lt;</span>value<span class="sc">&gt;</span>)</span>
+<span id="cb715-13"><a href="functions.html#cb715-13" aria-hidden="true" tabindex="-1"></a>} </span></code></pre></div>
 <p><strong>Example:</strong></p>
 <p>The following function <code>add_one</code> increments its argument by 1:</p>
-<div class="sourceCode" id="cb613"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb613-1"><a href="functions.html#cb613-1" tabindex="-1"></a>add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb613-2"><a href="functions.html#cb613-2" tabindex="-1"></a>    x <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb613-3"><a href="functions.html#cb613-3" tabindex="-1"></a>}</span>
-<span id="cb613-4"><a href="functions.html#cb613-4" tabindex="-1"></a></span>
-<span id="cb613-5"><a href="functions.html#cb613-5" tabindex="-1"></a><span class="fu">add_one</span>(<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb716"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb716-1"><a href="functions.html#cb716-1" aria-hidden="true" tabindex="-1"></a>add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb716-2"><a href="functions.html#cb716-2" aria-hidden="true" tabindex="-1"></a>    x <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb716-3"><a href="functions.html#cb716-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb716-4"><a href="functions.html#cb716-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb716-5"><a href="functions.html#cb716-5" aria-hidden="true" tabindex="-1"></a><span class="fu">add_one</span>(<span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb615"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb615-1"><a href="functions.html#cb615-1" tabindex="-1"></a><span class="fu">add_one</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb718"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb718-1"><a href="functions.html#cb718-1" aria-hidden="true" tabindex="-1"></a><span class="fu">add_one</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0</code></pre>
 <p>Now let’s update our function to calculate <span class="math inline">\(x^2 + 1\)</span> :</p>
-<div class="sourceCode" id="cb617"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb617-1"><a href="functions.html#cb617-1" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb617-2"><a href="functions.html#cb617-2" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span>    <span class="co"># choose a variable for temporary result</span></span>
-<span id="cb617-3"><a href="functions.html#cb617-3" tabindex="-1"></a>    result <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb617-4"><a href="functions.html#cb617-4" tabindex="-1"></a>}</span>
-<span id="cb617-5"><a href="functions.html#cb617-5" tabindex="-1"></a></span>
-<span id="cb617-6"><a href="functions.html#cb617-6" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb617-7"><a href="functions.html#cb617-7" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span>    <span class="co"># choose a variable for temporary result</span></span>
-<span id="cb617-8"><a href="functions.html#cb617-8" tabindex="-1"></a>    res1 <span class="ot">&lt;-</span> result <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb617-9"><a href="functions.html#cb617-9" tabindex="-1"></a>    res2 <span class="ot">&lt;-</span> <span class="fu">log</span>(x)</span>
-<span id="cb617-10"><a href="functions.html#cb617-10" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">sq1 =</span> res1, <span class="at">logx =</span> res2)</span>
-<span id="cb617-11"><a href="functions.html#cb617-11" tabindex="-1"></a>}</span>
-<span id="cb617-12"><a href="functions.html#cb617-12" tabindex="-1"></a><span class="fu">square_add_one</span>(<span class="dv">2</span>) <span class="co"># 2^2 + 1 = 5</span></span></code></pre></div>
+<div class="sourceCode" id="cb720"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb720-1"><a href="functions.html#cb720-1" aria-hidden="true" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb720-2"><a href="functions.html#cb720-2" aria-hidden="true" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span>    <span class="co"># choose a variable for temporary result</span></span>
+<span id="cb720-3"><a href="functions.html#cb720-3" aria-hidden="true" tabindex="-1"></a>    result <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb720-4"><a href="functions.html#cb720-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb720-5"><a href="functions.html#cb720-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb720-6"><a href="functions.html#cb720-6" aria-hidden="true" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb720-7"><a href="functions.html#cb720-7" aria-hidden="true" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span>    <span class="co"># choose a variable for temporary result</span></span>
+<span id="cb720-8"><a href="functions.html#cb720-8" aria-hidden="true" tabindex="-1"></a>    res1 <span class="ot">&lt;-</span> result <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb720-9"><a href="functions.html#cb720-9" aria-hidden="true" tabindex="-1"></a>    res2 <span class="ot">&lt;-</span> <span class="fu">log</span>(x)</span>
+<span id="cb720-10"><a href="functions.html#cb720-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">sq1 =</span> res1, <span class="at">logx =</span> res2)</span>
+<span id="cb720-11"><a href="functions.html#cb720-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb720-12"><a href="functions.html#cb720-12" aria-hidden="true" tabindex="-1"></a><span class="fu">square_add_one</span>(<span class="dv">2</span>) <span class="co"># 2^2 + 1 = 5</span></span></code></pre></div>
 <pre><code>## $sq1
 ## [1] 5
 ## 
 ## $logx
 ## [1] 0.6931472</code></pre>
-<div class="sourceCode" id="cb619"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb619-1"><a href="functions.html#cb619-1" tabindex="-1"></a><span class="fu">square_add_one</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="co"># (-1)^2 + 1 = 2</span></span></code></pre></div>
-<pre><code>## Warning in log(x): Production de NaN</code></pre>
+<div class="sourceCode" id="cb722"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb722-1"><a href="functions.html#cb722-1" aria-hidden="true" tabindex="-1"></a><span class="fu">square_add_one</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="co"># (-1)^2 + 1 = 2</span></span></code></pre></div>
+<pre><code>## Warning in log(x): NaNs produced</code></pre>
 <pre><code>## $sq1
 ## [1] 2
 ## 
 ## $logx
 ## [1] NaN</code></pre>
 <p>The following versions of this functions are all equivalent:</p>
-<div class="sourceCode" id="cb622"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb622-1"><a href="functions.html#cb622-1" tabindex="-1"></a><span class="co"># (v1) One operation per line.</span></span>
-<span id="cb622-2"><a href="functions.html#cb622-2" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb622-3"><a href="functions.html#cb622-3" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb622-4"><a href="functions.html#cb622-4" tabindex="-1"></a>    result <span class="ot">&lt;-</span> result <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb622-5"><a href="functions.html#cb622-5" tabindex="-1"></a>    result    <span class="co"># The last statement is returned as the value.</span></span>
-<span id="cb622-6"><a href="functions.html#cb622-6" tabindex="-1"></a>}</span>
-<span id="cb622-7"><a href="functions.html#cb622-7" tabindex="-1"></a><span class="co"># (v2) No additional &#39;result&#39; variable needed </span></span>
-<span id="cb622-8"><a href="functions.html#cb622-8" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb622-9"><a href="functions.html#cb622-9" tabindex="-1"></a>    x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb622-10"><a href="functions.html#cb622-10" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb725"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb725-1"><a href="functions.html#cb725-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (v1) One operation per line.</span></span>
+<span id="cb725-2"><a href="functions.html#cb725-2" aria-hidden="true" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb725-3"><a href="functions.html#cb725-3" aria-hidden="true" tabindex="-1"></a>    result <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb725-4"><a href="functions.html#cb725-4" aria-hidden="true" tabindex="-1"></a>    result <span class="ot">&lt;-</span> result <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb725-5"><a href="functions.html#cb725-5" aria-hidden="true" tabindex="-1"></a>    result    <span class="co"># The last statement is returned as the value.</span></span>
+<span id="cb725-6"><a href="functions.html#cb725-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb725-7"><a href="functions.html#cb725-7" aria-hidden="true" tabindex="-1"></a><span class="co"># (v2) No additional &#39;result&#39; variable needed </span></span>
+<span id="cb725-8"><a href="functions.html#cb725-8" aria-hidden="true" tabindex="-1"></a>square_add_one <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb725-9"><a href="functions.html#cb725-9" aria-hidden="true" tabindex="-1"></a>    x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb725-10"><a href="functions.html#cb725-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p><strong>Multiple arguments</strong> Functions may take as many arguments as needed. Recall the function <code>add_one</code> defined above, now we would like to have a more <code>generic</code> function to increment by a value other
 than a constant <code>1</code> :</p>
-<div class="sourceCode" id="cb623"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb623-1"><a href="functions.html#cb623-1" tabindex="-1"></a>increment <span class="ot">&lt;-</span> <span class="cf">function</span>(x,i) {</span>
-<span id="cb623-2"><a href="functions.html#cb623-2" tabindex="-1"></a>  <span class="co"># increment x by i</span></span>
-<span id="cb623-3"><a href="functions.html#cb623-3" tabindex="-1"></a>  x <span class="sc">+</span> i</span>
-<span id="cb623-4"><a href="functions.html#cb623-4" tabindex="-1"></a>}</span>
-<span id="cb623-5"><a href="functions.html#cb623-5" tabindex="-1"></a></span>
-<span id="cb623-6"><a href="functions.html#cb623-6" tabindex="-1"></a><span class="fu">increment</span>(<span class="dv">2</span>,<span class="dv">1</span>)             <span class="co"># &lt;=&gt; add_one(2)</span></span></code></pre></div>
+<div class="sourceCode" id="cb726"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb726-1"><a href="functions.html#cb726-1" aria-hidden="true" tabindex="-1"></a>increment <span class="ot">&lt;-</span> <span class="cf">function</span>(x,i) {</span>
+<span id="cb726-2"><a href="functions.html#cb726-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># increment x by i</span></span>
+<span id="cb726-3"><a href="functions.html#cb726-3" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">+</span> i</span>
+<span id="cb726-4"><a href="functions.html#cb726-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb726-5"><a href="functions.html#cb726-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb726-6"><a href="functions.html#cb726-6" aria-hidden="true" tabindex="-1"></a><span class="fu">increment</span>(<span class="dv">2</span>,<span class="dv">1</span>)             <span class="co"># &lt;=&gt; add_one(2)</span></span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb625"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb625-1"><a href="functions.html#cb625-1" tabindex="-1"></a><span class="fu">increment</span>(<span class="dv">11</span>,<span class="dv">2</span>)            <span class="co"># increment 11 by 2</span></span></code></pre></div>
+<div class="sourceCode" id="cb728"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb728-1"><a href="functions.html#cb728-1" aria-hidden="true" tabindex="-1"></a><span class="fu">increment</span>(<span class="dv">11</span>,<span class="dv">2</span>)            <span class="co"># increment 11 by 2</span></span></code></pre></div>
 <pre><code>## [1] 13</code></pre>
 <p>You may use the argument names explicitly:</p>
-<div class="sourceCode" id="cb627"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb627-1"><a href="functions.html#cb627-1" tabindex="-1"></a><span class="fu">increment</span>( <span class="at">x =</span> <span class="dv">14</span>, <span class="at">i =</span> <span class="dv">7</span> ) <span class="co"># increment 14 by 7</span></span></code></pre></div>
+<div class="sourceCode" id="cb730"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb730-1"><a href="functions.html#cb730-1" aria-hidden="true" tabindex="-1"></a><span class="fu">increment</span>( <span class="at">x =</span> <span class="dv">14</span>, <span class="at">i =</span> <span class="dv">7</span> ) <span class="co"># increment 14 by 7</span></span></code></pre></div>
 <pre><code>## [1] 21</code></pre>
 <p>Now let’s write a function which is not already part of the base R, e.g. <code>odd</code>. This function will take as an argument a whole number and returns a logical <code>TRUE</code> if the number is an odd number and FALSE otherwise.</p>
 <p>A whole number is odd when it is not integer divisible by 2. We can do this by taking it’s remainder of integer division (<code>%%</code> operator) by 2 and see whether it is non-zero:</p>
-<div class="sourceCode" id="cb629"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb629-1"><a href="functions.html#cb629-1" tabindex="-1"></a>odd <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb629-2"><a href="functions.html#cb629-2" tabindex="-1"></a>  x <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">!=</span> <span class="dv">0</span></span>
-<span id="cb629-3"><a href="functions.html#cb629-3" tabindex="-1"></a>}</span>
-<span id="cb629-4"><a href="functions.html#cb629-4" tabindex="-1"></a></span>
-<span id="cb629-5"><a href="functions.html#cb629-5" tabindex="-1"></a><span class="fu">odd</span>(<span class="dv">31</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb732"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb732-1"><a href="functions.html#cb732-1" aria-hidden="true" tabindex="-1"></a>odd <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb732-2"><a href="functions.html#cb732-2" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">!=</span> <span class="dv">0</span></span>
+<span id="cb732-3"><a href="functions.html#cb732-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb732-4"><a href="functions.html#cb732-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb732-5"><a href="functions.html#cb732-5" aria-hidden="true" tabindex="-1"></a><span class="fu">odd</span>(<span class="dv">31</span>) </span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb631"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb631-1"><a href="functions.html#cb631-1" tabindex="-1"></a><span class="fu">odd</span>( <span class="at">x =</span> <span class="dv">6</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb734"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb734-1"><a href="functions.html#cb734-1" aria-hidden="true" tabindex="-1"></a><span class="fu">odd</span>( <span class="at">x =</span> <span class="dv">6</span> )</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
 <p><strong>Observations:</strong></p>
 <ul>
@@ -446,33 +455,33 @@ than a constant <code>1</code> :</p>
 <p><!-- <center>![Program](images/control_flow_2.png)</center> --></p>
 <div id="sequential-execution" class="section level3 hasAnchor" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> Sequential execution<a href="functions.html#sequential-execution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb633"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb633-1"><a href="functions.html#cb633-1" tabindex="-1"></a>statement_1</span>
-<span id="cb633-2"><a href="functions.html#cb633-2" tabindex="-1"></a>statement_2; statement_3</span></code></pre></div>
+<div class="sourceCode" id="cb736"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb736-1"><a href="functions.html#cb736-1" aria-hidden="true" tabindex="-1"></a>statement_1</span>
+<span id="cb736-2"><a href="functions.html#cb736-2" aria-hidden="true" tabindex="-1"></a>statement_2; statement_3</span></code></pre></div>
 </div>
 <div id="conditional-execution-if" class="section level3 hasAnchor" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Conditional execution: if<a href="functions.html#conditional-execution-if" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb634"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb634-1"><a href="functions.html#cb634-1" tabindex="-1"></a><span class="co"># Only if &#39;condition&#39; variable evaluates to TRUE the </span></span>
-<span id="cb634-2"><a href="functions.html#cb634-2" tabindex="-1"></a><span class="co"># statement_T is executed.</span></span>
-<span id="cb634-3"><a href="functions.html#cb634-3" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb634-4"><a href="functions.html#cb634-4" tabindex="-1"></a><span class="co"># condition is TRUE  =&gt;  statement_A ; statement_T ; statement_B</span></span>
-<span id="cb634-5"><a href="functions.html#cb634-5" tabindex="-1"></a><span class="co"># condition is FALSE =&gt;  statement_A ; statement_B</span></span>
-<span id="cb634-6"><a href="functions.html#cb634-6" tabindex="-1"></a>statement_A</span>
-<span id="cb634-7"><a href="functions.html#cb634-7" tabindex="-1"></a><span class="cf">if</span> ( condition ) {</span>
-<span id="cb634-8"><a href="functions.html#cb634-8" tabindex="-1"></a>  statement_T</span>
-<span id="cb634-9"><a href="functions.html#cb634-9" tabindex="-1"></a>}</span>
-<span id="cb634-10"><a href="functions.html#cb634-10" tabindex="-1"></a>statement_B</span></code></pre></div>
+<div class="sourceCode" id="cb737"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb737-1"><a href="functions.html#cb737-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Only if &#39;condition&#39; variable evaluates to TRUE the </span></span>
+<span id="cb737-2"><a href="functions.html#cb737-2" aria-hidden="true" tabindex="-1"></a><span class="co"># statement_T is executed.</span></span>
+<span id="cb737-3"><a href="functions.html#cb737-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb737-4"><a href="functions.html#cb737-4" aria-hidden="true" tabindex="-1"></a><span class="co"># condition is TRUE  =&gt;  statement_A ; statement_T ; statement_B</span></span>
+<span id="cb737-5"><a href="functions.html#cb737-5" aria-hidden="true" tabindex="-1"></a><span class="co"># condition is FALSE =&gt;  statement_A ; statement_B</span></span>
+<span id="cb737-6"><a href="functions.html#cb737-6" aria-hidden="true" tabindex="-1"></a>statement_A</span>
+<span id="cb737-7"><a href="functions.html#cb737-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> ( condition ) {</span>
+<span id="cb737-8"><a href="functions.html#cb737-8" aria-hidden="true" tabindex="-1"></a>  statement_T</span>
+<span id="cb737-9"><a href="functions.html#cb737-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb737-10"><a href="functions.html#cb737-10" aria-hidden="true" tabindex="-1"></a>statement_B</span></code></pre></div>
 </div>
 <div id="conditional-execution-ifelse" class="section level3 hasAnchor" number="4.2.3">
 <h3><span class="header-section-number">4.2.3</span> Conditional execution: if/else<a href="functions.html#conditional-execution-ifelse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb635"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb635-1"><a href="functions.html#cb635-1" tabindex="-1"></a><span class="co"># condition is TRUE  =&gt;  statement_A ; statement_T ; statement_B</span></span>
-<span id="cb635-2"><a href="functions.html#cb635-2" tabindex="-1"></a><span class="co"># condition is FALSE =&gt;  statement_A ; statement_F ; statement_B</span></span>
-<span id="cb635-3"><a href="functions.html#cb635-3" tabindex="-1"></a>statement_A</span>
-<span id="cb635-4"><a href="functions.html#cb635-4" tabindex="-1"></a><span class="cf">if</span> ( condition ) {</span>
-<span id="cb635-5"><a href="functions.html#cb635-5" tabindex="-1"></a>  statement_T</span>
-<span id="cb635-6"><a href="functions.html#cb635-6" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb635-7"><a href="functions.html#cb635-7" tabindex="-1"></a>  statement_F</span>
-<span id="cb635-8"><a href="functions.html#cb635-8" tabindex="-1"></a>}</span>
-<span id="cb635-9"><a href="functions.html#cb635-9" tabindex="-1"></a>statement_B</span></code></pre></div>
+<div class="sourceCode" id="cb738"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb738-1"><a href="functions.html#cb738-1" aria-hidden="true" tabindex="-1"></a><span class="co"># condition is TRUE  =&gt;  statement_A ; statement_T ; statement_B</span></span>
+<span id="cb738-2"><a href="functions.html#cb738-2" aria-hidden="true" tabindex="-1"></a><span class="co"># condition is FALSE =&gt;  statement_A ; statement_F ; statement_B</span></span>
+<span id="cb738-3"><a href="functions.html#cb738-3" aria-hidden="true" tabindex="-1"></a>statement_A</span>
+<span id="cb738-4"><a href="functions.html#cb738-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> ( condition ) {</span>
+<span id="cb738-5"><a href="functions.html#cb738-5" aria-hidden="true" tabindex="-1"></a>  statement_T</span>
+<span id="cb738-6"><a href="functions.html#cb738-6" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb738-7"><a href="functions.html#cb738-7" aria-hidden="true" tabindex="-1"></a>  statement_F</span>
+<span id="cb738-8"><a href="functions.html#cb738-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb738-9"><a href="functions.html#cb738-9" aria-hidden="true" tabindex="-1"></a>statement_B</span></code></pre></div>
 <!-- [<small>[doc:if]</small>](http://cran.r-project.org/doc/manuals/r-release/R-lang.html#if) -->
 <p><strong>Example:</strong></p>
 <p>Let’s take the following excerpt from the World Health Organization (WHO):</p>
@@ -480,150 +489,150 @@ than a constant <code>1</code> :</p>
 <p>Now we would like to write a function, given the age in years, to evaluate the appropriate age group label for us. For this we need conditional statements.</p>
 <p><strong>Important</strong> First we enumerate the age group categories:</p>
 <p>Here is a template of the <code>AgeGroup</code> function:</p>
-<div class="sourceCode" id="cb636"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb636-1"><a href="functions.html#cb636-1" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb636-2"><a href="functions.html#cb636-2" tabindex="-1"></a><span class="co"># Template</span></span>
-<span id="cb636-3"><a href="functions.html#cb636-3" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb636-4"><a href="functions.html#cb636-4" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb636-5"><a href="functions.html#cb636-5" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb636-6"><a href="functions.html#cb636-6" tabindex="-1"></a>}</span>
-<span id="cb636-7"><a href="functions.html#cb636-7" tabindex="-1"></a></span>
-<span id="cb636-8"><a href="functions.html#cb636-8" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span>
-<span id="cb636-9"><a href="functions.html#cb636-9" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span>
-<span id="cb636-10"><a href="functions.html#cb636-10" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span>
-<span id="cb636-11"><a href="functions.html#cb636-11" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb739"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb739-1"><a href="functions.html#cb739-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb739-2"><a href="functions.html#cb739-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Template</span></span>
+<span id="cb739-3"><a href="functions.html#cb739-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb739-4"><a href="functions.html#cb739-4" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb739-5"><a href="functions.html#cb739-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb739-6"><a href="functions.html#cb739-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb739-7"><a href="functions.html#cb739-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb739-8"><a href="functions.html#cb739-8" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span>
+<span id="cb739-9"><a href="functions.html#cb739-9" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span>
+<span id="cb739-10"><a href="functions.html#cb739-10" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span>
+<span id="cb739-11"><a href="functions.html#cb739-11" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <p><strong>Scenario 1 : if </strong></p>
 <p>Let’s first assume that everybody is a child:</p>
-<div class="sourceCode" id="cb637"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb637-1"><a href="functions.html#cb637-1" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb637-2"><a href="functions.html#cb637-2" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb637-3"><a href="functions.html#cb637-3" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb637-4"><a href="functions.html#cb637-4" tabindex="-1"></a>  theLabel</span>
-<span id="cb637-5"><a href="functions.html#cb637-5" tabindex="-1"></a>}</span>
-<span id="cb637-6"><a href="functions.html#cb637-6" tabindex="-1"></a></span>
-<span id="cb637-7"><a href="functions.html#cb637-7" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb740"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb740-1"><a href="functions.html#cb740-1" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb740-2"><a href="functions.html#cb740-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb740-3"><a href="functions.html#cb740-3" aria-hidden="true" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb740-4"><a href="functions.html#cb740-4" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb740-5"><a href="functions.html#cb740-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb740-6"><a href="functions.html#cb740-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb740-7"><a href="functions.html#cb740-7" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb639"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb639-1"><a href="functions.html#cb639-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb742"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb742-1"><a href="functions.html#cb742-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb641"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb641-1"><a href="functions.html#cb641-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb744"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb744-1"><a href="functions.html#cb744-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb643"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb643-1"><a href="functions.html#cb643-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb746"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb746-1"><a href="functions.html#cb746-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
 <p>Next we add a single conditional to capture <code>adult</code> label:</p>
-<div class="sourceCode" id="cb645"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb645-1"><a href="functions.html#cb645-1" tabindex="-1"></a><span class="co"># child and adult</span></span>
-<span id="cb645-2"><a href="functions.html#cb645-2" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb645-3"><a href="functions.html#cb645-3" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb645-4"><a href="functions.html#cb645-4" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb645-5"><a href="functions.html#cb645-5" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb645-6"><a href="functions.html#cb645-6" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb645-7"><a href="functions.html#cb645-7" tabindex="-1"></a>  } </span>
-<span id="cb645-8"><a href="functions.html#cb645-8" tabindex="-1"></a>  theLabel</span>
-<span id="cb645-9"><a href="functions.html#cb645-9" tabindex="-1"></a>}</span>
-<span id="cb645-10"><a href="functions.html#cb645-10" tabindex="-1"></a></span>
-<span id="cb645-11"><a href="functions.html#cb645-11" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb748"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb748-1"><a href="functions.html#cb748-1" aria-hidden="true" tabindex="-1"></a><span class="co"># child and adult</span></span>
+<span id="cb748-2"><a href="functions.html#cb748-2" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb748-3"><a href="functions.html#cb748-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb748-4"><a href="functions.html#cb748-4" aria-hidden="true" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb748-5"><a href="functions.html#cb748-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb748-6"><a href="functions.html#cb748-6" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb748-7"><a href="functions.html#cb748-7" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb748-8"><a href="functions.html#cb748-8" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb748-9"><a href="functions.html#cb748-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb748-10"><a href="functions.html#cb748-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb748-11"><a href="functions.html#cb748-11" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb647"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb647-1"><a href="functions.html#cb647-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb750"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb750-1"><a href="functions.html#cb750-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb649"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb649-1"><a href="functions.html#cb649-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb752"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb752-1"><a href="functions.html#cb752-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb651"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb651-1"><a href="functions.html#cb651-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb754"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb754-1"><a href="functions.html#cb754-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;</code></pre>
 <p>Finally we add the conditional statement to capture the labels <code>adolescent</code> and <code>infant</code> in the same way:</p>
-<div class="sourceCode" id="cb653"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb653-1"><a href="functions.html#cb653-1" tabindex="-1"></a><span class="co"># version final</span></span>
-<span id="cb653-2"><a href="functions.html#cb653-2" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb653-3"><a href="functions.html#cb653-3" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb653-4"><a href="functions.html#cb653-4" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb653-5"><a href="functions.html#cb653-5" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb653-6"><a href="functions.html#cb653-6" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb653-7"><a href="functions.html#cb653-7" tabindex="-1"></a>  } </span>
-<span id="cb653-8"><a href="functions.html#cb653-8" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
-<span id="cb653-9"><a href="functions.html#cb653-9" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
-<span id="cb653-10"><a href="functions.html#cb653-10" tabindex="-1"></a>  } </span>
-<span id="cb653-11"><a href="functions.html#cb653-11" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
-<span id="cb653-12"><a href="functions.html#cb653-12" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
-<span id="cb653-13"><a href="functions.html#cb653-13" tabindex="-1"></a>  } </span>
-<span id="cb653-14"><a href="functions.html#cb653-14" tabindex="-1"></a>  theLabel</span>
-<span id="cb653-15"><a href="functions.html#cb653-15" tabindex="-1"></a>}</span>
-<span id="cb653-16"><a href="functions.html#cb653-16" tabindex="-1"></a></span>
-<span id="cb653-17"><a href="functions.html#cb653-17" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb756"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb756-1"><a href="functions.html#cb756-1" aria-hidden="true" tabindex="-1"></a><span class="co"># version final</span></span>
+<span id="cb756-2"><a href="functions.html#cb756-2" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb756-3"><a href="functions.html#cb756-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb756-4"><a href="functions.html#cb756-4" aria-hidden="true" tabindex="-1"></a>  theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb756-5"><a href="functions.html#cb756-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb756-6"><a href="functions.html#cb756-6" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb756-7"><a href="functions.html#cb756-7" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb756-8"><a href="functions.html#cb756-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
+<span id="cb756-9"><a href="functions.html#cb756-9" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
+<span id="cb756-10"><a href="functions.html#cb756-10" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb756-11"><a href="functions.html#cb756-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
+<span id="cb756-12"><a href="functions.html#cb756-12" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
+<span id="cb756-13"><a href="functions.html#cb756-13" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb756-14"><a href="functions.html#cb756-14" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb756-15"><a href="functions.html#cb756-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb756-16"><a href="functions.html#cb756-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb756-17"><a href="functions.html#cb756-17" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;infant&quot;</code></pre>
-<div class="sourceCode" id="cb655"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb655-1"><a href="functions.html#cb655-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb758"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb758-1"><a href="functions.html#cb758-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adolescent&quot;</code></pre>
-<div class="sourceCode" id="cb657"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb657-1"><a href="functions.html#cb657-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb760"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb760-1"><a href="functions.html#cb760-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb659"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb659-1"><a href="functions.html#cb659-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb762"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb762-1"><a href="functions.html#cb762-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;</code></pre>
 <p><strong>Scenario 2 : if/else</strong></p>
 <p><code>if</code> conditional can be extended with <code>else</code> part. This is a more concise way to capture
 labels:</p>
-<div class="sourceCode" id="cb661"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb661-1"><a href="functions.html#cb661-1" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb661-2"><a href="functions.html#cb661-2" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb661-3"><a href="functions.html#cb661-3" tabindex="-1"></a>  <span class="co"># labels `adult` and `child`</span></span>
-<span id="cb661-4"><a href="functions.html#cb661-4" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb661-5"><a href="functions.html#cb661-5" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb661-6"><a href="functions.html#cb661-6" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb661-7"><a href="functions.html#cb661-7" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb661-8"><a href="functions.html#cb661-8" tabindex="-1"></a>  }</span>
-<span id="cb661-9"><a href="functions.html#cb661-9" tabindex="-1"></a>  theLabel</span>
-<span id="cb661-10"><a href="functions.html#cb661-10" tabindex="-1"></a>}</span>
-<span id="cb661-11"><a href="functions.html#cb661-11" tabindex="-1"></a></span>
-<span id="cb661-12"><a href="functions.html#cb661-12" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb764"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb764-1"><a href="functions.html#cb764-1" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb764-2"><a href="functions.html#cb764-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb764-3"><a href="functions.html#cb764-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># labels `adult` and `child`</span></span>
+<span id="cb764-4"><a href="functions.html#cb764-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb764-5"><a href="functions.html#cb764-5" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb764-6"><a href="functions.html#cb764-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb764-7"><a href="functions.html#cb764-7" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb764-8"><a href="functions.html#cb764-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb764-9"><a href="functions.html#cb764-9" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb764-10"><a href="functions.html#cb764-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb764-11"><a href="functions.html#cb764-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb764-12"><a href="functions.html#cb764-12" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb663"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb663-1"><a href="functions.html#cb663-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb766"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb766-1"><a href="functions.html#cb766-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb665"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb665-1"><a href="functions.html#cb665-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb768"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb768-1"><a href="functions.html#cb768-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb667"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb667-1"><a href="functions.html#cb667-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb770"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb770-1"><a href="functions.html#cb770-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;</code></pre>
 <p>Now as before we add other conditionals to capture <code>adolescent</code> and <code>infant</code> labels:</p>
-<div class="sourceCode" id="cb669"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb669-1"><a href="functions.html#cb669-1" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb669-2"><a href="functions.html#cb669-2" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb669-3"><a href="functions.html#cb669-3" tabindex="-1"></a>  <span class="co"># labels `adult` and `child`</span></span>
-<span id="cb669-4"><a href="functions.html#cb669-4" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb669-5"><a href="functions.html#cb669-5" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb669-6"><a href="functions.html#cb669-6" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb669-7"><a href="functions.html#cb669-7" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb669-8"><a href="functions.html#cb669-8" tabindex="-1"></a>  }</span>
-<span id="cb669-9"><a href="functions.html#cb669-9" tabindex="-1"></a>  <span class="co"># label `adolescent`</span></span>
-<span id="cb669-10"><a href="functions.html#cb669-10" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
-<span id="cb669-11"><a href="functions.html#cb669-11" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
-<span id="cb669-12"><a href="functions.html#cb669-12" tabindex="-1"></a>  } </span>
-<span id="cb669-13"><a href="functions.html#cb669-13" tabindex="-1"></a>  <span class="co"># label `infant`</span></span>
-<span id="cb669-14"><a href="functions.html#cb669-14" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
-<span id="cb669-15"><a href="functions.html#cb669-15" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
-<span id="cb669-16"><a href="functions.html#cb669-16" tabindex="-1"></a>  } </span>
-<span id="cb669-17"><a href="functions.html#cb669-17" tabindex="-1"></a>  theLabel</span>
-<span id="cb669-18"><a href="functions.html#cb669-18" tabindex="-1"></a>}</span>
-<span id="cb669-19"><a href="functions.html#cb669-19" tabindex="-1"></a></span>
-<span id="cb669-20"><a href="functions.html#cb669-20" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb772"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb772-1"><a href="functions.html#cb772-1" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb772-2"><a href="functions.html#cb772-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb772-3"><a href="functions.html#cb772-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># labels `adult` and `child`</span></span>
+<span id="cb772-4"><a href="functions.html#cb772-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb772-5"><a href="functions.html#cb772-5" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb772-6"><a href="functions.html#cb772-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb772-7"><a href="functions.html#cb772-7" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb772-8"><a href="functions.html#cb772-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb772-9"><a href="functions.html#cb772-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># label `adolescent`</span></span>
+<span id="cb772-10"><a href="functions.html#cb772-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
+<span id="cb772-11"><a href="functions.html#cb772-11" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
+<span id="cb772-12"><a href="functions.html#cb772-12" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb772-13"><a href="functions.html#cb772-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># label `infant`</span></span>
+<span id="cb772-14"><a href="functions.html#cb772-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
+<span id="cb772-15"><a href="functions.html#cb772-15" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
+<span id="cb772-16"><a href="functions.html#cb772-16" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb772-17"><a href="functions.html#cb772-17" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb772-18"><a href="functions.html#cb772-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb772-19"><a href="functions.html#cb772-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb772-20"><a href="functions.html#cb772-20" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;infant&quot;</code></pre>
-<div class="sourceCode" id="cb671"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb671-1"><a href="functions.html#cb671-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb774"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb774-1"><a href="functions.html#cb774-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adolescent&quot;</code></pre>
-<div class="sourceCode" id="cb673"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb673-1"><a href="functions.html#cb673-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb776"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb776-1"><a href="functions.html#cb776-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb675"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb675-1"><a href="functions.html#cb675-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb778"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb778-1"><a href="functions.html#cb778-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;</code></pre>
 <p><strong>Scenario 2 : if/else/if …</strong></p>
 <p>It is also possible to have cascading if/else construct with multiple conditionals:</p>
-<div class="sourceCode" id="cb677"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb677-1"><a href="functions.html#cb677-1" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb677-2"><a href="functions.html#cb677-2" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb677-3"><a href="functions.html#cb677-3" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb677-4"><a href="functions.html#cb677-4" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb677-5"><a href="functions.html#cb677-5" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
-<span id="cb677-6"><a href="functions.html#cb677-6" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
-<span id="cb677-7"><a href="functions.html#cb677-7" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
-<span id="cb677-8"><a href="functions.html#cb677-8" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
-<span id="cb677-9"><a href="functions.html#cb677-9" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb677-10"><a href="functions.html#cb677-10" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb677-11"><a href="functions.html#cb677-11" tabindex="-1"></a>  }</span>
-<span id="cb677-12"><a href="functions.html#cb677-12" tabindex="-1"></a>  theLabel</span>
-<span id="cb677-13"><a href="functions.html#cb677-13" tabindex="-1"></a>}</span>
-<span id="cb677-14"><a href="functions.html#cb677-14" tabindex="-1"></a></span>
-<span id="cb677-15"><a href="functions.html#cb677-15" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb780"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb780-1"><a href="functions.html#cb780-1" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb780-2"><a href="functions.html#cb780-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb780-3"><a href="functions.html#cb780-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb780-4"><a href="functions.html#cb780-4" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb780-5"><a href="functions.html#cb780-5" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
+<span id="cb780-6"><a href="functions.html#cb780-6" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
+<span id="cb780-7"><a href="functions.html#cb780-7" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
+<span id="cb780-8"><a href="functions.html#cb780-8" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
+<span id="cb780-9"><a href="functions.html#cb780-9" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb780-10"><a href="functions.html#cb780-10" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb780-11"><a href="functions.html#cb780-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb780-12"><a href="functions.html#cb780-12" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb780-13"><a href="functions.html#cb780-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb780-14"><a href="functions.html#cb780-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb780-15"><a href="functions.html#cb780-15" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">0</span>)   <span class="co">#  &quot;infant&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;infant&quot;</code></pre>
-<div class="sourceCode" id="cb679"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb679-1"><a href="functions.html#cb679-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb782"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb782-1"><a href="functions.html#cb782-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">10</span>)  <span class="co">#  &quot;adolescent&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adolescent&quot;</code></pre>
-<div class="sourceCode" id="cb681"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb681-1"><a href="functions.html#cb681-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb784"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb784-1"><a href="functions.html#cb784-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">9</span>)   <span class="co">#  &quot;child&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;child&quot;</code></pre>
-<div class="sourceCode" id="cb683"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb683-1"><a href="functions.html#cb683-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb786"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb786-1"><a href="functions.html#cb786-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="dv">20</span>)  <span class="co">#  &quot;adult&quot;</span></span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;</code></pre>
 <hr />
 <blockquote>
@@ -640,18 +649,18 @@ labels:</p>
 <h3><span class="header-section-number">4.3.1</span> apply(X, MARGIN, FUN, …)<a href="functions.html#applyx-margin-fun" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>X</code> is a matrix (or data.frame) and the <code>MARGIN</code> is either 1 or 2 corresponding to row and column respectively. It applies the function <code>FUN</code> to each row or column depending on MARGIN value. The returned value is an array structure, i.e either a vector or a matrix, depending on the function <code>FUN</code> value.</p>
 <p>If <code>FUN</code> returns a single value and not a vector then the return value is a vector:</p>
-<div class="sourceCode" id="cb685"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb685-1"><a href="functions.html#cb685-1" tabindex="-1"></a><span class="co"># apply function to columns (MARGIN=2)</span></span>
-<span id="cb685-2"><a href="functions.html#cb685-2" tabindex="-1"></a><span class="fu">apply</span>(pulse[,<span class="fu">c</span>(<span class="st">&quot;height&quot;</span>,<span class="st">&quot;weight&quot;</span>,<span class="st">&quot;age&quot;</span>)],<span class="dv">2</span>, mean)  </span></code></pre></div>
+<div class="sourceCode" id="cb788"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb788-1"><a href="functions.html#cb788-1" aria-hidden="true" tabindex="-1"></a><span class="co"># apply function to columns (MARGIN=2)</span></span>
+<span id="cb788-2"><a href="functions.html#cb788-2" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(pulse[,<span class="fu">c</span>(<span class="st">&quot;height&quot;</span>,<span class="st">&quot;weight&quot;</span>,<span class="st">&quot;age&quot;</span>)],<span class="dv">2</span>, mean)  </span></code></pre></div>
 <pre><code>##    height    weight       age 
 ## 171.58182  66.33182  20.56364</code></pre>
 <p>Applying mean to the columns pulse1 and pulse2 results into NA:</p>
-<div class="sourceCode" id="cb687"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb687-1"><a href="functions.html#cb687-1" tabindex="-1"></a><span class="fu">apply</span>(pulse[,<span class="fu">c</span>(<span class="st">&quot;pulse1&quot;</span>,<span class="st">&quot;pulse2&quot;</span>)],<span class="dv">2</span>, mean)  </span></code></pre></div>
+<div class="sourceCode" id="cb790"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb790-1"><a href="functions.html#cb790-1" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(pulse[,<span class="fu">c</span>(<span class="st">&quot;pulse1&quot;</span>,<span class="st">&quot;pulse2&quot;</span>)],<span class="dv">2</span>, mean)  </span></code></pre></div>
 <pre><code>## pulse1 pulse2 
 ##     NA     NA</code></pre>
 <p>This is cause by missing values (NA’s) in pulse1 and pulse2. Note that it the function mean’s behavior that causes this:</p>
-<div class="sourceCode" id="cb689"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb689-1"><a href="functions.html#cb689-1" tabindex="-1"></a><span class="fu">mean</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">10</span>) ) </span></code></pre></div>
+<div class="sourceCode" id="cb792"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb792-1"><a href="functions.html#cb792-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">10</span>) ) </span></code></pre></div>
 <pre><code>## [1] 4.6</code></pre>
-<div class="sourceCode" id="cb691"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb691-1"><a href="functions.html#cb691-1" tabindex="-1"></a><span class="fu">mean</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">10</span>,<span class="cn">NA</span>) ) </span></code></pre></div>
+<div class="sourceCode" id="cb794"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb794-1"><a href="functions.html#cb794-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">10</span>,<span class="cn">NA</span>) ) </span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
 <p><strong>Quiz</strong> How can we get around NA’s and produce mean values for pulse measurements? (Hint: ?mean)</p>
 <p>…</p>
@@ -659,7 +668,7 @@ labels:</p>
 <div id="sapplyx-fun" class="section level3 hasAnchor" number="4.3.2">
 <h3><span class="header-section-number">4.3.2</span> sapply(X, FUN, …)<a href="functions.html#sapplyx-fun" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This is an easy way of running any function for a range of values.</p>
-<div class="sourceCode" id="cb693"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb693-1"><a href="functions.html#cb693-1" tabindex="-1"></a><span class="fu">sapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, odd)  <span class="co"># &lt;=&gt;   unlist( lapply(1:4,odd) )</span></span></code></pre></div>
+<div class="sourceCode" id="cb796"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb796-1"><a href="functions.html#cb796-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, odd)  <span class="co"># &lt;=&gt;   unlist( lapply(1:4,odd) )</span></span></code></pre></div>
 <pre><code>## [1]  TRUE FALSE  TRUE FALSE</code></pre>
 <p>This is in fact a simplified, user-friendly <code>lapply()</code>, which we will see next.</p>
 <hr />
@@ -672,13 +681,13 @@ labels:</p>
 <div id="lapplyx-fun-apply-a-function-to-a-listvector" class="section level3 hasAnchor" number="4.3.3">
 <h3><span class="header-section-number">4.3.3</span> lapply(X, FUN, …) : apply a function to a list/vector<a href="functions.html#lapplyx-fun-apply-a-function-to-a-listvector" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>X</code> is the sequence (vector/list) of elements on which the function <code>FUN</code> is applied to each element. The return value is always a list.</p>
-<div class="sourceCode" id="cb695"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb695-1"><a href="functions.html#cb695-1" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, add_one)               <span class="co"># vector as input</span></span></code></pre></div>
+<div class="sourceCode" id="cb798"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb798-1"><a href="functions.html#cb798-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, add_one)               <span class="co"># vector as input</span></span></code></pre></div>
 <pre><code>## [[1]]
 ## [1] 2
 ## 
 ## [[2]]
 ## [1] 3</code></pre>
-<div class="sourceCode" id="cb697"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb697-1"><a href="functions.html#cb697-1" tabindex="-1"></a><span class="fu">lapply</span>(<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>), square_add_one)  <span class="co"># list as input</span></span></code></pre></div>
+<div class="sourceCode" id="cb800"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb800-1"><a href="functions.html#cb800-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="fu">list</span>(<span class="dv">1</span>,<span class="dv">2</span>), square_add_one)  <span class="co"># list as input</span></span></code></pre></div>
 <pre><code>## [[1]]
 ## [[1]]$sq1
 ## [1] 2
@@ -699,18 +708,18 @@ labels:</p>
 <div id="tapplyx-index-fun-apply-a-function-to-a-vector-according-to-groups-of-index" class="section level3 hasAnchor" number="4.3.4">
 <h3><span class="header-section-number">4.3.4</span> tapply(X, INDEX, FUN, …) : apply a function to a vector, according to groups of INDEX<a href="functions.html#tapplyx-index-fun-apply-a-function-to-a-vector-according-to-groups-of-index" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Consider the data in the vector <code>x</code> and the grouping variable <code>group</code>:</p>
-<div class="sourceCode" id="cb699"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb699-1"><a href="functions.html#cb699-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>,  <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">12</span>)</span>
-<span id="cb699-2"><a href="functions.html#cb699-2" tabindex="-1"></a>group <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">each =</span> <span class="dv">5</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb802"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb802-1"><a href="functions.html#cb802-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>,  <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">12</span>)</span>
+<span id="cb802-2"><a href="functions.html#cb802-2" aria-hidden="true" tabindex="-1"></a>group <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">each =</span> <span class="dv">5</span>))</span></code></pre></div>
 <p>We can display the data by using a boxplot:</p>
-<div class="sourceCode" id="cb700"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb700-1"><a href="functions.html#cb700-1" tabindex="-1"></a><span class="fu">boxplot</span>(x <span class="sc">~</span> group)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-283-1.png" width="672" /></p>
+<div class="sourceCode" id="cb803"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb803-1"><a href="functions.html#cb803-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(x <span class="sc">~</span> group)</span></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-315-1.png" width="672" /></p>
 <p>To compute the means of values of <code>x</code> within groups defined by <code>group</code> we use:</p>
-<div class="sourceCode" id="cb701"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb701-1"><a href="functions.html#cb701-1" tabindex="-1"></a><span class="fu">tapply</span>(x, <span class="at">INDEX =</span> group, <span class="at">FUN =</span> mean)</span></code></pre></div>
+<div class="sourceCode" id="cb804"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb804-1"><a href="functions.html#cb804-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(x, <span class="at">INDEX =</span> group, <span class="at">FUN =</span> mean)</span></code></pre></div>
 <pre><code>##    1    2    3 
 ##  2.4  2.2 11.8</code></pre>
 <p><strong>Anonymous functions</strong> Are functions used in R expressions without being declared with a name:</p>
-<div class="sourceCode" id="cb703"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb703-1"><a href="functions.html#cb703-1" tabindex="-1"></a><span class="co"># odd: test whether a number is odd (named function)</span></span>
-<span id="cb703-2"><a href="functions.html#cb703-2" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,odd)</span></code></pre></div>
+<div class="sourceCode" id="cb806"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb806-1"><a href="functions.html#cb806-1" aria-hidden="true" tabindex="-1"></a><span class="co"># odd: test whether a number is odd (named function)</span></span>
+<span id="cb806-2"><a href="functions.html#cb806-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,odd)</span></code></pre></div>
 <pre><code>## [[1]]
 ## [1] TRUE
 ## 
@@ -722,8 +731,8 @@ labels:</p>
 ## 
 ## [[4]]
 ## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb705"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb705-1"><a href="functions.html#cb705-1" tabindex="-1"></a><span class="co"># odd: test whether a number is odd (anonymous function)</span></span>
-<span id="cb705-2"><a href="functions.html#cb705-2" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="cf">function</span>(x) { x <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">!=</span> <span class="dv">0</span> } ) </span></code></pre></div>
+<div class="sourceCode" id="cb808"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb808-1"><a href="functions.html#cb808-1" aria-hidden="true" tabindex="-1"></a><span class="co"># odd: test whether a number is odd (anonymous function)</span></span>
+<span id="cb808-2"><a href="functions.html#cb808-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="cf">function</span>(x) { x <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">!=</span> <span class="dv">0</span> } ) </span></code></pre></div>
 <pre><code>## [[1]]
 ## [1] TRUE
 ## 
@@ -740,55 +749,55 @@ labels:</p>
 <div id="type-checking" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Type checking<a href="functions.html#type-checking" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R language is not a <em>strictly typed</em> language. This means the programmer is responsible for making sure that variables involved in an assignment are of the same type. For example :</p>
-<div class="sourceCode" id="cb707"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb707-1"><a href="functions.html#cb707-1" tabindex="-1"></a>apple <span class="ot">&lt;-</span> <span class="st">&quot;123&quot;</span>  <span class="co"># character</span></span>
-<span id="cb707-2"><a href="functions.html#cb707-2" tabindex="-1"></a>pear  <span class="ot">&lt;-</span> <span class="dv">123</span>    <span class="co"># numeric </span></span>
-<span id="cb707-3"><a href="functions.html#cb707-3" tabindex="-1"></a>apple <span class="sc">==</span> pear   <span class="co"># ? </span></span></code></pre></div>
+<div class="sourceCode" id="cb810"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb810-1"><a href="functions.html#cb810-1" aria-hidden="true" tabindex="-1"></a>apple <span class="ot">&lt;-</span> <span class="st">&quot;123&quot;</span>  <span class="co"># character</span></span>
+<span id="cb810-2"><a href="functions.html#cb810-2" aria-hidden="true" tabindex="-1"></a>pear  <span class="ot">&lt;-</span> <span class="dv">123</span>    <span class="co"># numeric </span></span>
+<span id="cb810-3"><a href="functions.html#cb810-3" aria-hidden="true" tabindex="-1"></a>apple <span class="sc">==</span> pear   <span class="co"># ? </span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb709"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb709-1"><a href="functions.html#cb709-1" tabindex="-1"></a>apple <span class="sc">+</span>  pear   <span class="co"># ?</span></span></code></pre></div>
-<pre><code>## Error in apple + pear: argument non numérique pour un opérateur binaire</code></pre>
+<div class="sourceCode" id="cb812"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb812-1"><a href="functions.html#cb812-1" aria-hidden="true" tabindex="-1"></a>apple <span class="sc">+</span>  pear   <span class="co"># ?</span></span></code></pre></div>
+<pre><code>## Error in apple + pear: non-numeric argument to binary operator</code></pre>
 <p>here the last two operations should both produce an error because <code>apple</code> and <code>pear</code> are not of the same type, however R is more liberal towards logical comparison and produces a result even though the variables compared are not of the same type. The mechanism is called <code>type coercion</code> and the full detail is beyond the scope of this course but in short what happens here is that first <code>pear</code> is converted from numeric to character to make the comparison possible and then a lexicographical comparison (dictionary order) is carried out, i.e. :</p>
-<div class="sourceCode" id="cb711"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb711-1"><a href="functions.html#cb711-1" tabindex="-1"></a><span class="st">&quot;123&quot;</span> <span class="sc">==</span> <span class="st">&quot;123&quot;</span> <span class="co"># character comparison</span></span></code></pre></div>
+<div class="sourceCode" id="cb814"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb814-1"><a href="functions.html#cb814-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;123&quot;</span> <span class="sc">==</span> <span class="st">&quot;123&quot;</span> <span class="co"># character comparison</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <div id="is.-family-functions" class="section level3 hasAnchor" number="4.4.1">
 <h3><span class="header-section-number">4.4.1</span> is.* family functions<a href="functions.html#is.-family-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>These are functions created to check a characteristic in/of the data. Some examples are:</p>
-<div class="sourceCode" id="cb713"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb713-1"><a href="functions.html#cb713-1" tabindex="-1"></a><span class="co"># type checkinh</span></span>
-<span id="cb713-2"><a href="functions.html#cb713-2" tabindex="-1"></a><span class="fu">is.numeric</span>(<span class="st">&quot;a&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb816"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb816-1"><a href="functions.html#cb816-1" aria-hidden="true" tabindex="-1"></a><span class="co"># type checkinh</span></span>
+<span id="cb816-2"><a href="functions.html#cb816-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(<span class="st">&quot;a&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb715"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb715-1"><a href="functions.html#cb715-1" tabindex="-1"></a><span class="fu">is.numeric</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb818"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb818-1"><a href="functions.html#cb818-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb717"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb717-1"><a href="functions.html#cb717-1" tabindex="-1"></a><span class="fu">is.character</span>(<span class="st">&quot;b&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb820"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb820-1"><a href="functions.html#cb820-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.character</span>(<span class="st">&quot;b&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb719"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb719-1"><a href="functions.html#cb719-1" tabindex="-1"></a><span class="fu">is.character</span>( <span class="fu">data.frame</span>() )</span></code></pre></div>
+<div class="sourceCode" id="cb822"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb822-1"><a href="functions.html#cb822-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.character</span>( <span class="fu">data.frame</span>() )</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb721"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb721-1"><a href="functions.html#cb721-1" tabindex="-1"></a><span class="fu">is.logical</span>(<span class="st">&quot;TRUE&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb824"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb824-1"><a href="functions.html#cb824-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.logical</span>(<span class="st">&quot;TRUE&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb723"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb723-1"><a href="functions.html#cb723-1" tabindex="-1"></a><span class="fu">is.logical</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb826"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb826-1"><a href="functions.html#cb826-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.logical</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb725"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb725-1"><a href="functions.html#cb725-1" tabindex="-1"></a><span class="co"># missing values</span></span>
-<span id="cb725-2"><a href="functions.html#cb725-2" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb828"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb828-1"><a href="functions.html#cb828-1" aria-hidden="true" tabindex="-1"></a><span class="co"># missing values</span></span>
+<span id="cb828-2"><a href="functions.html#cb828-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb727"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb727-1"><a href="functions.html#cb727-1" tabindex="-1"></a><span class="fu">is.na</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">0</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="cn">NA</span>) )</span></code></pre></div>
+<div class="sourceCode" id="cb830"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb830-1"><a href="functions.html#cb830-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>( <span class="fu">c</span>(<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">0</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="cn">NA</span>) )</span></code></pre></div>
 <pre><code>## [1] FALSE  TRUE FALSE FALSE  TRUE</code></pre>
 <p>All these functions return a logical objetc as response. Note that both:</p>
-<div class="sourceCode" id="cb729"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb729-1"><a href="functions.html#cb729-1" tabindex="-1"></a><span class="fu">is.na</span>(<span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb832"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb832-1"><a href="functions.html#cb832-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(<span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
 <p>and</p>
-<div class="sourceCode" id="cb731"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb731-1"><a href="functions.html#cb731-1" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb834"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb834-1"><a href="functions.html#cb834-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <p>return an object with a single entry, whilst</p>
-<div class="sourceCode" id="cb733"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb733-1"><a href="functions.html#cb733-1" tabindex="-1"></a><span class="fu">is.na</span>(<span class="fu">c</span>(<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">0</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="cn">NA</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb836"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb836-1"><a href="functions.html#cb836-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(<span class="fu">c</span>(<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">0</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="cn">NA</span>))</span></code></pre></div>
 <pre><code>## [1] FALSE  TRUE FALSE FALSE  TRUE</code></pre>
 <p>returns an object which has one logical value for each entry in the input object. This function not only works with vectors as input, but also with matrices. Consider for example the following matrix, which involves some <code>NA</code> entries:</p>
-<div class="sourceCode" id="cb735"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb735-1"><a href="functions.html#cb735-1" tabindex="-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
-<span id="cb735-2"><a href="functions.html#cb735-2" tabindex="-1"></a>mat[<span class="dv">1</span>, <span class="dv">2</span>] <span class="ot">&lt;-</span> mat[<span class="dv">3</span>, <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb735-3"><a href="functions.html#cb735-3" tabindex="-1"></a>mat</span></code></pre></div>
+<div class="sourceCode" id="cb838"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb838-1"><a href="functions.html#cb838-1" aria-hidden="true" tabindex="-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
+<span id="cb838-2"><a href="functions.html#cb838-2" aria-hidden="true" tabindex="-1"></a>mat[<span class="dv">1</span>, <span class="dv">2</span>] <span class="ot">&lt;-</span> mat[<span class="dv">3</span>, <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb838-3"><a href="functions.html#cb838-3" aria-hidden="true" tabindex="-1"></a>mat</span></code></pre></div>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1   NA    7
 ## [2,]    2    5    8
 ## [3,]    3   NA    9</code></pre>
 <p>Then if we apply <code>is.na()</code> to this object, we get:</p>
-<div class="sourceCode" id="cb737"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb737-1"><a href="functions.html#cb737-1" tabindex="-1"></a><span class="fu">is.na</span>(mat)</span></code></pre></div>
+<div class="sourceCode" id="cb840"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb840-1"><a href="functions.html#cb840-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(mat)</span></code></pre></div>
 <pre><code>##       [,1]  [,2]  [,3]
 ## [1,] FALSE  TRUE FALSE
 ## [2,] FALSE FALSE FALSE
@@ -803,34 +812,34 @@ labels:</p>
 <li><p><strong>Warnings</strong> : possibility of recovery and no potential harm to the end result</p></li>
 <li><p><strong>Errors</strong> : no possibility for recovery and potential harm to the end result</p></li>
 </ul>
-<div class="sourceCode" id="cb739"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb739-1"><a href="functions.html#cb739-1" tabindex="-1"></a><span class="fu">stop</span>(<span class="st">&quot;your error message !&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb842"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb842-1"><a href="functions.html#cb842-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stop</span>(<span class="st">&quot;your error message !&quot;</span>)</span></code></pre></div>
 <pre><code>## Error in eval(expr, envir, enclos): your error message !</code></pre>
-<div class="sourceCode" id="cb741"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb741-1"><a href="functions.html#cb741-1" tabindex="-1"></a><span class="fu">warning</span>(<span class="st">&quot;your warning message !&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb844"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb844-1"><a href="functions.html#cb844-1" aria-hidden="true" tabindex="-1"></a><span class="fu">warning</span>(<span class="st">&quot;your warning message !&quot;</span>)</span></code></pre></div>
 <pre><code>## Warning: your warning message !</code></pre>
 <p><strong>Example:</strong></p>
 <p>Recall the function <code>AgeGroup</code> which takes age as argument. The function as is now covers all positive numbers but there is a flaw in the function, it can not handle negative input.</p>
-<div class="sourceCode" id="cb743"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb743-1"><a href="functions.html#cb743-1" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="sc">-</span><span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb846"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb846-1"><a href="functions.html#cb846-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="sc">-</span><span class="dv">10</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;infant&quot;</code></pre>
 <p>which is an error. The function needs to be modified to prevent the erroneous answer as follows:</p>
-<div class="sourceCode" id="cb745"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb745-1"><a href="functions.html#cb745-1" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
-<span id="cb745-2"><a href="functions.html#cb745-2" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
-<span id="cb745-3"><a href="functions.html#cb745-3" tabindex="-1"></a>  <span class="co"># error on x&lt;0</span></span>
-<span id="cb745-4"><a href="functions.html#cb745-4" tabindex="-1"></a>  <span class="cf">if</span> (x<span class="sc">&lt;</span><span class="dv">0</span>)</span>
-<span id="cb745-5"><a href="functions.html#cb745-5" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">&quot;invalid age !&quot;</span>)</span>
-<span id="cb745-6"><a href="functions.html#cb745-6" tabindex="-1"></a>  <span class="co"># x &gt;= 0</span></span>
-<span id="cb745-7"><a href="functions.html#cb745-7" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
-<span id="cb745-8"><a href="functions.html#cb745-8" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
-<span id="cb745-9"><a href="functions.html#cb745-9" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
-<span id="cb745-10"><a href="functions.html#cb745-10" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
-<span id="cb745-11"><a href="functions.html#cb745-11" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
-<span id="cb745-12"><a href="functions.html#cb745-12" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
-<span id="cb745-13"><a href="functions.html#cb745-13" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb745-14"><a href="functions.html#cb745-14" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
-<span id="cb745-15"><a href="functions.html#cb745-15" tabindex="-1"></a>  }</span>
-<span id="cb745-16"><a href="functions.html#cb745-16" tabindex="-1"></a>  theLabel</span>
-<span id="cb745-17"><a href="functions.html#cb745-17" tabindex="-1"></a>}</span>
-<span id="cb745-18"><a href="functions.html#cb745-18" tabindex="-1"></a></span>
-<span id="cb745-19"><a href="functions.html#cb745-19" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="sc">-</span><span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb848"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb848-1"><a href="functions.html#cb848-1" aria-hidden="true" tabindex="-1"></a>AgeGroup <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { </span>
+<span id="cb848-2"><a href="functions.html#cb848-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x : is age in year</span></span>
+<span id="cb848-3"><a href="functions.html#cb848-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># error on x&lt;0</span></span>
+<span id="cb848-4"><a href="functions.html#cb848-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (x<span class="sc">&lt;</span><span class="dv">0</span>)</span>
+<span id="cb848-5"><a href="functions.html#cb848-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">&quot;invalid age !&quot;</span>)</span>
+<span id="cb848-6"><a href="functions.html#cb848-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x &gt;= 0</span></span>
+<span id="cb848-7"><a href="functions.html#cb848-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ( x <span class="sc">&gt;</span> <span class="dv">19</span> ) {</span>
+<span id="cb848-8"><a href="functions.html#cb848-8" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adult&quot;</span></span>
+<span id="cb848-9"><a href="functions.html#cb848-9" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&gt;=</span> <span class="dv">10</span>  <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="dv">19</span> ) {</span>
+<span id="cb848-10"><a href="functions.html#cb848-10" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;adolescent&quot;</span></span>
+<span id="cb848-11"><a href="functions.html#cb848-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> ( x <span class="sc">&lt;</span> <span class="dv">1</span> ) {</span>
+<span id="cb848-12"><a href="functions.html#cb848-12" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;infant&quot;</span></span>
+<span id="cb848-13"><a href="functions.html#cb848-13" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb848-14"><a href="functions.html#cb848-14" aria-hidden="true" tabindex="-1"></a>    theLabel <span class="ot">&lt;-</span> <span class="st">&quot;child&quot;</span></span>
+<span id="cb848-15"><a href="functions.html#cb848-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb848-16"><a href="functions.html#cb848-16" aria-hidden="true" tabindex="-1"></a>  theLabel</span>
+<span id="cb848-17"><a href="functions.html#cb848-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb848-18"><a href="functions.html#cb848-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb848-19"><a href="functions.html#cb848-19" aria-hidden="true" tabindex="-1"></a><span class="fu">AgeGroup</span>(<span class="sc">-</span><span class="dv">10</span>)</span></code></pre></div>
 <pre><code>## Error in AgeGroup(-10): invalid age !</code></pre>
 <p><strong>Quiz</strong> What about <code>AgeGroup(1000)</code> ?</p>
 <hr />

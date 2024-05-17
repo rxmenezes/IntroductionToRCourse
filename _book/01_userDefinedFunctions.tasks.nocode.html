@@ -11,7 +11,7 @@
 
 
 
-<title>Projects and Scripts (tasks)</title>
+<title>User-defined functions and control flow (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,40 +348,331 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects and Scripts (tasks)</h1>
+<h1 class="title toc-ignore">User-defined functions and control flow
+(tasks)</h1>
 
 </div>
 
 
-<div id="firstLoad" class="section level1">
-<h1>Loading data from txt</h1>
-<p>For the quick exercises we will mostly work with the
-<code>survey</code> data. Let us load them into R.</p>
+<div id="user-defined-functions-and-control-flow-tasks" class="section level1">
+<h1>User-defined functions and control flow (tasks)</h1>
+<div id="tasks" class="section level2">
+<h2>Tasks</h2>
+<div id="functions0" class="section level3">
+<h3>functions (0)</h3>
 <ul>
-<li><p>Copy the file <code>survey.txt</code> into your data
-folder</p></li>
-<li><p>Load this new data set into R and call it
-<code>survey</code></p></li>
+<li>Write the function <code>even</code> which tests whether a number is
+even.</li>
 </ul>
-<pre class="r"><code>## </code></pre>
+<pre class="r"><code># (v1)
+even &lt;- function(x) {
+  x %% 2 == 0
+}</code></pre>
 <ul>
-<li>View it</li>
+<li>Write an alternative version of function <code>even</code> using
+<code>odd</code> function.</li>
 </ul>
-<pre class="r"><code>View(survey)</code></pre>
+<pre class="r"><code># (v2)
+even &lt;- function(x) {
+  !odd(x)
+}</code></pre>
+<ul>
+<li>Write a function, given values <code>x</code> and <code>m</code>,
+that tests whether <code>x</code> is integer divisible by
+<code>m</code>.</li>
+</ul>
+<pre class="r"><code>divisible &lt;- function(x,m) {
+  x %% m == 0
+}</code></pre>
+<ul>
+<li>There are two systems for weight and height measurements, metric
+(cm,kg) and imperial (inch,lbs). The relation between the measurements
+in different systems is (1 kg = 2.2 lbs) and (1 inch = 2.54 cm). Write
+the following unit conversion functions:
+<ul>
+<li>cm2meter : convert cm to meter</li>
+<li>lbs2kg : convert weight unit pound to kg</li>
+<li>inch2cm : convert inch to cm</li>
+</ul></li>
+</ul>
+<pre class="r"><code># examples:
+&gt; inch2cm(70)
+[1] 177.8
+&gt; lbs2kg(10)
+[1] 4.545455
+&gt; cm2m(190)
+[1] 1.9</code></pre>
+<pre class="r"><code>cm2m    &lt;- function(x) { x*0.01 }  # cm to meter
+lbs2kg  &lt;- function(x) { x/2.2 }   # pound to kg
+inch2cm &lt;- function(x) { x*2.54 } # inch to cm</code></pre>
+<ul>
+<li>(*) Generate the following sequence:</li>
+</ul>
+<pre><code> [1]  7 14 21 28 35 42 49 56 63 70 77 84 91 98</code></pre>
+<pre class="r"><code>v &lt;- 1:100
+v[sapply(v,function(x) divisible(x,7))]</code></pre>
+<pre><code> [1]  7 14 21 28 35 42 49 56 63 70 77 84 91 98</code></pre>
 </div>
-<div id="firstScript" class="section level1">
-<h1>Making a script</h1>
-<p>We will make a script to read in the pulse and survey datasets. We
-will use this script every day in the course.</p>
+<div id="functions1" class="section level3">
+<h3>functions (1)</h3>
 <ul>
-<li><p>Start a new script that reads in the pulse and survey data
-sets</p></li>
-<li><p>Add a comment to the script</p></li>
-<li><p>Save the script under a useful name</p></li>
-<li><p>Check it by closing and opening RStudio, running the script and
-then checking that the objects containing the datasets are loaded in the
-workspace (HINT: make sure you are in the right project)</p></li>
+<li>The following table is a BMI classification. Write a function to
+determine the classification given a BMI value.</li>
 </ul>
+<center>
+<table class="gmisc_table" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
+<thead>
+<tr>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey;">
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+classification
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+bmi
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">
+1
+</td>
+<td style="text-align: center;">
+underweight
+</td>
+<td style="text-align: center;">
+&lt;18.5
+</td>
+</tr>
+<tr style="background-color: #f7f7f7;">
+<td style="background-color: #f7f7f7; text-align: left;">
+2
+</td>
+<td style="background-color: #f7f7f7; text-align: center;">
+normal
+</td>
+<td style="background-color: #f7f7f7; text-align: center;">
+18.5-24.9
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+3
+</td>
+<td style="text-align: center;">
+overweight
+</td>
+<td style="text-align: center;">
+25-29.9
+</td>
+</tr>
+<tr style="background-color: #f7f7f7;">
+<td style="background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: left;">
+4
+</td>
+<td style="background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: center;">
+obese
+</td>
+<td style="background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: center;">
+&gt;30
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<pre class="r"><code>bmiClass &lt;- function(bmi) {
+  # Clissifies BMI value given as argument into categories:
+  #
+  #         {&quot;underweight&quot;,&quot;normal&quot;,&quot;overweight&quot;,&quot;obese&quot;}
+  #
+  # your code: 
+  ...
+}  
+# examples:
+&gt; bmiClass(19)
+[1] &quot;normal&quot;
+&gt; bmiClass(29.9)
+[1] &quot;overweight&quot;
+&gt; bmiClass(30)
+[1] &quot;obese&quot;</code></pre>
+<pre class="r"><code>#
+# bmiClass 
+#
+bmiClass &lt;- function(bmi) {
+  # Classifies BMI value given as argument into categories {&quot;underweight&quot;,&quot;normal&quot;,&quot;overweight&quot;,&quot;obese&quot;}
+  #
+  if (bmi &lt; 18.5) {
+    classification &lt;- &quot;underweight&quot;
+  } else if(18.5 &lt;= bmi &amp; bmi &lt;= 24.9) {
+    classification &lt;- &quot;normal&quot;
+  } else if(25 &lt;= bmi &amp; bmi &lt;= 29.9) {
+    classification &lt;- &quot;overweight&quot;
+  } else {
+    classification &lt;- &quot;obese&quot;
+  }  
+  classification
+}</code></pre>
+</div>
+<div id="functions" class="section level3">
+<h3>functions (2)</h3>
+<ul>
+<li>Write a function calculating BMI with arguments weight(kg) and
+height(cm). BMI in the metric system is defined as weight/(height^2)
+with weight and height in units of kilogram (kg) and meter (m). Use
+<code>cm2m</code> function from previous exercise.</li>
+</ul>
+<pre class="r"><code>bmi &lt;- function(weight,height) {
+  # Calculates the BMI given weight (kg) and height (cm). 
+  # weight : kg unit as value
+  # height : cm unit as value
+  weight/( cm2m( height )^2 )
+}</code></pre>
+<ul>
+<li>Upgrade the functions <code>lbs2kg</code> and <code>inch2cm</code>
+as such that the conversions can be applied in the opposite direction.
+You can do this by adding an additional logical argument
+<code>invert</code> to the function with the default value set to FALSE.
+For example a call like:</li>
+</ul>
+<pre class="r"><code>lbs2kg(65, invert=TRUE) # convert kg to lbs</code></pre>
+<p>will reverse the conversion from kg to lbs.</p>
+<pre class="r"><code>lbs2kg  &lt;- function(x, invert=FALSE) 
+  if (!invert) {
+    x/2.2   # pound to kg
+  } else {
+    x*2.2   # kg to pound
+  }
+
+inch2cm  &lt;- function(x, invert=FALSE) 
+  if (!invert) {
+    x*2.54  # inch to cm
+  } else {
+    x/2.54   # cm to inch
+  }</code></pre>
+<ul>
+<li>(*) Update BMI function with an additional logical argument
+<code>imperial</code> with the default value set to FALSE. The function
+will accept both systems of measurements (metric and imperial). Use the
+<code>imperial</code> argument in the function as a condition to convert
+imperial measurement to metric when the input values are in imperial.
+The function can be called with values for <code>weight</code> and
+<code>height</code> in metric system (kg,cm) or imperial
+(lbs,inch).</li>
+</ul>
+<pre class="r"><code>bmi &lt;- function(weight,height,imperial=FALSE) {
+  # Calculates the BMI given weight and height in either metric or imperial 
+  # systems. By default the metric system is assumed (imperial=FALSE). 
+  # 
+  # weight : pound or kg units as values
+  # height : inch or cm units as values
+  #
+  if (imperial) {
+    height &lt;- inch2cm(height)
+    weight &lt;- lbs2kg(weight)
+  }
+  weight/( cm2m( height )^2 )
+}</code></pre>
+</div>
+<div id="apply" class="section level3">
+<h3>apply</h3>
+<ul>
+<li>Calculate the mean age and height in survey data using apply
+function. Note that there are missing data (hint: see na.rm argument to
+mean).</li>
+</ul>
+<pre class="r"><code># Two solutions is given.
+
+# (1) anonymous function calls mean
+apply( survey[,c(&quot;age&quot;,&quot;height&quot;)], 2, function(x)  mean(x,na.rm=TRUE) )</code></pre>
+<pre><code>      age    height 
+ 20.35591 172.34592 </code></pre>
+<pre class="r"><code># (2) direct call to mean with argument `na.rm=TRUE` is passed to mean function through  apply ... argument (see ?apply)
+apply( survey[,c(&quot;age&quot;,&quot;height&quot;)], 2, mean, na.rm=TRUE)</code></pre>
+<pre><code>      age    height 
+ 20.35591 172.34592 </code></pre>
+<ul>
+<li>In the previous exercise we removed the missing values per variable.
+A more fair solution would be to remove the observation completely where
+one or both variables are missing. Hint : ?complete.cases</li>
+</ul>
+<pre class="r"><code># using an intermediate variable &#39;d&#39; 
+d &lt;- survey[,c(&quot;age&quot;,&quot;height&quot;)] 
+d &lt;- d[complete.cases(d),] # update d where all observations are complete cases (contain no NA&#39;s)
+apply(d,2, mean) </code></pre>
+<pre><code>      age    height 
+ 20.51542 172.34592 </code></pre>
+<ul>
+<li>(*) Upgrade bmiClass function in the previous exercises to process a
+vector of BMI values.</li>
+</ul>
+<pre class="r"><code>bmiClass &lt;- function(bmi) {
+  # Given a &#39;vector&#39; of BMI values as argument return the corresponding BMI classifications.
+  #
+  bmiClassFunc &lt;- function(bmi) {  
+    # Clissifies a BMI value given as argument into categories {&quot;underweight&quot;,&quot;normal&quot;,
+    # &quot;overweight&quot;,&quot;obese&quot;}
+    #
+    if (bmi &lt; 18.5) {
+      classification &lt;- &quot;underweight&quot;
+    } else if(18.5 &lt;= bmi &amp; bmi &lt;= 24.9) {
+      classification &lt;- &quot;normal&quot;
+    } else if(25 &lt;= bmi &amp; bmi &lt;= 29.9) {
+      classification &lt;- &quot;overweight&quot;
+    } else {
+      classification &lt;- &quot;obese&quot;
+    }  
+    classification
+  }
+  sapply(bmi,bmiClassFunc)
+}</code></pre>
+</div>
+<div id="argcheck" class="section level3">
+<h3>function argument check</h3>
+<pre class="r"><code>bmiClass &lt;- function(bmi) {
+  # Clissifies BMI value given as argument into categories {&quot;underweight&quot;,&quot;normal&quot;,&quot;overweight&quot;,&quot;obese&quot;}
+  #
+  if (!is.numeric(bmi))
+    stop(&quot;numeric type expected !&quot;)
+  if (bmi &lt; 18.5) {
+    classification &lt;- &quot;underweight&quot;
+  } else if(18.5 &lt;= bmi &amp; bmi &lt;= 24.9) {
+    classification &lt;- &quot;normal&quot;
+  } else if(25 &lt;= bmi &amp; bmi &lt;= 29.9) {
+    classification &lt;- &quot;overweight&quot;
+  } else {
+    classification &lt;- &quot;obese&quot;
+  }  
+  classification
+}</code></pre>
+<ul>
+<li>Update the function bmiClass as such to error on wrong input type,
+e.g.</li>
+</ul>
+<pre class="r"><code>bmiClass(&quot;a&quot;)</code></pre>
+<pre><code>Error in bmiClass(&quot;a&quot;): numeric type expected !</code></pre>
+</div>
+<div id="extra" class="section level3">
+<h3>Extra exercises</h3>
+<ul>
+<li>Update survey data with a new variable <code>heightInch</code> with
+height in inch units (use sapply).</li>
+</ul>
+<pre class="r"><code>survey$heightInch &lt;- sapply(survey$height, inch2cm, invert=TRUE)</code></pre>
+<ul>
+<li>Update the pulse data with <code>BMI</code> variable using the
+<em>bmi</em> function (use apply).</li>
+</ul>
+<pre class="r"><code>d &lt;- pulse[,c(&quot;weight&quot;,&quot;height&quot;)]  # intermediate data.frame `d`
+pulse$BMI &lt;- apply(d,1,function(x) bmi(x[&quot;weight&quot;],x[&quot;height&quot;]) )</code></pre>
+<ul>
+<li>Update the pulse data with BMI category variable
+<code>bmiClass</code> using the <em>bmiClass</em> function from previous
+exercise (use sapply).</li>
+</ul>
+<pre class="r"><code>pulse$bmiClass &lt;- sapply(pulse$BMI,bmiClass)</code></pre>
+</div>
+</div>
 </div>
 
 

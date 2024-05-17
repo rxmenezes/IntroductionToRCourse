@@ -11,7 +11,7 @@
 
 
 
-<title>Projects and Scripts (tasks)</title>
+<title>Data frames (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,40 +348,278 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects and Scripts (tasks)</h1>
+<h1 class="title toc-ignore">Data frames (tasks)</h1>
 
 </div>
 
 
-<div id="firstLoad" class="section level1">
-<h1>Loading data from txt</h1>
-<p>For the quick exercises we will mostly work with the
-<code>survey</code> data. Let us load them into R.</p>
+<div id="creating-a-data-frame" class="section level2">
+<h2>Creating a data frame</h2>
+<div id="primary-tasks" class="section level3">
+<h3>Primary tasks</h3>
 <ul>
-<li><p>Copy the file <code>survey.txt</code> into your data
-folder</p></li>
-<li><p>Load this new data set into R and call it
-<code>survey</code></p></li>
+<li>Create a <code>data.frame</code> from given vectors</li>
 </ul>
-<pre class="r"><code>## </code></pre>
-<ul>
-<li>View it</li>
-</ul>
-<pre class="r"><code>View(survey)</code></pre>
+<p>Create the following vectors: <code>firstname</code> containing
+“George”, “Leila” and “Alice”; <code>age</code> containing 34, 27 and
+41; and <code>height</code> containing 173, 177 and 162.</p>
+<pre class="r"><code>firstname &lt;- c(&quot;George&quot;, &quot;Leila&quot;, &quot;Alice&quot;)
+age &lt;- c(34, 27, 41)
+height &lt;- c(173, 177, 162)</code></pre>
+<p>Create a <code>data.frame</code> containing these variables.</p>
+<pre class="r"><code>mydata &lt;- data.frame(firstname, age, height)</code></pre>
+<p>Check the structure of the <code>data.frame</code> created.</p>
+<pre class="r"><code>str(mydata)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    3 obs. of  3 variables:
+##  $ firstname: chr  &quot;George&quot; &quot;Leila&quot; &quot;Alice&quot;
+##  $ age      : num  34 27 41
+##  $ height   : num  173 177 162</code></pre>
+<p>Compute the mean height of the individuals in the data using the
+function <code>mean()</code>.</p>
+<pre class="r"><code>mean(mydata$height)</code></pre>
+<pre><code>## [1] 170.6667</code></pre>
+<p>Compute the mean age of the individuals in the data.</p>
+<pre class="r"><code>mean(mydata[, &quot;age&quot;])</code></pre>
+<pre><code>## [1] 34</code></pre>
+<p>Check what happens if you try to compute the mean by selecting the
+variable <code>age</code> via square brackets, without the comma:</p>
+<pre class="r"><code>mean(mydata[ &quot;age&quot;])</code></pre>
+<pre><code>## Warning in mean.default(mydata[&quot;age&quot;]): argument is not numeric or logical: returning NA</code></pre>
+<pre><code>## [1] NA</code></pre>
 </div>
-<div id="firstScript" class="section level1">
-<h1>Making a script</h1>
-<p>We will make a script to read in the pulse and survey datasets. We
-will use this script every day in the course.</p>
+</div>
+<div id="reading-data-from-files-with-different-formats" class="section level2">
+<h2>Reading data from files with different formats</h2>
+<div id="primary-tasks-1" class="section level3">
+<h3>Primary tasks</h3>
 <ul>
-<li><p>Start a new script that reads in the pulse and survey data
-sets</p></li>
-<li><p>Add a comment to the script</p></li>
-<li><p>Save the script under a useful name</p></li>
-<li><p>Check it by closing and opening RStudio, running the script and
-then checking that the objects containing the datasets are loaded in the
-workspace (HINT: make sure you are in the right project)</p></li>
+<li>Load the <code>pulse.csv</code> file into the <code>d</code> object.
+Display the structure of <code>d</code> and the first few rows.</li>
 </ul>
+<pre class="r"><code>d &lt;- read.csv( &quot;./data/pulse.csv&quot; )</code></pre>
+<pre class="r"><code>str( d )</code></pre>
+<pre><code>## &#39;data.frame&#39;:    110 obs. of  13 variables:
+##  $ id      : chr  &quot;1993_A&quot; &quot;1993_B&quot; &quot;1993_C&quot; &quot;1993_D&quot; ...
+##  $ name    : chr  &quot;Bonnie&quot; &quot;Melanie&quot; &quot;Consuelo&quot; &quot;Travis&quot; ...
+##  $ height  : int  173 179 167 195 173 184 162 169 164 168 ...
+##  $ weight  : num  57 58 62 84 64 74 57 55 56 60 ...
+##  $ age     : int  18 19 18 18 18 22 20 18 19 23 ...
+##  $ gender  : chr  &quot;female&quot; &quot;female&quot; &quot;female&quot; &quot;male&quot; ...
+##  $ smokes  : chr  &quot;no&quot; &quot;no&quot; &quot;no&quot; &quot;no&quot; ...
+##  $ alcohol : chr  &quot;yes&quot; &quot;yes&quot; &quot;yes&quot; &quot;yes&quot; ...
+##  $ exercise: chr  &quot;moderate&quot; &quot;moderate&quot; &quot;high&quot; &quot;high&quot; ...
+##  $ ran     : chr  &quot;sat&quot; &quot;ran&quot; &quot;ran&quot; &quot;sat&quot; ...
+##  $ pulse1  : int  86 82 96 71 90 78 68 71 68 88 ...
+##  $ pulse2  : int  88 150 176 73 88 141 72 77 68 150 ...
+##  $ year    : int  1993 1993 1993 1993 1993 1993 1993 1993 1993 1993 ...</code></pre>
+<pre class="r"><code>head( d )</code></pre>
+<pre><code>##       id     name height weight age gender smokes alcohol exercise ran pulse1 pulse2 year
+## 1 1993_A   Bonnie    173     57  18 female     no     yes moderate sat     86     88 1993
+## 2 1993_B  Melanie    179     58  19 female     no     yes moderate ran     82    150 1993
+## 3 1993_C Consuelo    167     62  18 female     no     yes     high ran     96    176 1993
+## 4 1993_D   Travis    195     84  18   male     no     yes     high sat     71     73 1993
+## 5 1993_E    Lauri    173     64  18 female     no     yes      low sat     90     88 1993
+## 6 1993_F   George    184     74  22   male     no     yes      low ran     78    141 1993</code></pre>
+<p>Tabulate variables <code>gender</code> and <code>exercise</code>.</p>
+<pre class="r"><code>table(d$gender)</code></pre>
+<pre><code>## 
+## female   male 
+##     51     59</code></pre>
+<pre class="r"><code>table(d$exercise)</code></pre>
+<pre><code>## 
+##     high      low moderate 
+##       14       37       59</code></pre>
+<ul>
+<li>Select a small part of the data to work with</li>
+</ul>
+<p>Select the first 10 rows from table <code>d</code>. Save the data for
+the selected rows as a new object called <code>dnew</code>.</p>
+<pre class="r"><code>dnew &lt;- d[1:10, ]</code></pre>
+<p>Compute the mean height in this selected data.</p>
+<pre class="r"><code>mean(dnew$height)</code></pre>
+<pre><code>## [1] 173.4</code></pre>
+<p>Use the function <code>summary()</code> on the <code>height</code>
+variable.</p>
+<pre class="r"><code>summary(dnew$height)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   162.0   167.2   171.0   173.4   177.5   195.0</code></pre>
+<p>Make a new data.frame <code>d2</code> with the same selected rows and
+only columns <code>height</code>, <code>weight</code> and
+<code>age</code>.</p>
+<pre class="r"><code>d2 &lt;- dnew[, c(&quot;height&quot;, &quot;weight&quot;, &quot;age&quot;)]</code></pre>
+<p>Use the function <code>summary()</code> on this smaller dataset. What
+do you obtain?</p>
+<pre class="r"><code>summary(d2)</code></pre>
+<pre><code>##      height          weight          age       
+##  Min.   :162.0   Min.   :55.0   Min.   :18.00  
+##  1st Qu.:167.2   1st Qu.:57.0   1st Qu.:18.00  
+##  Median :171.0   Median :59.0   Median :18.50  
+##  Mean   :173.4   Mean   :62.7   Mean   :19.30  
+##  3rd Qu.:177.5   3rd Qu.:63.5   3rd Qu.:19.75  
+##  Max.   :195.0   Max.   :84.0   Max.   :23.00</code></pre>
+<ul>
+<li>Sorting the rows of a <code>data.frame</code> by one or more
+variables</li>
+</ul>
+<p>Use the dataset <code>d2</code> you just created. Use
+<code>sort()</code> to sort the entries of <code>age</code>.</p>
+<pre class="r"><code>sort(d2$age)</code></pre>
+<pre><code>##  [1] 18 18 18 18 18 19 19 20 22 23</code></pre>
+<p>Now use <code>order()</code> to again sort the elements of
+<code>age</code>. Hint: you have already done this in
+<code>02_selecting.tasks</code>.</p>
+<pre class="r"><code>d2$age[ order(d2$age) ]</code></pre>
+<pre><code>##  [1] 18 18 18 18 18 19 19 20 22 23</code></pre>
+<p>Use now the same trick to sort the rows in <code>d2</code>, including
+all columns, according to <code>age</code>.</p>
+<pre class="r"><code>d2[ order(d2$age), ]</code></pre>
+<pre><code>##    height weight age
+## 1     173     57  18
+## 3     167     62  18
+## 4     195     84  18
+## 5     173     64  18
+## 8     169     55  18
+## 2     179     58  19
+## 9     164     56  19
+## 7     162     57  20
+## 6     184     74  22
+## 10    168     60  23</code></pre>
+<p>Now sort the rows in <code>d2</code> first by <code>age</code> and
+then by <code>weight</code>. This means: individuals of the same
+<code>age</code> are sorted by their <code>weight</code>.</p>
+<pre class="r"><code>d2[ order(d2$age, d2$weight), ]</code></pre>
+<pre><code>##    height weight age
+## 8     169     55  18
+## 1     173     57  18
+## 3     167     62  18
+## 5     173     64  18
+## 4     195     84  18
+## 9     164     56  19
+## 2     179     58  19
+## 7     162     57  20
+## 6     184     74  22
+## 10    168     60  23</code></pre>
+<p>Sort the rows in <code>dnew</code>, the data.frame from the previous
+exercise which contains the same individuals as <code>d2</code> but with
+more columns, according to both <code>age</code> and
+<code>weight</code>.</p>
+<pre class="r"><code>dnew[ order(d2$age, d2$weight), ]</code></pre>
+<pre><code>##        id      name height weight age gender smokes alcohol exercise ran pulse1 pulse2 year
+## 8  1993_H Francesca    169     55  18 female     no     yes moderate sat     71     77 1993
+## 1  1993_A    Bonnie    173     57  18 female     no     yes moderate sat     86     88 1993
+## 3  1993_C  Consuelo    167     62  18 female     no     yes     high ran     96    176 1993
+## 5  1993_E     Lauri    173     64  18 female     no     yes      low sat     90     88 1993
+## 4  1993_D    Travis    195     84  18   male     no     yes     high sat     71     73 1993
+## 9  1993_I     Sonja    164     56  19 female     no     yes     high sat     68     68 1993
+## 2  1993_B   Melanie    179     58  19 female     no     yes moderate ran     82    150 1993
+## 7  1993_G    Cherry    162     57  20 female     no     yes moderate sat     68     72 1993
+## 6  1993_F    George    184     74  22   male     no     yes      low ran     78    141 1993
+## 10 1993_J      Troy    168     60  23   male     no     yes moderate ran     88    150 1993</code></pre>
+<p>Now display the sorted rows only for the columns <code>name</code>
+and <code>year</code>.</p>
+<pre class="r"><code>dnew[ order(d2$age, d2$weight), c(&quot;name&quot;, &quot;year&quot;)]</code></pre>
+<pre><code>##         name year
+## 8  Francesca 1993
+## 1     Bonnie 1993
+## 3   Consuelo 1993
+## 5      Lauri 1993
+## 4     Travis 1993
+## 9      Sonja 1993
+## 2    Melanie 1993
+## 7     Cherry 1993
+## 6     George 1993
+## 10      Troy 1993</code></pre>
+<ul>
+<li>Selecting rows using a logical expression.</li>
+</ul>
+<p>You have been asked to select individuals from the <code>d</code>
+data corresponding to men of weight in the range 60-80 kg. One way of
+doing this is as follows.</p>
+<ol style="list-style-type: decimal">
+<li>Create a logical vector <code>isMan</code> stating whether a row in
+the data corresponds to men. Hint: check which values in
+<code>gender</code> correspond to men.</li>
+</ol>
+<pre class="r"><code>table(d$gender)</code></pre>
+<pre><code>## 
+## female   male 
+##     51     59</code></pre>
+<pre class="r"><code>isMan &lt;- d$gender == &quot;male&quot;</code></pre>
+<p>Tabulate the logical vector to check you have constructed it
+correctly.</p>
+<pre class="r"><code>table(isMan)</code></pre>
+<pre><code>## isMan
+## FALSE  TRUE 
+##    51    59</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Create a logical vector <code>isInWeightRange</code> stating whether
+a row corresponds to a person with weight between 60 and 80</li>
+</ol>
+<pre class="r"><code>isInWeightRange &lt;- (d$weight &gt;= 60) &amp; (d$weight &lt;= 80)</code></pre>
+<p>Tabulate the resulting vector.</p>
+<pre class="r"><code>table(isInWeightRange)</code></pre>
+<pre><code>## isInWeightRange
+## FALSE  TRUE 
+##    58    52</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Select rows of the object <code>d</code> corresponding to the
+combined selections</li>
+</ol>
+<pre class="r"><code>d[ isMan &amp; isInWeightRange, ]</code></pre>
+<pre><code>##         id      name height weight age gender smokes alcohol exercise ran pulse1 pulse2 year
+## 6   1993_F    George    184   74.0  22   male     no     yes      low ran     78    141 1993
+## 10  1993_J      Troy    168   60.0  23   male     no     yes moderate ran     88    150 1993
+## 11  1993_K    Roland    170   75.0  20   male     no     yes     high ran     76     88 1993
+## 13  1993_M    Justin    170   68.0  22   male    yes     yes moderate sat     70     71 1993
+## 15  1993_O  Salvador    180   72.0  18   male     no     yes moderate sat     69     67 1993
+## 18  1993_R   Raymond    180   70.0  18   male     no     yes moderate ran     80    146 1993
+## 21  1993_U    Jerome    175   60.0  19   male     no      no      low sat     88     86 1993
+## 24  1993_X    Tyrone    182   75.0  26   male    yes     yes moderate sat     80     76 1993
+## 27  1995_A     Pedro    170   60.0  18   male     no     yes moderate sat     62     59 1995
+## 29  1995_C     Oscar    189   60.0  19   male     no     yes moderate ran     78    168 1995
+## 31  1995_E     Scott    175   75.0  20   male     no     yes moderate ran     59     92 1995
+## 35  1995_I      Marc    175   65.0  19   male     no     yes moderate ran     60    104 1995
+## 38  1995_L     Bobby    169   68.0  19   male     no      no moderate sat     58     58 1995
+## 41  1995_O   Clinton    175   66.0  20   male     no     yes moderate sat     66     68 1995
+## 42  1995_P     Peter    178   63.0  23   male     no     yes      low sat     84     90 1995
+## 43  1995_Q    Lester    184   65.0  21   male    yes      no moderate sat     65     67 1995
+## 50  1996_B    Travis    167   70.0  22   male    yes     yes      low sat     92     84 1996
+## 52  1996_D      Rick    183   73.0  20   male     no     yes moderate sat     63     65 1996
+## 55  1996_G    Nathan    182   63.0  20   male     no     yes     high ran     56    110 1996
+## 56  1996_H Christian    173   70.0  20   male     no     yes     high ran     64    126 1996
+## 60  1996_L    Sidney    180   75.0  20   male     no     yes moderate ran     65     82 1996
+## 65  1996_Q       Don    178   62.0  21   male     no      no      low sat     70     74 1996
+## 68  1996_T    Robert    180   80.0  21   male     no     yes moderate sat     80     80 1996
+## 73  1997_D       Guy    179   80.0  20   male     no     yes moderate ran    145    155 1997
+## 80  1997_K      John    191   78.0  19   male     no     yes     high ran     68    136 1997
+## 82  1997_M     Ralph    171   71.0  41   male     no      no      low sat     52     60 1997
+## 83  1997_N       Jim    180   76.0  21   male     no      no     high sat     74     72 1997
+## 85  1997_P     James    167   63.0  28   male     no     yes moderate sat     72     68 1997
+## 91  1997_V      Ross    175   78.5  19   male     no     yes      low ran     85    131 1997
+## 97  1998_E      Jeff    180   65.0  20   male     no      no moderate ran     88    144 1998
+## 102 1998_J      Raul     68   63.0  19   male     no      no moderate ran     88    136 1998
+## 104 1998_L      Juan    179   80.0  20   male     no      no moderate ran     76    168 1998
+## 108 1998_P     Chris    182   60.0  22   male     no     yes      low sat     86     84 1998
+## 109 1998_Q     Lewis    170   65.0  18   male     no     yes     high sat     69     64 1998</code></pre>
+</div>
+<div id="extra-tasks" class="section level3">
+<h3>Extra tasks</h3>
+<ul>
+<li>Making sure a selection returns a <code>data.frame</code>.</li>
+</ul>
+<p>Select the column <code>weight</code> from <code>d</code> and save it
+into the object <code>dw</code>. Check its class, and try to extract the
+dimensions of the resulting object.</p>
+<pre class="r"><code>dw &lt;- d[, &quot;weight&quot;]
+class(dw)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<p>Now use <code>drop = FALSE</code> to force the result to be a
+<code>data.frame</code>. Check the class of the resulting object and its
+dimensions.</p>
+<pre class="r"><code>dw2 &lt;- d[, &quot;weight&quot;, drop = FALSE]
+class(dw2)</code></pre>
+<pre><code>## [1] &quot;data.frame&quot;</code></pre>
+</div>
 </div>
 
 

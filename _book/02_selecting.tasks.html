@@ -11,7 +11,7 @@
 
 
 
-<title>Projects and Scripts (tasks)</title>
+<title>Selecting/indexing/subsetting (vector elements, data frame rows/columns, …) (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,40 +348,504 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects and Scripts (tasks)</h1>
+<h1 class="title toc-ignore">Selecting/indexing/subsetting (vector
+elements, data frame rows/columns, …) (tasks)</h1>
 
 </div>
 
 
-<div id="firstLoad" class="section level1">
-<h1>Loading data from txt</h1>
-<p>For the quick exercises we will mostly work with the
-<code>survey</code> data. Let us load them into R.</p>
+<div id="selectingindexingsubsetting-vectors-tasks" class="section level1">
+<h1>Selecting/indexing/subsetting (vectors) (tasks)</h1>
+<div id="brackets" class="section level2">
+<h2>Square brackets operator</h2>
+<p>Define a vector of the sequence of numbers between 101 and 110.</p>
+<pre class="r"><code>v &lt;- 101:110</code></pre>
+<div id="primary-tasks" class="section level3">
+<h3>Primary tasks</h3>
 <ul>
-<li><p>Copy the file <code>survey.txt</code> into your data
-folder</p></li>
-<li><p>Load this new data set into R and call it
-<code>survey</code></p></li>
+<li>Get the seventh element of the vector.</li>
 </ul>
-<pre class="r"><code>## </code></pre>
+<pre class="r"><code>v[ 7 ]</code></pre>
+<pre><code>## [1] 107</code></pre>
 <ul>
-<li>View it</li>
+<li>Get the number of entries in the vector (the same as the length of
+the vector).</li>
 </ul>
-<pre class="r"><code>View(survey)</code></pre>
+<pre class="r"><code>length(v)</code></pre>
+<pre><code>## [1] 10</code></pre>
+<ul>
+<li>Get the last element of the vector.</li>
+</ul>
+<pre class="r"><code>v[ length( v ) ]</code></pre>
+<pre><code>## [1] 110</code></pre>
+<ul>
+<li>Check what happens when you try to get an element with a too large
+index - 20, say.</li>
+</ul>
+<pre class="r"><code>v[ 20 ]</code></pre>
+<pre><code>## [1] NA</code></pre>
+<ul>
+<li>Check what happens when you use a negative index - say -7. What can
+negative indices be used for?</li>
+</ul>
+<pre class="r"><code>v[ -7 ]</code></pre>
+<pre><code>## [1] 101 102 103 104 105 106 108 109 110</code></pre>
+<ul>
+<li>Set the 5th element of <code>v</code> to zero. Check <code>v</code>
+before and after this change.</li>
+</ul>
+<pre class="r"><code>v</code></pre>
+<pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
+<pre class="r"><code>v[ 5 ] &lt;- 0
+v</code></pre>
+<pre><code>##  [1] 101 102 103 104   0 106 107 108 109 110</code></pre>
+<ul>
+<li>Create a vector of indices <code>idx</code> with the entries 3, 7
+and 1. Get the entries of <code>v</code> for positions indicated by
+<code>idx</code> - so the third, seventh and the first.</li>
+</ul>
+<pre class="r"><code>idx &lt;- c( 3, 7, 1 )
+v[ idx ]</code></pre>
+<pre><code>## [1] 103 107 101</code></pre>
+<ul>
+<li>Create a vector <code>age</code> by sampling 30 values between 18
+and 55.</li>
+</ul>
+<pre class="r"><code>age &lt;- sample(18:55, size = 30)</code></pre>
+<p>Create a vector <code>sex</code> assigning “female” to the first half
+of entries, and “male” to the second half. Hint: use
+<code>rep()</code>.</p>
+<pre class="r"><code>sex &lt;- rep(c(&quot;female&quot;, &quot;male&quot;), each = 30/2)</code></pre>
+<p>Now create a vector <code>height</code> of 30 heights in meters, by
+selecting values at random between 1.55 and 1.95. Hint: first generate
+the vector of heights to be sampled from using <code>seq()</code>. Then
+use <code>sample()</code> to draw 30 values from the created vector.</p>
+<pre class="r"><code>height &lt;- sample(seq(from = 1.55, to = 1.95, by = 0.01), size = 30)</code></pre>
+<p>Select all values of <code>height</code> for females older than 30
+years. Hint: first create a logical vector selecting females, then
+create a logical vector selecting ages older than 30. Subsequently,
+create a logical vector by combining the two logical vectors using
+<code>&amp;</code> (AND). Finally, use this logical vector to select
+entries from <code>height</code>.</p>
+<pre class="r"><code>sel.fem &lt;- sex == &quot;female&quot;
+sel.age &lt;- age &gt; 30
+sel &lt;- sel.fem &amp; sel.age
+height.sel &lt;- height[ sel ]</code></pre>
+<ul>
+<li>Now make the 10th entry in <code>age</code> as <code>NA</code>, and
+repeat the exercise. What happens to the result?</li>
+</ul>
+<pre class="r"><code>age[ 10 ] &lt;- NA
+sel.age &lt;- age &gt; 30
+sel &lt;- sel.fem &amp; sel.age
+height.sel &lt;- height[ sel ]</code></pre>
+<p>Explanation: <code>NA</code> entries in the logical vector used as
+index will generate <code>NA</code>s entries in the result, even if the
+original vector (in this case, <code>height</code>) did not involve
+<code>NA</code>s.</p>
 </div>
-<div id="firstScript" class="section level1">
-<h1>Making a script</h1>
-<p>We will make a script to read in the pulse and survey datasets. We
-will use this script every day in the course.</p>
+<div id="extra-tasks" class="section level3">
+<h3>Extra tasks</h3>
 <ul>
-<li><p>Start a new script that reads in the pulse and survey data
-sets</p></li>
-<li><p>Add a comment to the script</p></li>
-<li><p>Save the script under a useful name</p></li>
-<li><p>Check it by closing and opening RStudio, running the script and
-then checking that the objects containing the datasets are loaded in the
-workspace (HINT: make sure you are in the right project)</p></li>
+<li>Name the elements of <code>v</code> with subsequent small letters of
+alphabet. Use <code>1:length( v )</code> to specify the range of the
+<code>letters</code> vector. (*)</li>
 </ul>
+<pre class="r"><code>names( v ) &lt;- letters[ 1:length( v ) ]
+v</code></pre>
+<pre><code>##   a   b   c   d   e   f   g   h   i   j 
+## 101 102 103 104   0 106 107 108 109 110</code></pre>
+<ul>
+<li>Get the values of <code>v</code> corresponding to positions named
+<code>e</code> and <code>h</code>. (*)</li>
+</ul>
+<pre class="r"><code>v[ c( &#39;e&#39;, &#39;h&#39; ) ]</code></pre>
+<pre><code>##   e   h 
+##   0 108</code></pre>
+<ul>
+<li>In one operation set the 3rd and 5th elements of <code>v</code> to
+13 and 15. Check the result. (*)</li>
+</ul>
+<pre class="r"><code>v</code></pre>
+<pre><code>##   a   b   c   d   e   f   g   h   i   j 
+## 101 102 103 104   0 106 107 108 109 110</code></pre>
+<pre class="r"><code>v[ c( 3, 5 ) ] &lt;- c( 13, 15 )
+v</code></pre>
+<pre><code>##   a   b   c   d   e   f   g   h   i   j 
+## 101 102  13 104  15 106 107 108 109 110</code></pre>
+</div>
+</div>
+<div id="utility" class="section level2">
+<h2>Through utility functions</h2>
+<div id="result-is-part-of-the-original-vector" class="section level3">
+<h3>Result is (part of) the original vector</h3>
+<div id="primary-tasks-1" class="section level4">
+<h4>Primary tasks</h4>
+<ul>
+<li>Sample entries from a vector randomly using <code>sample()</code>.
+<ul>
+<li>Define <code>v &lt;- 101:110</code>. Try several times
+<code>sample( v )</code>.</li>
+<li>Then try several times <code>sample( v, 3 )</code>,
+<code>sample( v, 15 )</code> and
+<code>sample( v, 15, replace = TRUE )</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- 101:110
+sample( v )</code></pre>
+<pre><code>##  [1] 108 103 109 104 101 102 105 110 107 106</code></pre>
+<pre class="r"><code>sample( v )</code></pre>
+<pre><code>##  [1] 103 110 102 107 105 106 108 101 104 109</code></pre>
+<pre class="r"><code>sample( v, 3 )</code></pre>
+<pre><code>## [1] 107 102 101</code></pre>
+<pre class="r"><code>sample( v, 3 )</code></pre>
+<pre><code>## [1] 104 103 105</code></pre>
+<pre class="r"><code>sample( v, 15 )</code></pre>
+<pre><code>## Error in sample.int(length(x), size, replace, prob): cannot take a sample larger than the population when &#39;replace = FALSE&#39;</code></pre>
+<pre class="r"><code>sample( v, 15, replace = TRUE )</code></pre>
+<pre><code>##  [1] 101 110 102 106 101 106 102 101 106 102 110 108 105 106 103</code></pre>
+<pre class="r"><code>sample( v, 15, replace = TRUE )</code></pre>
+<pre><code>##  [1] 103 105 109 104 104 109 104 107 110 107 102 102 108 104 106</code></pre>
+<ul>
+<li>Using one result of sampling yielding 15 values, select the first
+3.</li>
+</ul>
+<pre class="r"><code>vs &lt;- sample(v, 15, replace = TRUE)
+vs[c(1, 2, 3)] # select the first 3 elements</code></pre>
+<pre><code>## [1] 105 101 109</code></pre>
+<pre class="r"><code>vs[1:3] # Same result as before</code></pre>
+<pre><code>## [1] 105 101 109</code></pre>
+</div>
+<div id="extra-tasks-1" class="section level4">
+<h4>Extra tasks</h4>
+<ul>
+<li>Reverse a vector: <code>rev</code>. (*)
+<ul>
+<li>Define <code>v &lt;- 101:110</code>.</li>
+<li>Compare <code>v</code> to <code>rev( v )</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- 101:110
+v</code></pre>
+<pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
+<pre class="r"><code>rev( v )</code></pre>
+<pre><code>##  [1] 110 109 108 107 106 105 104 103 102 101</code></pre>
+</div>
+</div>
+<div id="result-is-a-logical-vector" class="section level3">
+<h3>Result is a logical vector</h3>
+<div id="primary-tasks-2" class="section level4">
+<h4>Primary tasks</h4>
+<ul>
+<li>Which element(s) are available/missing: <code>is.na</code>.
+<ul>
+<li>Create a random vector <code>v</code> with <code>NA</code> elements:
+<code>v &lt;- sample( c( 0, 1, NA ), 10, replace = TRUE )</code>.</li>
+<li>Understand <code>is.na( v )</code> and
+<code>v[ !is.na( v ) ]</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( c( 0, 1, NA ), 10, replace = TRUE )
+v</code></pre>
+<pre><code>##  [1] NA  1  0  1 NA NA NA NA NA NA</code></pre>
+<pre class="r"><code>is.na( v )</code></pre>
+<pre><code>##  [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE</code></pre>
+<pre class="r"><code>v[ !is.na( v ) ]</code></pre>
+<pre><code>## [1] 1 0 1</code></pre>
+</div>
+<div id="extra-tasks-2" class="section level4">
+<h4>Extra tasks</h4>
+<ul>
+<li>Whether elements of one vector are present in another vector:
+<code>%in%</code>. (*)
+<ul>
+<li>Let’s check whether elements of
+<code>v &lt;- c( &quot;1&quot;, &quot;B&quot;, &quot;I&quot;, &quot;O&quot;, &quot;b&quot; )</code> are among
+<code>LETTERS</code> with <code>v %in% LETTERS</code>.</li>
+<li>How to interpret the result?</li>
+<li>How to find how many of elements in <code>v</code> occur in
+<code>LETTERS</code>?</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- c( &quot;1&quot;, &quot;B&quot;, &quot;I&quot;, &quot;O&quot;, &quot;b&quot; )
+v</code></pre>
+<pre><code>## [1] &quot;1&quot; &quot;B&quot; &quot;I&quot; &quot;O&quot; &quot;b&quot;</code></pre>
+<pre class="r"><code>v %in% LETTERS</code></pre>
+<pre><code>## [1] FALSE  TRUE  TRUE  TRUE FALSE</code></pre>
+<pre class="r"><code>sum( v %in% LETTERS )</code></pre>
+<pre><code>## [1] 3</code></pre>
+<ul>
+<li>Whether elements of a vector are duplicated (have occurred earlier
+already): <code>duplicated</code>. (*)
+<ul>
+<li>Let’s generate a vector <code>v</code> with repeated elements
+<code>v &lt;- sample( 1:4, 10, replace = TRUE )</code>.</li>
+<li>Understand <code>duplicated( v )</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( 1:4, 10, replace = TRUE )
+v</code></pre>
+<pre><code>##  [1] 2 1 4 3 4 4 1 1 2 1</code></pre>
+<pre class="r"><code>duplicated( v )</code></pre>
+<pre><code>##  [1] FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE</code></pre>
+</div>
+</div>
+<div id="result-is-a-vector-of-indices" class="section level3">
+<h3>Result is a vector of indices</h3>
+<div id="primary-tasks-3" class="section level4">
+<h4>Primary tasks</h4>
+<ul>
+<li>The function <code>which.max()</code> returns the index of the
+largest value in a vector. Use it to obtain the index of the largest
+value in <code>1:5</code>, and the one in <code>5:1</code>.</li>
+</ul>
+<pre class="r"><code>x &lt;- 1:5
+which.max(x)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<pre class="r"><code>y &lt;- 5:1
+which.max(y)</code></pre>
+<pre><code>## [1] 1</code></pre>
+<p>A similar function is <code>which.min()</code>, which returns the
+index of the smallest value in a vector. Use it to obtain the index of
+the largest value in a vector composed of <code>1:10</code> followed by
+<code>9:1</code>.</p>
+<pre class="r"><code>x &lt;- c(1:10, 9:1)
+which.min(x)</code></pre>
+<pre><code>## [1] 1</code></pre>
+<ul>
+<li>Create a vector <code>v</code> by sampling 10 elements from the
+sequence starting with <code>1</code> and ending at
+<code>1000000</code>, with step <code>1</code>. Show
+<code>v</code>.</li>
+</ul>
+<pre class="r"><code>v &lt;- sample( 1:1000000, 10 )
+v</code></pre>
+<pre><code>##  [1] 917673 690858 142223 593350 345069 827555 252626 198377 587998 225134</code></pre>
+<ul>
+<li>Use <code>which.max()</code> to find which entry of <code>v</code>
+contains its largest element.</li>
+</ul>
+<pre class="r"><code>which.max( v )</code></pre>
+<pre><code>## [1] 1</code></pre>
+<ul>
+<li>Select the largest element of <code>v</code>.</li>
+</ul>
+<pre class="r"><code>v[ which.max( v ) ]</code></pre>
+<pre><code>## [1] 917673</code></pre>
+<ul>
+<li>Check that this is indeed the largest value in <code>v</code> by
+using <code>max()</code>.</li>
+</ul>
+<pre class="r"><code>max(v)</code></pre>
+<pre><code>## [1] 917673</code></pre>
+</div>
+<div id="extra-tasks-3" class="section level4">
+<h4>Extra tasks</h4>
+<ul>
+<li>Indices where a logical vector is <code>TRUE</code>:
+<code>which</code>. (*)
+<ul>
+<li>Let’s create a random logical vector
+<code>v &lt;- sample( c( T, F ), 10, replace = TRUE )</code>.</li>
+<li>Use <code>which</code> to find positions with <code>TRUE</code>
+values.</li>
+<li>What is <code>v[ which( v ) ]</code>?</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( c( T, F ), 10, replace = TRUE )
+v</code></pre>
+<pre><code>##  [1]  TRUE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE  TRUE</code></pre>
+<pre class="r"><code>which( v )</code></pre>
+<pre><code>## [1]  1  7  8 10</code></pre>
+<pre class="r"><code>v[ which( v ) ]</code></pre>
+<pre><code>## [1] TRUE TRUE TRUE TRUE</code></pre>
+<ul>
+<li>Indices at which elements of one vector <code>match</code> another
+vector: <code>match</code>. (*)
+<ul>
+<li>Let’s check where elements of
+<code>v &lt;- c( &quot;1&quot;, &quot;B&quot;, &quot;I&quot;, &quot;O&quot;, &quot;b&quot; )</code> are among
+<code>LETTERS</code> with <code>match( v, LETTERS )</code>.</li>
+<li>How to interpret the result?</li>
+<li>How to find how many of elements in <code>v</code> do not occur in
+<code>LETTERS</code>?</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- c( &quot;1&quot;, &quot;B&quot;, &quot;I&quot;, &quot;O&quot;, &quot;b&quot; )
+idx &lt;- match( v, LETTERS )
+idx</code></pre>
+<pre><code>## [1] NA  2  9 15 NA</code></pre>
+<pre class="r"><code>LETTERS[ idx ]</code></pre>
+<pre><code>## [1] NA  &quot;B&quot; &quot;I&quot; &quot;O&quot; NA</code></pre>
+<pre class="r"><code>sum( is.na( idx ) )</code></pre>
+<pre><code>## [1] 2</code></pre>
+<ul>
+<li>Indices ordered so, that the elements of a vector would get ordered:
+<code>order</code>. (*)
+<ul>
+<li>Let’s generate a random vector
+<code>v &lt;- sample( LETTERS, 10 )</code>.</li>
+<li>Understand <code>order( v )</code> and
+<code>v[ order( v ) ]</code>.</li>
+<li>Check whether <code>v[ order( v ) ] == sort( v )</code> or even
+better whether <code>all( v[ order( v ) ] == sort( v ) )</code> is
+TRUE.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( LETTERS, 10 )
+v</code></pre>
+<pre><code>##  [1] &quot;J&quot; &quot;R&quot; &quot;T&quot; &quot;E&quot; &quot;X&quot; &quot;V&quot; &quot;D&quot; &quot;P&quot; &quot;Z&quot; &quot;M&quot;</code></pre>
+<pre class="r"><code>order( v )</code></pre>
+<pre><code>##  [1]  7  4  1 10  8  2  3  6  5  9</code></pre>
+<pre class="r"><code>v[ order( v ) ]</code></pre>
+<pre><code>##  [1] &quot;D&quot; &quot;E&quot; &quot;J&quot; &quot;M&quot; &quot;P&quot; &quot;R&quot; &quot;T&quot; &quot;V&quot; &quot;X&quot; &quot;Z&quot;</code></pre>
+<pre class="r"><code>v[ order( v ) ] == sort( v )</code></pre>
+<pre><code>##  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE</code></pre>
+<pre class="r"><code>all( v[ order( v ) ] == sort( v ) )</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+</div>
+<div id="other-functions" class="section level3">
+<h3>Other functions</h3>
+<ul>
+<li>Sorting a vector
+<ul>
+<li>Define <code>v</code> as a sample of small letters of size 5. Check
+its content.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( letters, 5)
+v</code></pre>
+<pre><code>## [1] &quot;s&quot; &quot;x&quot; &quot;j&quot; &quot;m&quot; &quot;h&quot;</code></pre>
+<ul>
+<li>Sort <code>v</code> using <code>sort()</code>. Save the result in a
+new vector.</li>
+</ul>
+<pre class="r"><code>sort( v )</code></pre>
+<pre><code>## [1] &quot;h&quot; &quot;j&quot; &quot;m&quot; &quot;s&quot; &quot;x&quot;</code></pre>
+<pre class="r"><code>u &lt;- sort(v)</code></pre>
+<ul>
+<li>Now computer <code>order()</code> for <code>v</code>.</li>
+</ul>
+<pre class="r"><code>order(v)</code></pre>
+<pre><code>## [1] 5 3 4 1 2</code></pre>
+<p>To understand what the function <code>order()</code> does, check what
+happens when you use it to select entries in <code>v</code>:</p>
+<pre class="r"><code>v[ order(v) ]</code></pre>
+<pre><code>## [1] &quot;h&quot; &quot;j&quot; &quot;m&quot; &quot;s&quot; &quot;x&quot;</code></pre>
+<p>Compare the result to <code>u</code>.</p>
+<pre class="r"><code>u</code></pre>
+<pre><code>## [1] &quot;h&quot; &quot;j&quot; &quot;m&quot; &quot;s&quot; &quot;x&quot;</code></pre>
+<ul>
+<li>Obtaining all unique elements of a vector
+<ul>
+<li>Generate again a vector <code>v</code> with the sequence of numbers
+between 101 and 110.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- 101:110</code></pre>
+<ul>
+<li>Sample 15 elements of this vector with replacement, as done in a
+previous exercise.</li>
+</ul>
+<pre class="r"><code>vs &lt;- sample( 101:110, 15, replace = TRUE )</code></pre>
+<ul>
+<li>Now use <code>unique()</code> to obtain the set of unique entries in
+the sampled vector.</li>
+</ul>
+<pre class="r"><code>unique( vs )</code></pre>
+<pre><code>## [1] 102 103 108 110 107 104</code></pre>
+<ul>
+<li>Use a function on this result to find out how many unique values the
+sampled vector has.</li>
+</ul>
+<pre class="r"><code>length(unique( vs ))</code></pre>
+<pre><code>## [1] 6</code></pre>
+<ul>
+<li>Obtaining the logical vector indicating duplicated entries (those
+which have occurred earlier)
+<ul>
+<li>Use <code>duplicated()</code> to obtain the logical vector
+indicating which entries are duplicated in <code>v</code>. Check if the
+result makes sense by comparing it to <code>v</code> itself</li>
+</ul></li>
+</ul>
+<pre class="r"><code>duplicated(v)</code></pre>
+<pre><code>##  [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<pre class="r"><code>v</code></pre>
+<pre><code>##  [1] 101 102 103 104 105 106 107 108 109 110</code></pre>
+<ul>
+<li>Use the logical vector created to select entries of the vector
+<code>v</code> which are duplicated</li>
+</ul>
+<pre class="r"><code>v[ duplicated(v) ]</code></pre>
+<pre><code>## integer(0)</code></pre>
+<ul>
+<li>Compute the number of duplicated entries in <code>v</code>.</li>
+</ul>
+<p>There are multiple ways to find out how many entries in
+<code>v</code> are duplicated. Some of them are:</p>
+<pre class="r"><code>sum( duplicated( v ) )</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code>length( v[ duplicated(v) ] )</code></pre>
+<pre><code>## [1] 0</code></pre>
+<div id="extra-tasks-4" class="section level4">
+<h4>Extra tasks</h4>
+<ul>
+<li>Create a vector with ranks of elements of another vector:
+<code>rank</code>.
+<ul>
+<li>Let’s generate a random vector
+<code>v &lt;- sample( LETTERS, 10 )</code>.</li>
+<li>Understand the difference of <code>order( v )</code> and
+<code>rank( v )</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>v &lt;- sample( LETTERS, 10 )
+v</code></pre>
+<pre><code>##  [1] &quot;D&quot; &quot;U&quot; &quot;C&quot; &quot;B&quot; &quot;N&quot; &quot;E&quot; &quot;V&quot; &quot;P&quot; &quot;F&quot; &quot;G&quot;</code></pre>
+<pre class="r"><code>order( v )</code></pre>
+<pre><code>##  [1]  4  3  1  6  9 10  5  8  2  7</code></pre>
+<pre class="r"><code>rank( v )</code></pre>
+<pre><code>##  [1]  3  9  2  1  7  4 10  8  5  6</code></pre>
+<p><em>Explanation</em>: We already know that <code>order()</code>
+returns the indices that, when used on the original vector, sorts its
+elements. The function <code>rank()</code> gives you the relative
+position of each entry, from the smallest to the largest by default. For
+example, define</p>
+<pre class="r"><code>myv &lt;- c(&quot;A&quot;, &quot;C&quot;, &quot;E&quot;, &quot;B&quot;, &quot;F&quot;)
+myv</code></pre>
+<pre><code>## [1] &quot;A&quot; &quot;C&quot; &quot;E&quot; &quot;B&quot; &quot;F&quot;</code></pre>
+<p>It is easy to see that the result of <code>order()</code> should be
+the vector: <code>c(1, 4, 2, 3, 5)</code>, since the first element in
+alphabetical order <code>A</code> is at position one, then the second
+element in alphabetical order <code>B</code> is in position 4, etc.
+Indeed, check that this is also the result of <code>order()</code>:</p>
+<pre class="r"><code>order(myv)</code></pre>
+<pre><code>## [1] 1 4 2 3 5</code></pre>
+<p>The <code>rank()</code> gives you the relative position of each
+entry, also in alphabetical order. The first entry in <code>myv</code>
+is also the first element in alphabetical order, so the first element in
+<code>rank()</code> is 1. The second entry in <code>myv</code> is the
+fourth element in alphabetical order, so the second element in
+<code>rank</code> is 4. Then the third entry in <code>myv</code> is the
+second element in alphabetical order, with rank 2. The next entry in
+<code>myv</code> is the third element, and the last entry in
+<code>myv</code> is the fifth element. This means that
+<code>rank(myv)</code> returns <code>c(1, 4, 2, 3, 5)</code>. Check
+this:</p>
+<pre class="r"><code>rank(myv)</code></pre>
+<pre><code>## [1] 1 3 4 2 5</code></pre>
+</div>
+</div>
+</div>
+<div id="class-of-a-vector-vectorclass" class="section level2">
+<h2>(*) Class of a vector {#vectorClass}</h2>
+<p>Try to explain the class of the resulting vector in the examples
+below:</p>
+<pre class="r"><code>x &lt;- c(3, 10, TRUE, 20)</code></pre>
+<pre class="r"><code>x &lt;- c(3, 10, &quot;TRUE&quot;, 20)</code></pre>
+</div>
 </div>
 
 

@@ -11,7 +11,7 @@
 
 
 
-<title>Projects and Scripts (tasks)</title>
+<title>Basic statistical tests (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,40 +348,266 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects and Scripts (tasks)</h1>
+<h1 class="title toc-ignore">Basic statistical tests (tasks)</h1>
 
 </div>
 
 
-<div id="firstLoad" class="section level1">
-<h1>Loading data from txt</h1>
-<p>For the quick exercises we will mostly work with the
-<code>survey</code> data. Let us load them into R.</p>
+<div id="S3" class="section level1">
+<h1>wilcox.test</h1>
 <ul>
-<li><p>Copy the file <code>survey.txt</code> into your data
-folder</p></li>
-<li><p>Load this new data set into R and call it
-<code>survey</code></p></li>
+<li>Perform a (paired) Wilcoxon signed rank test comparing
+<code>span1</code> and <code>span2</code> in the survey data</li>
 </ul>
-<pre class="r"><code>## </code></pre>
+<pre class="r"><code>wilcox.test(survey$span1, survey$span2, paired=TRUE)</code></pre>
+<pre><code>## 
+##  Wilcoxon signed rank test with continuity correction
+## 
+## data:  survey$span1 and survey$span2
+## V = 10540, p-value = 0.1268
+## alternative hypothesis: true location shift is not equal to 0</code></pre>
 <ul>
-<li>View it</li>
+<li>Store the p-value and the test statistic as two separate
+variables</li>
 </ul>
-<pre class="r"><code>View(survey)</code></pre>
+<pre class="r"><code>res &lt;- wilcox.test(survey$span1, survey$span2, paired=TRUE)
+names(res)</code></pre>
+<pre><code>## [1] &quot;statistic&quot;   &quot;parameter&quot;   &quot;p.value&quot;     &quot;null.value&quot;  &quot;alternative&quot; &quot;method&quot;     
+## [7] &quot;data.name&quot;</code></pre>
+<pre class="r"><code>p &lt;- res$p.value
+V &lt;- res$statistic</code></pre>
+<ul>
+<li>Apply now the Wilcoxon test ignoring the paired nature of the data
+and save the p-value generated as a variable. Then print on the console
+the two p-values computed (using the pairing and then not using it) on
+two subsequent lines.</li>
+</ul>
+<pre class="r"><code>res.np &lt;- wilcox.test(survey$span1, survey$span2, paired=FALSE)
+names(res.np)</code></pre>
+<pre><code>## [1] &quot;statistic&quot;   &quot;parameter&quot;   &quot;p.value&quot;     &quot;null.value&quot;  &quot;alternative&quot; &quot;method&quot;     
+## [7] &quot;data.name&quot;</code></pre>
+<pre class="r"><code>p.np &lt;- res.np$p.value
+p</code></pre>
+<pre><code>## [1] 0.1267877</code></pre>
+<pre class="r"><code>p.np</code></pre>
+<pre><code>## [1] 0.7649967</code></pre>
 </div>
-<div id="firstScript" class="section level1">
-<h1>Making a script</h1>
-<p>We will make a script to read in the pulse and survey datasets. We
-will use this script every day in the course.</p>
+<div id="unpaired-t.test" class="section level1">
+<h1>Unpaired t.test</h1>
 <ul>
-<li><p>Start a new script that reads in the pulse and survey data
-sets</p></li>
-<li><p>Add a comment to the script</p></li>
-<li><p>Save the script under a useful name</p></li>
-<li><p>Check it by closing and opening RStudio, running the script and
-then checking that the objects containing the datasets are loaded in the
-workspace (HINT: make sure you are in the right project)</p></li>
+<li>Study the <code>t.test</code> help file. How should we supply the
+input if we want to do a t test to compare <code>span1</code> between
+males and females?</li>
 </ul>
+<pre class="r"><code>?t.test</code></pre>
+<ul>
+<li>Make two separate vectors of <code>span1</code> values for males and
+females.</li>
+</ul>
+<pre class="r"><code>span1.male &lt;- survey$span1[survey$gender == &#39;male&#39;]
+span1.female &lt;- survey$span1[survey$gender == &#39;female&#39;]</code></pre>
+<ul>
+<li>Perform the unpaired t test that compares span1 between males and
+females.</li>
+</ul>
+<pre class="r"><code>t.test(span1.male, span1.female)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  span1.male and span1.female
+## t = 10.497, df = 207.63, p-value &lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  1.702358 2.489625
+## sample estimates:
+## mean of x mean of y 
+##  19.73103  17.63504</code></pre>
+<ul>
+<li>Extract the confidence interval for the difference in spans from the
+resulting object.</li>
+</ul>
+<pre class="r"><code>res &lt;- t.test(span1.male, span1.female)
+names(res)</code></pre>
+<pre><code>##  [1] &quot;statistic&quot;   &quot;parameter&quot;   &quot;p.value&quot;     &quot;conf.int&quot;    &quot;estimate&quot;    &quot;null.value&quot; 
+##  [7] &quot;stderr&quot;      &quot;alternative&quot; &quot;method&quot;      &quot;data.name&quot;</code></pre>
+<pre class="r"><code>res$conf.int</code></pre>
+<pre><code>## [1] 1.702358 2.489625
+## attr(,&quot;conf.level&quot;)
+## [1] 0.95</code></pre>
+<ul>
+<li>Round the p-value to 3 significant digits. Hint: use
+<code>round</code></li>
+</ul>
+<pre class="r"><code>round(res$p.value, 3)</code></pre>
+<pre><code>## [1] 0</code></pre>
+</div>
+<div id="tests-for-count-tables" class="section level1">
+<h1>Tests for count tables</h1>
+<ul>
+<li>In the survey data, make a table of the <code>fold</code> against
+the <code>clap</code> variables. Hint: use the function
+<code>table</code>.</li>
+</ul>
+<pre class="r"><code>table(survey$fold, survey$clap)</code></pre>
+<pre><code>##          
+##           left neither right
+##   left      15      21    60
+##   neither    0       2    16
+##   right     22      26    71</code></pre>
+<ul>
+<li>Now use a chi-square test to study the association between
+<code>fold</code> and <code>clap</code>. For this, check the help file
+for the function <code>chisq.test</code>.</li>
+</ul>
+<pre class="r"><code>chisq.test(survey$fold, survey$clap)</code></pre>
+<pre><code>## Warning in chisq.test(survey$fold, survey$clap): Chi-squared approximation may be incorrect</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  survey$fold and survey$clap
+## X-squared = 6.4101, df = 4, p-value = 0.1705</code></pre>
+<ul>
+<li>Check the class and the names of this object. Save the computed
+p-value as a separate variable.</li>
+</ul>
+<pre class="r"><code>class(chisq.test(survey$fold, survey$clap))</code></pre>
+<pre><code>## Warning in chisq.test(survey$fold, survey$clap): Chi-squared approximation may be incorrect</code></pre>
+<pre><code>## [1] &quot;htest&quot;</code></pre>
+<pre class="r"><code>names(chisq.test(survey$fold, survey$clap))</code></pre>
+<pre><code>## Warning in chisq.test(survey$fold, survey$clap): Chi-squared approximation may be incorrect</code></pre>
+<pre><code>## [1] &quot;statistic&quot; &quot;parameter&quot; &quot;p.value&quot;   &quot;method&quot;    &quot;data.name&quot; &quot;observed&quot;  &quot;expected&quot; 
+## [8] &quot;residuals&quot; &quot;stdres&quot;</code></pre>
+<pre class="r"><code>p.cs &lt;- chisq.test(survey$fold, survey$clap)$p.value</code></pre>
+<pre><code>## Warning in chisq.test(survey$fold, survey$clap): Chi-squared approximation may be incorrect</code></pre>
+<ul>
+<li>A warning message was generated because the expected count is less
+than 5 in some of the cells in the table. Get the expected counts from
+the object returned by <code>chisq.test</code>. Hint: use the component
+<code>expected</code> of the object.</li>
+</ul>
+<pre class="r"><code>res &lt;- chisq.test(survey$fold, survey$clap)</code></pre>
+<pre><code>## Warning in chisq.test(survey$fold, survey$clap): Chi-squared approximation may be incorrect</code></pre>
+<pre class="r"><code>res$expected</code></pre>
+<pre><code>##            survey$clap
+## survey$fold      left   neither    right
+##     left    15.244635 20.188841 60.56652
+##     neither  2.858369  3.785408 11.35622
+##     right   18.896996 25.025751 75.07725</code></pre>
+<ul>
+<li>Alternatively, an exact p-value can be obtained using a Fisher’s
+exact test. Use <code>fisher.test</code> to test association between
+<code>fold</code> and <code>clap</code>. Check the syntax in the help
+file of the function. Check the class of the object generated and its
+names. Then save the p-value computed as a separate variable.</li>
+</ul>
+<pre class="r"><code>fisher.test(survey$fold, survey$clap)</code></pre>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  survey$fold and survey$clap
+## p-value = 0.1727
+## alternative hypothesis: two.sided</code></pre>
+<pre class="r"><code>class(fisher.test(survey$fold, survey$clap))</code></pre>
+<pre><code>## [1] &quot;htest&quot;</code></pre>
+<pre class="r"><code>names(fisher.test(survey$fold, survey$clap))</code></pre>
+<pre><code>## [1] &quot;p.value&quot;     &quot;alternative&quot; &quot;method&quot;      &quot;data.name&quot;</code></pre>
+<pre class="r"><code>p.fis &lt;- fisher.test(survey$fold, survey$clap)$p.value</code></pre>
+<ul>
+<li>Print on the console all p-values computed above, rounded to 4
+decimal places.</li>
+</ul>
+<pre class="r"><code>round(p.cs, 4)</code></pre>
+<pre><code>## [1] 0.1705</code></pre>
+<pre class="r"><code>round(p.fis, 4)</code></pre>
+<pre><code>## [1] 0.1727</code></pre>
+</div>
+<div id="tests-for-count-tables-continued" class="section level1">
+<h1>Tests for count tables (continued)</h1>
+<ul>
+<li>Make a table of <code>gender</code> and <code>exercise</code> in the
+<code>survey</code> data and save the resulting object.</li>
+</ul>
+<pre class="r"><code>t.ge &lt;- table(survey$gender, survey$exercise)
+t.ge</code></pre>
+<pre><code>##         
+##          freq none some
+##   female   48   11   58
+##   male     65   12   39</code></pre>
+<ul>
+<li>Test for the association between <code>gender</code> and
+<code>exercise</code> in the <code>survey</code> data using a chi-square
+test. Use the table of the two variables in the function call, instead
+of the variables themselves. Save both the entire test result as the
+p-value as separate objects.</li>
+</ul>
+<pre class="r"><code>chi.ge &lt;- chisq.test(t.ge)
+chi.ge</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  t.ge
+## X-squared = 6.3185, df = 2, p-value = 0.04246</code></pre>
+<pre class="r"><code># Compare the result with that using the variables directly
+chisq.test(survey$gender, survey$exercise)</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  survey$gender and survey$exercise
+## X-squared = 6.3185, df = 2, p-value = 0.04246</code></pre>
+<pre class="r"><code>p.ge &lt;- chi.ge$p.value
+# This is the same as
+p.ge &lt;- chisq.test(t.ge)$p.value</code></pre>
+<ul>
+<li>Check the names of components in the test object. Extract the
+expected count table from the object to see if any of the entries are
+less than 5.</li>
+</ul>
+<pre class="r"><code>names(chi.ge)</code></pre>
+<pre><code>## [1] &quot;statistic&quot; &quot;parameter&quot; &quot;p.value&quot;   &quot;method&quot;    &quot;data.name&quot; &quot;observed&quot;  &quot;expected&quot; 
+## [8] &quot;residuals&quot; &quot;stdres&quot;</code></pre>
+<pre class="r"><code>chi.ge$expected</code></pre>
+<pre><code>##         
+##              freq     none     some
+##   female 56.74249 11.54936 48.70815
+##   male   56.25751 11.45064 48.29185</code></pre>
+<ul>
+<li>The test object also involves a component called
+<code>observed</code>. Check what it contains and compare it to the
+observed data table you saved.</li>
+</ul>
+<pre class="r"><code>chi.ge$observed</code></pre>
+<pre><code>##         
+##          freq none some
+##   female   48   11   58
+##   male     65   12   39</code></pre>
+<pre class="r"><code>t.ge</code></pre>
+<pre><code>##         
+##          freq none some
+##   female   48   11   58
+##   male     65   12   39</code></pre>
+<pre class="r"><code># The component observed from the test object corresponds to the cross-table of the variables used</code></pre>
+<ul>
+<li>Compute the p-value for the test again by using simulation, instead
+of the chi-square approximation. This can be done by means of the
+<code>simulate.p.value</code> slot in the function call. Save the
+computed p-value as a separate variable.</li>
+</ul>
+<pre class="r"><code>chisq.test(t.ge, simulate.p.value=TRUE)</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with simulated p-value (based on 2000 replicates)
+## 
+## data:  t.ge
+## X-squared = 6.3185, df = NA, p-value = 0.03548</code></pre>
+<pre class="r"><code>p.sim &lt;- chisq.test(t.ge, simulate.p.value=TRUE)$p.value</code></pre>
+<ul>
+<li>Print both computed p-values on the console with 2 decimal
+places.</li>
+</ul>
+<pre class="r"><code>round(p.ge, 2)</code></pre>
+<pre><code>## [1] 0.04</code></pre>
+<pre class="r"><code>round(p.sim, 2)</code></pre>
+<pre><code>## [1] 0.04</code></pre>
+<pre class="r"><code># Note that the simulated p-value may vary every time it is run</code></pre>
 </div>
 
 
