@@ -11,7 +11,7 @@
 
 
 
-<title>Basic data types (cont.)</title>
+<title>R scripts and reports (Rmarkdown) (tasks)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,233 +348,26 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Basic data types (cont.)</h1>
+<h1 class="title toc-ignore">R scripts and reports (Rmarkdown)
+(tasks)</h1>
 
 </div>
 
 
-<div id="basic-data-types-cont.-task" class="section level1">
-<h1>Basic data types (cont.) (task)</h1>
-<div id="numeric" class="section level2">
-<h2>Numeric vectors</h2>
-<div id="primary-tasks" class="section level3">
-<h3>Primary tasks</h3>
+<div id="create-a-new-rmarkdown-file" class="section level1">
+<h1>Create a new RMarkdown file</h1>
 <ul>
-<li>Create a variable <code>v</code> as a vector of (46,43,…,19,16,13).
-<ul>
-<li>Show <code>v</code> to check the numbers.</li>
-<li>Show the <code>head</code> of 4 elements of <code>v</code>.</li>
-<li>Show the <code>tail</code> of 3 elements of <code>v</code>.</li>
-<li>Compute the mean of <code>v</code>.</li>
-<li>Calculate the length of <code>v</code>.</li>
-</ul></li>
-<li>Create a variable <code>v</code> as a vector of (50, 40, 30, 20, 10,
-5, 4, 3, 2, 1, NA).
-<ul>
-<li>Use once <code>seq</code>, and once <code>:</code> (colon).</li>
-<li>Show <code>v</code> to check the numbers.</li>
-</ul></li>
+<li><p>add the name of two people as authors</p></li>
+<li><p>name the first section “Introduction”, and write some text in
+it.</p></li>
+<li><p>load the <code>survey.txt</code> data and display the variable
+names contained in it within a code chunk</p></li>
+<li><p>write in the text how many rows and columns the file contains.
+<em>Hint:</em> Use <code>nrow()</code> and <code>ncol()</code> within
+in-line code.</p></li>
+<li><p>add to the text the URL where the file can be
+downloaded.</p></li>
 </ul>
-<p>Compute the mean of <code>v</code>.</p>
-<ul>
-<li>Create a variable <code>v</code> as a vector with values 30, 40, 50,
-10, 12, 20.</li>
-</ul>
-<p>Compute the mean of <code>v</code>.</p>
-<p>Use <code>sort()</code> to sort the elements of the vector in
-ascending order.</p>
-<p>Save the result in another vector <code>u</code>. Compute the mean of
-this vector.</p>
-<p>Check how many elements <code>v</code> and <code>u</code> have by
-using <code>length()</code>.</p>
-</div>
-<div id="extra-tasks" class="section level3">
-<h3>Extra tasks</h3>
-<ul>
-<li><p>Sometimes it is useful to create a vector of length <em>n</em> of
-zeroes. Try the function <code>numeric( n )</code> to create a vector of
-25 zeroes, then create an empty numeric vector with nothing (so, of zero
-length). (*)</p></li>
-<li><p>Read the help file of <code>rep</code>. Construct a vector 0, 1,
-2, 0, 1, 2, 0, 1, 2, 0, 1, 2… with 20 pattern repetitions. (*)</p></li>
-<li><p>Use <code>rep</code>. Construct the first 13 elements of a vector
-0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2… Check the length of the result.
-(*)</p></li>
-<li><p>Read manual of function <code>rev</code>. Use this function and
-the <code>v</code> from the previous task to build a vector of
-(50,40,30,20,10,5,4,3,2,1,NA,NA,1,2,3,4,5,10,20,30,40,50). (*)</p></li>
-</ul>
-</div>
-</div>
-<div id="character" class="section level2">
-<h2>Character vectors</h2>
-<ul>
-<li>Create a character vector <code>fruits</code> with 5 random and
-different fruit names. Check what it contains.</li>
-</ul>
-<p>Check the length of <code>fruits</code>.</p>
-<p>Sort the entries in <code>fruits</code> in alphabetical order.</p>
-<div id="extra-tasks-1" class="section level3">
-<h3>Extra tasks</h3>
-<ul>
-<li><p>Use the <code>fruits</code> vector. Understand
-<code>nchar( fruits )</code>. (*)</p></li>
-<li><p>Build (manually) a vector <em>idx</em> so that
-<code>fruits[ idx ]</code> prints fruit names in alphabetical order. To
-do this, just make a vector composed of: the index corresponding to the
-first entry alphabetically; then the index of the second entry
-alphabetically, and so on. (*)</p></li>
-</ul>
-<p>Use the <code>idx</code> vector you created to select elements in
-<code>fruits</code>.</p>
-<ul>
-<li>Check what you get when you use <code>order( fruits )</code>.
-(*)</li>
-</ul>
-<p>Note that this is similar to <code>idx</code> you created. So what
-does the function <code>order</code> give?</p>
-<p>Use the function <code>order</code> to sort the vector
-<code>fruits</code>.</p>
-<ul>
-<li><p>Sometimes it is useful to create a vector of length <em>n</em> of
-class <code>character</code>. Try the function
-<code>character( n )</code> to create a vector of length 5, then create
-an empty character vector with nothing (so, with zero length).
-(*)</p></li>
-<li><p>Read the documentation of <code>rep</code>. Then understand the
-code below. (*)</p></li>
-</ul>
-<pre class="r"><code>c( rep( &quot;male&quot;, 2 ), rep( &quot;female&quot;, 1 ) )
-rep( c( &quot;male&quot;, &quot;female&quot; ), c( 2, 1 ) )</code></pre>
-<ul>
-<li>Use <code>rep</code> to produce an empty character vector with
-length 5, as you did above with <code>character</code>.</li>
-</ul>
-</div>
-</div>
-<div id="logical" class="section level2">
-<h2>Logical vectors</h2>
-<div id="primary-tasks-1" class="section level3">
-<h3>Primary tasks</h3>
-<ul>
-<li><p>Negation operator:</p>
-<ul>
-<li>Practice, what the negation operator produces for these there
-logical constants: <code>FALSE</code>, <code>TRUE</code>,
-<code>NA</code>.</li>
-</ul></li>
-<li><p>AND (vector) operator:</p>
-<ul>
-<li>Once symmetries are accounted for, there are six possible
-combinations of two different values (<code>a</code>, <code>b</code>)
-selected from the three logical constants: <code>FALSE</code>,
-<code>TRUE</code>, <code>NA</code>. Consider all six of them as
-arguments to the <code>&amp;</code> operator. First predict the result
-of <code>a &amp; b</code> and then calculate it.</li>
-</ul></li>
-<li><p>Make a vector <code>v &lt;- 19:10</code>. Build a logical vector
-<code>w</code> which states which positions of <code>v</code> are
-smaller than 12 or at least 17. Print both <code>v</code> and
-<code>w</code> to check by eye whether the result is correct.</p></li>
-<li><p>Logical vectors can also be transformed into numeric. Do this for
-the vector <code>w</code> created above.</p></li>
-</ul>
-<p>What happens to the entries in <code>w</code> equal to TRUE? And
-those equal to <code>FALSE</code>?</p>
-<ul>
-<li>Count how many positions in <code>w</code> are equal to
-<code>TRUE</code>. For this, use the <code>sum</code> function.</li>
-</ul>
-</div>
-<div id="extra-tasks-2" class="section level3">
-<h3>Extra tasks (*)</h3>
-<div id="comparisons-of-character-vectors" class="section level4">
-<h4>Comparisons of character vectors</h4>
-<p>Logical operators such as <code>&gt;</code> and <code>&lt;</code> do
-not give an error when used with character strings. To see this, check
-what the result of <code>A &lt; B</code> is:</p>
-<p>Specifically, the result is <code>TRUE</code> if the relation
-corresponds to the correct alphabetical order, and <code>FALSE</code>
-otherwise.</p>
-<p>However, the alphabetical order depends on the locale in use
-(i.e. the local settings). As such, the result depends on the locale as
-well. So, while it is perhaps logical to expect that
-<code>A &lt; B</code> yields TRUE, the comparison <code>Z &lt; T</code>
-gives FALSE in English, but <code>TRUE</code> in Estonian. See Details
-in <code>help(&quot;&gt;&quot;)</code> for more information and examples.</p>
-</div>
-<div id="or-operator" class="section level4">
-<h4>OR operator</h4>
-<ul>
-<li><p>Reproduce the “AND operator” exercise for the <code>|</code> (or)
-operator.</p></li>
-<li><p>Elements on <code>which</code> positions (indices) are
-<code>TRUE</code>: (*)</p>
-<ul>
-<li>Study the logical vector <code>w</code> from the earlier task.</li>
-<li>First, answer yourself the question: which positions in
-<code>w</code> are <code>TRUE</code>.</li>
-<li>Was your answer the same as the result of
-<code>which( w )</code>?</li>
-<li>Can you explain <code>which( LETTERS == &quot;R&quot; )</code>?</li>
-</ul></li>
-<li><p>Even numbers: (*)</p>
-<ul>
-<li>Even numbers are divisible by two with rest zero.</li>
-<li>Rest of division can be calculated with the <code>%%</code>
-operator.</li>
-<li>Take the vector <code>v &lt;- 19:10</code> and construct the
-corresponding logical vector <code>w</code> stating whether elements of
-<code>v</code> are divisible by two.</li>
-</ul></li>
-<li><p>AND, OR (single/first value) operators <code>&amp;&amp;</code>,
-<code>||</code>: (*)</p>
-<ul>
-<li>They work on single values (instead of complete vectors) and are
-frequently used in programming.</li>
-<li>Check the manual <code>?`&amp;&amp;`</code>. Try with some logical
-values similarly to <code>&amp;</code> and <code>|</code>.</li>
-</ul></li>
-<li><p>AND, OR (single/first value) functions <code>all</code>,
-<code>any</code>:</p>
-<ul>
-<li>Programs are more readable, when instead of
-<code>a &amp;&amp; b &amp;&amp; c &amp;&amp; d</code> the following code
-is written: <code>all( a, b, c, d )</code>.</li>
-<li>Read the manual for <code>all</code>, <code>any</code>. (*)</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="conversions" class="section level2">
-<h2>Type conversions</h2>
-<div id="primary-tasks-2" class="section level3">
-<h3>Primary tasks</h3>
-<ul>
-<li><p>Take the following character vector:
-<code>v &lt;- c( &quot;0&quot;, &quot;1&quot;, &quot;11&quot;, &quot;121&quot;, &quot;1221&quot;, &quot;one&quot; )</code>. Check
-the result of <code>as.numeric( v )</code>.</p></li>
-<li><p>Produce texts (character vector) out of numbers
-<code>101:110</code>.</p></li>
-<li><p>Convert <code>c( -1:1, NA )</code> to a logical vector with
-<code>as.logical</code>. Explain the result.</p></li>
-</ul>
-</div>
-<div id="extra-tasks-3" class="section level3">
-<h3>Extra tasks</h3>
-<ul>
-<li><p>Which of elements of
-<code>c( &quot;TRUE&quot;, &quot;True&quot;, &quot;true&quot;, &quot;T&quot;, &quot;FALSE&quot;, &quot;False&quot;, &quot;false&quot;, &quot;F&quot; )</code>
-are converted to valid logical values with <code>as.logical</code>?
-(*)</p></li>
-<li><p>Sometimes it is useful to create a vector of given number
-<em>n</em> of <code>FALSE</code> values. Try the function
-<code>logical( n )</code> to create a vector of 5 <code>FALSE</code>s,
-then create an empty logical vector. (*)</p></li>
-</ul>
-</div>
-</div>
 </div>
 
 

@@ -2,6 +2,10 @@
 title: "Projects and Scripts (tasks)"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 
 # Loading data from txt {#firstLoad}
 

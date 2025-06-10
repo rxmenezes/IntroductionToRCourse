@@ -2,6 +2,10 @@
 title: "Basics (tasks)"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 # First calculations {#firstCalculations}
 
 - Calculate 25 plus the square of 12
