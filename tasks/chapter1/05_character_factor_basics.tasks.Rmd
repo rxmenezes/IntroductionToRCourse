@@ -2,6 +2,10 @@
 title: "Basic data types (tasks)"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 ```{r echo = FALSE, eval = TRUE}
 pulse <- read.delim("../../data/pulse.txt")
 survey <- read.delim("../../data/survey.txt")

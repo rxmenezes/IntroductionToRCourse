@@ -2,8 +2,12 @@
 title: "Basic statistical tests (tasks)"
 output: html_document
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
 
-```{r setup, include=FALSE, eval=F}
+
+```{r setup2, include=FALSE, eval=F}
 source( "../../setup/R_course_setup.R" );
 ```
 

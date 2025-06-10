@@ -2,6 +2,10 @@
 title: "Data frames (tasks)"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 
 # Explore {#explore}
 

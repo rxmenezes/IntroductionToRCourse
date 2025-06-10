@@ -2,6 +2,10 @@
 title: "Data frames (tasks)"
 output: html_document
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 
 
 ## Creating a data frame

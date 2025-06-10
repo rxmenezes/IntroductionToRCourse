@@ -2,6 +2,10 @@
 title: "Selecting/indexing/subsetting (vector elements, data frame rows/columns, ...) (tasks)"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = param, eval= param, include=T)
+```
+
 
 # Selecting/indexing/subsetting (vectors) (tasks)
 
