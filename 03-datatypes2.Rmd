@@ -594,7 +594,19 @@ levels(pulse$exercise3) <- c("H.I", "H.I" , "L")
 Use `cut` to categorise a continuous variable and turn into a factor variable. Note that when calling `cut` the break points between categories need to be given, including the maximum and minimum values of the original variable.
 
 ```{r}
-pulse$height4 <- cut(pulse$height, c(min(pulse$height)-1, 160, 170, 180, max(pulse$height)))
+pulse$height4 <- cut(pulse$height, c(min(pulse$height), 160, 170, 180, max(pulse$height)))
+pulse$height4
+
+pulse$height4 <- cut(pulse$height, c(min(pulse$height), 160, 170, 180, max(pulse$height)),
+                     include.lowest=TRUE)
+pulse$height4
+
+pulse$height4 <- cut(pulse$height, c(min(pulse$height), 160, 170, 180, max(pulse$height)),
+                     include.lowest=TRUE, right=FALSE)
+pulse$height4
+```
+
+```{r}
 class(pulse$height4)
 table(pulse$height4)
 ```
