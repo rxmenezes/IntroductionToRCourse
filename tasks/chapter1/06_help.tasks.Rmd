@@ -47,7 +47,8 @@ Have a look at the `women`  data. It reports average heights and weights for gro
 barplot(women$weight)
 ```
 
--	What argument of `barplot` can be used to add names to the bars? HINT: `names.arg`. Add `height` as a names under the bars.
+-	What argument of `barplot` can be used to add names to the bars?
+_HINT: `names.arg`. Add `height` as a names under the bars._
 
 ```{r}
 barplot(women$weight, names.arg=women$height)

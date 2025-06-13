@@ -60,7 +60,8 @@ survey$pulse2 <- cut(survey$pulse, c(min(survey$pulse, na.rm = TRUE),
                                      med, max(survey$pulse, na.rm = TRUE)))
 ```
 
-- (*) Make a new factor with four categories: `lefthanded woman`, `righthanded woman`, `lefthanded man`, `righthanded man`. Hint: use `:` to combine `gender` and `hand`.
+- (*) Make a new factor with four categories: `lefthanded woman`, `righthanded woman`, `lefthanded man`, `righthanded man`.
+_Hint: use `:` to combine `gender` and `hand`._
 
 ```{r}
 survey$genderhand <- factor(survey$gender):factor(survey$hand)
@@ -74,7 +75,8 @@ levels(survey$genderhand) <- c('lefthanded woman', 'righthanded woman', 'lefthan
 
 # Regression with factors {#anova}
 
-- In the `survey` data, use ANOVA to see if `pulse` is different between the `fold` groups. Hint: use `lm` to fit a model where `pulse` is explained by `fold`, then use ANOVA on the model fit.
+- In the `survey` data, use ANOVA to see if `pulse` is different between the `fold` groups.
+_Hint: use `lm` to fit a model where `pulse` is explained by `fold`, then use ANOVA on the model fit._
 
 ```{r}
 fit <- lm(pulse ~ fold, data=survey)
@@ -92,7 +94,7 @@ summary(fit)$coefficients
 ```
 
 
-- Reorder the levels of `fold` so that the category `fit` is the first level, and refit the model. 
+- Reorder the levels of `fold` so that the category `right`` is the first level, and refit the model. 
 
 ```{r}
 survey$fold2 <- factor(survey$fold, levels=c('right', 'neither', 'left'))
@@ -100,7 +102,8 @@ fit <- lm(pulse ~ fold2, data=survey)
 summary(fit)
 ```
 
-- Make boxplots of `pulse` values for each of the groups defined by `fold`. Hint: use as input for the boxplot the same formula used for the `lm`.
+- Make boxplots of `pulse` values for each of the groups defined by `fold`.
+_Hint: use as input for the boxplot the same formula used for the `lm`._
 
 ```{r}
 boxplot(pulse ~ fold, data=survey)
@@ -121,7 +124,8 @@ fit1 <- lm(pulse ~ fold , data=survey)
 fit2 <- lm(pulse ~ fold + clap, data=survey)
 ```
 
-- Does `clap` have (statistical) added value in the model that already contains `fold`? Hint: use `anova` to compare the model fits already obtained.
+- Does `clap` have (statistical) added value in the model that already contains `fold`?
+_Hint: use `anova` to compare the model fits already obtained._
 
 ```{r}
 anova(fit1, fit2)

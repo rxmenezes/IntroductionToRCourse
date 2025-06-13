@@ -24,7 +24,8 @@ survey <- read.delim("../../data/survey.txt")
 
 - load the `survey.txt` data and display the variable names contained in it within a code chunk
 
-- write in the text how many rows and columns the file contains. *Hint:* Use `nrow()` and `ncol()` within in-line code.
+- write in the text how many rows and columns the file contains.
+_Hint: Use `nrow()` and `ncol()` within in-line code._
 
 - add to the text the URL where the file can be downloaded.
 
