@@ -72,19 +72,22 @@ v[ idx ]
 age <- sample(18:55, size = 30)
 ```
 
-Create a vector `sex` assigning "female" to the first half of entries, and "male" to the second half. Hint: use `rep()`.
+- Create a vector `sex` assigning "female" to the first half of entries, and "male" to the second half.
+_Hint: use `rep()`._
 
 ```{r}
 sex <- rep(c("female", "male"), each = 30/2)
 ```
 
-Now create a vector `height` of 30 heights in meters, by selecting values at random between 1.55 and 1.95. Hint: first generate the vector of heights to be sampled from using `seq()`. Then use `sample()` to draw 30 values from the created vector.
+- Now create a vector `height` of 30 heights in meters, by selecting values at random between 1.55 and 1.95.
+_Hint: first generate the vector of heights to be sampled from using `seq()`. Then use `sample()` to draw 30 values from the created vector._
 
 ```{r}
 height <- sample(seq(from = 1.55, to = 1.95, by = 0.01), size = 30)
 ```
 
-Select all values of `height` for females older than 30 years. Hint: first create a logical vector selecting females, then create a logical vector selecting ages older than 30. Subsequently, create a logical vector by combining the two logical vectors using `&` (AND). Finally, use this logical vector to select entries from `height`.
+- Select all values of `height` for females older than 30 years. 
+_Hint: first create a logical vector selecting females, then create a logical vector selecting ages older than 30. Subsequently, create a logical vector by combining the two logical vectors using `&` (AND). Finally, use this logical vector to select entries from `height`._
 
 ```{r}
 sel.fem <- sex == "female"
@@ -225,7 +228,7 @@ y <- 5:1
 which.max(y)
 ```
 
-A similar function is `which.min()`, which returns the index of the smallest value in a vector. Use it to obtain the index of the largest value in a vector composed of `1:10` followed by `9:1`.
+- A similar function is `which.min()`, which returns the index of the smallest value in a vector. Use it to obtain the index of the smallest value in a vector composed of `1:10` followed by `9:1`.
 
 ```{r}
 x <- c(1:10, 9:1)
@@ -419,10 +422,10 @@ rank(myv)
 
 Try to explain the class of the resulting vector in the examples below:
 
-```{r}
+```{r echo=TRUE}
 x <- c(3, 10, TRUE, 20)
 ```
 
-```{r}
+```{r echo=TRUE}
 x <- c(3, 10, "TRUE", 20)
 ```

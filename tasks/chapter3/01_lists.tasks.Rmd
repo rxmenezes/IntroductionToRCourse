@@ -141,7 +141,8 @@ scores$Dan[[ "physics" ]]
 hist(survey$age)
 ```
 
-- Change the title of the plot to `Histogram of Age`. Hint: use the slot `main` in the function call.
+- Change the title of the plot to `Histogram of Age`.
+_Hint: use the slot `main` in the function call._
 
 ```{r}
 hist(survey$age, main='Histogram of Age')
@@ -165,7 +166,8 @@ class(hist(survey$age)$xname)
 # as well as different lenghts, it can be concluded that the hist result object is a list 
 ```
 
-- What is the exact count in the first bin? Hint: use the component `counts` from the object.
+- What is the exact count in the first bin?
+_Hint: use the component `counts` from the object._
 
 ```{r}
 res <- hist(survey$age)
@@ -173,7 +175,8 @@ res$counts
 res$counts[1]
 ```
 
-- How many breaks does the produced histogram contain? Hint: use the component `breaks` from the object as well as the function `length`.
+- How many breaks does the produced histogram contain?
+_Hint: use the component `breaks` from the object as well as the function `length`._
 
 ```{r}
 names(res)
@@ -203,7 +206,9 @@ names(bpa)
 bpa$stats
 ```
 
-- Compute the median, the upper- and lowe-quartile of the `age` variable. Hint: use the function `quantile` with slot `probs` equal to 0.5, 0.25 and 0.75 to obtain these. Now compare these values to the values in the `stats` component of the boxplot object. What do you conclude about the computation of the values in `stats`?
+- Compute the median, the upper- and lowe-quartile of the `age` variable.
+_Hint: use the function `quantile` with slot `probs` equal to 0.5, 0.25 and 0.75 to obtain these._
+  - Now compare these values to the values in the `stats` component of the boxplot object. What do you conclude about the computation of the values in `stats`?
 
 - Check the help file for `boxplot.stats`, which is the function called by `boxplot` to actually produce the values in `stats` (see the entry under the 'See also' section of the boxplot help file). Was your conclusion correct?
 

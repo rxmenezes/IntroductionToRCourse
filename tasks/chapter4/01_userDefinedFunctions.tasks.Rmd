@@ -220,7 +220,7 @@ bmi <- function(weight,height,imperial=FALSE) {
 
 ### apply {#apply}
 
-  - Calculate the mean age and height in survey data using apply function. Note that there are missing data (hint: see na.rm argument to mean). 
+  - Calculate the mean age and height in survey data using apply function. Note that there are missing data (_hint: see na.rm argument to mean_). 
   
 ```{r}
 # Two solutions is given.
@@ -233,7 +233,8 @@ apply( survey[,c("age","height")], 2, mean, na.rm=TRUE)
 
 ```
 
-  - In the previous exercise we removed the missing values per variable. A more fair solution would be to remove the observation completely where one or both variables are missing. Hint : ?complete.cases
+  - In the previous exercise we removed the missing values per variable. A more fair solution would be to remove the observation completely where one or both variables are missing.
+  _Hint : `?complete.cases`_
   
   
 ```{r}
