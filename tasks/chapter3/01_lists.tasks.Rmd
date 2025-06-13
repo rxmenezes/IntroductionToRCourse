@@ -16,12 +16,7 @@ pulse <- read.delim("../../data/pulse.txt")
 survey <- read.delim("../../data/survey.txt")
 ```
 
-
-# Lists (tasks)
-
-## Tasks
-
-### Building a list {#createList}
+# Building a list {#createList}
 
 Three people received different sets of scores:
 
@@ -61,7 +56,7 @@ class( scores[[ 'Bob' ]] )
 class( scores[ 'Bob' ] )
 ```
 
-### Accessing list elements {#elementsList} (*)
+# Accessing list elements {#elementsList} (*)
 
 - Repeat the previous exercise to get simultanously scores of `c( "Bob", "Dan" )`. Check the result and its class. (*)
 
@@ -92,7 +87,7 @@ scores[[ 'Bob' ]] <- NULL
 scores
 ```
 
-### A nested list (*)
+# A nested list (*)
 
 - extend the previous example. Imagine, that there are scores of various topics. Try:
 ```{r echo=TRUE}

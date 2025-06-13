@@ -24,11 +24,7 @@ source( "../../setup/R_course_setup.R" )
 
 ```
 
-# User-defined functions and control flow (tasks)
-
-## Tasks
-
-### functions (0) {#functions0}
+# functions (0) {#functions0}
 
 - Write the function `even` which tests whether a number is even.
 
@@ -97,7 +93,7 @@ v[sapply(v,function(x) divisible(x,7))]
 ```
 
 
-### functions (1) {#functions1}
+# functions (1) {#functions1}
 
 
   - The following table is a BMI classification. Write a function to determine 
@@ -156,7 +152,7 @@ bmiClass <- function(bmi) {
   
   
 
-### functions (2)  {#functions}
+# functions (2)  {#functions}
 
   - Write a function calculating BMI with arguments weight(kg) and height(cm). BMI in the metric system is defined as weight/(height^2) with weight and height in units of kilogram (kg) and meter (m). Use `cm2m` function from previous exercise.   
 
@@ -218,7 +214,7 @@ bmi <- function(weight,height,imperial=FALSE) {
 ```
 
 
-### apply {#apply}
+# apply {#apply}
 
   - Calculate the mean age and height in survey data using apply function. Note that there are missing data (_hint: see na.rm argument to mean_). 
   
@@ -274,7 +270,7 @@ bmiClass <- function(bmi) {
 ```
 
 
-### function argument check {#argcheck}
+# function argument check {#argcheck}
 
 ```{r}
 bmiClass <- function(bmi) {
@@ -302,7 +298,7 @@ bmiClass <- function(bmi) {
 bmiClass("a")
 ```
   
-### Extra exercises {#extra}
+# Extra exercises {#extra}
 
   - Update survey data with a new variable `heightInch` with height in inch units (use sapply).
 

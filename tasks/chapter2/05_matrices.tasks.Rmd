@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo = param, eval= param, include=T)
 ```
 
 
-### Creation {#createSummarize}
+# Creation {#createSummarize}
 
 Create a matrix with 7 rows and 4 columns of the sequence of numbers from 1 until 28, filling out each column at a time.
 
@@ -15,7 +15,7 @@ Create a matrix with 7 rows and 4 columns of the sequence of numbers from 1 unti
 mat <- matrix(1:28, nrow = 7, ncol = 4)
 ```
 
-### Setting/getting names of rows/columns
+# Setting/getting names of rows/columns
 
 Assign to the matrix row names corresponding to weekdays: "Monday", "Tuesday", etc.
 
@@ -30,7 +30,7 @@ Assign to the matrix column names corresponding to week numbers sequentially sta
 colnames(mat) <- 3:6
 ```
 
-### Getting matrix elements
+# Getting matrix elements
 
 Select from this matrix only the rows corresponding to weekend days, and save the result as an R object. Check that the result is correct.
 
@@ -39,7 +39,7 @@ weekend <- mat[c("Saturday", "Sunday"), ]
 weekend
 ```
 
-### Useful matrix functions
+# Useful matrix functions
 
 The matrix below contains the daily number of loafs of bread sold by a small bakery, for 28 consecutive days.
 
@@ -73,9 +73,9 @@ rowMeans(mat) # gives the same result
 ```
 
 
-### Matrix of correlation coefficients {#corMatrix}
+# Matrix of correlation coefficients {#corMatrix}
 
-#### Extra tasks
+## Extra tasks
 
 The goal of this exercise is to calculate a matrix of column-column Pearson correlation coefficients for a number of data frame columns. The `cor` function does not accept a `data.frame` argument and it works only with numerical columns. Therefore, first the numerical columns of the data frame need to be extracted and converted to a matrix.
 

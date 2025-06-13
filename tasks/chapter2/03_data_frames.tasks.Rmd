@@ -8,9 +8,9 @@ knitr::opts_chunk$set(echo = param, eval= param, include=T)
 
 
 
-## Creating a data frame
+# Creating a data frame
 
-### Primary tasks
+## Primary tasks
 
 - Create a `data.frame` from given vectors
 
@@ -52,9 +52,9 @@ Check what happens if you try to compute the mean by selecting the variable `age
 mean(mydata[ "age"])
 ```
 
-## Reading data from files with different formats
+# Reading data from files with different formats
 
-### Primary tasks
+## Primary tasks
 
 - Load the `pulse.csv` file into the `d` object. Display the structure of `d` and the first few rows.
 
@@ -191,7 +191,7 @@ d[ isMan & isInWeightRange, ]
 
 
 
-### Extra tasks
+## Extra tasks
 
 - Making sure a selection returns a `data.frame`.
 
