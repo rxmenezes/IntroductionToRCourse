@@ -68,7 +68,8 @@ sort(diet_kJ)
 
 # Regular sequences
 
--	Make a vector of all numbers between 1 and 100. Hint: use `:`.
+-	Make a vector of all numbers between 1 and 100.
+_Hint: use `:`._
 
 ```{r}
 x <- 1:100

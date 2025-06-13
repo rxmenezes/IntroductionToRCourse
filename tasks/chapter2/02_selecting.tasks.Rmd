@@ -6,10 +6,7 @@ title: "Selecting/indexing/subsetting (vector elements, data frame rows/columns,
 knitr::opts_chunk$set(echo = param, eval= param, include=T)
 ```
 
-
-# Selecting/indexing/subsetting (vectors) (tasks)
-
-## Square brackets operator {#brackets}
+# Square brackets operator {#brackets}
 
 Define a vector of the sequence of numbers between 101 and 110.
 
@@ -17,7 +14,7 @@ Define a vector of the sequence of numbers between 101 and 110.
 v <- 101:110
 ```
 
-### Primary tasks
+## Primary tasks
 
 - Get the seventh element of the vector. 
 
@@ -72,19 +69,22 @@ v[ idx ]
 age <- sample(18:55, size = 30)
 ```
 
-Create a vector `sex` assigning "female" to the first half of entries, and "male" to the second half. Hint: use `rep()`.
+- Create a vector `sex` assigning "female" to the first half of entries, and "male" to the second half.
+_Hint: use `rep()`._
 
 ```{r}
 sex <- rep(c("female", "male"), each = 30/2)
 ```
 
-Now create a vector `height` of 30 heights in meters, by selecting values at random between 1.55 and 1.95. Hint: first generate the vector of heights to be sampled from using `seq()`. Then use `sample()` to draw 30 values from the created vector.
+- Now create a vector `height` of 30 heights in meters, by selecting values at random between 1.55 and 1.95.
+_Hint: first generate the vector of heights to be sampled from using `seq()`. Then use `sample()` to draw 30 values from the created vector._
 
 ```{r}
 height <- sample(seq(from = 1.55, to = 1.95, by = 0.01), size = 30)
 ```
 
-Select all values of `height` for females older than 30 years. Hint: first create a logical vector selecting females, then create a logical vector selecting ages older than 30. Subsequently, create a logical vector by combining the two logical vectors using `&` (AND). Finally, use this logical vector to select entries from `height`.
+- Select all values of `height` for females older than 30 years. 
+_Hint: first create a logical vector selecting females, then create a logical vector selecting ages older than 30. Subsequently, create a logical vector by combining the two logical vectors using `&` (AND). Finally, use this logical vector to select entries from `height`._
 
 ```{r}
 sel.fem <- sex == "female"
@@ -106,7 +106,7 @@ height.sel <- height[ sel ]
 Explanation: `NA` entries in the logical vector used as index will generate `NA`s entries in the result, even if the original  vector (in this case, `height`) did not involve `NA`s.
 
 
-### Extra tasks
+## Extra tasks
 
 - Name the elements of `v` with subsequent small letters of alphabet. Use `1:length( v )` to specify the range of the `letters` vector. (*)
 
@@ -131,11 +131,11 @@ v
 
 
 
-## Through utility functions {#utility}
+# Through utility functions {#utility}
 
-### Result is (part of) the original vector
+## Result is (part of) the original vector
 
-#### Primary tasks
+### Primary tasks
 
 - Sample entries from a vector randomly using `sample()`.
     - Define `v <- 101:110`. Try several times `sample( v )`. 
@@ -161,7 +161,7 @@ vs[1:3] # Same result as before
 ```
    
 
-#### Extra tasks
+### Extra tasks
 
 
 - Reverse a vector: `rev`. (*)
@@ -174,9 +174,9 @@ v
 rev( v )
 ```
 
-### Result is a logical vector
+## Result is a logical vector
 
-#### Primary tasks
+### Primary tasks
 
 - Which element(s) are available/missing: `is.na`.
     - Create a random vector `v` with `NA` elements: `v <- sample( c( 0, 1, NA ), 10, replace = TRUE )`. 
@@ -188,7 +188,7 @@ is.na( v )
 v[ !is.na( v ) ]
 ```
 
-#### Extra tasks
+### Extra tasks
 
 - Whether elements of one vector are present in another vector: `%in%`. (*) 
     - Let's check whether elements of `v <- c( "1", "B", "I", "O", "b" )` are among `LETTERS` with `v %in% LETTERS`. 
@@ -212,9 +212,9 @@ v
 duplicated( v )
 ```
 
-### Result is a vector of indices
+## Result is a vector of indices
 
-#### Primary tasks
+### Primary tasks
 
 - The function `which.max()` returns the index of the largest value in a vector. Use it to obtain the index of the largest value in `1:5`, and the one in `5:1`.
 
@@ -225,7 +225,7 @@ y <- 5:1
 which.max(y)
 ```
 
-A similar function is `which.min()`, which returns the index of the smallest value in a vector. Use it to obtain the index of the largest value in a vector composed of `1:10` followed by `9:1`.
+- A similar function is `which.min()`, which returns the index of the smallest value in a vector. Use it to obtain the index of the smallest value in a vector composed of `1:10` followed by `9:1`.
 
 ```{r}
 x <- c(1:10, 9:1)
@@ -259,7 +259,7 @@ v[ which.max( v ) ]
 max(v)
 ```
 
-#### Extra tasks
+### Extra tasks
 
 - Indices where a logical vector is `TRUE`: `which`. (*)
     - Let's create a random logical vector `v <- sample( c( T, F ), 10, replace = TRUE )`. 
@@ -299,7 +299,7 @@ v[ order( v ) ] == sort( v )
 all( v[ order( v ) ] == sort( v ) )
 ```
 
-### Other functions
+## Other functions
 
 - Sorting a vector
     - Define `v` as a  sample of small letters of size 5. Check its content. 
@@ -383,7 +383,7 @@ sum( duplicated( v ) )
 length( v[ duplicated(v) ] )
 ```
 
-#### Extra tasks
+### Extra tasks
 
 - Create a vector with ranks of elements of another vector: `rank`.
     - Let's generate a random vector `v <- sample( LETTERS, 10 )`.
@@ -414,15 +414,15 @@ The `rank()` gives you the relative position of each entry, also in alphabetical
 rank(myv)
 ```
 
-## (*) Class of a vector {#vectorClass}
+# (*) Class of a vector {#vectorClass}
 
 
 Try to explain the class of the resulting vector in the examples below:
 
-```{r}
+```{r echo=TRUE}
 x <- c(3, 10, TRUE, 20)
 ```
 
-```{r}
+```{r echo=TRUE}
 x <- c(3, 10, "TRUE", 20)
 ```

@@ -8,9 +8,9 @@ knitr::opts_chunk$set(echo = param, eval= param, include=T)
 
 
 
-## Creating a data frame
+# Creating a data frame
 
-### Primary tasks
+## Primary tasks
 
 - Create a `data.frame` from given vectors
 
@@ -52,9 +52,9 @@ Check what happens if you try to compute the mean by selecting the variable `age
 mean(mydata[ "age"])
 ```
 
-## Reading data from files with different formats
+# Reading data from files with different formats
 
-### Primary tasks
+## Primary tasks
 
 - Load the `pulse.csv` file into the `d` object. Display the structure of `d` and the first few rows.
 
@@ -121,7 +121,8 @@ Use the dataset `d2` you just created. Use `sort()` to sort the entries of `age`
 sort(d2$age)
 ```
 
-Now use `order()` to again sort the elements of `age`. Hint: you have already done this in `02_selecting.tasks`.
+Now use `order()` to again sort the elements of `age`.
+_Hint: you have already done this in `02_selecting.tasks`._
 
 ```{r}
 d2$age[ order(d2$age) ]
@@ -156,7 +157,8 @@ dnew[ order(d2$age, d2$weight), c("name", "year")]
     
 You have been asked to select individuals from the `d` data corresponding to men of weight in the range 60-80 kg. One way of doing this is as follows. 
 
-1. Create a logical vector `isMan` stating whether a row in the data corresponds to men. Hint: check which values in `gender` correspond to men.
+1. Create a logical vector `isMan` stating whether a row in the data corresponds to men.
+_Hint: check which values in `gender` correspond to men._
 
 ```{r}
 table(d$gender)
@@ -189,7 +191,7 @@ d[ isMan & isInWeightRange, ]
 
 
 
-### Extra tasks
+## Extra tasks
 
 - Making sure a selection returns a `data.frame`.
 

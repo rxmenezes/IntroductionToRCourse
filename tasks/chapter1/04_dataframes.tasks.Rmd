@@ -56,7 +56,8 @@ diff <- survey$span1 - survey$span2
 survey$diff <- diff
 ```
 
-- What is the minimum age in the data set? Hint: use `min()`.
+- What is the minimum age in the data set?
+_Hint: use `min()`._
 
 ```{r}
 min(survey$age)

@@ -36,4 +36,5 @@ We will make a script to read in the pulse and survey datasets. We will use this
 
 - Save the script under a useful name
 
-- Check it by closing and opening RStudio, running the script and then checking that the objects containing the datasets are loaded in the workspace (HINT: make sure you are in the right project)
+- Check it by closing and opening RStudio, running the script and then checking that the objects containing the datasets are loaded in the workspace
+_HINT: make sure you are in the right project_

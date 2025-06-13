@@ -71,7 +71,8 @@ names(res)
 res$conf.int
 ```
 
-- Round the p-value to 3 significant digits. Hint: use `round`
+- Round the p-value to 3 significant digits.
+_Hint: use `round`_
 ```{r}
 round(res$p.value, 3)
 ```
@@ -79,7 +80,8 @@ round(res$p.value, 3)
 
 # Tests for count tables 
 
-- In the survey data, make a table of the `fold` against the `clap` variables. Hint: use the function `table`.
+- In the survey data, make a table of the `fold` against the `clap` variables.
+_Hint: use the function `table`._
 ```{r}
 table(survey$fold, survey$clap)
 ```
@@ -98,7 +100,8 @@ names(chisq.test(survey$fold, survey$clap))
 p.cs <- chisq.test(survey$fold, survey$clap)$p.value
 ```
 
-- A warning message was generated  because the expected count is less than 5 in some of the cells in the table. Get the expected counts from the object returned by `chisq.test`. Hint: use the component `expected` of the object.
+- A warning message was generated  because the expected count is less than 5 in some of the cells in the table. Get the expected counts from the object returned by `chisq.test`.
+_Hint: use the component `expected` of the object._
 
 ```{r}
 res <- chisq.test(survey$fold, survey$clap)
