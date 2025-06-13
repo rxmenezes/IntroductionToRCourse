@@ -92,7 +92,7 @@ summary(fit)$coefficients
 ```
 
 
-- Reorder the levels of `fold` so that the category `fit` is the first level, and refit the model. 
+- Reorder the levels of `fold` so that the category `right`` is the first level, and refit the model. 
 
 ```{r}
 survey$fold2 <- factor(survey$fold, levels=c('right', 'neither', 'left'))
