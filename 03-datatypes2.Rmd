@@ -362,8 +362,8 @@ Formula objects can also be used in the syntax of tests and other functions, mak
 
 
 ```{r}
-pulse1.male <- pulse$pulse1[survey$gender == 'male']
-pulse1.female <- pulse$pulse1[survey$gender == 'female']
+pulse1.male <- pulse$pulse1[pulse$gender == 'male']
+pulse1.female <- pulse$pulse1[pulse$gender == 'female']
 t.test(pulse1.male, pulse1.female)
 ```
 
