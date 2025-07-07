@@ -97,13 +97,13 @@ v[sapply(v,function(x) divisible(x,7))]
 
 
   - The following table is a BMI classification. Write a function to determine 
-the classification given a BMI value.
+the classification given a BMI value. _Hint: Use `cut()`_
 
 <center>
 ```{r, eval=TRUE, echo=FALSE}
 library("htmlTable")
 htmlTable( data.frame(classification=c("underweight","normal","overweight","obese"),
-           bmi=c("<18.5","18.5-24.9","25-29.9","\\>30"), stringsAsFactors = F),  col.rgroup = c("none", "#F7F7F7") )
+           bmi=c("≤18.5","18.5-25","25-30","\\>30"), stringsAsFactors = F),  col.rgroup = c("none", "#F7F7F7") )
 ```
 </center>
 
@@ -135,15 +135,9 @@ bmiClass <- function(bmi) {
 bmiClass <- function(bmi) {
   # Classifies BMI value given as argument into categories {"underweight","normal","overweight","obese"}
   #
-  if (bmi < 18.5) {
-    classification <- "underweight"
-  } else if(18.5 <= bmi & bmi <= 24.9) {
-    classification <- "normal"
-  } else if(25 <= bmi & bmi <= 29.9) {
-    classification <- "overweight"
-  } else {
-    classification <- "obese"
-  }  
+  classification <- cut(bmi,
+                        breaks=c(0, 18.5, 24.9, 29.9, Inf),
+                        labels=c("underweight", "normal", "overweight", "obese"))
   classification
 }
 ```

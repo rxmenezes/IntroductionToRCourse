@@ -378,7 +378,7 @@ v[ duplicated(v) ]
 
 There are multiple ways to find out how many entries in `v` are duplicated. Some of them are:
 
-```{r}
+```{r echo=TRUE}
 sum( duplicated( v ) )
 length( v[ duplicated(v) ] )
 ```
@@ -388,6 +388,7 @@ length( v[ duplicated(v) ] )
 - Create a vector with ranks of elements of another vector: `rank`.
     - Let's generate a random vector `v <- sample( LETTERS, 10 )`.
     - Understand the difference of `order( v )` and `rank( v )`.
+    
 ```{r}
 v <- sample( LETTERS, 10 )
 v
@@ -397,20 +398,20 @@ rank( v )
 
 *Explanation*: We already know that `order()` returns the indices that, when used on the original vector, sorts its elements. The function `rank()` gives you the relative position of each entry, from the smallest to the largest by default. For example, define
 
-```{r}
+```{r echo=TRUE}
 myv <- c("A", "C", "E", "B", "F")
 myv
 ```
 
 It is easy to see that the result of `order()` should be the vector: `c(1, 4, 2, 3, 5)`, since the first element in alphabetical order `A` is at position one, then the second element in alphabetical order `B` is in position 4, etc. Indeed, check that this is also the result of `order()`:
 
-```{r}
+```{r echo=TRUE}
 order(myv)
 ```
 
 The `rank()` gives you the relative position of each entry, also in alphabetical order. The first entry in `myv` is also the first element in alphabetical order, so the first element in `rank()` is 1. The second entry in `myv` is the fourth element in alphabetical order, so the second element in `rank` is 4.  Then the third entry in `myv` is the second element in alphabetical order, with rank 2. The next entry in `myv` is the third element, and the last entry in `myv` is the fifth element. This means that `rank(myv)` returns `c(1, 4, 2, 3, 5)`. Check this:
 
-```{r}
+```{r echo=TRUE}
 rank(myv)
 ```
 
