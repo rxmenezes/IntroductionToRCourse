@@ -83,9 +83,7 @@ The materials contain also a `data` folder with the __data__ __files__ used in t
 
 ## Programme {-}
 
-### Sixth NKI edition, June  3rd, 4th, 6th, and 7th 2024
-
-This course will be given live at room Z4. All course days are in the period 9:00-16:30.
+This course will be given live at room Z4 at the NKI. All course days are in the period 9:00-16:30.
 
 
 
